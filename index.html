@@ -12,41 +12,91 @@
 <body>
     <header class="header">
         <div class="header-top">
-            <nav class="header-nav nav">
-                <div class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a class="nav-link" href="">Shop</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Story</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Testimonials</a></li>
+            <nav class="header-menu menu">
+                <div class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Shop</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Story</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Blog</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Testimonials</a>
+                        </li>
                     </ul>
+                    <!-- menu__list -->
                 </div>
+                <!-- menu -->
             </nav>
-            <a class="logo-link" href=""><img class="logo-img" src="assets/images/logo.jpg" alt="logo"></a>
-            <div>
-                <ul>
-                    <li><a href=""><img src="assets/images/user.png" alt="user"></a></li>
-                    <li><a href=""><img src="assets/images/search.png" alt="search"></a></li>
-                    <li><a href=""><img src="assets/images/cart.png" alt="cart"></a>
-                        <span>3</span></li>
+            <!-- header-menu menu -->
+            <div class="header__logo logo">
+                <a class="logo-link" href="#">
+                    <img class="logo-img" src="assets/images/logo.jpg" alt="logo">
+                </a>
+            </div>
+            <!-- header__logo logo -->
+            <div class="header__personal personal">
+                <ul class="personal__list">
+                    <li class="personal__item">
+                        <a class="personal__link" href="#">
+                            <img class="personal__icon" src="assets/images/search.png" alt="search">
+                        </a>
+                    </li>
+                    <li class="personal__item">
+                        <a class="personal__link" href="#">
+                            <img class="personal__icon" src="assets/images/user.png" alt="user">
+                        </a>
+                    </li class="personal__item">
+                    <li class="header__personal personal">
+                        <a class="personal__link" href="#">
+                            <img class="personal__icon" src="assets/images/cart.png" alt="cart">
+                        </a>
+                        <span class="personal__count">3</span>
+                    </li>
                 </ul>
             </div>
-            <div>
-                <ul>
-                    <li><a href=""><img src="assets/images/instagram.png" alt="instagram"></a></li>
-                    <li><a href=""><img src="assets/images/facebook.png" alt="facebook"></a></li>
-                    <li><a href=""><img src="assets/images/pinterest.png" alt="pinterest"></a></li>
+            <!-- header__personal personal -->
+            <div class="header__social social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <img class="social__icon" src="assets/images/instagram.png" alt="instagram">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <img class="social__icon" src="assets/images/facebook.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <img class="social__icon" src="assets/images/pinterest.png" alt="pinterest">
+                        </a>
+                    </li>
                 </ul>
             </div>
+            <!-- header__social social -->
 
+        </div> <!-- header-top -->
+
+        <div class="header__content">
+            <button class="header__btn btn btn--green--bg">Shop now</button>
+            <h1 class="header__title">SMOOTHIE</h1>
         </div>
-        <div>
-            <a href="">Shop now</a>
-            <h1>SMOOTHIE</h1>
-        </div>
+        <!-- header__content -->
     </header>
+    <!-- header -->
+
     <section>
         <h2>What are these smoothies?</h2>
         <p>A smoothie is a drink made from pureed raw fruit, vegetables, and sometimes dairy products (milk, yogurt,
