@@ -23,7 +23,7 @@
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.02em;
-	color: #ffffff;
+	color: #5d4769;
 	text-decoration: none;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .personal__count {
-	background-color: #fff;
+	background-color: rgb(28, 70, 71);
 	width: 25px;
 	height: 25px;
 	overflow: hidden;
