@@ -40,9 +40,25 @@ body {
 	min-height: 100vh;
 }
 
-.header__top {}
 
-.header__menu {}
+
+.header__top {
+	border: 3px solid red;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__menu {
+	border: 3px solid red;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+
+}
 
 .header__logo {}
 
@@ -57,22 +73,48 @@ body {
 .header__title {}
 
 
-.menu {}
+.menu {
+	border: 3px solid rgb(37, 93, 116);
+	width: 100%;
+}
 
-.menu__list {}
+.menu__list {
+	border: 3px solid red;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	
+}
 
-.menu__item {}
+.menu__item {
+	
+}
 
-.menu__link {}
+.menu__link {
+	font-family: Muli;
+font-size: 16px;
+line-height: 40px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.02em;
+color: #fff;
+}
 
 .logo {}
 
 .logo__img {}
 
 
-.personal {}
+.personal {
+	width: 100%;
+}
 
-.personal__list {}
+.personal__list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
 
 .personal__item {}
 
@@ -82,12 +124,26 @@ body {
 
 .personal__link--cart {}
 
-.personal__count {}
+.personal__count {
+	font-family: Muli;
+font-size: 10px;
+line-height: 40px;
+font-weight: 400;
+text-transform: uppercase;
+letter-spacing: 0.02em;
+color: #000;
+}
 
 
-.social {}
+.social {
+	width: 100%;
+}
 
-.social__list {}
+.social__list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
 
 .social__item {}
 
