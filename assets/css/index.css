@@ -1,56 +1,294 @@
 @font-face {
-	font-family: Muli;
-	src: url("../fonts/Muli-Bold.ttf"), url("../fonts/Muli-BoldItalic.ttf"), url("../fonts/Muli-ExtraBold.woff"),
-		url("../fonts/Muli-Italic.ttf"), url("../fonts/Muli-Regular.woff"), url("../fonts/Muli-Semi-BoldItalic.ttf");
+	font-family: "Muli";
+	src: url("../fonts/Muli-Regular.ttf"), url("../fonts/Muli-Regular.woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Muli";
+	src: url("../fonts/Muli-Bold.ttf"), url("../fonts/Muli-ExtraBold.woff");
+	font-weight: 800;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Muli";
+	src: url("../fonts/Muli-Italic.ttf");
+	font-weight: 400;
+	font-display: swap;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Muli";
+	src: url("../fonts/Muli-BoldItalic.ttf"), url("../fonts/Muli-Semi-BoldItalic.ttf");
+	font-weight: 800;
+	font-display: swap;
+}
+
+body {
+	font-family: "Muli";
+	color: #fff;
+	font-size: 18px;
 }
 
 .header {
-	border: 3px solid red;
 	background-image: url("../images/header_bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 100vh;
 }
 
-.menu__item {
-	list-style-type: none;
+.header__top {}
+
+.header__menu {}
+
+.header__logo {}
+
+.header__personal {}
+
+.header__social &__so {}
+
+.header__content {}
+
+.header__btn {}
+
+.header__title {}
+
+
+.menu {}
+
+.menu__list {}
+
+.menu__item {}
+
+.menu__link {}
+
+.logo {}
+
+.logo__img {}
+
+
+.personal {}
+
+.personal__list {}
+
+.personal__item {}
+
+.personal__link {}
+
+.personal__icon {}
+
+.personal__link--cart {}
+
+.personal__count {}
+
+
+.social {}
+
+.social__list {}
+
+.social__item {}
+
+.social__link {}
+
+.social__icon {}
+
+
+.btn {}
+
+.btn--bg {}
+
+.title {}
+
+
+
+
+
+
+
+
+
+
+
+
+.smoothies {}
+
+.smoothies__title {}
+
+.smoothies__text {}
+
+.smoothies__cards {}
+
+.container {}
+
+.cards {}
+
+.cards__item {}
+
+.cards__icon {}
+
+.cards__desc {}
+
+
+.about {}
+
+.about__img {}
+
+.about__wrapper {}
+
+// .about__title
+&__title {}
+
+.about__title--green {}
+
+.about__list {}
+
+.about__item {}
+
+.about__item--bold {}
+
+.about__link {}
+
+.products {}
+
+.products__item {}
+
+
+.product {}
+
+.product__label {}
+
+.product__subtitle {}
+
+.product__button {}
+
+.product__item {}
+
+.story {}
+
+.story__inner {}
+
+.story__box {}
+
+.story__title {}
+
+.story__text {}
+
+.story__link {}
+
+.story__content {}
+
+.story__image {}
 }
 
-.menu__link {
-	font-family: Muli;
-	font-size: 16px;
-	line-height: 40px;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 0.02em;
-	color: #5d4769;
-	text-decoration: none;
+.testimonials {}
+
+.testimonials__inner {}
+
+.testimonials__title {}
+
+.testimonials__title--big {}
+
+.testimonials__box {}
+
+.testimonials__quote {}
+
+.testimonials__cite {}
+
+.testimonials__img {}
 }
 
-.personal__item {
-	list-style-type: none;
+.blog {}
+
+.blog__wrapper {}
+
+.blog__text-box {}
+
+.blog__title {}
+
+.blog__img {}
+
+.blog__box {}
+
+.blog__subtitle {}
+
+.blog__time {}
+
+.blog__excerpt {}
+
+.blog__link {}
+
+
+.instagram {}
+
+.instagram__title {}
+
+.instagram__link {}
+
+.instagram__inner {}
+
+.instagram__picture {}
+
+.instagram__img {}
 }
 
-.personal__link {
-	text-decoration: none;
-}
+.footer {}
 
-.personal__count {
-	background-color: rgb(28, 70, 71);
-	width: 25px;
-	height: 25px;
-	overflow: hidden;
-	text-decoration: none;
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-	font-family: Muli;
-	font-size: 10px;
-	line-height: 40px;
-	font-weight: 400;
-	text-transform: uppercase;
-	letter-spacing: 0.02em;
-	color: #000000;
-}
+.footer__top {}
+
+.footer__wrapper {}
+
+.footer__logo {}
+
+.footer__info {}
+
+.footer__title {}
+
+.footer__payment {}
+
+.footer__box {}
+
+.footer__form {}
+
+.footer__input {}
+
+.footer__btn {}
+
+.footer__social {}
+
+.footer__list {}
+
+.footer__item {}
+
+.footer__link {}
+
+.footer__img {}
+
+.footer__bottom {}
+
+
+.info {}
+
+.info__list {}
+
+.info__item {}
+
+.info__link {}
+
+
+.payment {}
+
+.payment__title {}
+
+.payment__box {}
+
+.payment__img {}
+
+
+.bottom {}
+
+.bottom__small {}
+
+.bottom__link {}
