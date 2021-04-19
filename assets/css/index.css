@@ -31,6 +31,7 @@ body {
 	font-family: "Muli";
 	color: #fff;
 	font-size: 18px;
+	max-width: 1920px;
 }
 
 .header {
@@ -38,12 +39,13 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 100vh;
+	min-width: 100vh;
 }
 
 
 
 .header__top {
-	border: 3px solid red;
+
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -51,12 +53,12 @@ body {
 }
 
 .header__menu {
-	border: 3px solid red;
+
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
+
 
 }
 
@@ -64,9 +66,15 @@ body {
 
 .header__personal {}
 
-.header__social &__so {}
+.header__social {}
 
-.header__content {}
+.header__content {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
 
 .header__btn {}
 
@@ -74,40 +82,42 @@ body {
 
 
 .menu {
-	border: 3px solid rgb(37, 93, 116);
-	width: 100%;
+
+	width: 550px;
+	margin-right: 200px;
 }
 
 .menu__list {
-	border: 3px solid red;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	
+
 }
 
-.menu__item {
-	
-}
+.menu__item {}
 
 .menu__link {
 	font-family: Muli;
-font-size: 16px;
-line-height: 40px;
-font-weight: 700;
-text-transform: uppercase;
-letter-spacing: 0.02em;
-color: #fff;
+	font-size: 16px;
+	line-height: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	color: #fff;
 }
 
-.logo {}
+.logo {
+	margin-right: 330px;
+}
 
 .logo__img {}
 
 
 .personal {
-	width: 100%;
+	width: 250px;
+	margin-right: 100px;
 }
 
 .personal__list {
@@ -126,17 +136,18 @@ color: #fff;
 
 .personal__count {
 	font-family: Muli;
-font-size: 10px;
-line-height: 40px;
-font-weight: 400;
-text-transform: uppercase;
-letter-spacing: 0.02em;
-color: #000;
+	font-size: 10px;
+	line-height: 40px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	color: #000;
 }
 
 
 .social {
-	width: 100%;
+	width: 180px;
+	margin-right: 100px;
 }
 
 .social__list {
@@ -152,9 +163,26 @@ color: #000;
 .social__icon {}
 
 
-.btn {}
+.btn {
+	padding: 25px 125px 20px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 35px;
+	font-family: Muli;
+	font-size: 24px;
+	line-height: 40px;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: #fff;
+	border: none;
+}
 
-.btn--bg {}
+.btn--bg {
+
+	background-color: #0aa566;
+
+}
 
 .title {}
 
@@ -171,43 +199,116 @@ color: #000;
 
 .smoothies {}
 
-.smoothies__title {}
+.smoothies__title {
+	font-family: Muli;
+	font-size: 50px;
+	line-height: 40px;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: #f7ae3b;
+}
 
-.smoothies__text {}
+.smoothies__text {
+	font-family: Muli;
+	font-size: 18px;
+	line-height: 35px;
+	font-weight: 400;
+	color: #1e1e1e;
+}
 
 .smoothies__cards {}
 
 .container {}
 
-.cards {}
+.cards {
+	width: 1020px;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+}
 
-.cards__item {}
+.cards__item {
+	width: 240px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 .cards__icon {}
 
-.cards__desc {}
+.cards__desc {
+	font-family: Muli;
+	font-size: 25px;
+	line-height: 40px;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: #f2612d;
+}
 
 
-.about {}
+.about {
+	background-color: #148071;
+}
 
 .about__img {}
 
 .about__wrapper {}
 
-// .about__title
-&__title {}
+.about__title {
+	font-family: Muli;
+	font-size: 55px;
+	line-height: 60px;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: #fff;
 
-.about__title--green {}
+}
 
-.about__list {}
+.about__title--green {
+	color: #cae941;
+}
 
-.about__item {}
+.about__list {
+	list-style-image: url(../images/li.png);
+}
 
-.about__item--bold {}
+.about__item {
+
+	font-family: Muli;
+	font-size: 21px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #fff;
+
+}
+
+.about__item--bold {
+	font-weight: 800;
+}
+
+.about__btn {
+	width: 382px;
+height: 63px;
+border: 2px solid #f8b231;
+border-radius: 30px;
+	font-family: Muli;
+	font-size: 21px;
+	line-height: 22px;
+	font-weight: 800;
+	color: #fff;
+}
 
 .about__link {}
 
-.products {}
+.products {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+}
 
 .products__item {}
 
@@ -218,7 +319,12 @@ color: #000;
 
 .product__subtitle {}
 
-.product__button {}
+.product__button {
+	width: 207px;
+height: 63px;
+border: 2px solid #ffffff;
+border-radius: 30px;
+}
 
 .product__item {}
 
