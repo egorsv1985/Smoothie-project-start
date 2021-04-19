@@ -42,10 +42,7 @@ body {
 	min-width: 100vh;
 }
 
-
-
 .header__top {
-
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -53,50 +50,50 @@ body {
 }
 
 .header__menu {
-
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-
 }
 
-.header__logo {}
+.header__logo {
+}
 
-.header__personal {}
+.header__personal {
+}
 
-.header__social {}
+.header__social {
+}
 
 .header__content {
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	flex-direction: column;
 	flex-wrap: wrap;
 	align-items: center;
 }
 
-.header__btn {}
+.header__btn {
+}
 
-.header__title {}
-
+.header__title {
+}
 
 .menu {
-
 	width: 550px;
 	margin-right: 200px;
 }
 
 .menu__list {
-
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-
 }
 
-.menu__item {}
+.menu__item {
+}
 
 .menu__link {
 	font-family: Muli;
@@ -112,8 +109,8 @@ body {
 	margin-right: 330px;
 }
 
-.logo__img {}
-
+.logo__img {
+}
 
 .personal {
 	width: 250px;
@@ -126,13 +123,17 @@ body {
 	flex-wrap: wrap;
 }
 
-.personal__item {}
+.personal__item {
+}
 
-.personal__link {}
+.personal__link {
+}
 
-.personal__icon {}
+.personal__icon {
+}
 
-.personal__link--cart {}
+.personal__link--cart {
+}
 
 .personal__count {
 	font-family: Muli;
@@ -143,7 +144,6 @@ body {
 	letter-spacing: 0.02em;
 	color: #000;
 }
-
 
 .social {
 	width: 180px;
@@ -156,12 +156,14 @@ body {
 	flex-wrap: wrap;
 }
 
-.social__item {}
+.social__item {
+}
 
-.social__link {}
+.social__link {
+}
 
-.social__icon {}
-
+.social__icon {
+}
 
 .btn {
 	padding: 25px 125px 20px 40px;
@@ -179,25 +181,14 @@ body {
 }
 
 .btn--bg {
-
 	background-color: #0aa566;
-
 }
 
-.title {}
+.title {
+}
 
-
-
-
-
-
-
-
-
-
-
-
-.smoothies {}
+.smoothies {
+}
 
 .smoothies__title {
 	font-family: Muli;
@@ -216,9 +207,11 @@ body {
 	color: #1e1e1e;
 }
 
-.smoothies__cards {}
+.smoothies__cards {
+}
 
-.container {}
+.container {
+}
 
 .cards {
 	width: 1020px;
@@ -237,7 +230,8 @@ body {
 	align-items: center;
 }
 
-.cards__icon {}
+.cards__icon {
+}
 
 .cards__desc {
 	font-family: Muli;
@@ -248,14 +242,15 @@ body {
 	color: #f2612d;
 }
 
-
 .about {
 	background-color: #148071;
 }
 
-.about__img {}
+.about__img {
+}
 
-.about__wrapper {}
+.about__wrapper {
+}
 
 .about__title {
 	font-family: Muli;
@@ -264,7 +259,6 @@ body {
 	font-weight: 800;
 	letter-spacing: -0.02em;
 	color: #fff;
-
 }
 
 .about__title--green {
@@ -276,13 +270,11 @@ body {
 }
 
 .about__item {
-
 	font-family: Muli;
 	font-size: 21px;
 	line-height: 22px;
 	font-weight: 400;
 	color: #fff;
-
 }
 
 .about__item--bold {
@@ -291,9 +283,9 @@ body {
 
 .about__btn {
 	width: 382px;
-height: 63px;
-border: 2px solid #f8b231;
-border-radius: 30px;
+	height: 63px;
+	border: 2px solid #f8b231;
+	border-radius: 30px;
 	font-family: Muli;
 	font-size: 21px;
 	line-height: 22px;
@@ -301,7 +293,8 @@ border-radius: 30px;
 	color: #fff;
 }
 
-.about__link {}
+.about__link {
+}
 
 .products {
 	width: 100%;
@@ -310,147 +303,308 @@ border-radius: 30px;
 	justify-content: space-between;
 }
 
-.products__item {}
+.products__item {
+}
 
+.product {
+}
 
-.product {}
+.product__label {
+}
 
-.product__label {}
-
-.product__subtitle {}
+.product__subtitle {
+}
 
 .product__button {
 	width: 207px;
-height: 63px;
-border: 2px solid #ffffff;
-border-radius: 30px;
+	height: 63px;
+	border: 2px solid #ffffff;
+	border-radius: 30px;
 }
 
-.product__item {}
-
-.story {}
-
-.story__inner {}
-
-.story__box {}
-
-.story__title {}
-
-.story__text {}
-
-.story__link {}
-
-.story__content {}
-
-.story__image {}
+.product__item {
 }
 
-.testimonials {}
-
-.testimonials__inner {}
-
-.testimonials__title {}
-
-.testimonials__title--big {}
-
-.testimonials__box {}
-
-.testimonials__quote {}
-
-.testimonials__cite {}
-
-.testimonials__img {}
+.story {
 }
 
-.blog {}
-
-.blog__wrapper {}
-
-.blog__text-box {}
-
-.blog__title {}
-
-.blog__img {}
-
-.blog__box {}
-
-.blog__subtitle {}
-
-.blog__time {}
-
-.blog__excerpt {}
-
-.blog__link {}
-
-
-.instagram {}
-
-.instagram__title {}
-
-.instagram__link {}
-
-.instagram__inner {}
-
-.instagram__picture {}
-
-.instagram__img {}
+.story__inner {
 }
 
-.footer {}
+.story__box {
+}
 
-.footer__top {}
+.story__title {
+	font-family: Muli;
+	font-size: 50px;
+	line-height: 40px;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: #f7ae3b;
+}
 
-.footer__wrapper {}
+.story__text {
+	font-family: Muli;
+	font-size: 18px;
+	line-height: 35px;
+	font-weight: 400;
+	color: #1e1e1e;
+}
 
-.footer__logo {}
+.story__link {
+}
 
-.footer__info {}
+.story__content {
+}
 
-.footer__title {}
+.story__image {
+}
 
-.footer__payment {}
+.testimonials {
+	background-color: #67311e;
+}
 
-.footer__box {}
+.testimonials__inner {
+}
 
-.footer__form {}
+.testimonials__title {
+	font-family: Muli;
+	font-size: 50px;
+	line-height: 40px;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: #f7ae3b;
+}
 
-.footer__input {}
+.testimonials__title--big {
+	color: #f2612d;
+	text-transform: uppercase;
+}
 
-.footer__btn {}
+.testimonials__box {
+}
 
-.footer__social {}
+.testimonials__quote {
+	font-family: Muli;
+	font-size: 18px;
+	line-height: 35px;
+	font-weight: 400;
+	color: #ffffff;
+}
 
-.footer__list {}
+.testimonials__cite {
+	line-height: 45px;
+	font-weight: 600;
+	font-style: italic;
+	color: #f7ae3b;
+}
 
-.footer__item {}
+.testimonials__img {
+}
 
-.footer__link {}
+.blog {
+}
 
-.footer__img {}
+.blog__wrapper {
+}
 
-.footer__bottom {}
+.blog__text-box {
+}
 
+.blog__title {
+	font-family: Muli;
+	font-size: 50px;
+	line-height: 40px;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: #f7ae3b;
+}
 
-.info {}
+.blog__img {
+}
 
-.info__list {}
+.blog__box {
+}
 
-.info__item {}
+.blog__subtitle {
+	font-family: Muli;
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: #f2612d;
+}
 
-.info__link {}
+.blog__time {
+	font-family: Muli;
+	font-size: 16px;
+	line-height: 35px;
+	font-weight: 400;
+	color: #1e1e1e;
+}
 
+.blog__excerpt {
+	font-family: Muli;
+	font-size: 18px;
+	line-height: 35px;
+	font-weight: 400;
+	color: #1e1e1e;
+}
 
-.payment {}
+.blog__link {
+	font-weight: 800;
+	font-style: italic;
+}
 
-.payment__title {}
+.instagram {
+}
 
-.payment__box {}
+.instagram__title {
+}
 
-.payment__img {}
+.instagram__link {
+	font-family: Muli;
+	font-size: 24px;
+	line-height: 40px;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: #0aa566;
+}
 
+.instagram__inner {
+	display: flex;
+	justify-content: space-between;
+}
 
-.bottom {}
+.instagram__picture {
+}
 
-.bottom__small {}
+.instagram__img {
+}
 
-.bottom__link {}
+.footer {
+}
+
+.footer__top {
+	background-color: #f5ad3d;
+	width: 100%;
+}
+
+.footer__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__logo {
+}
+
+.footer__info {
+}
+
+.footer__title {
+	font-family: Muli;
+	font-size: 26px;
+	line-height: 40px;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: #ffffff;
+}
+
+.footer__payment {
+}
+
+.footer__box {
+}
+
+.footer__form {
+}
+
+.footer__input {
+}
+
+.footer__btn {
+	font-family: Muli;
+	font-size: 18px;
+	line-height: 40px;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+	color: #6d450c;
+}
+
+.footer__social {
+}
+
+.footer__list {
+}
+
+.footer__item {
+}
+
+.footer__link {
+}
+
+.footer__img {
+}
+
+.footer__bottom {
+	background-color: #6c2e1b;
+}
+
+.info {
+}
+
+.info__list {
+}
+
+.info__item {
+}
+
+.info__link {
+	font-family: Muli;
+	font-size: 18px;
+	line-height: 35px;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	color: #6d450c;
+}
+
+.payment {
+}
+
+.payment__title {
+	font-family: Muli;
+	font-size: 26px;
+	line-height: 40px;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: #ffffff;
+}
+
+.payment__box {
+}
+
+.payment__img {
+}
+
+.bottom {
+}
+
+.bottom__small {
+	font-family: Muli;
+	font-size: 13px;
+	line-height: 35px;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	color: #af8a82;
+}
+
+.bottom__link {
+	font-family: Muli;
+	font-size: 16px;
+	line-height: 40px;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	color: #ffffff;
+}
