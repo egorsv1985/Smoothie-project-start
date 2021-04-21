@@ -1,230 +1,376 @@
 .header {
+	min-height: 100vh;
+	background-image: url(../images/header_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
 .header__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 65px 40px 60px 100px;
 }
+
 .header__menu {
 }
+
 .menu {
 }
+
 .menu__list {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15px;
+}
+.menu__item + .menu__item {
+	margin-left: 32px;
 }
 .menu__item {
 }
+
 .menu__link {
+	font-family: Muli;
+	font-size: 16px;
+	line-height: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	color: #ffffff;
 }
+
 .logo {
 }
+
 .header__logo {
+	margin-right: 80px;
 }
+
 .logo__img {
 }
+
 .header__personal {
 }
+
 .personal {
 }
+
 .personal__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.personal__item + .personal__item {
+	margin-left: 45px;
 }
 .personal__item {
 }
+
 .personal__link {
 }
+
 .personal__icon {
 }
+
 .personal__link--cart {
 }
+
 .personal__count {
 }
+
 .header__social {
 }
+
 .social {
 }
+
 .social__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.social__item + .social__item {
+	margin-left: 10px;
 }
 .social__item {
 }
+
 .social__link {
 }
+
 .social__icon {
 }
+
 .header__content {
 }
+
 .header__btn {
 }
+
 .btn {
 }
+
 .btn--bg {
 }
+
 .header__title {
 }
+
 .title {
 }
+
 .smoothies {
 }
+
 .smoothies__title {
 }
+
 .smoothies__text {
 }
+
 .smoothies__cards {
 }
+
 .cards {
 }
+
 .cards__item {
 }
+
 .cards__icon {
 }
+
 .cards__desc {
 }
+
 .about {
 }
+
 .about__img {
 }
+
 .about__wrapper {
 }
+
 .about__title {
 }
+
 .about__title--green {
 }
+
 .about__list {
 }
+
 .about__item {
 }
+
 .about__item--bold {
 }
+
 .about__btn {
 }
+
 .btn--border-white {
 }
+
 .about__link {
 }
+
 .products {
 }
+
 .products__item {
 }
+
 .product {
 }
+
 .product__label {
 }
+
 .product__subtitle {
 }
+
 .product__button {
 }
+
 .product__item {
 }
+
 .story {
 }
+
 .story__inner {
 }
+
 .story__box {
 }
+
 .story__title {
 }
+
 .story__text {
 }
+
 .story__link {
 }
+
 .story__content {
 }
+
 .story__image {
 }
+
 .testimonials {
 }
+
 .testimonials__inner {
 }
+
 .testimonials__title {
 }
+
 .testimonials__title--big {
 }
+
 .testimonials__box {
 }
+
 .testimonials__quote {
 }
+
 .testimonials__cite {
 }
+
 .testimonials__img {
 }
+
 .blog {
 }
+
 .blog__wrapper {
 }
+
 .blog__text-box {
 }
+
 .blog__title {
 }
+
 .blog__img {
 }
+
 .blog__box {
 }
+
 .blog__subtitle {
 }
+
 .blog__time {
 }
+
 .blog__excerpt {
 }
+
 .blog__link {
 }
+
 .instagram {
 }
+
 .instagram__title {
 }
+
 .instagram__link {
 }
+
 .instagram__inner {
 }
+
 .instagram__picture {
 }
+
 .instagram__img {
 }
+
 .footer__top {
 }
+
 .footer__wrapper {
 }
+
 .footer__logo {
 }
+
 .footer__info {
 }
+
 .info {
 }
+
 .footer__title {
 }
+
 .info__list {
 }
+
 .info__item {
 }
+
 .info__link {
 }
+
 .footer__payment {
 }
+
 .payment {
 }
+
 .payment__title {
 }
+
 .payment__box {
 }
+
 .payment__img {
 }
+
 .footer__box {
 }
+
 .footer__form {
 }
+
 .footer__input {
 }
+
 .footer__btn {
 }
+
 .footer__social {
 }
+
 .footer__list {
 }
+
 .footer__item {
 }
+
 .footer__link {
 }
+
 .footer__img {
 }
+
 .footer__bottom {
 }
+
 .bottom {
 }
+
 .bottom__small {
 }
+
 .bottom__link {
 }
