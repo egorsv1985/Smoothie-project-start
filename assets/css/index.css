@@ -135,16 +135,14 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	background-color: #fff;
-	border: radius 50%;
+	border-radius: 50%;
+	bottom: 15px;
+	left: 20px;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
-
-	bottom: 15px;
-	left: 20px;
 }
 
 .social {
