@@ -70,12 +70,6 @@ body {
 	padding: 85px 40px 80px 100px;
 }
 
-.header__menu {
-}
-
-.menu {
-}
-
 .menu__list {
 	display: flex;
 	justify-content: space-between;
@@ -85,9 +79,6 @@ body {
 	margin-left: 32px;
 }
 
-.menu__item {
-}
-
 .menu__link {
 	font-family: Muli-Bold;
 	font-size: 16px;
@@ -95,9 +86,6 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 0.02em;
 	color: #fff;
-}
-
-.logo {
 }
 
 .header__logo {
@@ -110,9 +98,6 @@ body {
 	-moz-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
-}
-
-.logo__img {
 }
 
 .header__personal {
@@ -135,15 +120,6 @@ body {
 
 .personal__item:last-child {
 	position: relative;
-}
-
-.personal__link {
-}
-
-.personal__icon {
-}
-
-.personal__link--cart {
 }
 
 .personal__count {
@@ -169,9 +145,6 @@ body {
 
 	bottom: 15px;
 	left: 20px;
-}
-
-.header__social {
 }
 
 .social {
@@ -204,9 +177,6 @@ body {
 	-o-border-radius: 50%;
 }
 
-.personal__link {
-}
-
 .personal__list:last-child::after {
 	position: absolute;
 	content: "";
@@ -216,7 +186,6 @@ body {
 	width: 47px;
 	height: 2px;
 	background-color: #ffd68f;
-	z-index: 1;
 }
 
 .header__content {
@@ -277,260 +246,68 @@ body {
 	color: #fff;
 }
 
-.title {
-}
+/* 
+.header__menu {}
+.menu {}
+.menu__item {}
+.logo {}
+.logo__img {}
+.personal__link {}
+.personal__icon {}
+.personal__link--cart {}
+.header__social {}
+.personal__link {}
+.title {} */
+/* header */
 
-.smoothies {
+.container {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
 }
 
 .smoothies__title {
+	font-family: Muli;
+	font-size: 50px;
+	line-height: 40px;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: #f7ae3b;
 }
 
 .smoothies__text {
+	width: 900px;
+	text-align: center;
+	font-family: Muli;
+	font-size: 18px;
+	line-height: 35px;
+	font-weight: 400;
+	color: #1e1e1e;
 }
 
 .smoothies__cards {
-}
-
-.cards {
-}
-
-.cards__item {
-}
-
-.cards__icon {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 80px;
+	grid-row-gap: 25px;
+	margin: 60px 110px 50px 200px;
 }
 
 .cards__desc {
-}
-
-.about {
-}
-
-.about__img {
-}
-
-.about__wrapper {
-}
-
-.about__title {
-}
-
-.about__title--green {
-}
-
-.about__list {
-}
-
-.about__item {
-}
-
-.about__item--bold {
-}
-
-.about__btn {
-}
-
-.btn--border-white {
-}
-
-.about__link {
-}
-
-.products {
-}
-
-.products__item {
-}
-
-.product {
-}
-
-.product__label {
-}
-
-.product__subtitle {
-}
-
-.product__button {
-}
-
-.product__item {
-}
-
-.story {
-}
-
-.story__inner {
-}
-
-.story__box {
-}
-
-.story__title {
-}
-
-.story__text {
-}
-
-.story__link {
-}
-
-.story__content {
-}
-
-.story__image {
-}
-
-.testimonials {
-}
-
-.testimonials__inner {
-}
-
-.testimonials__title {
-}
-
-.testimonials__title--big {
-}
-
-.testimonials__box {
-}
-
-.testimonials__quote {
-}
-
-.testimonials__cite {
-}
-
-.testimonials__img {
-}
-
-.blog {
-}
-
-.blog__wrapper {
-}
-
-.blog__text-box {
-}
-
-.blog__title {
-}
-
-.blog__img {
-}
-
-.blog__box {
-}
-
-.blog__subtitle {
-}
-
-.blog__time {
-}
-
-.blog__excerpt {
-}
-
-.blog__link {
-}
-
-.instagram {
-}
-
-.instagram__title {
-}
-
-.instagram__link {
-}
-
-.instagram__inner {
-}
-
-.instagram__picture {
-}
-
-.instagram__img {
-}
-
-.footer__top {
-}
-
-.footer__wrapper {
-}
-
-.footer__logo {
-}
-
-.footer__info {
-}
-
-.info {
-}
-
-.footer__title {
-}
-
-.info__list {
-}
-
-.info__item {
-}
-
-.info__link {
-}
-
-.footer__payment {
-}
-
-.payment {
-}
-
-.payment__title {
-}
-
-.payment__box {
-}
-
-.payment__img {
-}
-
-.footer__box {
-}
-
-.footer__form {
-}
-
-.footer__input {
-}
-
-.footer__btn {
-}
-
-.footer__social {
-}
-
-.footer__list {
-}
-
-.footer__item {
-}
-
-.footer__link {
-}
-
-.footer__img {
-}
-
-.footer__bottom {
-}
-
-.bottom {
-}
-
-.bottom__small {
-}
-
-.bottom__link {
-}
+	font-family: Muli;
+	font-size: 25px;
+	line-height: 40px;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: #f2612d;
+}
+
+/*
+.smoothies {}
+.title {}
+.cards {}
+.cards__item {}
+.cards__icon {} */
+/* smoothies */
