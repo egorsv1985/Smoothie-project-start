@@ -218,6 +218,12 @@ h3 {
 	-moz-border-radius: 35px;
 	-ms-border-radius: 35px;
 	-o-border-radius: 35px;
+	font-family: Muli-ExtraBold;
+	font-size: 24px;
+	line-height: 40px;
+	letter-spacing: -0.02em;
+	color: #fff;
+	text-transform: capitalize;
 }
 
 .header__btn::before {
@@ -228,15 +234,6 @@ h3 {
 	width: 30px;
 	height: 16px;
 	background-image: url("../images/arrow.png");
-}
-
-.btn {
-	font-family: Muli-ExtraBold;
-	font-size: 24px;
-	line-height: 40px;
-	letter-spacing: -0.02em;
-	color: #fff;
-	text-transform: capitalize;
 }
 
 .btn--bg {
@@ -390,28 +387,27 @@ h3 {
 .about {
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
+
 	flex-wrap: wrap;
 	background-color: #17836f;
-	min-height: 100vh;
-	max-height: 800px;
+	padding-top: 60px;
+	padding-left: 5px;
+	max-height: 740px;
 }
 
 .about__img {
-	padding: 0px 0px 125px 40px;
+	padding: 0;
+	margin: 0;
 }
 
 .about__wrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	padding: 0px 260px 550px 0px;
+	box-sizing: border-box;
+	width: 800px;
+	height: 700px;
 }
 
 .about__title {
-	width: 800px;
+	width: 660px;
 	font-family: Muli-ExtraBold;
 	font-size: 55px;
 	line-height: 60px;
@@ -428,13 +424,15 @@ h3 {
 
 .about__list {
 	list-style-image: url(../images/li.png);
+	padding-bottom: 25px;
 }
 
 .about__item {
 	font-family: Muli;
 	font-size: 21px;
 	line-height: 22px;
-	color: #ffffff;
+	color: #fff;
+	padding-bottom: 26px;
 }
 
 .about__item--bold {
@@ -442,13 +440,48 @@ h3 {
 }
 
 .about__btn {
+	position: relative;
+	right: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 382px;
+	height: 63px;
+	border: 2px solid #f8b231;
+	border-radius: 30px;
+	font-family: Muli;
+	font-size: 21px;
+	line-height: 22px;
+	font-weight: 800;
+	color: #fff;
+	padding: 25px 90px 20px 30px;
+	margin-left: 50px;
+	background-color: #17836f;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
 }
 
-.btn {
-}
-
-.btn--border-white {
+.btn--border-orange {
+	border: 2px solid #f8b231;
 }
 
 .about__link {
+	font-family: Muli-ExtraBold;
+	font-size: 21px;
+	line-height: 22px;
+
+	color: #fff;
+}
+
+.about__btn::before {
+	content: "";
+	position: absolute;
+	top: 23px;
+	left: 310px;
+	width: 30px;
+	height: 16px;
+	background-image: url("../images/arrow.png");
 }
