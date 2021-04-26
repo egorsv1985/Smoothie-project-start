@@ -61,15 +61,17 @@ h2,
 h3 {
 	text-align: center;
 }
+
 .header {
 	background-image: url(../images/header_bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
 .container {
 	min-height: 100vh;
 	max-width: 1732px;
-	margin: 0 auto;
+	margin: 0 auto 50px;
 	padding: 0 6px;
 }
 
@@ -265,6 +267,24 @@ h3 {
 	align-items: center;
 	position: relative;
 } */
+.smoothies {
+}
+
+.smoothies__container {
+	max-height: 800px;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 6px;
+}
+
+.smoothies__wrapper {
+	max-width: 1000px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 auto 80px;
+}
 
 .smoothies__title {
 	font-family: Muli-ExtraBold;
@@ -272,6 +292,7 @@ h3 {
 	line-height: 40px;
 	letter-spacing: -0.02em;
 	color: #f7ae3b;
+	margin: 45px 0;
 }
 
 .smoothies__text {
@@ -288,9 +309,9 @@ h3 {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 1fr);
-	grid-column-gap: 80px;
-	grid-row-gap: 70px;
-	margin: 60px 60px 100px 150px;
+	/* grid-column-gap: 80px; */
+	grid-row-gap: 10px;
+
 	justify-content: center;
 	align-items: center;
 }
@@ -304,14 +325,17 @@ h3 {
 }
 
 .cards__item {
+	width: 270px;
+	height: 160px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-
+.cards:first-child {
+	border: 2px solid red;
+}
 .cards__icon {
-	padding-bottom: 15px;
 }
 
 /*
@@ -418,17 +442,24 @@ h3 {
 	height: 16px;
 	background-image: url("../images/arrow.png");
 }
+
 .products {
 }
+
 .product__item {
 }
+
 .product {
 }
+
 .product__label {
 }
+
 .product__subtitle {
 }
+
 .product__button {
 }
+
 .btn {
 }
