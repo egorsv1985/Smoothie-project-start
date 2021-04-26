@@ -50,34 +50,37 @@ Muli-Italic
 Muli
 Muli-Semi-BoldItalic */
 
-body {
-	font-family: Muli;
+* {
 	margin: 0;
 	padding: 0;
+	font-weight: normal;
 }
 
 h1,
 h2,
 h3 {
-	margin: 0;
-	padding: 0;
 	text-align: center;
 }
-
 .header {
-	min-height: 100vh;
 	background-image: url(../images/header_bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.container {
+	min-height: 100vh;
+	max-width: 1732px;
+	margin: 0 auto;
+	padding: 0 6px;
+}
 
 .header__top {
+	height: 140px;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: relative;
-
-	padding: 85px 40px 80px 100px;
+	padding: 10px 0;
+	margin-bottom: 55px;
 }
 
 .menu__list {
@@ -99,33 +102,24 @@ h3 {
 }
 
 .header__logo {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin: 0;
-	transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
+	margin: 40px 200px 40px 55px;
 }
 
 .header__personal {
-	position: relative;
 }
 
 .personal {
-	margin-left: 625px;
 }
 
 .personal__list {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 }
 
 .personal__item + .personal__item {
-	margin-left: 45px;
+	margin-left: 40px;
 }
 
 .personal__item:last-child {
@@ -156,7 +150,6 @@ h3 {
 }
 
 .social {
-	margin-right: 40px;
 }
 
 .social__list {
@@ -200,8 +193,6 @@ h3 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-top: 45px;
-	padding-left: 15px;
 }
 
 .header__btn {
@@ -267,13 +258,13 @@ h3 {
  */
 /* header */
 
-.container {
+/* .container {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
 	align-items: center;
 	position: relative;
-}
+} */
 
 .smoothies__title {
 	font-family: Muli-ExtraBold;
@@ -310,61 +301,6 @@ h3 {
 	line-height: 40px;
 	letter-spacing: -0.02em;
 	color: #f2612d;
-}
-
-.cards:last-child::before {
-	position: absolute;
-	content: "";
-	bottom: 250px;
-	left: 450px;
-	width: 1010px;
-	height: 2px;
-	background-color: #f6edde;
-}
-
-.cards:last-child::after {
-	position: absolute;
-	content: "";
-	bottom: 240px;
-	left: 550px;
-	width: 390px;
-	height: 2px;
-	background-color: #f6edde;
-	transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-}
-
-.cards__item:nth-child(2)::before {
-	position: absolute;
-	content: "";
-	bottom: 235px;
-	left: 815px;
-	width: 390px;
-	height: 2px;
-	background-color: #f6edde;
-	transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-}
-
-.cards__item:nth-child(2)::after {
-	position: absolute;
-	content: "";
-	bottom: 235px;
-	left: 1055px;
-	width: 390px;
-	height: 2px;
-	background-color: #f6edde;
-	transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
 }
 
 .cards__item {
