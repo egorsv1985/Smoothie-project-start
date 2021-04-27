@@ -113,8 +113,8 @@ body {
 
 .personal__count {
 	position: absolute;
-	bottom: 16px;
-	left: 21px;
+	bottom: 20px;
+	left: 22px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
