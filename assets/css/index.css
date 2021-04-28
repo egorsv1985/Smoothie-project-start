@@ -252,6 +252,11 @@ body {
 }
 
 .smoothies__cards {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(260px, 180px));
+	grid-template-rows: repeat(2, 1fr);
+	align-items: center;
+	justify-content: center;
 }
 
 .cards {
@@ -262,9 +267,22 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 260px;
+	height: 180px;
+	border-bottom: 2px solid #f6edde;
+	border-right: 2px solid #f6edde;
 }
-
+.cards__item:last-child {
+	border: none;
+}
+.cards__item:nth-child(4) {
+	border-right: none;
+}
+.cards__item:nth-child(1n + 5) {
+	border-bottom: none;
+}
 .cards__icon {
+	margin-bottom: 25px;
 }
 
 .cards__desc {
