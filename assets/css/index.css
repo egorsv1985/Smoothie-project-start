@@ -222,10 +222,6 @@ body {
 /* header */
 
 /* smoothies */
-
-.smoothies {
-}
-
 .smoothies__container {
 	max-width: 1010px;
 	margin: 0 auto 100px;
@@ -259,9 +255,6 @@ body {
 	justify-content: center;
 }
 
-.cards {
-}
-
 .cards__item {
 	display: flex;
 	flex-direction: column;
@@ -290,51 +283,4 @@ body {
 	font-weight: 800;
 	color: #f2612d;
 }
-
-/* .smoothies {
-}
-
-.smoothies__container {
-	max-width: 1000px;
-	margin: 0 auto 100px;
-}
-.smoothies__wrapper {
-	margin-bottom: 60px;
-}
-.smoothies__title {
-	text-align: center;
-	color: #f7ae3b;
-	margin-bottom: 45px;
-}
-.smoothies__text {
-	font-size: 18px;
-	line-height: 35px;
-	text-align: center;
-	color: #1e1e1e;
-}
-
-.smoothies__cards {
-	max-width: 1010px;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	grid-column-gap: 260px;
-	grid-row-gap: 180px;
-}
-
-.cards {
-}
-
-.cards__item {
-}
-
-.cards__icon {
-}
-
-.cards__desc {
-	font-size: 25px;
-	line-height: 40px;
-	font-weight: 800;
-	letter-spacing: -0.02em;
-	color: #f2612d;
-} */
+/* smoothies */
