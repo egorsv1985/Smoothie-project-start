@@ -88,6 +88,7 @@ body {
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.02em;
+	color: #fff;
 }
 
 .header-block {
@@ -190,6 +191,7 @@ body {
 	font-weight: 800;
 	font-size: 24px;
 	text-transform: capitalize;
+	color: #fff;
 }
 
 .header__btn::before {
@@ -298,15 +300,22 @@ body {
 	background-color: #12806d;
 	max-height: 800px;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
+	justify-content: space-between;
 }
-
+.about__image {
+	margin-top: 80px;
+	margin-left: 140px;
+}
 .about__img {
 }
 
 .about__wrapper {
+	max-width: 620px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-right: 320px;
 }
 
 .about__title {
