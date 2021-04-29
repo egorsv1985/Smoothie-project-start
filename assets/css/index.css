@@ -43,6 +43,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -50,6 +51,7 @@ body {
 	font-size: 16px;
 	letter-spacing: -0.02em;
 	line-height: 40px;
+	color: #fff;
 }
 
 .header {
@@ -59,7 +61,7 @@ body {
 .container {
 	min-height: 100vh;
 	max-width: 1725px;
-	margin: 0 auto 100px;
+	margin: 0 auto;
 }
 
 .header__top {
@@ -67,8 +69,8 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	padding-top: 68px;
-	margin-bottom: 100px;
+	padding-top: 65px;
+	margin-bottom: 95px;
 }
 
 .menu__list {
@@ -79,14 +81,13 @@ body {
 }
 
 .menu__item + .menu__item {
-	margin-left: 32px;
+	margin-left: 33px;
 }
 
 .menu__link {
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.02em;
-	color: #fff;
 }
 
 .header-block {
@@ -94,7 +95,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	margin-left: 135px;
+	margin-left: 130px;
 }
 
 .personal__list {
@@ -113,8 +114,8 @@ body {
 
 .personal__count {
 	position: absolute;
-	bottom: 20px;
-	left: 22px;
+	bottom: 15px;
+	left: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -133,17 +134,14 @@ body {
 	-o-border-radius: 50%;
 }
 
-.header__social {
-	margin-left: 135px;
-}
-
 .social__list {
 	display: flex;
 	align-items: center;
+	margin-left: 135px;
 }
 
 .social__item + .social__item {
-	margin-left: 9px;
+	margin-left: 8px;
 }
 
 .social__item {
@@ -191,7 +189,6 @@ body {
 	-o-border-radius: 35px;
 	font-weight: 800;
 	font-size: 24px;
-	color: #fff;
 	text-transform: capitalize;
 }
 
@@ -211,7 +208,6 @@ body {
 
 .header__title {
 	text-transform: uppercase;
-	color: #fff;
 }
 
 .title {
@@ -222,9 +218,13 @@ body {
 /* header */
 
 /* smoothies */
+.smoothies {
+	padding: 100px;
+}
+
 .smoothies__container {
-	max-width: 1010px;
-	margin: 0 auto 100px;
+	/* max-width: 1010px; */
+	margin: 0 auto;
 }
 
 .smoothies__wrapper {
@@ -245,14 +245,17 @@ body {
 	font-size: 18px;
 	line-height: 35px;
 	color: #1e1e1e;
+	margin: 0 auto;
 }
 
 .smoothies__cards {
+	max-width: 1010px;
 	display: grid;
-	grid-template-columns: repeat(4, minmax(260px, 180px));
+	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	align-items: center;
 	justify-content: center;
+	margin: 0 auto;
 }
 
 .cards__item {
@@ -265,15 +268,19 @@ body {
 	border-bottom: 2px solid #f6edde;
 	border-right: 2px solid #f6edde;
 }
+
 .cards__item:last-child {
 	border: none;
 }
+
 .cards__item:nth-child(4) {
 	border-right: none;
 }
+
 .cards__item:nth-child(1n + 5) {
 	border-bottom: none;
 }
+
 .cards__icon {
 	margin-bottom: 25px;
 }
@@ -283,4 +290,55 @@ body {
 	font-weight: 800;
 	color: #f2612d;
 }
+
 /* smoothies */
+
+/* about */
+.about {
+	background-color: #12806d;
+	max-height: 800px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.about__img {
+}
+
+.about__wrapper {
+}
+
+.about__title {
+	font-size: 55px;
+	line-height: 60px;
+}
+
+.about__title--green {
+	color: #cae941;
+}
+
+.about__list {
+	list-style-image: url(../images/li.png);
+}
+
+.about__item {
+	font-size: 21px;
+	line-height: 22px;
+}
+
+.about__item--bold {
+	font-weight: 800;
+}
+
+.about__btn {
+	font-size: 21px;
+	line-height: 22px;
+	font-weight: 800;
+}
+
+.btn {
+}
+
+.btn--border-orange {
+}
