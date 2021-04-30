@@ -221,7 +221,7 @@ body {
 
 /* smoothies */
 .smoothies {
-	padding: 100px;
+	margin: 90px 0 130px 0;
 }
 
 .smoothies__wrapper {
@@ -337,7 +337,7 @@ body {
 
 .about__list {
 	list-style-image: url(../images/li.png);
-	margin-bottom: 30px;
+	margin-bottom: 5px;
 }
 
 .about__item {
@@ -427,7 +427,6 @@ body {
 }
 
 .product {
-	border: 2px solid red;
 }
 
 .product__label {
