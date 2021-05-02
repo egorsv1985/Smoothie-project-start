@@ -472,7 +472,7 @@ body {
 
 .story {
 	display: flex;
-	margin: 120px 0 160px 0;
+	margin: 100px 0 160px 0;
 }
 
 .story__inner {
@@ -540,8 +540,8 @@ body {
 .story__content::after {
 	content: "";
 	position: absolute;
-	top: 20px;
-	left: -162px;
+	top: 23px;
+	left: -167px;
 	width: 290px;
 	height: 216px;
 
@@ -556,15 +556,15 @@ body {
 .testimonials::after {
 	content: "";
 	position: absolute;
-	top: -80px;
-	right: 52px;
+	top: -90px;
+	right: 50px;
 	width: 410px;
 	height: 301px;
 	background-image: url("../images/dots.png");
 }
 
 .testimonials__inner {
-	padding: 115px 0 220px 0;
+	padding: 105px 0 230px 0;
 	position: relative;
 }
 
@@ -601,7 +601,7 @@ body {
 .testimonials__wrapper::after {
 	content: "";
 	position: absolute;
-	bottom: -150px;
+	bottom: -135px;
 	left: 874px;
 	width: 30px;
 	height: 16px;
@@ -616,7 +616,7 @@ body {
 .testimonials__wrapper::before {
 	content: "";
 	position: absolute;
-	bottom: -150px;
+	bottom: -135px;
 	right: 874px;
 	width: 30px;
 	height: 16px;
@@ -649,6 +649,7 @@ body {
 }
 
 .testimonials__img {
+	margin-top: 15px;
 	z-index: 1;
 }
 
@@ -662,7 +663,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 60px;
-	padding: 110px 0 200px 0;
+	padding: 85px 0 190px 0;
 }
 
 .blog__box {
@@ -676,11 +677,26 @@ body {
 	margin-bottom: 50px;
 }
 
+.blog__img {
+	z-index: 1;
+}
+
 .blog__text-box {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	margin-top: 180px;
+}
+
+.blog__text-box::before {
+	position: absolute;
+	content: "";
+	width: 687px;
+	height: 12px;
+	background-color: #f7ae3b;
+	bottom: 275px;
+	left: -120px;
 }
 
 .blog__subtitle {
@@ -712,6 +728,7 @@ body {
 	font-style: italic;
 	color: #1e1e1e;
 }
+
 .blog__excerpt::after {
 	content: "";
 	position: absolute;
@@ -720,4 +737,58 @@ body {
 	width: 18px;
 	height: 10px;
 	background-image: url("../images/arrow.png");
+}
+
+.instagram {
+}
+
+.instagram__title {
+	text-align: center;
+	position: relative;
+	margin-left: 38px;
+}
+
+.instagram__title::before {
+	position: absolute;
+	content: "";
+	background-image: url("../images/instagramm.png");
+	background-repeat: no-repeat;
+
+	width: 26px;
+	height: 26px;
+	top: 15px;
+	left: 805px;
+}
+
+.instagram__link {
+	text-align: center;
+	font-size: 24px;
+	line-height: 40px;
+	font-weight: 800;
+	color: #0aa566;
+}
+
+.instagram__inner {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 45px;
+}
+
+.instagram__picture {
+	position: relative;
+}
+.instagram__picture::before {
+	position: absolute;
+	content: "";
+	background-image: url("../images/instaramm_white.png");
+	background-repeat: no-repeat;
+
+	width: 26px;
+	height: 26px;
+	bottom: 40px;
+	right: 25px;
+	z-index: 1;
+}
+
+.instagram__img {
 }
