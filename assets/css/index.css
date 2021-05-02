@@ -60,7 +60,7 @@ body {
 
 .container {
 	min-height: 100vh;
-	max-width: 1725px;
+	max-width: 1735px;
 	margin: 0 auto;
 }
 
@@ -69,8 +69,9 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	padding-top: 65px;
+	padding-top: 60px;
 	margin-bottom: 95px;
+	padding-left: 15px;
 }
 
 .menu__list {
@@ -81,7 +82,7 @@ body {
 }
 
 .menu__item + .menu__item {
-	margin-left: 33px;
+	margin-left: 32px;
 }
 
 .menu__link {
@@ -89,6 +90,9 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 0.02em;
 	color: #fff;
+}
+
+.logo {
 }
 
 .header-block {
@@ -106,7 +110,7 @@ body {
 }
 
 .personal__item + .personal__item {
-	margin-left: 45px;
+	margin-left: 50px;
 }
 
 .personal__link--cart {
@@ -138,25 +142,28 @@ body {
 .social__list {
 	display: flex;
 	align-items: center;
-	margin-left: 135px;
+	margin-left: 125px;
 }
 
 .social__item + .social__item {
-	margin-left: 8px;
+	margin-left: 6px;
 }
 
 .social__item {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 38px;
-	height: 38px;
 	background-color: #fff;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
+}
+
+.social__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 38px;
+	height: 38px;
 }
 
 .personal__list:last-child::after {
@@ -201,7 +208,7 @@ body {
 	left: 210px;
 	width: 30px;
 	height: 16px;
-	background-image: url("../images/arrow.png");
+	background: no-repeat center/cover url("../images/arrow.png");
 }
 
 .btn--bg {
@@ -224,16 +231,10 @@ body {
 	margin: 90px 0 130px 0;
 }
 
-.smoothies__wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 60px;
-}
-
 .smoothies__title {
 	color: #f7ae3b;
-	margin-bottom: 45px;
+	margin-bottom: 50px;
+	text-align: center;
 }
 
 .smoothies__text {
@@ -255,6 +256,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	background-color: #f6edde;
+	margin-top: 50px;
 }
 
 .cards__item {
@@ -316,7 +318,7 @@ body {
 	position: relative;
 	font-size: 55px;
 	line-height: 60px;
-	margin-bottom: 50px;
+	max-width: 605px;
 	margin-bottom: 50px;
 	margin-top: 92px;
 }
@@ -324,7 +326,7 @@ body {
 .about__title::before {
 	position: absolute;
 	content: "";
-	background-image: url(../images/line.png);
+	background: no-repeat center/cover url(../images/line.png);
 	top: 115px;
 	left: 10px;
 	width: 450px;
@@ -337,7 +339,8 @@ body {
 
 .about__list {
 	list-style-image: url(../images/li.png);
-	margin-bottom: 5px;
+	margin-bottom: 15px;
+	padding-left: 30px;
 }
 
 .about__item {
@@ -365,7 +368,7 @@ body {
 	height: 63px;
 	background-color: transparent;
 
-	padding: 0 99px 0 22px;
+	padding: 0 90px 0 35px;
 	border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
@@ -380,7 +383,7 @@ body {
 	left: 305px;
 	width: 30px;
 	height: 16px;
-	background-image: url("../images/arrow.png");
+	background: no-repeat center/cover url("../images/arrow.png");
 }
 
 .btn--border-orange {
@@ -467,7 +470,7 @@ body {
 	left: 130px;
 	width: 30px;
 	height: 16px;
-	background-image: url("../images/arrow_white.png");
+	background: no-repeat center/cover url("../images/arrow_white.png");
 }
 
 .story {
@@ -529,7 +532,7 @@ body {
 	left: 235px;
 	width: 30px;
 	height: 16px;
-	background-image: url("../images/arrow.png");
+	background: no-repeat center/cover url("../images/arrow.png");
 }
 
 .story__content {
@@ -545,7 +548,7 @@ body {
 	width: 290px;
 	height: 216px;
 
-	background-image: url("../images/stamp.png");
+	background: no-repeat center/cover url("../images/stamp.png");
 }
 
 .testimonials {
@@ -560,7 +563,7 @@ body {
 	right: 50px;
 	width: 410px;
 	height: 301px;
-	background-image: url("../images/dots.png");
+	background: no-repeat center/cover url("../images/dots.png");
 }
 
 .testimonials__inner {
@@ -605,7 +608,7 @@ body {
 	left: 874px;
 	width: 30px;
 	height: 16px;
-	background-image: url("../images/arrow.png");
+	background: no-repeat center/cover url("../images/arrow.png");
 	transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
 	-moz-transform: rotate(180deg);
@@ -620,7 +623,7 @@ body {
 	right: 874px;
 	width: 30px;
 	height: 16px;
-	background-image: url("../images/arrow.png");
+	background: no-repeat center/cover url("../images/arrow.png");
 }
 
 .testimonials__box {
@@ -736,7 +739,7 @@ body {
 	left: 340px;
 	width: 18px;
 	height: 10px;
-	background-image: url("../images/arrow.png");
+	background: no-repeat center/cover url("../images/arrow.png");
 }
 
 .instagram__title {
@@ -748,7 +751,7 @@ body {
 .instagram__title::before {
 	position: absolute;
 	content: "";
-	background-image: url("../images/instagramm.png");
+	background: no-repeat center/cover url("../images/instagramm.png");
 	background-repeat: no-repeat;
 
 	width: 26px;
@@ -773,16 +776,133 @@ body {
 
 .instagram__picture {
 	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
 .instagram__picture::before {
 	position: absolute;
 	content: "";
-	background-image: url("../images/instaramm_white.png");
-	background-repeat: no-repeat;
+	background: no-repeat center/cover url("../images/instaramm_white.png");
 
 	width: 26px;
 	height: 26px;
 	bottom: 40px;
 	right: 25px;
 	z-index: 1;
+}
+
+.footer {
+}
+
+.footer__top {
+	background-color: #f6a739;
+}
+
+.footer__wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 55px 0 100px 100px;
+}
+
+.logo {
+}
+
+.footer__logo {
+	align-self: center;
+	margin-right: 90px;
+}
+
+.logo__img {
+}
+
+.footer__info {
+	display: flex;
+	flex-direction: column;
+	padding-left: 30px;
+}
+
+.info {
+}
+
+.footer__title {
+	font-size: 26px;
+	line-height: 40px;
+	font-weight: 800;
+}
+
+.info__list {
+	margin-top: 10px;
+}
+
+.info__item {
+}
+
+.info__link {
+	font-size: 18px;
+	line-height: 35px;
+	font-weight: 700;
+
+	color: #6d450c;
+}
+
+.footer__payment {
+}
+
+.payment {
+}
+
+.payment__title {
+}
+
+.payment__box {
+	margin-top: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 245px;
+	height: 150px;
+	gap: 19px;
+}
+
+.payment__img {
+}
+
+.footer__box {
+}
+
+.footer__form {
+}
+
+.footer__input {
+}
+
+.footer__btn {
+}
+
+.footer__social {
+}
+
+.footer__list {
+}
+
+.footer__item {
+}
+
+.footer__link {
+}
+
+.footer__img {
+}
+
+.footer__bottom {
+	background-color: #6f2f1d;
+}
+
+.bottom {
+}
+
+.bottom__small {
+}
+
+.bottom__link {
 }
