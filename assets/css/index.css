@@ -549,10 +549,10 @@ body {
 }
 
 .testimonials {
-	margin: 0 auto;
 	background-color: #662e1b;
 	position: relative;
 }
+
 .testimonials::after {
 	content: "";
 	position: absolute;
@@ -562,10 +562,12 @@ body {
 	height: 301px;
 	background-image: url("../images/dots.png");
 }
+
 .testimonials__inner {
 	padding: 115px 0 220px 0;
 	position: relative;
 }
+
 .testimonials__inner::after {
 	content: "Sarah A";
 	position: absolute;
@@ -578,6 +580,7 @@ body {
 	top: 290px;
 	left: 415px;
 }
+
 .testimonials__title {
 	text-align: center;
 	color: #f7ae3b;
@@ -588,11 +591,13 @@ body {
 	color: #f2612d;
 	text-transform: uppercase;
 }
+
 .testimonials__wrapper {
 	display: flex;
 	justify-content: center;
 	position: relative;
 }
+
 .testimonials__wrapper::after {
 	content: "";
 	position: absolute;
@@ -607,6 +612,7 @@ body {
 	-ms-transform: rotate(180deg);
 	-o-transform: rotate(180deg);
 }
+
 .testimonials__wrapper::before {
 	content: "";
 	position: absolute;
@@ -641,6 +647,77 @@ body {
 	font-style: italic;
 	color: #f7ae3b;
 }
+
 .testimonials__img {
 	z-index: 1;
+}
+
+.blog {
+	margin: 0 auto;
+	max-width: 1220px;
+}
+
+.blog__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 60px;
+	padding: 110px 0 200px 0;
+}
+
+.blog__box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.blog__title {
+	color: #f7ae3b;
+	margin-bottom: 50px;
+}
+
+.blog__text-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 180px;
+}
+
+.blog__subtitle {
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 800;
+	color: #f2612d;
+}
+
+.blog__time {
+	font-size: 16px;
+	line-height: 35px;
+	color: #1e1e1e;
+}
+
+.blog__excerpt {
+	position: relative;
+	max-width: 502px;
+	font-size: 18px;
+	line-height: 35px;
+	color: #1e1e1e;
+	text-align: start;
+	padding-top: 25px;
+	padding-left: 40px;
+}
+
+.blog__link {
+	font-weight: 800;
+	font-style: italic;
+	color: #1e1e1e;
+}
+.blog__excerpt::after {
+	content: "";
+	position: absolute;
+	top: 140px;
+	left: 340px;
+	width: 18px;
+	height: 10px;
+	background-image: url("../images/arrow.png");
 }
