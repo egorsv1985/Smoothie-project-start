@@ -739,9 +739,6 @@ body {
 	background-image: url("../images/arrow.png");
 }
 
-.instagram {
-}
-
 .instagram__title {
 	text-align: center;
 	position: relative;
@@ -788,7 +785,4 @@ body {
 	bottom: 40px;
 	right: 25px;
 	z-index: 1;
-}
-
-.instagram__img {
 }
