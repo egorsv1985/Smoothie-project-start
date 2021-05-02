@@ -547,3 +547,100 @@ body {
 
 	background-image: url("../images/stamp.png");
 }
+
+.testimonials {
+	margin: 0 auto;
+	background-color: #662e1b;
+	position: relative;
+}
+.testimonials::after {
+	content: "";
+	position: absolute;
+	top: -80px;
+	right: 52px;
+	width: 410px;
+	height: 301px;
+	background-image: url("../images/dots.png");
+}
+.testimonials__inner {
+	padding: 115px 0 220px 0;
+	position: relative;
+}
+.testimonials__inner::after {
+	content: "Sarah A";
+	position: absolute;
+	opacity: 0.6;
+	font-size: 200px;
+	line-height: 40px;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: #521905;
+	top: 290px;
+	left: 415px;
+}
+.testimonials__title {
+	text-align: center;
+	color: #f7ae3b;
+	margin-bottom: 115px;
+}
+
+.testimonials__title--big {
+	color: #f2612d;
+	text-transform: uppercase;
+}
+.testimonials__wrapper {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+.testimonials__wrapper::after {
+	content: "";
+	position: absolute;
+	bottom: -150px;
+	left: 874px;
+	width: 30px;
+	height: 16px;
+	background-image: url("../images/arrow.png");
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+}
+.testimonials__wrapper::before {
+	content: "";
+	position: absolute;
+	bottom: -150px;
+	right: 874px;
+	width: 30px;
+	height: 16px;
+	background-image: url("../images/arrow.png");
+}
+
+.testimonials__box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 455px;
+	height: 130px;
+	margin-right: 59px;
+	margin-top: 80px;
+}
+
+.testimonials__quote {
+	font-size: 18px;
+	line-height: 35px;
+	text-align: center;
+	z-index: 1;
+}
+
+.testimonials__cite {
+	line-height: 45px;
+	font-weight: 600;
+	font-style: italic;
+	color: #f7ae3b;
+}
+.testimonials__img {
+	z-index: 1;
+}
