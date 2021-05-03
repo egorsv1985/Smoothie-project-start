@@ -92,9 +92,6 @@ body {
 	color: #fff;
 }
 
-.logo {
-}
-
 .header-block {
 	display: flex;
 	justify-content: space-between;
@@ -169,6 +166,7 @@ body {
 .personal__list:last-child::after {
 	position: absolute;
 	content: "";
+	display: block;
 	top: 10px;
 	left: 205px;
 	width: 47px;
@@ -203,6 +201,7 @@ body {
 
 .header__btn::before {
 	content: "";
+	display: block;
 	position: absolute;
 	top: 27px;
 	left: 210px;
@@ -315,20 +314,22 @@ body {
 }
 
 .about__title {
-	position: relative;
 	font-size: 55px;
 	line-height: 60px;
 	max-width: 605px;
 	margin-bottom: 50px;
 	margin-top: 92px;
 }
-
-.about__title::before {
+.about__title--green {
+	position: relative;
+}
+.about__title--green::before {
 	position: absolute;
 	content: "";
+	display: block;
 	background: no-repeat center/cover url(../images/line.png);
-	top: 115px;
-	left: 10px;
+	top: 70px;
+	left: -5px;
 	width: 450px;
 	height: 13px;
 }
@@ -379,6 +380,7 @@ body {
 .about__btn::before {
 	content: "";
 	position: absolute;
+	display: block;
 	top: 25px;
 	left: 305px;
 	width: 30px;
@@ -466,6 +468,7 @@ body {
 .product__button::before {
 	content: "";
 	position: absolute;
+	display: block;
 	top: 25px;
 	left: 130px;
 	width: 30px;
@@ -528,6 +531,7 @@ body {
 .story__btn::before {
 	content: "";
 	position: absolute;
+	display: block;
 	top: 20px;
 	left: 235px;
 	width: 30px;
@@ -543,6 +547,7 @@ body {
 .story__content::after {
 	content: "";
 	position: absolute;
+	display: block;
 	top: 23px;
 	left: -167px;
 	width: 290px;
@@ -559,21 +564,25 @@ body {
 .testimonials::after {
 	content: "";
 	position: absolute;
-	top: -90px;
-	right: 50px;
+	display: block;
+	top: -85px;
+	right: 40px;
 	width: 410px;
 	height: 301px;
 	background: no-repeat center/cover url("../images/dots.png");
 }
 
 .testimonials__inner {
-	padding: 105px 0 230px 0;
+	padding: 105px 0 90px 0;
 	position: relative;
 }
 
 .testimonials__inner::after {
 	content: "Sarah A";
 	position: absolute;
+	display: block;
+	width: 770px;
+	height: 148px;
 	opacity: 0.6;
 	font-size: 200px;
 	line-height: 40px;
@@ -581,7 +590,7 @@ body {
 	letter-spacing: -0.02em;
 	color: #521905;
 	top: 290px;
-	left: 415px;
+	left: 430px;
 }
 
 .testimonials__title {
@@ -599,15 +608,21 @@ body {
 	display: flex;
 	justify-content: center;
 	position: relative;
+	margin-bottom: 120px;
 }
-
-.testimonials__wrapper::after {
-	content: "";
-	position: absolute;
-	bottom: -135px;
-	left: 874px;
+.testimonials__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 160px;
+	gap: 98px;
+	margin: 0 auto;
+}
+.testimonials__button-left {
+	display: block;
 	width: 30px;
 	height: 16px;
+	border: none;
 	background: no-repeat center/cover url("../images/arrow.png");
 	transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
@@ -615,17 +630,12 @@ body {
 	-ms-transform: rotate(180deg);
 	-o-transform: rotate(180deg);
 }
-
-.testimonials__wrapper::before {
-	content: "";
-	position: absolute;
-	bottom: -135px;
-	right: 874px;
+.testimonials__button-right {
 	width: 30px;
 	height: 16px;
 	background: no-repeat center/cover url("../images/arrow.png");
+	border: none;
 }
-
 .testimonials__box {
 	display: flex;
 	justify-content: center;
@@ -658,21 +668,21 @@ body {
 
 .blog {
 	margin: 0 auto;
-	max-width: 1220px;
 }
 
 .blog__wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 60px;
-	padding: 85px 0 190px 0;
+
+	padding: 95px 0 190px 0;
 }
 
 .blog__box {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-right: 65px;
 }
 
 .blog__title {
@@ -689,12 +699,14 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-top: 180px;
+	margin-top: 185px;
+	margin-right: 30px;
 }
 
 .blog__text-box::before {
 	position: absolute;
 	content: "";
+	display: block;
 	width: 687px;
 	height: 12px;
 	background-color: #f7ae3b;
@@ -707,6 +719,7 @@ body {
 	line-height: 40px;
 	font-weight: 800;
 	color: #f2612d;
+	text-align: center;
 }
 
 .blog__time {
@@ -735,6 +748,7 @@ body {
 .blog__excerpt::after {
 	content: "";
 	position: absolute;
+	display: block;
 	top: 140px;
 	left: 340px;
 	width: 18px;
@@ -751,9 +765,8 @@ body {
 .instagram__title::before {
 	position: absolute;
 	content: "";
+	display: block;
 	background: no-repeat center/cover url("../images/instagramm.png");
-	background-repeat: no-repeat;
-
 	width: 26px;
 	height: 26px;
 	top: 15px;
@@ -783,6 +796,7 @@ body {
 .instagram__picture::before {
 	position: absolute;
 	content: "";
+	display: block;
 	background: no-repeat center/cover url("../images/instaramm_white.png");
 
 	width: 26px;
