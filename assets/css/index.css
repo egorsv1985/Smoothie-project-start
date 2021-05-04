@@ -7,7 +7,7 @@
 
 @font-face {
 	font-family: Muli;
-	src: url("../fonts/Muli-BoldItalic") format("truetype");
+	src: url("../fonts/Muli-BoldItalic.ttf") format("truetype");
 	font-weight: 700;
 	font-display: swap;
 }
@@ -60,7 +60,7 @@ body {
 
 .container {
 	min-height: 100vh;
-	max-width: 1735px;
+	max-width: 1725px;
 	margin: 0 auto;
 }
 
@@ -71,7 +71,8 @@ body {
 	flex-wrap: wrap;
 	padding-top: 60px;
 	margin-bottom: 95px;
-	padding-left: 15px;
+	position: relative;
+	min-height: 105px;
 }
 
 .menu__list {
@@ -90,6 +91,17 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 0.02em;
 	color: #fff;
+}
+
+.header__logo {
+	position: absolute;
+	margin: 0;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
 }
 
 .header-block {
@@ -320,9 +332,11 @@ body {
 	margin-bottom: 50px;
 	margin-top: 92px;
 }
+
 .about__title--green {
 	position: relative;
 }
+
 .about__title--green::before {
 	position: absolute;
 	content: "";
@@ -610,6 +624,7 @@ body {
 	position: relative;
 	margin-bottom: 120px;
 }
+
 .testimonials__container {
 	display: flex;
 	justify-content: center;
@@ -618,6 +633,7 @@ body {
 	gap: 98px;
 	margin: 0 auto;
 }
+
 .testimonials__button-left {
 	display: block;
 	width: 30px;
@@ -630,12 +646,14 @@ body {
 	-ms-transform: rotate(180deg);
 	-o-transform: rotate(180deg);
 }
+
 .testimonials__button-right {
 	width: 30px;
 	height: 16px;
 	background: no-repeat center/cover url("../images/arrow.png");
 	border: none;
 }
+
 .testimonials__box {
 	display: flex;
 	justify-content: center;
