@@ -9,6 +9,7 @@
 	font-family: Muli;
 	src: url("../fonts/Muli-BoldItalic.ttf") format("truetype");
 	font-weight: 700;
+	font-style: italic;
 	font-display: swap;
 }
 
@@ -23,6 +24,7 @@
 	font-family: Muli;
 	src: url("../fonts/Muli-Italic.ttf") format("truetype");
 	font-weight: 400;
+	font-style: italic;
 	font-display: swap;
 }
 
@@ -37,6 +39,7 @@
 	font-family: Muli-Semi-BoldItalic;
 	src: url("../fonts/Muli-Semi-BoldItalic.ttf") format("truetype");
 	font-weight: 600;
+	font-style: italic;
 	font-display: swap;
 }
 
@@ -48,19 +51,19 @@
 
 body {
 	font-family: Muli, sans-serif;
-	font-size: 16px;
+	/* font-size: 16px;
 	letter-spacing: -0.02em;
 	line-height: 40px;
-	color: #fff;
+	color: #fff; */
 }
 
 .header {
 	background: no-repeat center/cover url(../images/header_bg.jpg);
 }
 
-.container {
+.header__container {
 	min-height: 100vh;
-	max-width: 1725px;
+	max-width: 1720px;
 	margin: 0 auto;
 }
 
@@ -69,8 +72,9 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	padding-top: 60px;
-	margin-bottom: 95px;
+	padding-top: 82px;
+
+	margin-bottom: 120px;
 	position: relative;
 }
 
@@ -86,6 +90,8 @@ body {
 }
 
 .menu__link {
+	font-size: 16px;
+	line-height: 40px;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.02em;
@@ -94,14 +100,13 @@ body {
 
 .header__logo {
 	position: absolute;
-
 	top: 60px;
 	left: 50%;
 	transform: translateX(-50%);
-	-webkit-transform: translateX(, -50%);
-	-moz-transform: translateX(, -50%);
-	-ms-transform: translateX(, -50%);
-	-o-transform: translateX(, -50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
 }
 
 .header-block {
@@ -109,24 +114,24 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	margin-left: 130px;
 }
 
-.personal__list {
+.header__personal {
 	display: flex;
 	align-items: center;
 	position: relative;
+	margin-right: 134px;
 }
 
-.personal__item + .personal__item {
-	margin-left: 50px;
+.header__item + .header__item {
+	margin-left: 45px;
 }
 
-.personal__link--cart {
+.header__link--cart {
 	position: relative;
 }
 
-.personal__count {
+.header__count {
 	position: absolute;
 	bottom: 15px;
 	left: 20px;
@@ -148,14 +153,20 @@ body {
 	-o-border-radius: 50%;
 }
 
-.social__list {
-	display: flex;
-	align-items: center;
-	margin-left: 125px;
+.header__personal::after {
+	position: absolute;
+	content: "";
+	display: block;
+	top: 10px;
+	left: 205px;
+	width: 47px;
+	height: 2px;
+	background-color: #ffd68f;
 }
 
-.social__item + .social__item {
-	margin-left: 6px;
+.social {
+	display: flex;
+	align-items: center;
 }
 
 .social__item {
@@ -167,23 +178,16 @@ body {
 	-o-border-radius: 50%;
 }
 
+.social__item + .social__item {
+	margin-left: 6px;
+}
+
 .social__link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 38px;
 	height: 38px;
-}
-
-.personal__list::after {
-	position: absolute;
-	content: "";
-	display: block;
-	top: 10px;
-	left: 205px;
-	width: 47px;
-	height: 2px;
-	background-color: #ffd68f;
 }
 
 .header__content {
@@ -226,48 +230,55 @@ body {
 	background-color: #0aa566;
 }
 
-.header__title {
-	text-transform: uppercase;
-}
-
 .title {
-	font-weight: 800;
 	font-size: 50px;
+	line-height: 40px;
+	font-weight: 800;
+	letter-spacing: -0.02em;
 }
 
 /* header */
 
 /* smoothies */
 .smoothies {
-	margin: 90px 0 130px 0;
+	max-width: 1010px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.smoothies__container {
+	padding: 100px 0;
 }
 
 .smoothies__title {
-	color: #f7ae3b;
 	margin-bottom: 50px;
-	text-align: center;
+}
+
+.title--orange {
+	color: #f7ae3b;
 }
 
 .smoothies__text {
-	max-width: 915px;
-	text-align: center;
+	margin-bottom: 60px;
+}
+
+.text {
 	font-size: 18px;
 	line-height: 35px;
+}
+
+.text--black {
 	color: #1e1e1e;
-	margin: 0 auto;
 }
 
 .smoothies__cards {
-	max-width: 1010px;
 	display: grid;
-	margin: 0 auto;
 	gap: 2px;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 1fr);
-	align-items: center;
+
 	justify-content: center;
 	background-color: #f6edde;
-	margin-top: 50px;
 }
 
 .cards__item {
@@ -276,8 +287,17 @@ body {
 	justify-content: center;
 	align-items: center;
 	width: 260px;
-	height: 180px;
+	height: 194px;
 	background-color: #fff;
+}
+
+.cards__desc {
+	font-size: 25px;
+	line-height: 40px;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: #f2612d;
+	padding-top: 10px;
 }
 
 .cards__item:last-child {
@@ -290,16 +310,6 @@ body {
 
 .cards__item:nth-child(1n + 5) {
 	border-bottom: none;
-}
-
-.cards__icon {
-	margin-bottom: 25px;
-}
-
-.cards__desc {
-	font-size: 25px;
-	font-weight: 800;
-	color: #f2612d;
 }
 
 /* smoothies */
@@ -811,10 +821,12 @@ body {
 	display: flex;
 	flex: 1 0 20%;
 }
+
 .instagram__img {
 	width: 100%;
 	object-fit: contain;
 }
+
 .instagram__picture::before {
 	position: absolute;
 	content: "";
