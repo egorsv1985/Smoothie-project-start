@@ -57,7 +57,7 @@ body {
 	color: #fff; */
 }
 
-.header {
+/* .header {
 	background: no-repeat center/cover url(../images/header_bg.jpg);
 }
 
@@ -235,12 +235,12 @@ body {
 	line-height: 40px;
 	font-weight: 800;
 	letter-spacing: 0.02em;
-}
+} */
 
 /* header */
 
 /* smoothies */
-.smoothies {
+/* .smoothies {
 	max-width: 1010px;
 	margin: 0 auto;
 	text-align: center;
@@ -310,12 +310,12 @@ body {
 
 .cards__item:nth-child(1n + 5) {
 	border-bottom: none;
-}
+} */
 
 /* smoothies */
 
 /* about */
-.about {
+/* .about {
 	background-color: #12806d;
 	display: flex;
 	max-height: 800px;
@@ -418,12 +418,12 @@ body {
 
 .btn--border-orange {
 	border: 2px solid #f8b231;
-}
+} */
 
 /* about */
 
 /* product */
-
+/* 
 .products__wrapper {
 	display: flex;
 	flex: 1 0 25%;
@@ -452,8 +452,7 @@ body {
 .product__item:last-child {
 	background-color: #c3491f;
 }
-.product__img {
-}
+
 .product__label {
 	font-size: 24px;
 	line-height: 22px;
@@ -497,23 +496,38 @@ body {
 	width: 30px;
 	height: 16px;
 	background: no-repeat center/cover url("../images/arrow_white.png");
-}
+} */
 /* product */
-
-.story {
-	display: flex;
-	margin: 100px 0 160px 0;
+/* .story {
 }
-
 .story__inner {
 	display: flex;
-	flex-direction: column;
 }
-
 .story__box {
 	margin-left: 300px;
 }
+.story__title {
+}
+.title {
+}
+.story__text {
+}
+.text {
+}
+.story__btn {
+}
+.btn {
+}
+.btn--bg {
+}
+.story__content {
+}
+.story__image {
+}
 
+.story__box {
+} */
+/* 
 .story__title {
 	font-size: 50px;
 	line-height: 40px;
@@ -807,11 +821,11 @@ body {
 	line-height: 40px;
 	font-weight: 800;
 	color: #0aa566;
-}
-
+} */
+/* 
 .instagram__inner {
 	display: flex;
-	/* justify-content: space-between; */
+	justify-content: space-between;
 	margin-top: 45px;
 }
 
@@ -953,4 +967,4 @@ body {
 }
 
 .bottom__link {
-}
+} */
