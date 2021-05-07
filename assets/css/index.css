@@ -56,10 +56,10 @@ body {
 	line-height: 40px;
 	color: #fff; */
 }
-
-/* .header {
+.header {
 	background: no-repeat center/cover url(../images/header_bg.jpg);
 }
+/* 
 
 .header__container {
 	min-height: 100vh;
