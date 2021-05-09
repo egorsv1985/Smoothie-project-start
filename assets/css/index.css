@@ -253,6 +253,9 @@ body {
 /* header */
 
 /* smoothies */
+.smoothies {
+
+}
 /* .smoothies {
 	max-width: 1010px;
 	margin: 0 auto;
@@ -436,7 +439,7 @@ body {
 /* about */
 
 /* product */
-/* 
+/*
 .products__wrapper {
 	display: flex;
 	flex: 1 0 25%;
@@ -540,7 +543,7 @@ body {
 
 .story__box {
 } */
-/* 
+/*
 .story__title {
 	font-size: 50px;
 	line-height: 40px;
@@ -835,7 +838,7 @@ body {
 	font-weight: 800;
 	color: #0aa566;
 } */
-/* 
+/*
 .instagram__inner {
 	display: flex;
 	justify-content: space-between;
