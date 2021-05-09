@@ -256,6 +256,12 @@ body {
 .smoothies {
 
 }
+.smoothies__title {
+	text-align: center;
+}
+title--orange {
+	color: #f7ae3b;
+}
 /* .smoothies {
 	max-width: 1010px;
 	margin: 0 auto;
