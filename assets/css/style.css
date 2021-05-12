@@ -61,9 +61,10 @@ body {
 }
 
 .container {
-	max-width: 1720px;
+	max-width: 1750px;
 	height: 100vh;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
 .header__top {
@@ -73,11 +74,13 @@ body {
 	flex-wrap: wrap;
 	padding-top: 84px;
 	position: relative;
+	margin-bottom: 120px;
 }
 
 .menu__list {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	gap: 33px;
 }
 
@@ -103,7 +106,7 @@ body {
 
 .header-block {
 	display: flex;
-	justify-content: space-between;
+
 	align-items: center;
 	flex-wrap: wrap;
 	width: 420px;
@@ -183,7 +186,6 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 100px;
 }
 
 .header__btn {
@@ -193,6 +195,7 @@ body {
 	letter-spacing: -0.02em;
 	color: #fff;
 	position: relative;
+	text-transform: capitalize;
 	border: none;
 	width: 280px;
 	height: 70px;
@@ -212,6 +215,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 0px 112px 0 45px;
 }
 
 .btn--green {
