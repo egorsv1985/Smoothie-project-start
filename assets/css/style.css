@@ -501,3 +501,64 @@ body {
 }
 
 /* product */
+
+/* story */
+.story {
+}
+.story__inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 120px auto 160px;
+	max-width: 1320px;
+}
+.story__box {
+	padding: 130px 0 130px 17px;
+}
+.story__title {
+	color: #f7ae3b;
+	margin-bottom: 43px;
+}
+.story__text {
+	margin-bottom: 45px;
+}
+.story__btn {
+	width: 304px;
+	height: 63px;
+	background-color: #0aa566;
+	font-size: 21px;
+	line-height: 22px;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	padding: 0px 145px 0 25px;
+	position: relative;
+	border: none;
+}
+.story__btn::before {
+	content: "";
+	position: absolute;
+	top: 20px;
+	left: 225px;
+	width: 30px;
+	height: 16px;
+	background-image: url("../images/arrow.png");
+}
+
+.story__content {
+	margin-left: 200px;
+	position: relative;
+}
+.story__content::after {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 23px;
+	left: -167px;
+	width: 290px;
+	height: 216px;
+	background: no-repeat center/cover url("../images/stamp.png");
+}
+/* story */
