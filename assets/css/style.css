@@ -575,6 +575,7 @@ body {
 	background-color: #672f1b;
 	position: relative;
 }
+
 .testimonials::after {
 	content: "";
 	position: absolute;
@@ -591,6 +592,7 @@ body {
 	padding: 117px 0 80px;
 	position: relative;
 }
+
 .testimonials__inner::after {
 	content: "Sarah A";
 	position: absolute;
@@ -606,10 +608,12 @@ body {
 	top: 290px;
 	left: 430px;
 }
+
 .testimonials__title {
 	text-align: center;
 	margin-bottom: 130px;
 }
+
 .testimonials__title--big {
 	color: #f2612d;
 	text-transform: uppercase;
@@ -623,6 +627,7 @@ body {
 	gap: 59px;
 	margin: 0 auto 120px;
 }
+
 .testimonials__textbox {
 	display: flex;
 	justify-content: center;
@@ -630,6 +635,7 @@ body {
 	flex-direction: column;
 	padding-top: 40px;
 }
+
 .testimonials__quote {
 	font-size: 18px;
 	line-height: 35px;
@@ -657,6 +663,7 @@ body {
 	gap: 98px;
 	margin: 0 auto;
 }
+
 .testimonials__button-left {
 	display: block;
 	width: 30px;
@@ -669,6 +676,7 @@ body {
 	-ms-transform: rotate(180deg);
 	-o-transform: rotate(180deg);
 }
+
 .testimonials__button-right {
 	width: 30px;
 	height: 16px;
@@ -681,18 +689,37 @@ body {
 	padding: 95px 0 200px;
 	margin: 0 auto;
 }
+
 .blog__wrapper {
 	display: flex;
 	justify-content: center;
 }
+
 .blog__box {
 	display: flex;
 	flex-direction: column;
 	gap: 55px;
 }
-
+.blog__img {
+	z-index: 1;
+}
 .blog__text-box {
 	padding: 223px 30px 45px;
+	position: relative;
+}
+.blog__text-box::before {
+	position: absolute;
+	content: "";
+	width: 687px;
+	height: 12px;
+	background-color: #f7ae3b;
+	top: 165px;
+	left: -45px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 }
 .blog__subtitle {
 	font-size: 30px;
@@ -702,22 +729,59 @@ body {
 	color: #f2612d;
 	margin-left: 30px;
 }
+
 .blog__time {
 	font-size: 16px;
 	line-height: 35px;
 	color: #1e1e1e;
 	margin-left: 30px;
 }
+
 .blog__text {
 	max-width: 472px;
 	margin-left: 90px;
 	margin-top: 25px;
+	position: relative;
 }
+.blog__text::after {
+	content: "";
+	position: absolute;
+	bottom: 15px;
+	right: 143px;
+	width: 18px;
+	height: 10px;
 
+	background-image: url("../images/arrow_blog.png");
+}
 .blog__link {
 	font-size: 18px;
 	line-height: 35px;
 	color: #1e1e1e;
 	font-weight: 800;
 	font-style: italic;
+}
+
+/* blog */
+
+/* instagram */
+
+.instagram {
+}
+
+.instagram__title {
+}
+
+.title {
+}
+
+.instagram__link {
+}
+
+.instagram__inner {
+}
+
+.instagram__picture {
+}
+
+.instagram__img {
 }
