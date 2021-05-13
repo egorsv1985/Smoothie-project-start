@@ -677,3 +677,47 @@ body {
 }
 
 /* testimonials */
+.blog {
+	padding: 95px 0 200px;
+	margin: 0 auto;
+}
+.blog__wrapper {
+	display: flex;
+	justify-content: center;
+}
+.blog__box {
+	display: flex;
+	flex-direction: column;
+	gap: 55px;
+}
+
+.blog__text-box {
+	padding: 223px 30px 45px;
+}
+.blog__subtitle {
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: #f2612d;
+	margin-left: 30px;
+}
+.blog__time {
+	font-size: 16px;
+	line-height: 35px;
+	color: #1e1e1e;
+	margin-left: 30px;
+}
+.blog__text {
+	max-width: 472px;
+	margin-left: 90px;
+	margin-top: 25px;
+}
+
+.blog__link {
+	font-size: 18px;
+	line-height: 35px;
+	color: #1e1e1e;
+	font-weight: 800;
+	font-style: italic;
+}
