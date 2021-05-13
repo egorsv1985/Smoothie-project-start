@@ -686,7 +686,7 @@ body {
 
 /* testimonials */
 .blog {
-	padding: 95px 0 200px;
+	padding: 95px 0 180px;
 	margin: 0 auto;
 }
 
@@ -750,8 +750,7 @@ body {
 	right: 143px;
 	width: 18px;
 	height: 10px;
-
-	background-image: url("../images/arrow_blog.png");
+	background: no-repeat center/cover url("../images/arrow.png");
 }
 .blog__link {
 	font-size: 18px;
@@ -764,24 +763,56 @@ body {
 /* blog */
 
 /* instagram */
-
 .instagram {
+	margin: 0 auto;
 }
-
 .instagram__title {
+	font-size: 24px;
+	text-align: center;
+	position: relative;
+	margin-bottom: 45px;
+	margin-left: 50px;
 }
 
-.title {
+.title--green {
+	color: #0aa566;
 }
-
+.instagram__title::before {
+	position: absolute;
+	content: "";
+	display: block;
+	background: no-repeat center/cover url("../images/instagramm.png");
+	width: 26px;
+	height: 26px;
+	top: 10px;
+	left: 800px;
+}
 .instagram__link {
+	color: inherit;
+	text-align: center;
 }
-
 .instagram__inner {
+	display: flex;
+	justify-content: space-between;
 }
-
 .instagram__picture {
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-
+.instagram__picture::before {
+	position: absolute;
+	content: "";
+	background: no-repeat center/cover url("../images/instaramm_white.png");
+	width: 26px;
+	height: 26px;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1;
+}
 .instagram__img {
+	width: 100%;
+	object-fit: contain;
+	background-image: url("../images/shadow_1.png");
+	opacity: 0.2;
 }
