@@ -766,6 +766,19 @@ body {
 .instagram {
 	margin: 0 auto;
 }
+.instagram__inner {
+	position: relative;
+}
+.instagram__inner::before {
+	content: "";
+	position: absolute;
+	width: 384px;
+	height: 384px;
+	top: 0;
+	left: 0;
+	background: linear-gradient(140deg, transparent, transparent 80%, #1d1e1f);
+	opacity: 0.25;
+}
 .instagram__title {
 	font-size: 24px;
 	text-align: center;
@@ -814,5 +827,4 @@ body {
 	width: 100%;
 	object-fit: contain;
 	background-image: url("../images/shadow_1.png");
-	opacity: 0.2;
 }
