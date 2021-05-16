@@ -319,10 +319,11 @@ body {
 	height: 194px;
 
 	background-color: #fff;
+	padding: 40px 0 15px;
 }
 
 .cards__icon {
-	margin: 40px 0 15px;
+	/* margin: 40px 0 15px; */
 }
 
 .cards__desc {
