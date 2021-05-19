@@ -101,7 +101,7 @@ a:active {
 }
 
 .container {
-	max-width: 1740px;
+	max-width: 108.75em;
 	height: 100vh;
 
 	margin: 0 auto;
@@ -124,12 +124,12 @@ a:active {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	gap: 33px;
+	gap: 32px;
 }
 
 .menu__link {
-	font-size: 16px;
-	line-height: 40px;
+	font-size: 1rem;
+	line-height: 2.5em;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.02em;
@@ -138,7 +138,7 @@ a:active {
 
 .header__logo {
 	position: absolute;
-	top: 67px;
+	top: 68px;
 	left: 50%;
 	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
@@ -151,7 +151,7 @@ a:active {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	width: 420px;
+	width: 26.25em;
 }
 
 .header__personal {
@@ -170,7 +170,7 @@ a:active {
 	top: 10px;
 	left: 205px;
 
-	width: 47px;
+	width: 48px;
 	height: 2px;
 
 	background-color: #ffd68f;
@@ -191,7 +191,7 @@ a:active {
 .personal__count {
 	position: absolute;
 
-	font-size: 10px;
+	font-size: 0.625rem;
 	text-transform: uppercase;
 	color: #000;
 
@@ -199,8 +199,8 @@ a:active {
 	justify-content: center;
 	align-items: center;
 
-	width: 21px;
-	height: 21px;
+	width: 1.3125em;
+	height: 1.3125em;
 
 	background-color: #fff;
 
@@ -223,8 +223,8 @@ a:active {
 }
 
 .social__item {
-	width: 38px;
-	height: 38px;
+	width: 2.375em;
+	height: 2.375em;
 
 	display: flex;
 	justify-content: center;
@@ -247,8 +247,8 @@ a:active {
 }
 
 .header__btn {
-	font-size: 24px;
-	line-height: 40px;
+	font-size: 1.5rem;
+	line-height: 2.5em;
 	letter-spacing: -0.02em;
 	text-transform: capitalize;
 
@@ -263,8 +263,8 @@ a:active {
 
 	position: relative;
 
-	width: 280px;
-	height: 70px;
+	width: 11.666em;
+	height: 2.92em;
 }
 
 .header__btn::before {
@@ -299,7 +299,7 @@ a:active {
 /* smoothies */
 
 .smoothies {
-	padding: 100px 0 125px;
+	padding: 100px 0 90px;
 }
 
 .smoothies__title {
@@ -309,8 +309,8 @@ a:active {
 }
 
 .title {
-	font-size: 50px;
-	line-height: 40px;
+	font-size: 3.125rem;
+	line-height: 0.8em;
 	font-weight: 800;
 	letter-spacing: -0.02em;
 }
@@ -320,7 +320,7 @@ a:active {
 }
 
 .smoothies__text {
-	max-width: 915px;
+	max-width: 57.25em;
 	text-align: center;
 
 	margin: 0 auto;
@@ -328,8 +328,8 @@ a:active {
 }
 
 .text {
-	font-size: 18px;
-	line-height: 35px;
+	font-size: 1.125rem;
+	line-height: 2.22em;
 }
 
 .text--black {
@@ -338,14 +338,14 @@ a:active {
 
 .smoothies__cards {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(4, 25%);
+	grid-template-rows: repeat(2, 50%);
 	gap: 2px;
 	justify-content: center;
 
 	background-color: #f6edde;
 
-	max-width: 1010px;
+	max-width: 63.125em;
 
 	margin: 0 auto;
 }
@@ -355,21 +355,20 @@ a:active {
 	align-items: center;
 	flex-direction: column;
 
-	width: 260px;
-	height: 194px;
-
 	background-color: #fff;
-	padding: 40px 0 15px;
 }
 
 .cards__desc {
-	font-size: 25px;
-	line-height: 40px;
+	font-size: 1.5625rem;
+	line-height: 1.6em;
 	font-weight: 800;
 	letter-spacing: -0.02em;
 	color: #f2612d;
+	margin-bottom: 40px;
 }
-
+.cards__icon {
+	margin: 20px 0 24px;
+}
 .cards__item:last-child {
 	border: none;
 }
@@ -386,13 +385,13 @@ a:active {
 
 /* about */
 .about {
-	max-height: 800px;
+	max-height: 50em;
 
 	display: flex;
 
 	background-color: #158371;
 
-	padding-left: 143px;
+	padding-left: 140px;
 }
 
 .about__img {
@@ -414,7 +413,7 @@ a:active {
 }
 
 .about__title {
-	max-width: 595px;
+	max-width: 10.85em;
 
 	margin-bottom: 55px;
 	margin-top: 80px;
@@ -1245,3 +1244,16 @@ a:active {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 75em) {
 }
+/* @media only screen and (max-width : 1920px) {}
+@media only screen and (max-width : 1680px) {}
+@media only screen and (max-width : 1366px) {}
+@media only screen and (max-width : 1280px) {}
+@media only screen and (max-width : 1024px) {}
+@media only screen and (max-width : 800px)  {}
+@media only screen and (max-width : 768px)  {}
+@media only screen and (max-width : 600px)  {}
+@media only screen and (max-width : 533px)  {}
+@media only screen and (max-width : 360px)  {}
+@media only screen and (max-width : 320px)  {}
+@media only screen and (max-width : 240px)  {}
+@media only screen and (max-width : 176px)  {} */
