@@ -101,6 +101,7 @@ pre {
 a {
   background-color: transparent;
   text-decoration: none;
+  color: inherit;
 }
 
 /**
@@ -198,6 +199,8 @@ textarea {
   font-size: 100%;
   /* 1 */
   line-height: 1.15;
+  /* 1 */
+  color: inherit;
   /* 1 */
   margin: 0;
   /* 2 */
