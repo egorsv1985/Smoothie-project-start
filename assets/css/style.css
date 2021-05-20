@@ -106,8 +106,6 @@ a:active {
 .header {
 	background: no-repeat center url(../images/header_bg.jpg);
 	width: 100%;
-	margin: 0 auto;
-	/* background-size: 1920px 1080px; */
 }
 
 .container {
@@ -232,8 +230,8 @@ a:active {
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
 
-	bottom: 15px;
-	left: 20px;
+	bottom: -10px;
+	left: 25px;
 }
 
 .social__list {
