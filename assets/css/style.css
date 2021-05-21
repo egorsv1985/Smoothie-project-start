@@ -60,7 +60,10 @@
 	margin: 0;
 	padding: 0;
 }
-
+html,
+body {
+	overflow-x: hidden;
+}
 body {
 	font-family: Muli, sans-serif;
 	color: #fff;
@@ -104,7 +107,7 @@ a:active {
 } */
 
 .header {
-	background: no-repeat center url(../images/header_bg.jpg);
+	background: no-repeat center/cover url(../images/header_bg.jpg);
 	width: 100%;
 }
 
@@ -139,10 +142,12 @@ a:active {
 .menu__list {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	flex-wrap: wrap;
-	gap: 32px;
 }
-
+.menu__item + .menu__item {
+	margin-left: 2em;
+}
 .menu__link {
 	font-size: 1rem;
 	/* 16px */
@@ -153,20 +158,9 @@ a:active {
 	letter-spacing: 0.02em;
 	/* 0.32px */
 }
-
-.header__logo {
-	position: absolute;
-	top: 68px;
-	left: 50%;
-	transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-}
-
 .header__right-block {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 	width: 26.25em;
@@ -203,9 +197,10 @@ a:active {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 45px;
 }
-
+.personal__item + .personal__item {
+	margin-left: 45px;
+}
 .personal__link--cart {
 	position: relative;
 }
@@ -244,7 +239,6 @@ a:active {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 8px;
 }
 
 .social__item {
@@ -265,6 +259,34 @@ a:active {
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
 }
+.social__item + .social__item {
+	margin-left: 0.5em;
+}
+
+.header__logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+}
+.header__burger-btn {
+	display: none;
+	position: absolute;
+	top: 1.8em;
+	right: 2em;
+}
+@media (max-width: 768px) {
+	.header__burger-btn {
+		display: block;
+	}
+}
+.header__burger-img {
+	width: 2.5em;
+}
 
 .header__content {
 	display: flex;
@@ -272,7 +294,12 @@ a:active {
 	justify-content: center;
 	align-items: center;
 }
-
+.title {
+	font-size: 3.125rem;
+	line-height: 0.8em;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+}
 .header__btn {
 	font-size: 1.5rem;
 	/* 24px */
@@ -318,9 +345,6 @@ a:active {
 .btn {
 	font-weight: 800;
 
-	background-color: transparent;
-	border: none;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -343,13 +367,6 @@ a:active {
 
 	margin-bottom: 40px;
 } */
-
-.title {
-	font-size: 3.125rem;
-	line-height: 0.8em;
-	font-weight: 800;
-	letter-spacing: -0.02em;
-}
 
 /* .title--orange {
 	color: #f7ae3b;
