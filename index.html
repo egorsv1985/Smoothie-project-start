@@ -14,79 +14,84 @@
     <header class="header">
         <div class="container">
             <div class="header__top">
-                <nav class="header__menu menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Home</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Shop</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Story</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">About</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Blog</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Testimonials</a>
-                        </li>
-                    </ul>
-                    <!-- menu__list -->
-                </nav>
-                <!-- header-menu menu -->
+                <div class="header__navigation">
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Home</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Shop</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Story</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">About</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Blog</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Testimonials</a>
+                            </li>
+                        </ul>
+                        <!-- menu__list -->
+                    </nav>
+                    <!-- header-menu menu -->
+                    <div class="header__right-block">
+                        <div class="header__personal personal">
+                            <ul class="personal__list">
+                                <li class="personal__item">
+                                    <a class="personal__link" href="#">
+                                        <img class="personal__icon" src="assets/images/search.png" alt="search">
+                                    </a>
+                                </li>
+                                <li class="personal__item">
+                                    <a class="personal__link" href="#">
+                                        <img class="personal__icon" src="assets/images/user.png" alt="useregor">
+                                    </a>
+                                </li>
+                                <li class="personal__item">
+                                    <a class="personal__link--cart" href="#"><span class="personal__count">0</span>
+                                        <img class="personal__icon" src="assets/images/cart.png" alt="cart">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- header__personal -->
+                        <div class="header__social social">
+                            <ul class="social__list">
+                                <li class="social__item">
+                                    <a class="social__link" href="#">
+                                        <img class="social__icon" src="assets/images/facebook.png" alt="facebook">
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="#">
+                                        <img class="social__icon" src="assets/images/pinterest.png" alt="pinterest">
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="#">
+                                        <img class="social__icon" src="assets/images/instagram_icon.png"
+                                            alt="instagram">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- header__social -->
+                    </div>
+                    <!-- header-block -->
+                </div>
+                <!-- header__navigation -->
                 <div class="header__logo logo">
                     <a class="logo__link" href="#">
                         <img class="logo__img" src="assets/images/logo.png" alt="logo">
                     </a>
                 </div>
                 <!-- header__logo -->
-                <div class="header-block">
-                    <div class="header__personal personal">
-                        <ul class="personal__list">
-                            <li class="personal__item">
-                                <a class="personal__link" href="#">
-                                    <img class="personal__icon" src="assets/images/search.png" alt="search">
-                                </a>
-                            </li>
-                            <li class="personal__item">
-                                <a class="personal__link" href="#">
-                                    <img class="personal__icon" src="assets/images/user.png" alt="useregor">
-                                </a>
-                            </li>
-                            <li class="personal__item">
-                                <a class="personal__link--cart" href="#"><span class="personal__count">0</span>
-                                    <img class="personal__icon" src="assets/images/cart.png" alt="cart">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- header__personal -->
-                    <div class="header__social social">
-                        <ul class="social__list">
-                            <li class="social__item">
-                                <a class="social__link" href="#">
-                                    <img class="social__icon" src="assets/images/facebook.png" alt="facebook">
-                                </a>
-                            </li>
-                            <li class="social__item">
-                                <a class="social__link" href="#">
-                                    <img class="social__icon" src="assets/images/pinterest.png" alt="pinterest">
-                                </a>
-                            </li>
-                            <li class="social__item">
-                                <a class="social__link" href="#">
-                                    <img class="social__icon" src="assets/images/instagram_icon.png" alt="instagram">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- header__social -->
-                </div>
-                <!-- header-block -->
+
 
             </div> <!-- header-top -->
 
@@ -209,7 +214,7 @@
                 <img class="product__img" src="assets/images/Turmeric_Garlic.png" alt="Turmeric Garlic">
                 <h3 class="product__label">Turmeric Garlic Smoothie</h3>
                 <span class="product__subtitle">100 ml</span>
-                <button class="product__button btn">Buy</button>
+                <button class="product__btn btn">Buy</button>
             </div>
         </div>
         <!-- products__wrapper -->
@@ -255,8 +260,8 @@
             </div>
             <!-- testimonials__box -->
             <div class="testimonials__container">
-                <button class="testimonials__button-left"></button>
-                <button class="testimonials__button-right"></button>
+                <button class="testimonials__btn-left"></button>
+                <button class="testimonials__btn-right"></button>
             </div>
             <!-- testimonials__container -->
         </div>

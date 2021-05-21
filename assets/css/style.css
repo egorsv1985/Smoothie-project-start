@@ -50,9 +50,9 @@
 }
 
 /* проблема переполнения */
-/* * {
+* {
 	outline: solid 1px red;
-} */
+}
 *,
 *::after,
 *::before {
@@ -107,6 +107,11 @@ a:active {
 	background: no-repeat center url(../images/header_bg.jpg);
 	width: 100%;
 }
+@media (max-width: 768px) {
+	.header__navigation {
+		display: none;
+	}
+}
 
 .container {
 	max-width: 108.75em;
@@ -118,11 +123,6 @@ a:active {
 }
 
 .header__top {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-
 	padding-top: 5.25em;
 	/* 84px */
 	margin-bottom: 7.5em;
@@ -130,7 +130,12 @@ a:active {
 
 	position: relative;
 }
-
+.header__navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
 .menu__list {
 	display: flex;
 	justify-content: space-between;
@@ -160,7 +165,7 @@ a:active {
 	-o-transform: translateX(-50%);
 }
 
-.header-block {
+.header__right-block {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
@@ -312,6 +317,9 @@ a:active {
 
 .btn {
 	font-weight: 800;
+
+	background-color: transparent;
+	border: none;
 
 	display: flex;
 	justify-content: center;
@@ -501,8 +509,6 @@ a:active {
 	width: 382px;
 	height: 63px;
 
-	background-color: transparent;
-
 	padding: 0 90px 0 22px;
 
 	border-radius: 30px;
@@ -590,7 +596,7 @@ a:active {
 	margin-bottom: 60px;
 }
 
-.product__button {
+.product__btn {
 	font-size: 21px;
 	line-height: 22px;
 
@@ -601,8 +607,6 @@ a:active {
 
 	position: relative;
 
-	background-color: transparent;
-
 	padding: 0 124px 0 30px;
 
 	border-radius: 30px;
@@ -612,7 +616,7 @@ a:active {
 	-o-border-radius: 30px;
 }
 
-.product__button::before {
+.product__btn::before {
 	content: "";
 
 	position: absolute;
@@ -824,13 +828,11 @@ a:active {
 	margin: 0 auto;
 }
 
-.testimonials__button-left {
+.testimonials__btn-left {
 	display: block;
 
 	width: 30px;
 	height: 16px;
-
-	border: none;
 
 	background: no-repeat center/cover url("../images/arrow.png");
 
@@ -841,13 +843,11 @@ a:active {
 	-o-transform: rotate(180deg);
 }
 
-.testimonials__button-right {
+.testimonials__btn-right {
 	width: 30px;
 	height: 16px;
 
 	background: no-repeat center/cover url("../images/arrow.png");
-
-	border: none;
 }
 
 /* testimonials */
@@ -1250,24 +1250,24 @@ a:active {
 
 /* создаем медиа запросы */
 /* Extra small devices (phones, 600px and down)  */
-@media only screen and (max-width: 37.5em) {
-}
+/* @media only screen and (max-width: 37.5em) {
+} */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 37.5) {
-}
+/* @media only screen and (min-width: 37.5) {
+} */
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 48em) {
-}
+/* @media only screen and (min-width: 48em) {
+} */
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 62em) {
-}
+/* @media only screen and (min-width: 62em) {
+} */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 75em) {
-}
+/* @media only screen and (min-width: 75em) {
+} */
 
 /* @media only screen and (max-width : 1920px) {}
 @media only screen and (max-width : 1680px) {}
