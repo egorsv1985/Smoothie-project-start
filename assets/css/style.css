@@ -333,16 +333,16 @@ a:active {
 /* header */
 
 /* smoothies */
-
+/* 
 .smoothies {
 	padding: 100px 0 90px;
-}
+} */
 
-.smoothies__title {
+/* .smoothies__title {
 	text-align: center;
 
 	margin-bottom: 40px;
-}
+} */
 
 .title {
 	font-size: 3.125rem;
@@ -351,11 +351,11 @@ a:active {
 	letter-spacing: -0.02em;
 }
 
-.title--orange {
+/* .title--orange {
 	color: #f7ae3b;
-}
+} */
 
-.smoothies__text {
+/* .smoothies__text {
 	max-width: 57.25em;
 	text-align: center;
 
@@ -417,12 +417,12 @@ a:active {
 
 .cards__item:nth-child(1n + 5) {
 	border-bottom: none;
-}
+} */
 
 /* smoothies */
 
 /* about */
-.about {
+/* .about {
 	max-height: 50em;
 
 	display: flex;
@@ -537,11 +537,11 @@ a:active {
 .btn--border-orange {
 	border: 2px solid #f8b231;
 }
-
+ */
 /* about */
 /* product */
 
-.products__wrapper {
+/* .products__wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -631,11 +631,11 @@ a:active {
 
 	background: no-repeat center/cover url("../images/arrow_white.png");
 }
-
+ */
 /* product */
 
 /* story */
-
+/* 
 .story__inner {
 	display: flex;
 	justify-content: center;
@@ -711,12 +711,12 @@ a:active {
 	height: 216px;
 
 	background: no-repeat center/cover url("../images/stamp.png");
-}
+} */
 
 /* story */
 
 /* testimonials */
-
+/* 
 .testimonials {
 	background-color: #672f1b;
 
@@ -848,10 +848,10 @@ a:active {
 	height: 16px;
 
 	background: no-repeat center/cover url("../images/arrow.png");
-}
+} */
 
 /* testimonials */
-.blog {
+/* .blog {
 	padding: 95px 0 180px;
 	margin: 0 auto;
 }
@@ -946,12 +946,12 @@ a:active {
 	color: #1e1e1e;
 	font-weight: 800;
 	font-style: italic;
-}
+} */
 
 /* blog */
 
 /* instagram */
-.instagram {
+/* .instagram {
 	margin: 0 auto;
 
 	text-align: center;
@@ -1246,7 +1246,7 @@ a:active {
 
 	top: 40px;
 	right: 60px;
-}
+} */
 
 /* создаем медиа запросы */
 /* Extra small devices (phones, 600px and down)  */
