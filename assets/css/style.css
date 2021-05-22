@@ -275,6 +275,7 @@ a:active {
 	top: 1.8em;
 	right: 2em;
 	z-index: 1;
+	cursor: pointer;
 }
 
 .header__content {
@@ -297,6 +298,8 @@ a:active {
 	/* 40px */
 	letter-spacing: -0.02em;
 	text-transform: capitalize;
+
+	cursor: pointer;
 
 	border: none;
 	border-radius: 35px;
