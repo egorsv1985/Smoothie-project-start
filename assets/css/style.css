@@ -45,14 +45,15 @@
 
 :root {
 	box-sizing: border-box;
-	font-size: 62.5%;
+	font-size: calc(12px + 0.35vw);
+	/* font-size: 62.5%; */
 	/* 10px */
 }
 
 /* проблема переполнения */
-* {
+/* * {
 	outline: solid 1px red;
-}
+} */
 
 *,
 *::after,
@@ -60,11 +61,6 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-}
-
-html,
-body {
-	overflow-x: hidden;
 }
 
 body {
@@ -79,53 +75,23 @@ img {
 	max-width: 100%;
 }
 
-/*
-♦ Ссылки
-*/
-/* a:link {
-	color: #1476b8;
-	font-weight: bold;
-	text-decoration: none;
-}
-a:visited {
-	color: #1430b8;
-}
-a:hover {
-	text-decoration: underline;
-}
-a:active {
-	color: #b81414;
-} */
-/* .title {
-	color: rgb(59, 45, 180);
-	text-transform: uppercase;
-	font-size: 2.5rem;
-	margin: 0.2em 0;
-} */
-/* 
-@media (max-width: 35em) {
-	.title {
-		font-size: 1.5rem;
-	}
-} */
-
 .header {
 	background: no-repeat center/cover url(../images/header_bg.jpg);
 }
 
 .container {
-	max-width: 174rem;
-	/* 1740px */
+	max-width: 1740px;
+
 	height: 100vh;
 
 	margin: 0 auto;
-	padding: 0 1em;
+	padding: 0 10px;
 }
 
 .header__top {
-	padding-top: 8.4rem;
+	padding-top: 4.25rem;
 	/* 84px */
-	margin-bottom: 12rem;
+	margin-bottom: 6.5rem;
 	/* 120px */
 
 	position: relative;
@@ -144,12 +110,12 @@ a:active {
 }
 
 .menu__item + .menu__item {
-	margin-left: 3.3rem;
+	margin-left: 2rem;
 	/* 33px */
 }
 
 .menu__link {
-	font-size: 1.6rem;
+	font-size: 1rem;
 	/* 16px */
 	line-height: 2.5em;
 	/* 40px */
@@ -164,14 +130,13 @@ a:active {
 	justify-content: space-between;
 	align-items: center;
 
-	width: 42rem;
-	/* 420px */
+	width: 420px;
 }
 
 .header__personal {
 	position: relative;
 
-	margin-right: 13.4rem;
+	margin-right: 8.375rem;
 	/* 134px */
 }
 
@@ -185,10 +150,8 @@ a:active {
 	top: 10px;
 	left: 205px;
 
-	width: 4.8rem;
-	/*  48px */
-	height: 0.2rem;
-	/* 2px */
+	width: 48px;
+	height: 2px;
 
 	background-color: #ffd68f;
 }
@@ -199,7 +162,7 @@ a:active {
 }
 
 .personal__item + .personal__item {
-	margin-left: 4.5rem;
+	margin-left: 2.8125rem;
 }
 
 .personal__link--cart {
@@ -209,7 +172,7 @@ a:active {
 .personal__count {
 	position: absolute;
 
-	font-size: 1rem;
+	font-size: 0.625rem;
 	/* 10px */
 	text-transform: uppercase;
 	color: #000;
@@ -218,10 +181,8 @@ a:active {
 	justify-content: center;
 	align-items: center;
 
-	width: 2.1rem;
-	/* 21px */
-	height: 2.1rem;
-	/* 21px */
+	width: 21px;
+	height: 21px;
 
 	background-color: #fff;
 
@@ -241,9 +202,9 @@ a:active {
 }
 
 .social__item {
-	width: 3.8rem;
+	width: 38px;
 	/* 38px */
-	height: 3.8rem;
+	height: 38px;
 	/* 38px */
 
 	display: flex;
@@ -260,7 +221,7 @@ a:active {
 }
 
 .social__item + .social__item {
-	margin-left: 0.8rem;
+	margin-left: 8px;
 }
 
 .header__logo {
@@ -277,8 +238,8 @@ a:active {
 .header__burger-btn {
 	display: none;
 	position: fixed;
-	top: 1.8em;
-	right: 2em;
+	top: 18px;
+	right: 2px;
 	z-index: 1;
 	cursor: pointer;
 }
@@ -291,7 +252,7 @@ a:active {
 }
 
 .title {
-	font-size: 5rem;
+	font-size: 3.125rem;
 	/* 50px */
 	line-height: 0.8em;
 	font-weight: 800;
@@ -299,7 +260,7 @@ a:active {
 }
 
 .header__btn {
-	font-size: 2.4rem;
+	font-size: 1.5rem;
 	/* 24px */
 	line-height: 2.5em;
 	/* 40px */
@@ -317,10 +278,8 @@ a:active {
 	text-indent: -8.5rem;
 	position: relative;
 
-	width: 28rem;
-	/* 280px */
-	height: 7rem;
-	/* 70px */
+	width: 280px;
+	height: 70px;
 }
 
 .header__btn::before {
@@ -331,16 +290,14 @@ a:active {
 	top: 27px;
 	left: 210px;
 
-	width: 3rem;
-	/* 30px */
-	height: 1.6rem;
-	/* 16px */
+	width: 30px;
+	height: 16px;
 
 	background: no-repeat center/cover url("../images/arrow.png");
 }
 
 .header__burger-img {
-	width: 4rem;
+	width: 40px;
 }
 
 .btn {
@@ -360,14 +317,14 @@ a:active {
 /* smoothies */
 
 .smoothies {
-	padding: 10rem 0 9rem;
+	padding: 6.25rem 0 5.625rem;
 	/* 100px 0 90px  */
 }
 
 .smoothies__title {
 	text-align: center;
 
-	margin-bottom: 4rem;
+	margin-bottom: 2.5rem;
 	/* 40px */
 }
 
@@ -376,16 +333,17 @@ a:active {
 }
 
 .smoothies__text {
-	max-width: 91.5rem;
+	max-width: 58rem;
 	/* 915px */
 	text-align: center;
 
-	margin: 0 auto 4rem;
+	margin: 0 auto 2.5rem;
 	/* 40px */
 }
 
 .text {
-	font-size: 1.8rem;
+	font-size: 1.125rem;
+	/* font-size: 1.8rem; */
 	/* 18px */
 	line-height: 2em;
 	/* 35px */
@@ -396,67 +354,65 @@ a:active {
 }
 
 .smoothies__cards {
-	display: grid;
-	grid-template-columns: repeat(4, 25%);
-	grid-template-rows: repeat(2, 50%);
-	gap: 2px;
+	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
 
-	background-color: #f6edde;
-
-	max-width: 101rem;
+	max-width: 1010px;
 
 	margin: 0 auto;
+
+	background-color: #f6edde;
 }
 
 .cards__item {
 	display: flex;
-	align-items: center;
+	justify-content: flex-end;
 	flex-direction: column;
+	width: 25%;
+	height: 195px;
 
 	background-color: #fff;
+
+	padding: 30px 0 40px;
+}
+
+.cards__item:nth-child(-n + 8) {
+	border-right: 2px solid #f6edde;
+}
+
+.cards__item:nth-child(-n + 4) {
+	border-bottom: 2px solid #f6edde;
+}
+
+.cards__item:nth-child(4),
+.cards__item:last-child {
+	border-right: none;
 }
 
 .cards__desc {
 	font-size: 2.5rem;
-	/* 25px */
 	line-height: 1.6em;
-	/* 40px */
 	font-weight: 800;
 	letter-spacing: -0.02em;
 	color: #f2612d;
-	margin-bottom: 2.6rem;
-	/* 26px */
-}
+	text-align: center;
 
-.cards__icon {
-	margin: 3.7rem 0 1.6rem;
-	/* 20px 0 24px */
-}
-
-.cards__item:last-child {
-	border: none;
-}
-
-.cards__item:nth-child(4) {
-	border-right: none;
-}
-
-.cards__item:nth-child(1n + 5) {
-	border-bottom: none;
+	margin-top: 27px;
 }
 
 /* smoothies */
 
 /* about */
-/* .about {
-	max-height: 50em;
+.about {
+	max-height: 80rem;
 
 	display: flex;
 
 	background-color: #158371;
 
-	padding-left: 140px;
+	padding-left: 14rem;
 }
 
 .about__img {
@@ -474,17 +430,17 @@ a:active {
 	display: flex;
 	flex-direction: column;
 
-	margin-left: 142px;
+	margin-left: 14.2rem;
 }
 
 .about__title {
-	max-width: 10.85em;
+	max-width: 17rem;
 
-	margin-bottom: 55px;
-	margin-top: 80px;
+	margin-bottom: 5.5rem;
+	margin-top: 8rem;
 
-	font-size: 55px;
-	line-height: 60px;
+	font-size: 5.5rem;
+	line-height: 1.1em;
 }
 
 .about__title--orange {
@@ -505,22 +461,22 @@ a:active {
 	top: 60px;
 	left: -5px;
 
-	width: 450px;
-	height: 13px;
+	width: 45rem;
+	height: 1.3rem;
 }
 
 .about__list {
 	list-style-image: url(../images/li.png);
 
-	margin-bottom: 32px;
-	padding-left: 30px;
+	margin-bottom: 3.2rem;
+	padding-left: 3rem;
 }
 
 .about__item {
-	font-size: 21px;
-	line-height: 22px;
+	font-size: 2.1rem;
+	line-height: 1.05em;
 
-	margin-bottom: 22px;
+	margin-bottom: 2.2rem;
 }
 
 .about__item--bold {
@@ -528,15 +484,15 @@ a:active {
 }
 
 .about__btn {
-	font-size: 21px;
-	line-height: 22px;
+	font-size: 2.1rem;
+	line-height: 1.05em;
 
 	position: relative;
 
 	width: 382px;
 	height: 63px;
 
-	padding: 0 90px 0 22px;
+	padding: 0 9rem 0 2.2rem;
 
 	border-radius: 30px;
 	-webkit-border-radius: 30px;
@@ -564,8 +520,9 @@ a:active {
 .btn--border-orange {
 	border: 2px solid #f8b231;
 }
- */
+
 /* about */
+
 /* product */
 
 /* .products__wrapper {
@@ -1369,21 +1326,26 @@ a:active {
 	.smoothies {
 		padding: 8rem 0 7rem;
 	}
+
 	.smoothies__title {
 		font-size: 4rem;
 		margin-bottom: 3rem;
 	}
+
 	.smoothies__text {
 		font-size: 1.5rem;
 		margin-bottom: 3rem;
 	}
+
 	.smoothies__cards {
 		max-width: 95rem;
 	}
+
 	.cards__icon {
 		margin: 3rem 0 1.5rem;
 	}
 }
+
 @media only screen and (max-width: 960px) {
 	.smoothies {
 		padding: 7rem 0 6rem;
@@ -1392,9 +1354,11 @@ a:active {
 	.smoothies__title {
 		margin-bottom: 2.5rem;
 	}
+
 	.title {
 		font-size: 3.5rem;
 	}
+
 	.smoothies__text {
 		max-width: 70rem;
 		margin-bottom: 3rem;
@@ -1403,12 +1367,14 @@ a:active {
 	.text {
 		font-size: 1.4rem;
 	}
+
 	.smoothies__cards {
 		grid-template-columns: repeat(2, 50%);
 		grid-template-rows: repeat(4, 25%);
 		max-width: 50.5rem;
 	}
 }
+
 @media only screen and (max-width: 720px) {
 	.header__navigation {
 		display: none;
@@ -1468,6 +1434,7 @@ a:active {
 	.header__burger-btn {
 		display: block;
 	}
+
 	.smoothies {
 		padding: 6rem 0 5rem;
 	}
@@ -1475,9 +1442,11 @@ a:active {
 	.smoothies__title {
 		margin-bottom: 2.3rem;
 	}
+
 	.title {
 		font-size: 3.2rem;
 	}
+
 	.smoothies__text {
 		max-width: 60rem;
 		margin-bottom: 2.5rem;
@@ -1486,17 +1455,20 @@ a:active {
 	.text {
 		font-size: 1.2rem;
 	}
+
 	.smoothies__cards {
 		grid-template-columns: repeat(2, 50%);
 		grid-template-rows: repeat(4, 25%);
 		max-width: 40rem;
 	}
+
 	.cards__desc {
 		font-size: 2rem;
 
 		margin-bottom: 2.3rem;
 	}
 }
+
 @media only screen and (max-width: 540px) {
 	.smoothies {
 		padding: 6rem 0 5rem;
@@ -1505,9 +1477,11 @@ a:active {
 	.smoothies__title {
 		margin-bottom: 2.5rem;
 	}
+
 	.title {
 		font-size: 3.5rem;
 	}
+
 	.smoothies__text {
 		max-width: 50rem;
 		margin-bottom: 3rem;
@@ -1516,15 +1490,18 @@ a:active {
 	.text {
 		font-size: 1.2rem;
 	}
+
 	.smoothies__cards {
 		grid-template-columns: repeat(2, 50%);
 		grid-template-rows: repeat(4, 25%);
 		max-width: 42rem;
 	}
+
 	.cards__desc {
 		font-size: 2rem;
 	}
 }
+
 @media only screen and (max-width: 320px) {
 	.smoothies {
 		padding: 5rem 0 4rem;
@@ -1533,9 +1510,11 @@ a:active {
 	.smoothies__title {
 		margin-bottom: 2rem;
 	}
+
 	.title {
 		font-size: 3rem;
 	}
+
 	.smoothies__text {
 		max-width: 28rem;
 		margin-bottom: 2rem;
@@ -1544,11 +1523,13 @@ a:active {
 	.text {
 		font-size: 1rem;
 	}
+
 	.smoothies__cards {
 		grid-template-columns: repeat(2, 50%);
 		grid-template-rows: repeat(4, 25%);
 		max-width: 26rem;
 	}
+
 	.cards__desc {
 		font-size: 1.2rem;
 	}
