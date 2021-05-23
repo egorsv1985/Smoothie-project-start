@@ -46,13 +46,14 @@
 :root {
 	box-sizing: border-box;
 	font-size: 62.5%;
-	/* 16px */
+	/* 10px */
 }
 
 /* проблема переполнения */
 * {
 	outline: solid 1px red;
 }
+
 *,
 *::after,
 *::before {
@@ -60,10 +61,12 @@
 	margin: 0;
 	padding: 0;
 }
+
 html,
 body {
 	overflow-x: hidden;
 }
+
 body {
 	font-family: Muli, sans-serif;
 	color: #fff;
@@ -127,6 +130,7 @@ a:active {
 
 	position: relative;
 }
+
 .header__navigation {
 	display: flex;
 	justify-content: space-between;
@@ -254,6 +258,7 @@ a:active {
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
 }
+
 .social__item + .social__item {
 	margin-left: 0.8rem;
 }
@@ -284,6 +289,7 @@ a:active {
 	justify-content: center;
 	align-items: center;
 }
+
 .title {
 	font-size: 5rem;
 	/* 50px */
@@ -291,6 +297,7 @@ a:active {
 	font-weight: 800;
 	letter-spacing: -0.02em;
 }
+
 .header__btn {
 	font-size: 2.4rem;
 	/* 24px */
@@ -331,9 +338,11 @@ a:active {
 
 	background: no-repeat center/cover url("../images/arrow.png");
 }
+
 .header__burger-img {
 	width: 4rem;
 }
+
 .btn {
 	font-weight: 800;
 }
@@ -341,6 +350,7 @@ a:active {
 .btn--green {
 	background-color: #0aa566;
 }
+
 .btn--green:hover {
 	background-color: #12c37c;
 }
@@ -370,8 +380,7 @@ a:active {
 	/* 915px */
 	text-align: center;
 
-	margin: 0 auto;
-	padding-bottom: 2.22em;
+	margin: 0 auto 4rem;
 	/* 40px */
 }
 
@@ -1301,56 +1310,110 @@ a:active {
 @media only screen and (max-width : 240px)  {}
 @media only screen and (max-width : 176px)  {} */
 
-@media (max-width: 1440px) {
+@media only screen and (max-width: 1440px) {
 	.menu__item + .menu__item {
 		margin-left: 2.5rem;
 	}
+
 	.header__personal {
 		margin-right: 10rem;
 	}
+
 	.header__personal::before {
 		display: none;
 	}
+
 	.personal__item + .personal__item {
 		margin-left: 3.8rem;
 	}
+
 	.social__item + .social__item {
 		margin-left: 0.6rem;
 	}
 }
 
-@media (max-width: 1280px) {
+@media only screen and (max-width: 1280px) {
 	.header__navigation {
 		flex-direction: column;
 		justify-content: space-between;
 		padding-top: 9rem;
 		height: 27rem;
 	}
+
 	.menu__link {
 		font-size: 1.8rem;
 	}
+
 	.header__right-block {
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
 		height: 10rem;
 	}
+
 	.header__personal {
 		margin-right: 0;
 	}
+
 	.social__item + .social__item {
 		margin-left: 1.5rem;
 	}
+
 	.header__logo {
 		max-width: 60%;
 		top: 5rem;
 	}
 }
 
-@media (max-width: 720px) {
+@media only screen and (max-width: 1140px) {
+	.smoothies {
+		padding: 8rem 0 7rem;
+	}
+	.smoothies__title {
+		font-size: 4rem;
+		margin-bottom: 3rem;
+	}
+	.smoothies__text {
+		font-size: 1.5rem;
+		margin-bottom: 3rem;
+	}
+	.smoothies__cards {
+		max-width: 95rem;
+	}
+	.cards__icon {
+		margin: 3rem 0 1.5rem;
+	}
+}
+@media only screen and (max-width: 960px) {
+	.smoothies {
+		padding: 7rem 0 6rem;
+	}
+
+	.smoothies__title {
+		margin-bottom: 2.5rem;
+	}
+	.title {
+		font-size: 3.5rem;
+	}
+	.smoothies__text {
+		max-width: 70rem;
+		margin-bottom: 3rem;
+	}
+
+	.text {
+		font-size: 1.4rem;
+	}
+	.smoothies__cards {
+		grid-template-columns: repeat(2, 50%);
+		grid-template-rows: repeat(4, 25%);
+		max-width: 50.5rem;
+	}
+}
+@media only screen and (max-width: 720px) {
 	.header__navigation {
 		display: none;
 	}
+
 	._active {
 		position: block;
 
@@ -1371,6 +1434,7 @@ a:active {
 		justify-content: flex-end;
 		align-items: center;
 	}
+
 	.menu__list {
 		display: flex;
 		flex-direction: column;
@@ -1379,23 +1443,57 @@ a:active {
 		height: 50rem;
 		/* 500px */
 	}
+
 	.menu__item + .menu__item {
 		margin-left: 0;
 	}
+
 	.menu__link {
 		font-size: 2rem;
 		/* 20px */
 	}
+
 	.header__right-block {
 		margin: 10rem 0 15rem;
 	}
+
 	.header__logo {
 		display: none;
 	}
+
 	.logo__img {
 		width: 250px;
 	}
+
 	.header__burger-btn {
 		display: block;
+	}
+	.smoothies {
+		padding: 6rem 0 5rem;
+	}
+
+	.smoothies__title {
+		margin-bottom: 2.3rem;
+	}
+	.title {
+		font-size: 3.2rem;
+	}
+	.smoothies__text {
+		max-width: 60rem;
+		margin-bottom: 2.5rem;
+	}
+
+	.text {
+		font-size: 1.2rem;
+	}
+	.smoothies__cards {
+		grid-template-columns: repeat(2, 50%);
+		grid-template-rows: repeat(4, 25%);
+		max-width: 40rem;
+	}
+	.cards__desc {
+		font-size: 2rem;
+
+		margin-bottom: 2.3rem;
 	}
 }
