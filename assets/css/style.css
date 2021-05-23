@@ -1497,3 +1497,59 @@ a:active {
 		margin-bottom: 2.3rem;
 	}
 }
+@media only screen and (max-width: 540px) {
+	.smoothies {
+		padding: 6rem 0 5rem;
+	}
+
+	.smoothies__title {
+		margin-bottom: 2.5rem;
+	}
+	.title {
+		font-size: 3.5rem;
+	}
+	.smoothies__text {
+		max-width: 50rem;
+		margin-bottom: 3rem;
+	}
+
+	.text {
+		font-size: 1.2rem;
+	}
+	.smoothies__cards {
+		grid-template-columns: repeat(2, 50%);
+		grid-template-rows: repeat(4, 25%);
+		max-width: 42rem;
+	}
+	.cards__desc {
+		font-size: 2rem;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.smoothies {
+		padding: 5rem 0 4rem;
+	}
+
+	.smoothies__title {
+		margin-bottom: 2rem;
+	}
+	.title {
+		font-size: 3rem;
+	}
+	.smoothies__text {
+		max-width: 28rem;
+		margin-bottom: 2rem;
+	}
+
+	.text {
+		font-size: 1rem;
+	}
+	.smoothies__cards {
+		grid-template-columns: repeat(2, 50%);
+		grid-template-rows: repeat(4, 25%);
+		max-width: 26rem;
+	}
+	.cards__desc {
+		font-size: 1.2rem;
+	}
+}
