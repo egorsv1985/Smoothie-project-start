@@ -350,13 +350,15 @@ a:active {
 /* smoothies */
 
 .smoothies {
-	padding: 100px 0 90px;
+	padding: 10rem 0 9rem;
+	/* 100px 0 90px  */
 }
 
 .smoothies__title {
 	text-align: center;
 
-	margin-bottom: 40px;
+	margin-bottom: 4rem;
+	/* 40px */
 }
 
 .title--orange {
@@ -364,16 +366,20 @@ a:active {
 }
 
 .smoothies__text {
-	max-width: 57.25em;
+	max-width: 91.5rem;
+	/* 915px */
 	text-align: center;
 
 	margin: 0 auto;
-	padding-bottom: 40px;
+	padding-bottom: 2.22em;
+	/* 40px */
 }
 
 .text {
-	font-size: 1.125rem;
-	line-height: 2.22em;
+	font-size: 1.8rem;
+	/* 18px */
+	line-height: 2em;
+	/* 35px */
 }
 
 .text--black {
@@ -389,7 +395,7 @@ a:active {
 
 	background-color: #f6edde;
 
-	max-width: 63.125em;
+	max-width: 101rem;
 
 	margin: 0 auto;
 }
@@ -403,16 +409,20 @@ a:active {
 }
 
 .cards__desc {
-	font-size: 1.5625rem;
+	font-size: 2.5rem;
+	/* 25px */
 	line-height: 1.6em;
+	/* 40px */
 	font-weight: 800;
 	letter-spacing: -0.02em;
 	color: #f2612d;
-	margin-bottom: 40px;
+	margin-bottom: 2.6rem;
+	/* 26px */
 }
 
 .cards__icon {
-	margin: 20px 0 24px;
+	margin: 3.7rem 0 1.6rem;
+	/* 20px 0 24px */
 }
 
 .cards__item:last-child {
