@@ -45,8 +45,8 @@
 
 :root {
 	box-sizing: border-box;
-	font-size: calc(12px + 0.35vw);
-	/* font-size: 62.5%; */
+	/* font-size: calc(12px + 0.35vw); */
+	font-size: 62.5%;
 	/* 10px */
 }
 
@@ -72,7 +72,7 @@ body {
 img {
 	display: block;
 	margin: 0 auto;
-	max-width: 100%;
+	/* max-width: 100%; */
 }
 
 .header {
@@ -89,9 +89,9 @@ img {
 }
 
 .header__top {
-	padding-top: 4.25rem;
+	padding-top: 8.4rem;
 	/* 84px */
-	margin-bottom: 6.5rem;
+	margin-bottom: 12rem;
 	/* 120px */
 
 	position: relative;
@@ -110,12 +110,12 @@ img {
 }
 
 .menu__item + .menu__item {
-	margin-left: 2rem;
+	margin-left: 3.3rem;
 	/* 33px */
 }
 
 .menu__link {
-	font-size: 1rem;
+	font-size: 1.6rem;
 	/* 16px */
 	line-height: 2.5em;
 	/* 40px */
@@ -136,7 +136,7 @@ img {
 .header__personal {
 	position: relative;
 
-	margin-right: 8.375rem;
+	margin-right: 13.4rem;
 	/* 134px */
 }
 
@@ -162,7 +162,7 @@ img {
 }
 
 .personal__item + .personal__item {
-	margin-left: 2.8125rem;
+	margin-left: 4.5rem;
 }
 
 .personal__link--cart {
@@ -172,7 +172,7 @@ img {
 .personal__count {
 	position: absolute;
 
-	font-size: 0.625rem;
+	font-size: 1rem;
 	/* 10px */
 	text-transform: uppercase;
 	color: #000;
@@ -252,7 +252,7 @@ img {
 }
 
 .title {
-	font-size: 3.125rem;
+	font-size: 5rem;
 	/* 50px */
 	line-height: 0.8em;
 	font-weight: 800;
@@ -260,16 +260,13 @@ img {
 }
 
 .header__btn {
-	font-size: 1.5rem;
+	font-size: 2.4rem;
 	/* 24px */
 	line-height: 2.5em;
 	/* 40px */
 	letter-spacing: -0.02em;
 	text-transform: capitalize;
 
-	cursor: pointer;
-
-	border: none;
 	border-radius: 35px;
 	-webkit-border-radius: 35px;
 	-moz-border-radius: 35px;
@@ -302,6 +299,7 @@ img {
 
 .btn {
 	font-weight: 800;
+	cursor: pointer;
 }
 
 .btn--green {
@@ -317,14 +315,13 @@ img {
 /* smoothies */
 
 .smoothies {
-	padding: 6.25rem 0 5.625rem;
-	/* 100px 0 90px  */
+	padding: 100px 0 90px;
 }
 
 .smoothies__title {
 	text-align: center;
 
-	margin-bottom: 2.5rem;
+	margin-bottom: 4rem;
 	/* 40px */
 }
 
@@ -333,17 +330,16 @@ img {
 }
 
 .smoothies__text {
-	max-width: 58rem;
-	/* 915px */
+	max-width: 915px;
+
 	text-align: center;
 
-	margin: 0 auto 2.5rem;
-	/* 40px */
+	margin: 0 auto 40px;
 }
 
 .text {
-	font-size: 1.125rem;
-	/* font-size: 1.8rem; */
+	font-size: 1.8rem;
+
 	/* 18px */
 	line-height: 2em;
 	/* 35px */
@@ -359,7 +355,7 @@ img {
 	justify-content: center;
 	align-items: center;
 
-	max-width: 1010px;
+	max-width: 1050px;
 
 	margin: 0 auto;
 
@@ -406,13 +402,13 @@ img {
 
 /* about */
 .about {
-	max-height: 80rem;
+	max-height: 800px;
 
 	display: flex;
 
 	background-color: #158371;
 
-	padding-left: 14rem;
+	padding-left: 142px;
 }
 
 .about__img {
