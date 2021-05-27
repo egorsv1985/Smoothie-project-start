@@ -556,7 +556,7 @@ img {
 	margin: 0 auto;
 }
 
-.product__item {
+.products__item {
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
@@ -566,19 +566,19 @@ img {
 	height: 720px;
 }
 
-.product__item--brown {
+.products__item--brown {
 	background-color: #642c18;
 }
 
-.product__item--green {
+.products__item--green {
 	background-color: #1a8874;
 }
 
-.product__item--yellow {
+.products__item--yellow {
 	background-color: #fab03e;
 }
 
-.product__item--orange {
+.products__item--orange {
 	background-color: #c3491f;
 }
 
@@ -587,7 +587,7 @@ img {
 	margin-bottom: 25px;
 }
 
-.product__label {
+.products__label {
 	font-size: 24px;
 	line-height: 22px;
 	font-weight: 700;
@@ -595,14 +595,14 @@ img {
 	margin-bottom: 5px;
 }
 
-.product__subtitle {
+.products__subtitle {
 	font-size: 21px;
 	line-height: 32px;
 
 	margin-bottom: 60px;
 }
 
-.product__btn {
+.products__btn {
 	font-size: 21px;
 	line-height: 22px;
 
@@ -622,7 +622,7 @@ img {
 	-o-border-radius: 30px;
 }
 
-.product__btn::before {
+.products__btn::before {
 	content: "";
 
 	position: absolute;
@@ -638,7 +638,7 @@ img {
 	background: no-repeat center/cover url("../images/arrow_white.png");
 }
 
-/* product */
+/* products */
 @media only screen and (max-width: 1440px) {
 }
 @media only screen and (max-width: 992px) {
