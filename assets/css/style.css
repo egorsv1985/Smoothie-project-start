@@ -45,15 +45,15 @@
 
 :root {
 	box-sizing: border-box;
-	/* font-size: calc(12px + 0.35vw); */
-	font-size: 62.5%;
+
+	font-size: 100%;
 	/* 10px */
 }
 
 /* проблема переполнения */
-/* * {
+* {
 	outline: solid 1px red;
-} */
+}
 
 *,
 *::after,
@@ -89,9 +89,9 @@ img {
 }
 
 .header__top {
-	padding-top: 8.4rem;
+	padding-top: 5.25rem;
 	/* 84px */
-	margin-bottom: 12rem;
+	margin-bottom: 7.5rem;
 	/* 120px */
 
 	position: relative;
@@ -110,12 +110,13 @@ img {
 }
 
 .menu__item + .menu__item {
-	margin-left: 3.3rem;
+	margin-left: 2rem;
 	/* 33px */
 }
 
 .menu__link {
-	font-size: 1.6rem;
+	/* font-size: 1rem; */
+	font-size: calc(10px + 6 * (100vw / 1920));
 	/* 16px */
 	line-height: 2.5em;
 	/* 40px */
@@ -136,7 +137,7 @@ img {
 .header__personal {
 	position: relative;
 
-	margin-right: 13.4rem;
+	margin-right: 8.4rem;
 	/* 134px */
 }
 
@@ -162,7 +163,7 @@ img {
 }
 
 .personal__item + .personal__item {
-	margin-left: 4.5rem;
+	margin-left: 2.8rem;
 }
 
 .personal__link--cart {
@@ -172,7 +173,7 @@ img {
 .personal__count {
 	position: absolute;
 
-	font-size: 1rem;
+	font-size: 0.625rem;
 	/* 10px */
 	text-transform: uppercase;
 	color: #000;
@@ -221,7 +222,7 @@ img {
 }
 
 .social__item + .social__item {
-	margin-left: 8px;
+	margin-left: 0.5rem;
 }
 
 .header__logo {
@@ -252,7 +253,8 @@ img {
 }
 
 .title {
-	font-size: 5rem;
+	font-size: 3.125rem;
+
 	/* 50px */
 	line-height: 0.8em;
 	font-weight: 800;
@@ -260,7 +262,7 @@ img {
 }
 
 .header__btn {
-	font-size: 2.4rem;
+	font-size: 1.5rem;
 	/* 24px */
 	line-height: 2.5em;
 	/* 40px */
@@ -272,7 +274,7 @@ img {
 	-moz-border-radius: 35px;
 	-ms-border-radius: 35px;
 	-o-border-radius: 35px;
-	text-indent: -8.5rem;
+	text-indent: -4.5rem;
 	position: relative;
 
 	width: 280px;
@@ -311,17 +313,26 @@ img {
 }
 
 /* header */
+@media only screen and (max-width: 1440px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 320px) {
+}
 
 /* smoothies */
 
 .smoothies {
-	padding: 100px 0 90px;
+	padding: 6.25rem 0 5.6rem;
+	/* 100px 0 90px */
 }
 
 .smoothies__title {
 	text-align: center;
 
-	margin-bottom: 4rem;
+	margin-bottom: 2.5rem;
 	/* 40px */
 }
 
@@ -330,16 +341,15 @@ img {
 }
 
 .smoothies__text {
-	max-width: 915px;
+	max-width: 58rem;
 
 	text-align: center;
 
-	margin: 0 auto 40px;
+	margin: 0 auto 2.5rem;
 }
 
 .text {
-	font-size: 1.8rem;
-
+	font-size: 1.125rem;
 	/* 18px */
 	line-height: 2em;
 	/* 35px */
@@ -371,7 +381,7 @@ img {
 
 	background-color: #fff;
 
-	padding: 30px 0 40px;
+	padding: 1.8rem 0 2.5rem;
 }
 
 .cards__item:nth-child(-n + 8) {
@@ -388,17 +398,25 @@ img {
 }
 
 .cards__desc {
-	font-size: 2.5rem;
+	font-size: 1.5625rem;
 	line-height: 1.6em;
 	font-weight: 800;
 	letter-spacing: -0.02em;
 	color: #f2612d;
 	text-align: center;
 
-	margin-top: 27px;
+	margin-top: 1.7rem;
 }
 
 /* smoothies */
+@media only screen and (max-width: 1440px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 320px) {
+}
 
 /* about */
 .about {
@@ -408,7 +426,7 @@ img {
 
 	background-color: #158371;
 
-	padding-left: 142px;
+	padding-left: 8.9rem;
 }
 
 .about__img {
@@ -518,10 +536,18 @@ img {
 }
 
 /* about */
+@media only screen and (max-width: 1440px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 320px) {
+}
 
 /* product */
 
-/* .products__wrapper {
+.products__wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -611,11 +637,19 @@ img {
 
 	background: no-repeat center/cover url("../images/arrow_white.png");
 }
- */
+
 /* product */
+@media only screen and (max-width: 1440px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 320px) {
+}
 
 /* story */
-/* 
+
 .story__inner {
 	display: flex;
 	justify-content: center;
@@ -691,12 +725,20 @@ img {
 	height: 216px;
 
 	background: no-repeat center/cover url("../images/stamp.png");
-} */
+}
 
 /* story */
+@media only screen and (max-width: 1440px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 320px) {
+}
 
 /* testimonials */
-/* 
+
 .testimonials {
 	background-color: #672f1b;
 
@@ -828,10 +870,21 @@ img {
 	height: 16px;
 
 	background: no-repeat center/cover url("../images/arrow.png");
-} */
+}
 
 /* testimonials */
-/* .blog {
+@media only screen and (max-width: 1440px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 320px) {
+}
+
+/* blog */
+
+.blog {
 	padding: 95px 0 180px;
 	margin: 0 auto;
 }
@@ -926,12 +979,20 @@ img {
 	color: #1e1e1e;
 	font-weight: 800;
 	font-style: italic;
-} */
+}
 
 /* blog */
+@media only screen and (max-width: 1440px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 320px) {
+}
 
 /* instagram */
-/* .instagram {
+.instagram {
 	margin: 0 auto;
 
 	text-align: center;
@@ -1017,7 +1078,17 @@ img {
 
 	object-fit: contain;
 }
+/* instagram */
+@media only screen and (max-width: 1440px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 320px) {
+}
 
+/* footer */
 .footer__top {
 	background-color: #f4ad39;
 
@@ -1226,28 +1297,9 @@ img {
 
 	top: 40px;
 	right: 60px;
-} */
+}
 
 /* создаем медиа запросы */
-/* Extra small devices (phones, 600px and down)  */
-/* @media only screen and (max-width: 37.5em) {
-} */
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 37.5) {
-} */
-
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 48em) {
-} */
-
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 62em) {
-} */
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 75em) {
-} */
 
 /* @media only screen and (max-width : 1920px) {}
 @media only screen and (max-width : 1680px) {}
@@ -1263,7 +1315,7 @@ img {
 @media only screen and (max-width : 240px)  {}
 @media only screen and (max-width : 176px)  {} */
 
-@media only screen and (max-width: 1440px) {
+/* @media only screen and (max-width: 1440px) {
 	.menu__item + .menu__item {
 		margin-left: 2.5rem;
 	}
@@ -1283,8 +1335,8 @@ img {
 	.social__item + .social__item {
 		margin-left: 0.6rem;
 	}
-}
-
+} */
+/* 
 @media only screen and (max-width: 1280px) {
 	.header__navigation {
 		flex-direction: column;
@@ -1316,8 +1368,8 @@ img {
 		max-width: 60%;
 		top: 5rem;
 	}
-}
-
+} */
+/* 
 @media only screen and (max-width: 1140px) {
 	.smoothies {
 		padding: 8rem 0 7rem;
@@ -1340,8 +1392,8 @@ img {
 	.cards__icon {
 		margin: 3rem 0 1.5rem;
 	}
-}
-
+} */
+/* 
 @media only screen and (max-width: 960px) {
 	.smoothies {
 		padding: 7rem 0 6rem;
@@ -1369,8 +1421,8 @@ img {
 		grid-template-rows: repeat(4, 25%);
 		max-width: 50.5rem;
 	}
-}
-
+} */
+/* 
 @media only screen and (max-width: 720px) {
 	.header__navigation {
 		display: none;
@@ -1378,6 +1430,7 @@ img {
 
 	._active {
 		position: block;
+		overflow: auto;
 
 		left: 0;
 		top: 0;
@@ -1395,25 +1448,25 @@ img {
 		flex-direction: column-reverse;
 		justify-content: flex-end;
 		align-items: center;
-	}
-
+	} */
+/* 
 	.menu__list {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 
-		height: 50rem;
-		/* 500px */
-	}
+		height: 50rem; */
+/* 500px */
+/* }
 
 	.menu__item + .menu__item {
 		margin-left: 0;
 	}
 
 	.menu__link {
-		font-size: 2rem;
-		/* 20px */
-	}
+		font-size: 2rem; */
+/* 20px */
+/* }
 
 	.header__right-block {
 		margin: 10rem 0 15rem;
@@ -1463,8 +1516,8 @@ img {
 
 		margin-bottom: 2.3rem;
 	}
-}
-
+} */
+/* 
 @media only screen and (max-width: 540px) {
 	.smoothies {
 		padding: 6rem 0 5rem;
@@ -1496,8 +1549,8 @@ img {
 	.cards__desc {
 		font-size: 2rem;
 	}
-}
-
+} */
+/* 
 @media only screen and (max-width: 320px) {
 	.smoothies {
 		padding: 5rem 0 4rem;
@@ -1529,4 +1582,4 @@ img {
 	.cards__desc {
 		font-size: 1.2rem;
 	}
-}
+} */
