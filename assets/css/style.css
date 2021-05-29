@@ -48,12 +48,15 @@
 
 	font-size: 100%;
 	/* 10px */
+	/* parallax */
+	height: 100%;
+	overflow: hidden;
 }
 
 /* проблема переполнения */
-* {
+/* * {
 	outline: solid 1px red;
-}
+} */
 
 *,
 *::after,
@@ -67,6 +70,13 @@ body {
 	font-family: Muli, sans-serif;
 	color: #fff;
 	margin: 0;
+	/* parallax */
+	padding: 0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 img {
@@ -74,15 +84,38 @@ img {
 
 	max-width: 100%;
 }
-
 .header {
+}
+.header::before {
 	background: no-repeat center/cover url(../images/header_bg.jpg);
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: -1;
+	transform-origin: center;
+	min-height: 100vh;
+
+	transition: 1s;
+	/*paralax*/
+	transform: translateZ(-1px) scale(2);
+	-webkit-transform: translateZ(-1px) scale(2);
+	-moz-transform: translateZ(-1px) scale(2);
+	-ms-transform: translateZ(-1px) scale(2);
+	-o-transform: translateZ(-1px) scale(2);
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
 }
 
 .container {
 	max-width: 1740px;
 
-	height: 100vh;
+	min-height: 100vh;
 
 	margin: 0 auto;
 	padding: 0 10px;
@@ -251,7 +284,9 @@ img {
 	justify-content: center;
 	align-items: center;
 }
-
+/* parallax */
+.header__title {
+}
 .title {
 	font-size: 3.125rem;
 	/* 50px */
