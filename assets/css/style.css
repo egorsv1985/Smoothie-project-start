@@ -84,8 +84,7 @@ img {
 
 	max-width: 100%;
 }
-.header {
-}
+
 .header::before {
 	background: no-repeat center/cover url(../images/header_bg.jpg);
 	content: "";
@@ -285,8 +284,7 @@ img {
 	align-items: center;
 }
 /* parallax */
-.header__title {
-}
+
 .title {
 	font-size: 3.125rem;
 	/* 50px */
