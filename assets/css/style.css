@@ -69,13 +69,10 @@
 body {
 	font-family: Muli, sans-serif;
 	color: #fff;
-	margin: 0;
+
 	/* parallax */
-	padding: 0;
-	perspective: 1px;
-	transform-style: preserve-3d;
+
 	height: 100%;
-	overflow-y: scroll;
 	overflow-x: hidden;
 }
 
@@ -85,30 +82,13 @@ img {
 	max-width: 100%;
 }
 
-.header::before {
+.header {
 	background: no-repeat center/cover url(../images/header_bg.jpg);
-	content: "";
-	display: block;
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	z-index: -1;
-	transform-origin: center;
-	min-height: 100vh;
 
-	transition: 1s;
-	/*paralax*/
-	transform: translateZ(-1px) scale(2);
-	-webkit-transform: translateZ(-1px) scale(2);
-	-moz-transform: translateZ(-1px) scale(2);
-	-ms-transform: translateZ(-1px) scale(2);
-	-o-transform: translateZ(-1px) scale(2);
-	-webkit-transition: 1s;
-	-moz-transition: 1s;
-	-ms-transition: 1s;
-	-o-transition: 1s;
+	z-index: -1;
+
+	min-height: 100vh;
+	background-attachment: fixed;
 }
 
 .container {
@@ -156,8 +136,44 @@ img {
 	text-transform: uppercase;
 	letter-spacing: 0.02em;
 	/* 0.32px */
+	position: relative;
 }
-
+.menu__link:hover {
+	color: #223499;
+	transform: scaleX(2);
+	-webkit-transform: scaleX(2);
+	-moz-transform: scaleX(2);
+	-ms-transform: scaleX(2);
+	-o-transform: scaleX(2);
+}
+.menu__link::before {
+	content: "";
+	width: 100%;
+	height: 1px;
+	background-color: #223499;
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	transform-origin: left;
+	transform: scaleX(0);
+	-webkit-transform: scaleX(0);
+	-moz-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	-o-transform: scaleX(0);
+}
+.menu__link:hover::before {
+	transition: all 0.25s;
+	transform-origin: right;
+	transform: scaleX(1);
+	-webkit-transform: scaleX(1);
+	-moz-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	-o-transform: scaleX(1);
+	-webkit-transition: all 0.25s;
+	-moz-transition: all 0.25s;
+	-ms-transition: all 0.25s;
+	-o-transition: all 0.25s;
+}
 .header__right-block {
 	display: flex;
 	justify-content: space-between;
@@ -284,7 +300,9 @@ img {
 	align-items: center;
 }
 /* parallax */
-
+.header__title:hover {
+	mix-blend-mode: difference;
+}
 .title {
 	font-size: 3.125rem;
 	/* 50px */
@@ -306,7 +324,7 @@ img {
 	-moz-border-radius: 35px;
 	-ms-border-radius: 35px;
 	-o-border-radius: 35px;
-	text-indent: -4.5rem;
+	text-indent: -5.2rem;
 	position: relative;
 
 	width: 280px;
@@ -326,7 +344,18 @@ img {
 
 	background: no-repeat center/cover url("../images/arrow.png");
 }
-
+.btn:hover::before {
+	transform: translateX(10px);
+	transition: 0.4s ease-in-out;
+	-webkit-transition: 0.4s ease-in-out;
+	-moz-transition: 0.4s ease-in-out;
+	-ms-transition: 0.4s ease-in-out;
+	-o-transition: 0.4s ease-in-out;
+	-webkit-transform: translateX(10px);
+	-moz-transform: translateX(10px);
+	-ms-transform: translateX(10px);
+	-o-transform: translateX(10px);
+}
 .header__burger-img {
 	width: 40px;
 }
@@ -484,7 +513,7 @@ img {
 }
 
 .about__title {
-	max-width: 670px;
+	max-width: 660px;
 
 	margin-bottom: 55px;
 	margin-top: 80px;
@@ -620,8 +649,7 @@ img {
 	background-color: #c3491f;
 }
 
-.product__img {
-	margin-top: 130px;
+.products__img {
 	margin-bottom: 25px;
 }
 
