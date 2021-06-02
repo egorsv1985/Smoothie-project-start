@@ -1035,10 +1035,6 @@ img {
 	gap: 55px;
 }
 
-.blog__img {
-	z-index: 1;
-}
-
 .blog__text-box {
 	padding: 225px 30px 45px;
 
@@ -1047,22 +1043,17 @@ img {
 
 .blog__text-box::before {
 	position: absolute;
-
 	content: "";
-
 	width: 685px;
 	height: 12px;
-
 	background-color: #f7ae3b;
-
 	top: 165px;
 	left: -45px;
-
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
+	border-radius: 0 10px 10px 0;
+	-webkit-border-radius: 0 10px 10px 0;
+	-moz-border-radius: 0 10px 10px 0;
+	-ms-border-radius: 0 10px 10px 0;
+	-o-border-radius: 0 10px 10px 0;
 }
 
 .blog__subtitle {
