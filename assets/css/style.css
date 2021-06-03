@@ -710,8 +710,8 @@ img {
 
 @media only screen and (max-width: 768px) {
 	.smoothies {
-		padding: 6.25rem 0 5.625rem;
-		/* 100px 0 90px */
+		padding: 3rem 0 5.625rem;
+		/* 48px 0 90px */
 		background-color: #fff;
 		
 	}
@@ -733,8 +733,8 @@ img {
 	
 		text-align: center;
 	
-		margin: 0 auto 2.5rem;
-		/* 0 auto 40px */
+		margin: 0 auto 2.875rem;
+		/* 0 auto 46px */
 	}
 	
 	.text {
