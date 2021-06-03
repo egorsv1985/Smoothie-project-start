@@ -440,7 +440,7 @@ img {
 	}
 
 	.header__burger-line {
-		background-color: #fff;
+		background-color: #0f075c;
 
 		width: 1.875rem;
 		/* 35px */
@@ -451,15 +451,12 @@ img {
 
 		display: block;
 
-
-
-
 	}
 
 	.header__burger-line::after {
 		content: '';
 
-		background-color: #fff;
+		background-color: #0f075c;
 
 		display: block;
 		cursor: pointer;
@@ -479,7 +476,7 @@ img {
 	.header__burger-line::before {
 		content: '';
 
-		background-color: #fff;
+		background-color: #0f075c;
 
 		display: block;
 		cursor: pointer;
@@ -514,7 +511,7 @@ img {
 
 		display: flex;
 		flex-direction: column-reverse;
-		justify-content: flex-end;
+		justify-content: center;
 		align-items: center;
 	}
 
@@ -522,6 +519,7 @@ img {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		align-items: center;
 
 		height: 50rem;
 
