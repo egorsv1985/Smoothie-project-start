@@ -253,7 +253,7 @@ img {
 	width: 1.3125rem;
 	/* 21px */
 	height: 1.3125rem;
-/* 21px */
+	/* 21px */
 	background-color: #fff;
 
 	border-radius: 50%;
@@ -326,7 +326,7 @@ img {
 	height: 3.125rem;
 	/* 50px */
 	position: fixed;
-	top: 0.9375rem	;
+	top: 0.9375rem;
 	/* 15px */
 	right: 1.5625rem;
 	/* 25px */
@@ -471,7 +471,7 @@ img {
 
 		width: 2.5rem;
 		/* 40px */
-		height: 0.125rem		;
+		height: 0.125rem;
 		/* 2px */
 
 	}
@@ -497,7 +497,7 @@ img {
 
 	._active {
 		position: fixed;
-		
+
 		/* overflow-y: hidden; */
 
 		left: 0;
@@ -505,7 +505,7 @@ img {
 		right: 0;
 		bottom: 0;
 
-		
+
 		height: 100vh;
 
 		z-index: 1;
@@ -524,7 +524,7 @@ img {
 		justify-content: space-between;
 
 		height: 50rem;
-	
+
 		/* 500px */
 	}
 
@@ -547,46 +547,6 @@ img {
 		top: 120%;
 	}
 
-	/* .logo__img {
-		width: 250px;
-	} */
-
-	.header__burger-btn {
-		display: block;
-	}
-
-	.smoothies {
-		padding: 6rem 0 5rem;
-	}
-
-	.smoothies__title {
-		margin-bottom: 2.3rem;
-	}
-
-	.title {
-		font-size: 3.2rem;
-	}
-
-	.smoothies__text {
-		max-width: 60rem;
-		margin-bottom: 2.5rem;
-	}
-
-	.text {
-		font-size: 1.2rem;
-	}
-
-	.smoothies__cards {
-		grid-template-columns: repeat(2, 50%);
-		grid-template-rows: repeat(4, 25%);
-		max-width: 40rem;
-	}
-
-	.cards__desc {
-		font-size: 2rem;
-
-		margin-bottom: 2.3rem;
-	}
 }
 
 
@@ -598,7 +558,7 @@ img {
 	padding: 6.25rem 0 5.625rem;
 	/* 100px 0 90px */
 	background-color: #fff;
-	
+
 }
 
 .smoothies__title {
@@ -647,11 +607,11 @@ img {
 	background-color: #f6edde;
 }
 
-.cards__item {
+.smoothies__item {
 	display: flex;
 	justify-content: flex-end;
 	flex-direction: column;
-	justify-content: center;
+
 	align-items: center;
 
 	width: 25%;
@@ -664,20 +624,20 @@ img {
 	/* 28px 0 40px */
 }
 
-.cards__item:nth-child(-n + 8) {
+.smoothies__item:nth-child(-n + 8) {
 	border-right: 2px solid #f6edde;
 }
 
-.cards__item:nth-child(-n + 4) {
+.smoothies__item:nth-child(-n + 4) {
 	border-bottom: 2px solid #f6edde;
 }
 
-.cards__item:nth-child(4),
-.cards__item:last-child {
+.smoothies__item:nth-child(4),
+.smoothies__item:last-child {
 	border-right: none;
 }
 
-.cards__icon:hover {
+.smoothies__icon:hover {
 	transition: all 0.5s ease-in-out;
 	transform: scale(1.3);
 	-webkit-transform: scale(1.3);
@@ -690,7 +650,7 @@ img {
 	-o-transition: all 0.5s ease-in-out;
 }
 
-.cards__desc {
+.smoothies__desc {
 	font-size: 1.5625rem;
 	/* 25px */
 	line-height: 1.6em;
@@ -712,87 +672,91 @@ img {
 	.smoothies {
 		padding: 3rem 0 5.625rem;
 		/* 48px 0 90px */
-		background-color: #fff;
-		
+
+
 	}
-	
+
 	.smoothies__title {
-		text-align: center;
-	
+
+
 		margin-bottom: 2.375rem;
 		/* 38px */
 	}
-	
-	.title--orange {
-		color: #f7ae3b;
-	}
-	
+
+
 	.smoothies__text {
 		max-width: 43.75rem;
 		/* 700px */
-	
-		text-align: center;
-	
+
+
+
 		margin: 0 auto 2.875rem;
 		/* 0 auto 46px */
 	}
-	
-	.text {
-		font-size: 1.125rem;
-		/* 18px */
-		line-height: 2em;
-		/* 35px */
-	}
-	
-	.text--black {
-		color: #1e1e1e;
-	}
-	
+
+
+
 	.smoothies__cards {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-	
-		max-width: 65.625rem;
+
+		max-width: 33.75rem;
 		/* 1050px */
-	
-		margin: 0 auto;
-	
-		background-color: #f6edde;
+
+
 	}
-	
-	.cards__item {
-		display: flex;
-		justify-content: flex-end;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	
-		width: 25%;
+
+	.smoothies__item {
+
+
+		width: 50%;
 		height: 12.1875rem;
 		/* 195px */
-	
-		background-color: #fff;
-	
-		padding: 1.75rem 0 2.5rem;
-		/* 28px 0 40px */
+
+
+
+		padding: 1.75rem 0 1.75rem;
+		/* 28px 0 30px */
 	}
-	
-	.cards__item:nth-child(-n + 8) {
+
+	/* .smoothies__item:nth-child(-n + 8) {
 		border-right: 2px solid #f6edde;
 	}
 	
-	.cards__item:nth-child(-n + 4) {
+	.smoothies__item:nth-child(-n + 4) {
 		border-bottom: 2px solid #f6edde;
 	}
 	
-	.cards__item:nth-child(4),
-	.cards__item:last-child {
+	.smoothies__item:nth-child(4),
+	.smoothies__item:last-child {
 		border-right: none;
+	} */
+	.smoothies__item:nth-child(-n + 8),
+	.smoothies__item:nth-child(-n + 4),
+	.smoothies__item:nth-child(4),
+	.smoothies__item:last-child {
+		border: none;
 	}
-	
-	.cards__icon:hover {
+
+	.smoothies__item:nth-child(odd) {
+		border-right: 2px solid #f6edde;
+		border-bottom: 2px solid #f6edde;
+	}
+
+	.smoothies__item:nth-child(even) {
+		border-bottom: 2px solid #f6edde;
+	}
+
+	.smoothies__item:nth-child(7),
+	.smoothies__item:nth-child(8) {
+		border-bottom: none;
+	}
+
+
+
+	.smoothies__icon:hover {
 		transition: all 0.5s ease-in-out;
 		transform: scale(1.3);
 		-webkit-transform: scale(1.3);
@@ -804,8 +768,8 @@ img {
 		-ms-transition: all 0.5s ease-in-out;
 		-o-transition: all 0.5s ease-in-out;
 	}
-	
-	.cards__desc {
+
+	.smoothies__desc {
 		font-size: 1.5625rem;
 		/* 25px */
 		line-height: 1.6em;
@@ -813,11 +777,11 @@ img {
 		letter-spacing: -0.02em;
 		color: #f2612d;
 		text-align: center;
-	
+
 		margin-top: 1.6875rem;
 		/* 27px */
 	}
-	
+
 }
 
 @media only screen and (max-width: 320px) {}
