@@ -307,6 +307,12 @@ img {
 	
 	z-index: 1;
 	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+		top: 40px;
+		right: 45px;
+		display: block;
 }
 
 .header__content {
@@ -408,15 +414,16 @@ img {
 	}
 
 	.header__burger-line {
-		background-color: #2d30f2;
+		background-color: #0b0222;
 
 		width: 35px;
 		height: 2px;
 
-		position: fixed;
-		top: 40px;
-		right: 45px;
+		position: relative;
+
 		display: block;
+
+		
 
 
 	}
@@ -424,9 +431,10 @@ img {
 	.header__burger-line::after {
 		content: '';
 
-		background-color: #472c92;
+		background-color: #0b0222;
 
 		display: block;
+		cursor: pointer;
 
 		position: absolute;
 		bottom: 10px;
@@ -434,14 +442,16 @@ img {
 
 		width: 40px;
 		height: 2px;
+
 	}
 
 	.header__burger-line::before {
 		content: '';
 
-		background-color: #472c92;
+		background-color: #0b0222;
 
 		display: block;
+		cursor: pointer;
 
 		position: absolute;
 		top: 10px;
