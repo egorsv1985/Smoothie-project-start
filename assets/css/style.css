@@ -1507,15 +1507,11 @@ img {
 
 .instagram__title {
 	font-size: 1.5rem;
-	/* 24px */
+	/*24px*/
 	text-align: center;
-
 	position: relative;
-
 	display: inline-block;
-
 	margin-bottom: 45px;
-
 	transform: translate(30px, 0px);
 	-webkit-transform: translate(30px, 0px);
 	-moz-transform: translate(30px, 0px);
@@ -1558,7 +1554,7 @@ img {
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
-	flex-basis: 50;
+
 	flex: 1 1 20%;
 }
 
@@ -1581,8 +1577,6 @@ img {
 }
 
 .instagram__img {
-	width: 100%;
-
 	object-fit: contain;
 }
 
@@ -1594,6 +1588,9 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
+	.instagram__inner {
+		overflow-x: auto;
+	}
 }
 
 @media only screen and (max-width: 320px) {
