@@ -341,11 +341,6 @@ img {
 	align-items: center;
 }
 
-/* parallax */
-.header__title:hover {
-	mix-blend-mode: difference;
-}
-
 .title {
 	font-size: 3.125rem;
 	/* 50px */
@@ -1068,64 +1063,94 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 120px auto 152px;
-	max-width: 1320px;
+	flex-wrap: wrap;
+
+	margin: 7.5rem auto 9.5rem;
+	/* 120px auto 152px */
+	max-width: 82.5rem;
+	/* 1320px */
 }
 
 .story__box {
-	padding-left: 17px;
+	padding-left: 1rem;
+	/* 16px */
 }
 
 .story__image {
-	max-width: 585px;
+	max-width: 36.5rem;
+	/* 584px */
 }
 
 .story__title {
-	margin-bottom: 43px;
+	margin-bottom: 2.6875rem;
+	/* 43px */
 }
 
 .story__text {
-	margin-bottom: 45px;
+	margin-bottom: 2.8125rem;
+	/* 45px */
 }
 
 .story__btn {
-	width: 304px;
-	height: 63px;
-	font-size: 21px;
-	line-height: 22px;
+	width: 19rem;
+	/* 304px */
+	height: 4rem;
+	/* 64px */
+
+	font-size: 1.3125rem;
+	/* 21px */
+
+	line-height: 1.3175rem;
+	/* 22px */
+
 	border: none;
 	border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	-ms-border-radius: 30px;
 	-o-border-radius: 30px;
-	padding: 0px 145px 0 25px;
+
+	text-indent: -7.875rem;
+	/* 126px */
+
 	position: relative;
 }
 
 .story__btn::before {
 	content: "";
+
 	position: absolute;
-	top: 20px;
-	left: 225px;
-	width: 30px;
-	height: 16px;
+	top: 1.25rem;
+	/* 20px */
+	left: 14.0625rem;
+	/* 225px */
+	width: 1.875rem;
+	/* 30px */
+	height: 1rem;
+	/* 16px */
+
 	background: no-repeat center/cover url("../images/arrow.png");
 }
 
 .story__content {
-	margin-left: 200px;
 	position: relative;
+
+	margin-left: 12.5625rem;
+	/* 200px */
 }
 
 .story__content::after {
 	content: "";
 	position: absolute;
 	display: block;
-	top: 23px;
-	left: -167px;
-	width: 290px;
-	height: 216px;
+	top: 1.5rem;
+	/* 24px */
+	left: -10.375rem;
+	/* -166px */
+	width: 18.125rem;
+	/* 290px */
+	height: 13.5rem;
+	/* 216px */
 	background: no-repeat center/cover url("../images/stamp.png");
 }
 
@@ -1137,6 +1162,39 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
+	.story__inner {
+		justify-content: flex-start;
+		margin: 5.625rem auto 9.5rem;
+		/* 90px auto 152px */
+	}
+
+	.story__box {
+		padding-left: 2.125rem;
+		/* 34px */
+	}
+
+	.story__title {
+		margin-bottom: 2.6875rem;
+		/* 43px */
+	}
+
+	.story__text {
+		max-width: 32.5rem;
+		/* 520px */
+
+		margin-bottom: 2.5rem;
+		/* 40px */
+	}
+
+	.story__btn {
+		margin-bottom: 5rem;
+		/* 80px */
+	}
+
+	.story__content {
+		margin-left: 10rem;
+		/* 160px */
+	}
 }
 
 @media only screen and (max-width: 320px) {
