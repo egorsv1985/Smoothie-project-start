@@ -552,6 +552,14 @@ img {
 		/* 44px */
 		line-height: 1.25em;
 	}
+	.menu__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+
+		height: 300px;
+	}
 }
 
 /* smoothies */
@@ -1663,8 +1671,7 @@ img {
 
 @media only screen and (max-width: 360px) {
 	.blog {
-		padding: 0;
-		margin: 0 auto;
+		padding: 60px 10px 90px;
 	}
 	.blog__wrapper {
 		margin: 0 auto;
@@ -1672,6 +1679,16 @@ img {
 	.blog__img {
 		width: 340px;
 		height: 245px;
+	}
+	.blog__text {
+		/* max-width: 472px; */
+
+		margin-left: 0;
+		margin-top: 28px;
+	}
+	.blog__text::after {
+		bottom: 15px;
+		right: 270px;
 	}
 }
 
@@ -2035,14 +2052,79 @@ img {
 	.footer__text {
 		margin-right: 23px;
 	}
-
-	.footer__link {
-		right: 30px;
-		bottom: 30px;
-	}
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
+	.footer__top {
+		padding: 65px 10px 68px;
+	}
+	.footer__wrapper {
+		justify-content: flex-start;
+		flex-direction: column;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+	.footer__logo {
+		margin: 0px 30px 60px 64px;
+	}
+	.footer__wrap {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-bottom: 48px;
+	}
+	.footer__info {
+		margin-left: 0px;
+		margin-bottom: 54px;
+	}
+
+	.footer__title {
+		margin-bottom: 22px;
+	}
+	.footer__pay {
+		margin-left: 0;
+	}
+	.footer__pay-list {
+		width: 354px;
+	}
+	.footer__box {
+		margin: 0 90px 0 0px;
+	}
+
+	.footer__input {
+		text-indent: 10px;
+
+		width: 343px;
+	}
+	.footer__inner {
+		margin-left: 82px;
+	}
+	.footer__text {
+		line-height: 1.125rem;
+
+		margin-right: 24px;
+	}
+	.footer__text::before {
+		position: absolute;
+
+		content: "";
+
+		display: block;
+
+		background: no-repeat center/cover url("../images/arrow_footer.png");
+
+		width: 48px;
+		height: 42px;
+
+		bottom: -2px;
+		left: -55px;
+	}
+	.footer__link {
+		right: 12px;
+	}
+	.footer__link::before {
+		display: none;
+	}
 }
 /* создаем медиа запросы */
 
