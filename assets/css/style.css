@@ -44,8 +44,6 @@
 }
 
 :root {
-	box-sizing: border-box;
-
 	font-size: 100%;
 	/* 10px */
 	/* parallax */
@@ -548,7 +546,12 @@ img {
 	}
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
+	.title {
+		font-size: 2.75rem;
+		/* 44px */
+		line-height: 1.25em;
+	}
 }
 
 /* smoothies */
@@ -556,7 +559,6 @@ img {
 .smoothies {
 	padding: 100px 0 90px;
 	/* 100px 0 90px */
-	background-color: #fff;
 }
 
 .smoothies__title {
@@ -699,7 +701,29 @@ img {
 	}
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
+	.smoothies {
+		padding: 40px 0 90px;
+		/* 40px 0 90px */
+	}
+	.smoothies__title {
+		margin-bottom: 22px;
+		/* 22px */
+	}
+	.smoothies__text {
+		max-width: 338px;
+		/* 338px */
+
+		margin: 0 auto 60px;
+		/* 0 auto 60px */
+	}
+	.smoothies__desc {
+		font-size: 1.25rem;
+		/* 20px */
+
+		margin-top: 27px;
+		/* 27px */
+	}
 }
 
 /* about */
@@ -807,8 +831,9 @@ img {
 	/*382px*/
 	height: 63px;
 	/*63px*/
-	padding: 0 90px 0 22px;
-	/*0 90px 0 22px*/
+	text-indent: -5.25rem;
+	/* 84px */
+
 	border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
@@ -870,7 +895,55 @@ img {
 	}
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
+	.about {
+		padding-left: 12px;
+		/* 12px */
+	}
+	.about__img {
+		width: 337px;
+		/*337px*/
+		height: 399px;
+		/*399px*/
+	}
+
+	.about__title {
+		max-width: 660px;
+		/* 660px */
+
+		font-size: 2.75rem;
+		/* 44px */
+
+		margin-bottom: 60px;
+		/* 60px */
+		margin-top: 50px;
+		/* 50px */
+	}
+	.about__title--orange::before {
+		top: 95px;
+		/* 95px */
+		left: -260px;
+		/* -260px */
+
+		width: 305px;
+		/* 305px */
+		height: 9px;
+		/* 9px */
+	}
+	.about__btn {
+		font-size: 1.125rem;
+		/*18px*/
+
+		width: 343px;
+		/*343px*/
+	}
+	.about__btn::before {
+		left: 280px;
+		/* 280px */
+	}
+	.about__item--bold {
+		line-height: 1.5em;
+	}
 }
 
 /* product */
@@ -995,7 +1068,13 @@ img {
 @media only screen and (max-width: 768px) {
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
+	.products__img {
+		width: 100px;
+		/* 100px */
+		height: 254px;
+		/* 254px */
+	}
 }
 
 /* story */
@@ -1139,7 +1218,36 @@ img {
 	}
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
+	.story__inner {
+		margin: 60px auto 152px;
+		/* 60px auto 152px */
+	}
+	.story__box {
+		padding-left: 11px;
+		/* 16px */
+	}
+
+	.story__title {
+		margin-bottom: 32px;
+		/* 32px */
+	}
+	.story__btn {
+		margin-left: 17px;
+	}
+	.story__img {
+		width: 340px;
+		/* 340px */
+		height: 350px;
+		/* 350px */
+	}
+	.story__content {
+		margin: 0 auto;
+		/* 200px */
+	}
+	.story__content::after {
+		display: none;
+	}
 }
 
 /* testimonials */
@@ -1243,7 +1351,7 @@ img {
 }
 
 .testimonials__cite {
-	line-height: 2.5em;
+	line-height: 1.95em;
 	font-weight: 600;
 	font-style: italic;
 	text-align: center;
@@ -1306,9 +1414,9 @@ img {
 		font-size: 11.25rem;
 		/* 180px */
 
-		top: 32.75rem;
+		top: 512px;
 		/* 512px */
-		left: 2.25rem;
+		left: 36px;
 		/* 36px */
 	}
 
@@ -1336,9 +1444,42 @@ img {
 		max-width: 452px;
 		/* 452px */
 	}
+	.testimonials__cite {
+		line-height: 3.95em;
+	}
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
+	.testimonials__inner {
+		padding: 116px 0 112px;
+		/* 116px 0 112px */
+
+		position: relative;
+	}
+	.testimonials__title {
+		margin-bottom: 65px;
+		/* 65px */
+	}
+	.testimonials::after {
+		content: "";
+		display: none;
+	}
+
+	.testimonials__inner::after {
+		content: "";
+		display: none;
+	}
+	.testimonials__box {
+		margin: 0 auto 80px;
+		/*0 auto 80px */
+	}
+	.testimonials__textbox {
+		margin-top: 50px;
+		/* 50px */
+
+		max-width: 338px;
+		/* 338px */
+	}
 }
 
 /* blog */
@@ -1520,7 +1661,18 @@ img {
 	}
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
+	.blog {
+		padding: 0;
+		margin: 0 auto;
+	}
+	.blog__wrapper {
+		margin: 0 auto;
+	}
+	.blog__img {
+		width: 340px;
+		height: 245px;
+	}
 }
 
 /* instagram */
