@@ -1325,30 +1325,6 @@ img {
 	margin: 0 auto;
 	padding: 116px 0 80px;
 	/* 116px 0 80px */
-
-	position: relative;
-}
-
-.testimonials__inner::after {
-	content: "Sarah A";
-
-	position: absolute;
-
-	display: block;
-
-	opacity: 0.6;
-
-	font-size: 12.5rem;
-	/* 200px */
-	line-height: 0.2em;
-	font-weight: 800;
-	letter-spacing: -0.02em;
-	color: #521905;
-
-	top: 290px;
-	/* 290px */
-	left: 430px;
-	/* 430px */
 }
 
 .testimonials__title {
@@ -1367,10 +1343,31 @@ img {
 	justify-content: center;
 	align-items: center;
 
+	position: relative;
+
 	margin: 0 auto 120px;
 	/* 120px */
 }
-
+.testimonials__box::after {
+	content: "Sarah A";
+	position: absolute;
+	display: block;
+	opacity: 0.6;
+	font-size: 12.5rem;
+	/*200px*/
+	line-height: 0.2em;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: #521905;
+	top: 7px;
+	/*15px*/
+	left: 43%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+}
 .testimonials__textbox {
 	display: flex;
 	justify-content: center;
@@ -1438,6 +1435,9 @@ img {
 
 /* testimonials */
 @media only screen and (max-width: 1440px) {
+	.testimonials::after {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 992px) {
