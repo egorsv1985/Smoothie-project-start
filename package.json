@@ -19,6 +19,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-uglify": "^3.0.2",
+    "node-normalize-scss": "^8.1.2",
     "node-sass": "^5.0.0"
   },
   "browserslist": [
