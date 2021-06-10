@@ -2,6 +2,9 @@
 
 @import "./base/fonts";
 
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
 @import "./layout/header";
 @import "./layout/smoothies";
 @import "./layout/about";
@@ -20,8 +23,7 @@
 @import "./components/text";
 @import "./components/title";
 
-@import "./abstracts/mixins";
-@import "./components/menu";
+
 
 
 

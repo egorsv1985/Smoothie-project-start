@@ -281,7 +281,7 @@ function watchFiles() {
 
 
 const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts)); // Будет запускаться по команде gulp build
-const watch = gulp.parallel(build, watchFiles, serve); // Будет запускаться по дефолтной команде gulp 
+const watch = gulp.series(build, serve, watchFiles); // Будет запускаться по дефолтной команде gulp 
 
 
 // Экспорты тасок
