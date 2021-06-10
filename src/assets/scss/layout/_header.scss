@@ -1,5 +1,5 @@
 .header {
-	background: no-repeat center/cover url(../images/header/header_bg.jpg);
+	background: no-repeat center/cover url('../images/header/header_bg.jpg');
 	z-index: -1;
 	min-height: 100vh;
 
@@ -35,7 +35,8 @@
 			}
 
 	&__burger-btn {
-		@include pos-fix ($t: 15px, $r: 25px, $w: 50px, $h: 50px);
+		@include pos-fix ($t: 15px, $r: 25px);
+		@include box-size($w: 50px, $h: 50px);
 		display: block;
 		z-index: 1;
 		cursor: pointer;
@@ -102,7 +103,7 @@
 		}
 
 		&__right-block {
-			@include pad-mar($mt: 160px, $mr: 0, $mb: 240px, $mr: 0);
+			@include pad-mar($mt: 160px, $mr: 0, $mb: 240px, $ml: 0);
 			}
 
 		&__logo {

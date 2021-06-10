@@ -19,7 +19,7 @@
 	width: $w;
 	height: $h;
 }
-@mixin pad-mar ($pt: null, $pr: null, $pb: null, $pl: null, $mt: null, $mr: null, $mb: null, $mr: null) {
+@mixin pad-mar ($pt: null, $pr: null, $pb: null, $pl: null, $mt: null, $mr: null, $mb: null, $ml: null) {
 	padding-top: $pt;
 	padding-right: $pr;
 	padding-bottom: $pb;
@@ -46,11 +46,12 @@
 	left: $l;
 	right: $r;
 	}
-@mixin font ($fs: 1rem, $lh: 2.5em, $ls: null, $text-trans: null) {
+@mixin font ($fs: 1rem, $lh: 2.5em, $ls: null, $text-trans: null, $fw: null) {
 	font-size: $fs;
 	line-height: $lh;
 	letter-spacing: $ls;
 	text-transform: $text-trans;
+	font-weight: $fw;
 }
 
 // @mixin font-source-sans($size: false, $colour: false, $weight: false, $lh: false) {

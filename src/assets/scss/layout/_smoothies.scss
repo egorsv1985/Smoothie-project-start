@@ -12,11 +12,11 @@
 		@include pad-mar($mt: 0px, $mr: auto, $mb: 40px, $ml: auto);
 	}
 
-	.smoothies__cards {
+	&__cards {
 		@include flex ($jc: center, $ai: center, $fw: wrap);
 		max-width: 1050px;
 		/* 1050px */
-		@include pad-mar($mt: 0, $mr: auto, $mb: 0, $mr: auto);
+		@include pad-mar($mt: 0, $mr: auto, $mb: 0, $ml: auto);
 		background-color: #f6edde;
 	}
 
@@ -41,16 +41,10 @@
 	}
 
 	.smoothies__desc {
-		font-size: 1.5625rem;
-		/* 25px */
-		line-height: 1.6em;
-		font-weight: 800;
-		letter-spacing: -0.02em;
+		@include font ($fs: 1.5625rem, $lh: 1.6em, $ls: -0.02em, $fw: 800);
+		@include pad-mar($mt: 27px);
 		color: #f2612d;
 		text-align: center;
-
-		margin-top: 27px;
-		/* 27px */
 	}
 
 	/* smoothies */
@@ -60,8 +54,7 @@
 
 	@media only screen and (max-width: 768px) {
 		.smoothies {
-			padding: 48px 0 90px;
-			/* 48px 0 90px */
+			@include pad-mar($pt: 48px, $pr:0, $pb: 90px, $pl: 0);
 		}
 
 		.smoothies__text {
@@ -76,8 +69,7 @@
 
 		.smoothies__item {
 			width: 50%;
-
-			padding-bottom: 30px;
+			@include pad-mar($pb: 30px);
 		}
 
 		.smoothies__item:nth-child(-n + 8),
@@ -104,31 +96,22 @@
 
 	@media only screen and (max-width: 360px) {
 		.smoothies {
-			padding: 40px 0 90px;
-			/* 40px 0 90px */
+			@include pad-mar($pt: 40px, $pr: 0, $pb: 90px, $pl: 0);
 		}
 
 		.smoothies__title {
-			margin-bottom: 22px;
-			/* 22px */
+			@include pad-mar ($mt: 22px);
 		}
 
 		.smoothies__text {
 			max-width: 338px;
 			/* 338px */
-
-			margin: 0 auto 60px;
-			/* 0 auto 60px */
+			@include pad-mar($mt: 0, $mr: auto, $mb: 60px);
 		}
 
 		.smoothies__desc {
-			font-size: 1.25rem;
-			/* 20px */
-
-			margin-top: 27px;
-			/* 27px */
+			@include font ($fs: 1.25rem);
+			@include pad-mar ($mt: 27px);
 		}
 	}
-
-
 }
