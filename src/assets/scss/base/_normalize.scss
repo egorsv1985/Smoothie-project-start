@@ -8,6 +8,14 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+ *,
+ *::after,
+ *::before {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -48,6 +56,9 @@ h6 {
  * Render the `main` element consistently in IE.
  */
 
+img {
+	display: block;
+}
 main {
   display: block;
 }

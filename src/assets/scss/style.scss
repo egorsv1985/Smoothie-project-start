@@ -1,50 +1,34 @@
-@import "normalize";
+@import "./base/normalize";
+
+@import "./base/fonts";
+
+@import "./layout/header";
+@import "./layout/smoothies";
+@import "./layout/about";
+@import "./layout/products";
+@import "./layout/story";
+@import "./layout/testimonials";
+@import "./layout/blog";
+@import "./layout/instagram";
+@import "./layout/footer";
+
+@import "./components/menu";
+@import "./components/personal";
+@import "./components/social";
+@import "./components/buttons";
+@import "./components/burger-active";
+@import "./components/text";
+@import "./components/title";
+
+@import "./abstracts/mixins";
+@import "./components/menu";
 
 
-@font-face {
-	font-family: Muli;
-	src: url("./fonts/Muli-Bold.ttf") format("truetype");
-	font-weight: 700;
-	font-display: swap;
-}
 
-@font-face {
-	font-family: Muli;
-	src: url("../fonts/Muli-BoldItalic.ttf") format("truetype");
-	font-weight: 700;
-	font-style: italic;
-	font-display: swap;
-}
 
-@font-face {
-	font-family: Muli;
-	src: url("../fonts/Muli-ExtraBold.woff") format("woff");
-	font-weight: 800;
-	font-display: swap;
-}
 
-@font-face {
-	font-family: Muli;
-	src: url("../fonts/Muli-Italic.ttf") format("truetype");
-	font-weight: 400;
-	font-style: italic;
-	font-display: swap;
-}
 
-@font-face {
-	font-family: Muli;
-	src: url("../fonts/Muli-Regular.woff") format("woff");
-	font-weight: 400;
-	font-display: swap;
-}
 
-@font-face {
-	font-family: Muli;
-	src: url("../fonts/Muli-Semi-BoldItalic.ttf") format("truetype");
-	font-weight: 600;
-	font-style: italic;
-	font-display: swap;
-}
 
 :root {
 	font-size: 100%;
@@ -59,13 +43,6 @@
 	outline: solid 1px red;
 } */
 
-*,
-*::after,
-*::before {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
 
 body {
 	font-family: Muli, sans-serif;
@@ -77,9 +54,6 @@ body {
 	overflow-x: hidden;
 }
 
-img {
-	display: block;
-}
 
 
 .container {
@@ -95,109 +69,12 @@ img {
 
 
 
-
-/* header */
-
-
-	._active {
-		position: fixed;
-
-		/* overflow-y: hidden; */
-
-		left: 0;
-		top: 0;
-		right: 0;
-		bottom: 0;
-
-		height: 100vh;
-
-		z-index: 1;
-
-		background-color: #12c37c;
-
-		display: flex;
-		flex-direction: column-reverse;
-		justify-content: center;
-		align-items: center;
-	}
-	@media only screen and (max-width: 1368px) {
-	div.header__navigation._active {
-		left: 0;
-
-		transition: all 0.2s ease-in-out;
-		-webkit-transition: all 0.2s ease-in-out;
-		-moz-transition: all 0.2s ease-in-out;
-		-ms-transition: all 0.2s ease-in-out;
-		-o-transition: all 0.2s ease-in-out;
-	}
-
-	._active + .header__burger-btn .header__burger-line::after {
-		transform: rotate(90deg) translate(10px, 0);
-		-webkit-transform: rotate(90deg) translate(10px, 0);
-		-moz-transform: rotate(90deg) translate(10px, 0);
-		-ms-transform: rotate(90deg) translate(10px, 0);
-		-o-transform: rotate(90deg) translate(10px, 0);
-	}
-
-	._active + .header__burger-btn .header__burger-line {
-		width: 40px;
-		transform: rotate(-45deg) translate(-15px, 0);
-		-webkit-transform: rotate(-45deg) translate(-15px, 0);
-		-moz-transform: rotate(-45deg) translate(-15px, 0);
-		-ms-transform: rotate(-45deg) translate(-15px, 0);
-		-o-transform: rotate(-45deg) translate(-15px, 0);
-	}
-
-	._active + .header__burger-btn .header__burger-line::before {
-		transform: scale(0);
-		-webkit-transform: scale(0);
-		-moz-transform: scale(0);
-		-ms-transform: scale(0);
-		-o-transform: scale(0);
-	}
-
-
-}
+	
 @media only screen and (max-width: 992px) {
 }
 
 @media only screen and (max-width: 768px) {
 }
-
-
-/* smoothies */
-
-
-
-/* about */
-
-
-
-/* about */
-
-
-/* product */
-
-
-/* story */
-
-
-/* testimonials */
-
-
-/* testimonials */
-
-
-/* blog */
-
-
-/* instagram */
-
-
-
-/* footer */
-
-
 
 
 /* создаем медиа запросы */
