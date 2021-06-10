@@ -1,0 +1,23 @@
+.title {
+	font-size: 3.125rem;
+	/* 50px */
+	line-height: 0.8em;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+}
+@media only screen and (max-width: 360px) {
+	.title {
+		font-size: 2.75rem;
+		/* 44px */
+		line-height: 1.25em;
+	}
+
+}
+
+.title--orange {
+	color: #f7ae3b;
+}
+
+.title--green {
+	color: #0aa566;
+}

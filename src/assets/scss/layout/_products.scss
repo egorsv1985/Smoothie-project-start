@@ -1,0 +1,125 @@
+.products {
+	overflow-x: auto;
+}
+
+.products__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin: 0 auto;
+}
+
+.products__item {
+	display: flex;
+	flex: 1 0 25%;
+	flex-direction: column;
+	align-items: center;
+
+	min-width: 480px;
+	/* 480px */
+	height: 720px;
+	/* 720px */
+
+	padding-top: 130px;
+	/* 130px */
+}
+
+.products__item--brown {
+	background-color: #642c18;
+}
+
+.products__item--green {
+	background-color: #1a8874;
+}
+
+.products__item--yellow {
+	background-color: #fab03e;
+}
+
+.products__item--orange {
+	background-color: #c3491f;
+}
+
+.products__img {
+	margin-bottom: 25px;
+	/* 25px */
+}
+
+.products__title {
+	font-size: 1.5rem;
+	/* 24px */
+	line-height: 1.1em;
+	font-weight: 700;
+
+	margin-bottom: 5px;
+	/* 5px */
+}
+
+.products__subtitle {
+	font-size: 1.3rem;
+	/* 21px */
+	line-height: 1.5em;
+
+	margin-bottom: 60px;
+	/* 60px */
+}
+
+.products__btn {
+	width: 208px;
+	/* 208px */
+	height: 64px;
+	/* 64px */
+
+	border: 2px solid #fff;
+
+	position: relative;
+
+	text-indent: -90px;
+	/* 90px */
+
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+}
+
+.products__btn::before {
+	content: "";
+
+	position: absolute;
+
+	display: block;
+
+	top: 20px;
+	/* 20px */
+	left: 140px;
+	/* 140px */
+
+	width: 30px;
+	/* 30px */
+	height: 16px;
+	/* 16px */
+
+	background: no-repeat center/cover url("../images/arrow_white.png");
+}
+
+/* products */
+@media only screen and (max-width: 1440px) {
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 360px) {
+	.products__img {
+		width: 100px;
+		/* 100px */
+		height: 254px;
+		/* 254px */
+	}
+}

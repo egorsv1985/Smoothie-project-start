@@ -1,0 +1,52 @@
+
+.personal__list {
+	display: flex;
+	align-items: center;
+}
+
+.personal__icon:hover {
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+}
+
+.personal__item + .personal__item {
+	margin-left: 45px;
+	/* 45px */
+}
+
+.personal__link--cart {
+	position: relative;
+}
+
+.personal__count {
+	position: absolute;
+
+	font-size: 0.625rem;
+	/* 10px */
+	text-transform: uppercase;
+	color: #000;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 21px;
+	/* 21px */
+	height: 21px;
+	/* 21px */
+	background-color: #fff;
+
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+
+	bottom: -10px;
+	/* -10px */
+	left: 25px;
+	/* 25px */
+}

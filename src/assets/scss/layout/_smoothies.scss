@@ -1,0 +1,158 @@
+
+.smoothies {
+	padding: 100px 0 120px;
+	/* 100px 0 120px */
+}
+
+.smoothies__title {
+	text-align: center;
+
+	margin-bottom: 40px;
+	/* 40px */
+}
+
+.smoothies__text {
+	max-width: 915px;
+	/* 915px */
+
+	text-align: center;
+
+	margin: 0 auto 40px;
+	/* 0 auto 40px */
+}
+
+.smoothies__cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+	max-width: 1050px;
+	/* 1050px */
+
+	margin: 0 auto;
+
+	background-color: #f6edde;
+}
+
+.smoothies__item {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+
+	align-items: center;
+
+	width: 25%;
+	height: 195px;
+	/* 195px */
+
+	background-color: #fff;
+
+	padding: 28px 0 40px;
+	/* 28px 0 40px */
+}
+
+.smoothies__item:nth-child(-n + 8) {
+	border-right: 2px solid #f6edde;
+}
+
+.smoothies__item:nth-child(-n + 4) {
+	border-bottom: 2px solid #f6edde;
+}
+
+.smoothies__item:nth-child(4),
+.smoothies__item:last-child {
+	border-right: none;
+}
+
+.smoothies__desc {
+	font-size: 1.5625rem;
+	/* 25px */
+	line-height: 1.6em;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: #f2612d;
+	text-align: center;
+
+	margin-top: 27px;
+	/* 27px */
+}
+
+/* smoothies */
+@media only screen and (max-width: 1440px) {
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+	.smoothies {
+		padding: 48px 0 90px;
+		/* 48px 0 90px */
+	}
+
+	.smoothies__text {
+		max-width: 700px;
+		/* 700px */
+	}
+
+	.smoothies__cards {
+		max-width: 540px;
+		/* 1050px */
+	}
+
+	.smoothies__item {
+		width: 50%;
+
+		padding-bottom: 30px;
+	}
+
+	.smoothies__item:nth-child(-n + 8),
+	.smoothies__item:nth-child(-n + 4),
+	.smoothies__item:nth-child(4),
+	.smoothies__item:last-child {
+		border: none;
+	}
+
+	.smoothies__item:nth-child(odd) {
+		border-right: 2px solid #f6edde;
+		border-bottom: 2px solid #f6edde;
+	}
+
+	.smoothies__item:nth-child(even) {
+		border-bottom: 2px solid #f6edde;
+	}
+
+	.smoothies__item:nth-child(7),
+	.smoothies__item:last-child {
+		border-bottom: none;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.smoothies {
+		padding: 40px 0 90px;
+		/* 40px 0 90px */
+	}
+
+	.smoothies__title {
+		margin-bottom: 22px;
+		/* 22px */
+	}
+
+	.smoothies__text {
+		max-width: 338px;
+		/* 338px */
+
+		margin: 0 auto 60px;
+		/* 0 auto 60px */
+	}
+
+	.smoothies__desc {
+		font-size: 1.25rem;
+		/* 20px */
+
+		margin-top: 27px;
+		/* 27px */
+	}
+}
