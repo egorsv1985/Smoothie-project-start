@@ -429,7 +429,7 @@ template {
 }
 
 .header {
-    background: no-repeat center/cover url(../images/header/header_bg.jpg);
+    background: no-repeat center/cover url("../images/header/header_bg.jpg");
     z-index: -1;
     min-height: 100vh;
 }
@@ -655,20 +655,20 @@ template {
 
 .smoothies .smoothies__desc {
     font-size: 1.5625rem;
-    /* 25px */
     line-height: 1.6em;
-    font-weight: 800;
     letter-spacing: -0.02em;
+    font-weight: 800;
+    margin-top: 27px;
     color: #f2612d;
     text-align: center;
-    margin-top: 27px;
-    /* 27px */
 }
 
 @media only screen and (max-width: 768px) {
     .smoothies .smoothies {
-        padding: 48px 0 90px;
-      /* 48px 0 90px */
+        padding-top: 48px;
+        padding-right: 0;
+        padding-bottom: 90px;
+        padding-left: 0;
     }
 
     .smoothies .smoothies__text {
@@ -710,34 +710,34 @@ template {
 
 @media only screen and (max-width: 360px) {
     .smoothies .smoothies {
-        padding: 40px 0 90px;
-      /* 40px 0 90px */
+        padding-top: 40px;
+        padding-right: 0;
+        padding-bottom: 90px;
+        padding-left: 0;
     }
 
     .smoothies .smoothies__title {
-        margin-bottom: 22px;
-      /* 22px */
+        margin-top: 22px;
     }
 
     .smoothies .smoothies__text {
         max-width: 338px;
       /* 338px */
-        margin: 0 auto 60px;
-      /* 0 auto 60px */
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 60px;
     }
 
     .smoothies .smoothies__desc {
         font-size: 1.25rem;
-      /* 20px */
+        line-height: 2.5em;
         margin-top: 27px;
-      /* 27px */
     }
 }
 
 .about {
     background-color: #158371;
     padding-left: 142px;
-  /* 142px */
 }
 
 .about__inner {
@@ -751,9 +751,7 @@ template {
 
 .about__img {
     width: 691px;
-  /*691px*/
     height: 818px;
-  /*818px*/
     transform: translateY(0px) rotate(-7deg);
     -webkit-transform: translateY(0px) rotate(-7deg);
     -moz-transform: translateY(0px) rotate(-7deg);
@@ -767,18 +765,14 @@ template {
     -ms-flex-direction: column;
     flex-direction: column;
     margin-left: 142px;
-  /* 142px */
 }
 
 .about__title {
     max-width: 660px;
-  /* 660px */
-    margin-bottom: 55px;
-  /* 55px */
+    /* 660px */
     margin-top: 80px;
-  /* 80px */
+    margin-bottom: 55px;
     font-size: 3.4375rem;
-  /* 55px */
     line-height: 1.1em;
 }
 
@@ -788,34 +782,28 @@ template {
 }
 
 .about__title--orange::before {
-    position: absolute;
     content: "";
     display: block;
     background: no-repeat center/cover url(../images/line.png);
+    position: absolute;
     top: 60px;
-  /* 60px */
     left: -5px;
-  /* -5px */
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     width: 450px;
-  /* 450px */
     height: 13px;
-  /* 13px */
 }
 
 .about__list {
     list-style-image: url(../images/li.png);
-    margin-bottom: 32px;
-  /* 32px */
     padding-left: 30px;
-  /* 30px */
+    margin-bottom: 32px;
 }
 
 .about__item {
     font-size: 1.3125rem;
-  /* 21px */
     line-height: 1.05em;
     margin-bottom: 22px;
-  /* 22px */
 }
 
 .about__item--bold {
@@ -825,11 +813,9 @@ template {
 .about__btn {
     position: relative;
     width: 382px;
-  /*382px*/
     height: 63px;
-  /*63px*/
     text-indent: -5.25rem;
-  /* 84px */
+    /* 84px */
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -840,116 +826,105 @@ template {
 .about__btn::before {
     content: "";
     position: absolute;
-    display: block;
     top: 22px;
-  /* 22px */
     left: 305px;
-  /* 305px */
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     width: 30px;
-  /* 30px */
     height: 16px;
-  /* 16px */
+    display: block;
     background: no-repeat center/cover url("../images/arrow.png");
 }
 
 @media only screen and (max-width: 1440px) {
-    .about {
+    .about .about {
         padding-left: 80px;
-    /* 80px */
         max-height: 1000px;
-    /* 1000px */
+      /* 1000px */
     }
 
     .about__wrapper {
         margin-left: 80px;
-    /* 80px */
     }
 
     .about__title {
         margin-top: 65px;
-    /* 80px */
     }
 
     .about__title--orange::before {
         top: 120px;
-    /* 120px */
+      /* 120px */
         left: -320px;
-    /* -320px */
+      /* -320px */
         width: 420px;
-    /* 420px */
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .about {
+    .about .about {
         max-height: 1660px;
-    /* 1660px */
-        padding: 56px 0 100px 38px;
-    /* 56px 0 100px 38px*/
+      /* 1660px */
+        padding-top: 56px;
+        padding-right: 0;
+        padding-bottom: 100px;
+        padding-left: 38px;
     }
 
     .about__inner {
         display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
         -ms-flex-direction: column;
         flex-direction: column;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
     }
 
     .about__wrapper {
         -ms-flex-direction: column;
         flex-direction: column;
         margin-left: 0;
-    /* 142px */
     }
 }
 
 @media only screen and (max-width: 360px) {
-    .about {
+    .about .about {
         padding-left: 12px;
-    /* 12px */
     }
 
     .about__img {
         width: 337px;
-    /*337px*/
         height: 399px;
-    /*399px*/
     }
 
     .about__title {
         max-width: 660px;
-    /* 660px */
+      /* 660px */
         font-size: 2.75rem;
-    /* 44px */
-        margin-bottom: 60px;
-    /* 60px */
+      /* 44px */
         margin-top: 50px;
-    /* 50px */
+        margin-bottom: 60px;
     }
 
     .about__title--orange::before {
         top: 95px;
-    /* 95px */
+      /* 95px */
         left: -260px;
-    /* -260px */
+      /* -260px */
         width: 305px;
-    /* 305px */
         height: 9px;
-    /* 9px */
     }
 
     .about__btn {
         font-size: 1.125rem;
-    /*18px*/
+      /*18px*/
         width: 343px;
-    /*343px*/
     }
 
     .about__btn::before {
         left: 280px;
-    /* 280px */
+      /* 280px */
     }
 
     .about__item--bold {
