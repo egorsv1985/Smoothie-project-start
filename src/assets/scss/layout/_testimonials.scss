@@ -1,232 +1,239 @@
-
 .testimonials {
 	background-color: #672f1b;
 
 	position: relative;
-}
 
-.testimonials::after {
-	content: "";
-
-	position: absolute;
-
-	display: block;
-
-	top: -86px;
-	/* 86px */
-	right: 56px;
-	/* 56px */
-
-	width: 410px;
-	/* 410px */
-	height: 301px;
-	/* 301px */
-
-	background: no-repeat center/cover url("../images/dots.png");
-}
-
-.testimonials__inner {
-	margin: 0 auto;
-	padding: 116px 0 80px;
-	/* 116px 0 80px */
-}
-
-.testimonials__title {
-	text-align: center;
-
-	margin-bottom: 140px;
-	/* 140px */
-}
-
-.testimonials__title--big {
-	text-transform: uppercase;
-}
-
-.testimonials__box {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	position: relative;
-
-	margin: 0 auto 105px;
-	/* 120px */
-}
-.testimonials__box::after {
-	content: "Sarah A";
-	position: absolute;
-	display: block;
-	opacity: 0.6;
-	font-size: 12.5rem;
-	/*200px*/
-	line-height: 0.2em;
-	font-weight: 800;
-	letter-spacing: -0.02em;
-	color: #521905;
-	top: 7px;
-	/*15px*/
-	left: 43%;
-	transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-}
-.testimonials__textbox {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-
-	max-width: 470px;
-
-	margin-right: 50px;
-}
-
-.testimonials__quote {
-	font-size: 1.1rem;
-	/* 18px */
-	line-height: 1.95em;
-	text-align: center;
-
-	z-index: 1;
-
-	margin-bottom: 10px;
-}
-
-.testimonials__cite {
-	line-height: 1.95em;
-	font-weight: 600;
-	font-style: italic;
-	text-align: center;
-	color: #f7ae3b;
-}
-
-.testimonials__img {
-	z-index: 1;
-}
-
-.testimonials__container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	max-width: 160px;
-	/* 160px */
-
-	margin: 0 auto;
-}
-
-.testimonials__btn {
-	display: block;
-
-	background: no-repeat center/cover url("../images/arrow.png");
-
-	width: 30px;
-
-	height: 16px;
-}
-
-.testimonials__btn:first-child {
-	margin-right: 100px;
-}
-@media only screen and (max-width: 1440px) {
-	.testimonials::after {
-		display: none;
-	}
-	.testimonials__box::after {
-		font-size: 12.5rem;
-		/* 200px */
-
-		top: 512px;
-		/* 512px */
-		left: 36px;
-		/* 36px */
-	}
-}
-
-@media only screen and (max-width: 992px) {
-}
-
-@media only screen and (max-width: 768px) {
-	.testimonials::after {
+	&::after {
 		content: "";
-		display: none;
+
+		position: absolute;
+
+		display: block;
+
+		top: -86px;
+		/* 86px */
+		right: 56px;
+		/* 56px */
+
+		width: 410px;
+		/* 410px */
+		height: 301px;
+		/* 301px */
+
+		background: no-repeat center/cover url("../images/dots.png");
 	}
 
-	.testimonials__box::after {
-		font-size: 11.25rem;
-		/* 180px */
-
-		top: 512px;
-		/* 512px */
-		left: 36px;
-		/* 36px */
+	&__inner {
+		margin: 0 auto;
+		padding: 116px 0 80px;
+		/* 116px 0 80px */
 	}
 
-	.testimonials__title {
-		margin-bottom: 6rem;
-		/* 96px */
+	&__title {
+		text-align: center;
+
+		margin-bottom: 140px;
+		/* 140px */
+
+		&--big {
+			text-transform: uppercase;
+		}
 	}
 
-	.testimonials__box {
-		flex-direction: column-reverse;
-
-		max-width: 740px;
-		/* 740px */
-
-		margin: 0 auto 104px;
-		/*0 auto 104px */
-	}
-
-	.testimonials__textbox {
-		padding-top: 0;
-		margin-top: 90px;
-		/* 90px */
-		margin-right: 0;
-
-		max-width: 452px;
-		/* 452px */
-	}
-
-	.testimonials__cite {
-		line-height: 3.95em;
-	}
-}
-
-@media only screen and (max-width: 360px) {
-	.testimonials__inner {
-		padding: 116px 0 112px;
-		/* 116px 0 112px */
+	&__box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
 		position: relative;
+
+		margin: 0 auto 105px;
+		/* 120px */
+
+		&::after {
+			content: "Sarah A";
+			position: absolute;
+			display: block;
+			opacity: 0.6;
+			font-size: 12.5rem;
+			/*200px*/
+			line-height: 0.2em;
+			font-weight: 800;
+			letter-spacing: -0.02em;
+			color: #521905;
+			top: 7px;
+			/*15px*/
+			left: 43%;
+			transform: translateX(-50%);
+			-webkit-transform: translateX(-50%);
+			-moz-transform: translateX(-50%);
+			-ms-transform: translateX(-50%);
+			-o-transform: translateX(-50%);
+		}
 	}
 
-	.testimonials__title {
-		margin-bottom: 65px;
-		/* 65px */
+	&__textbox {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		max-width: 470px;
+
+		margin-right: 50px;
 	}
 
-	.testimonials::after {
-		content: "";
-		display: none;
+	&__quote {
+		font-size: 1.1rem;
+		/* 18px */
+		line-height: 1.95em;
+		text-align: center;
+
+		z-index: 1;
+
+		margin-bottom: 10px;
 	}
 
-	.testimonials__inner::after {
-		content: "";
-		display: none;
+	&__cite {
+		line-height: 1.95em;
+		font-weight: 600;
+		font-style: italic;
+		text-align: center;
+		color: #f7ae3b;
 	}
 
-	.testimonials__box {
-		margin: 0 auto 80px;
-		/*0 auto 80px */
+	&__img {
+		z-index: 1;
 	}
 
-	.testimonials__textbox {
-		margin-top: 50px;
-		/* 50px */
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-		max-width: 338px;
-		/* 338px */
+		max-width: 160px;
+		/* 160px */
+
+		margin: 0 auto;
+	}
+
+	&__btn {
+		display: block;
+
+		background: no-repeat center/cover url("../images/arrow.png");
+
+		width: 30px;
+
+		height: 16px;
+
+		&:first-child {
+			margin-right: 100px;
+		}
+	}
+
+	
+
+	@media only screen and (max-width: 1440px) {
+		&::after {
+			display: none;
+		}
+
+		&__box::after { 
+			// сократить запись
+			font-size: 12.5rem;
+			/* 200px */
+
+			top: 512px;
+			/* 512px */
+			left: 36px;
+			/* 36px */
+		}
+	}
+
+	@media only screen and (max-width: 992px) {}
+
+	@media only screen and (max-width: 768px) {
+		&::after {
+			content: "";
+			display: none;
+		}
+
+		&__box::after {
+			font-size: 11.25rem;
+			/* 180px */
+
+			top: 512px;
+			/* 512px */
+			left: 36px;
+			/* 36px */
+		}
+
+		&__title {
+			margin-bottom: 6rem;
+			/* 96px */
+		}
+
+		&__box {
+			flex-direction: column-reverse;
+
+			max-width: 740px;
+			/* 740px */
+
+			margin: 0 auto 104px;
+			/*0 auto 104px */
+		}
+
+		&__textbox {
+			padding-top: 0;
+			margin-top: 90px;
+			/* 90px */
+			margin-right: 0;
+
+			max-width: 452px;
+			/* 452px */
+		}
+
+		&__cite {
+			line-height: 3.95em;
+		}
+	}
+
+	@media only screen and (max-width: 360px) {
+		&__inner {
+			padding: 116px 0 112px;
+			/* 116px 0 112px */
+
+			position: relative;
+
+			&::after {
+				content: "";
+				display: none;
+			}
+		}
+
+		&__title {
+			margin-bottom: 65px;
+			/* 65px */
+		}
+
+		&::after {
+			content: "";
+			display: none;
+		}
+
+		
+
+		&__box {
+			margin: 0 auto 80px;
+			/*0 auto 80px */
+		}
+
+		&__textbox {
+			margin-top: 50px;
+			/* 50px */
+
+			max-width: 338px;
+			/* 338px */
+		}
 	}
 }

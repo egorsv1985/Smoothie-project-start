@@ -1,125 +1,90 @@
 .products {
 	overflow-x: auto;
-}
 
-.products__wrapper {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	&__wrapper {
+		@include flex ($jc: space-between, $ai: center);
+		@include pad-mar ($mt: 0, $mr: auto, $mb: 0, $ml: auto);
 
-	margin: 0 auto;
-}
+	}
 
-.products__item {
-	display: flex;
-	flex: 1 0 25%;
-	flex-direction: column;
-	align-items: center;
+	&__item {
+		@include flex ($ai: center, $fd: column);
 
-	min-width: 480px;
-	/* 480px */
-	height: 720px;
-	/* 720px */
+		flex: 1 0 25%;
 
-	padding-top: 130px;
-	/* 130px */
-}
+		min-width: 480px;
+		/* 480px */
+		@include box-size ($h: 720px);
+		@include pad-mar ($pt: 130px);
 
-.products__item--brown {
-	background-color: #642c18;
-}
+		&--brown {
+			background-color: #642c18;
+		}
 
-.products__item--green {
-	background-color: #1a8874;
-}
+		&--green {
+			background-color: #1a8874;
+		}
 
-.products__item--yellow {
-	background-color: #fab03e;
-}
+		&--yellow {
+			background-color: #fab03e;
+		}
 
-.products__item--orange {
-	background-color: #c3491f;
-}
+		&--orange {
+			background-color: #c3491f;
+		}
 
-.products__img {
-	margin-bottom: 25px;
-	/* 25px */
-}
+	}
 
-.products__title {
-	font-size: 1.5rem;
-	/* 24px */
-	line-height: 1.1em;
-	font-weight: 700;
+	&__img {
+		@include pad-mar ($mb: 25px);
+	}
 
-	margin-bottom: 5px;
-	/* 5px */
-}
+	&__title {
+		@include font ($fs: 1.5rem, $lh: 1.1em, $fw: 700);
+		@include pad-mar ($mb: 5px);
+	}
 
-.products__subtitle {
-	font-size: 1.3rem;
-	/* 21px */
-	line-height: 1.5em;
+	&__subtitle {
+		@include font ($fs: 1.3rem, $lh: 1.5em);
+		@include pad-mar ($mb: 60px);
+	}
 
-	margin-bottom: 60px;
-	/* 60px */
-}
+	&__btn {
+		@include box-size ($w: 288px, $h: 64px);
 
-.products__btn {
-	width: 208px;
-	/* 208px */
-	height: 64px;
-	/* 64px */
 
-	border: 2px solid #fff;
+		border: 2px solid #fff;
 
-	position: relative;
+		position: relative;
 
-	text-indent: -90px;
-	/* 90px */
+		text-indent: -90px;
+		/* 90px */
 
-	border-radius: 30px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	-ms-border-radius: 30px;
-	-o-border-radius: 30px;
-}
+		border-radius: 30px;
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
+		-ms-border-radius: 30px;
+		-o-border-radius: 30px;
 
-.products__btn::before {
-	content: "";
+		&::before {
+			@include pseudo ($t: 20px, $l: 140px);
+			@include box-size ($w: 30px, $h: 16px);
+			background: no-repeat center/cover url("../images/arrow_white.png");
+		}
+	}
 
-	position: absolute;
 
-	display: block;
 
-	top: 20px;
-	/* 20px */
-	left: 140px;
-	/* 140px */
+	/* products */
+	@media only screen and (max-width: 1440px) {}
 
-	width: 30px;
-	/* 30px */
-	height: 16px;
-	/* 16px */
+	@media only screen and (max-width: 992px) {}
 
-	background: no-repeat center/cover url("../images/arrow_white.png");
-}
+	@media only screen and (max-width: 768px) {}
 
-/* products */
-@media only screen and (max-width: 1440px) {
-}
-
-@media only screen and (max-width: 992px) {
-}
-
-@media only screen and (max-width: 768px) {
-}
-
-@media only screen and (max-width: 360px) {
-	.products__img {
-		width: 100px;
-		/* 100px */
-		height: 254px;
-		/* 254px */
+	@media only screen and (max-width: 360px) {
+		&__img {
+			@include box-size ($w: 100px, $h: 254px);
+		}
 	}
 }

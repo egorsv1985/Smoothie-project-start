@@ -30,20 +30,20 @@
 		/* 660px */
 		@include pad-mar ($mt: 80px, $mb: 55px);
 		@include font ($fs: 3.4375rem, $lh: 1.1em);
-	}
 
-	&__title--orange {
-		color: #cae941;
+		&--orange {
+			color: #cae941;
+	
+			position: relative;
 
-		position: relative;
-	}
-
-	&__title--orange::before {
-		content: "";
-		display: block;
-		background: no-repeat center/cover url(../images/line.png);
-		@include pos-abs ($t: 60px, $l: -5px);
-		@include box-size ($w: 450px, $h: 13px);
+			&::before {
+				@include pseudo ();
+				
+				background: no-repeat center/cover url(../images/line.png);
+				@include pos-abs ($t: 60px, $l: -5px);
+				@include box-size ($w: 450px, $h: 13px);
+			}
+		}
 	}
 
 	&__list {
@@ -54,11 +54,13 @@
 	&__item {
 		@include font ($fs: 1.3125rem, $lh: 1.05em);
 		@include pad-mar($mb: 22px);
+
+		&--bold {
+			font-weight: 800;
+		}
 	}
 
-	&__item--bold {
-		font-weight: 800;
-	}
+	
 
 	&__btn {
 		position: relative;
@@ -70,18 +72,20 @@
 		-moz-border-radius: 30px;
 		-ms-border-radius: 30px;
 		-o-border-radius: 30px;
+
+		&::before {
+			content: "";
+			@include pos-abs ($t: 22px, $l: 305px);
+			@include box-size ($w: 30px, $h: 16px);
+			display: block;
+			background: no-repeat center/cover url("../images/arrow.png");
+		}
 	}
 
-	&__btn::before {
-		content: "";
-		@include pos-abs ($t: 22px, $l: 305px);
-		@include box-size ($w: 30px, $h: 16px);
-		display: block;
-		background: no-repeat center/cover url("../images/arrow.png");
-	}
+	
 
 	@media only screen and (max-width: 1440px) {
-		.about {
+		& {
 			@include pad-mar ($pl: 80px);
 			max-height: 1000px;
 			/* 1000px */
@@ -93,22 +97,22 @@
 
 		&__title {
 			@include pad-mar ($mt: 65px);
-		}
 
-		&__title--orange::before {
+			&--orange::before {
 
-			top: 120px;
-			/* 120px */
-			left: -320px;
-			/* -320px */
-			@include box-size ($w: 420px);
+				top: 120px;
+				/* 120px */
+				left: -320px;
+				/* -320px */
+				@include box-size ($w: 420px);
+			}
 		}
 	}
 
 	@media only screen and (max-width: 992px) {}
 
 	@media only screen and (max-width: 768px) {
-		.about {
+		& {
 			max-height: 1660px;
 			/* 1660px */
 			@include pad-mar ($pt: 56px, $pr: 0, $pb: 100px, $pl: 38px);
@@ -125,7 +129,7 @@
 	}
 
 	@media only screen and (max-width: 360px) {
-		.about {
+		& {
 			@include pad-mar ($pl: 12px);
 		}
 
@@ -140,27 +144,27 @@
 			font-size: 2.75rem;
 			/* 44px */
 			@include pad-mar ($mt: 50px, $mb: 60px);
-		}
 
-		&__title--orange::before {
-			top: 95px;
-			/* 95px */
-			left: -260px;
-			/* -260px */
-			@include box-size ($w: 305px, $h: 9px);
+			&--orange::before {
+				top: 95px;
+				/* 95px */
+				left: -260px;
+				/* -260px */
+				@include box-size ($w: 305px, $h: 9px);
+			}
 		}
 
 		&__btn {
 			font-size: 1.125rem;
 			/*18px*/
 			@include box-size ($w: 343px);
-		}
 
-		&__btn::before {
-			left: 280px;
-			/* 280px */
+			&::before {
+				left: 280px;
+				/* 280px */
+			}
 		}
-
+		
 		&__item--bold {
 			line-height: 1.5em;
 		}
