@@ -1,28 +1,29 @@
 .about {
 	background-color: #158371;
-	@include pad-mar($pl: 142px);
+	
 
 
 	&__inner {
-		@include flex();
+		@include flex($jc: space-between, $ai: center, $fw: wrap);
 	}
 
-	&__wrap {
-		height: 800px;
+	&__wrapper {
+		@include box-size ($h: 800px);
+		
 	}
 
 	&__img {
 		@include box-size ($w: 691px, $h: 818px);
-		transform: translateY(0px) rotate(-7deg);
-		-webkit-transform: translateY(0px) rotate(-7deg);
-		-moz-transform: translateY(0px) rotate(-7deg);
-		-ms-transform: translateY(0px) rotate(-7deg);
-		-o-transform: translateY(0px) rotate(-7deg);
+		// transform: translateY(0px) rotate(-7deg);
+		// -webkit-transform: translateY(0px) rotate(-7deg);
+		// -moz-transform: translateY(0px) rotate(-7deg);
+		// -ms-transform: translateY(0px) rotate(-7deg);
+		// -o-transform: translateY(0px) rotate(-7deg);
 	}
 
-	&__wrapper {
+	&__wrap {
 		@include flex ($fd: column);
-		@include pad-mar ($ml: 142px);
+		
 	}
 
 	&__title {
@@ -38,8 +39,9 @@
 
 			&::before {
 				@include pseudo ();
+								
+				background: no-repeat center/cover url(../images/about/about_line.png);
 				
-				background: no-repeat center/cover url(../images/line.png);
 				@include pos-abs ($t: 60px, $l: -5px);
 				@include box-size ($w: 450px, $h: 13px);
 			}
@@ -47,7 +49,7 @@
 	}
 
 	&__list {
-		list-style-image: url(../images/li.png);
+		list-style-image: url(./images/about/about_li.png);
 		@include pad-mar ($pl: 30px, $mb: 32px);
 	}
 

@@ -7,6 +7,7 @@ if (headerBurgerBtn) {
 		headerNavigation.classList.toggle('_active');
 	});
 }
+console.log('hello');
 // const fs = require('fs');
 // const chalk = require('chalk');
 

@@ -58,7 +58,7 @@
 		font-style: italic;
 		&::after {
 			@include pos-abs ($b: 15px, $r: 145px);
-			@include box-size ($w: 18px, 10px);
+			@include box-size ($w: 18px, $h:10px);
 			
 			background: no-repeat center/cover url("../images/arrow.png");
 		}
@@ -76,7 +76,7 @@
 			@include pad-mar ($pt: 100px, $pr: 30px, $pb: 160px, $pl: 30px, $mt: 0, $mr: auto, $mb: 0, $ml: auto);
 			
 			&__wrapper {
-				@include flex($jc: flex-start $fw:wrap);
+				@include flex($jc: flex-start, $fw: wrap);
 				flex-wrap: wrap;
 				justify-content: flex-start;
 			}

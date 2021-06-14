@@ -1,18 +1,18 @@
 .header {
-	background: no-repeat center/cover url('../images/header/header_bg.jpg');
+	@include background (url('../images/header/header_bg.jpg'));
 	z-index: -1;
 	min-height: 100vh;
 
 	&__top {
-		@include pad-mar ($pt: 84px, $mb: 120px);
+		@include pad-mar (84, 0, 0, 0, 0, 0, 120, 0);
 		position: relative;
 	}
 
 	&__navigation {
 		@include flex ($jc: space-between, $ai: center, $fw: wrap);
 		z-index: 1;
-		width: 100%;
-	}
+		@include box-size ($w: 100%);
+		}
 
 
 	&__right-block {
@@ -21,12 +21,12 @@
 
 	&__personal {
 		position: relative;
-		@include pad-mar ($mr: 134px);
+		@include pad-mar (0, 0, 0, 0, 0, 134, 0, 0);
 
 		&::before {
-			@include pseudo ($t: 10px, $l: 205px);
+			@include pseudo (10, 0, 205, 0);
 			@include box-size ($w: 48px, $h: 2px);
-			background-color: #ffd68f;
+			background-color: $bg-header-color;
 		}
 	}
 
@@ -35,11 +35,11 @@
 	}
 
 	&__burger-btn {
-		@include pos-fix ($t: 15px, $r: 25px);
+		@include pos-fix (15,0, 0, 25);
 		@include box-size($w: 50px, $h: 50px);
 		display: block;
 		z-index: 1;
-		cursor: pointer;
+		
 	}
 
 	&__content {
@@ -49,16 +49,17 @@
 	&__btn {
 		@include box-size($w: 280px, $h: 70px);
 		@include font ($fs: 1.5rem, $lh: 2.5em, $ls: -0.02em, $text-trans: capitalize);
-		border-radius: 35px;
+		@include border-radius (35);
 		text-indent: -5.25rem;
 		/*84px*/
 		position: relative;
 
 
 		&::before {
-			@include pseudo ($t: 27px, $l: 210px);
+			@include pseudo (27, 0, 210, 0);
 			@include box-size ($w: 30px, $h: 16px);
-			background: no-repeat center/cover url("../images/arrow.png");
+			@include background (url('../images/base/arrow.jpg'));
+			
 		}
 	}
 
@@ -75,34 +76,32 @@
 		}
 
 		&__burger-line {
+			@include box-size ($w: 35px, $h: 2px);
+			background-color: $bg-burger-color;
+			position: relative;
+			display: block;
+			transition: all 0.5s ease;
 
 			&::after,
 			&::before {
-				background-color: #c7c5c4;
-				content: "";
-				cursor: pointer;
+				@include pseudo ($r: 0);
+				background-color: $bg-burger-color;
 				@include box-size ($w: 35px, $h: 2px);
-				position: relative;
-				display: block;
-				transition: all 0.5s ease;
-			}
-			&::after,
-			&::before {
-				position: absolute;
-				right: 0;
-			}
+				}
+			
 			&::after {
-				bottom: 10px;
-				width: 40px;
+				@include pos (-10, 0, 0, 0);
+				@include box-size ($w: 40px)
+				
 			}
 			&::before {
-				top: 10px;
-				width: 30px;
-			}
+				@include pos (10, 0, 0, 0);
+				@include box-size ($w: 30px);
+				}
 		}
 
 		&__right-block {
-			@include pad-mar($mt: 160px, $mr: 0, $mb: 240px, $ml: 0);
+			@include pad-mar(160, 0, 240, 0);
 		}
 
 		&__logo {
