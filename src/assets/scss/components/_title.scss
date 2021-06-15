@@ -25,9 +25,6 @@
 	@media only screen and (max-width: 360px) {
 		& {
 			@include font ($fs: 2.75rem, $lh: 1.25em);
-			font-size: 2.75rem;
-			/* 44px */
-			line-height: 1.25em;
 		}
 	}
 }

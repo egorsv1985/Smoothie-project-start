@@ -1,33 +1,20 @@
 ._active {
-	position: fixed;
-
+	@include pos-fix (0, 0, 0, 0);
+	@include box-size ($h: 100vh);
 	/* overflow-y: hidden; */
-
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-
-	height: 100vh;
 
 	z-index: 1;
 
-	background-color: #12c37c;
+	background-color: $bg-burger-color;
 
-	display: flex;
-	flex-direction: column-reverse;
-	justify-content: center;
-	align-items: center;
+	@include flex ($jc: center, $ai: center, $fw: wrap, $fd: column-reverse);
+
 }
 @media only screen and (max-width: 1368px) {
 div.header__navigation._active {
-	left: 0;
-
-	transition: all 0.2s ease-in-out;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
+	@include pos ($l: 0);
+	@include transition (all 0.2s ease-in-out);
+	
 }
 
 ._active + .header__burger-btn .header__burger-line::after {
@@ -39,7 +26,8 @@ div.header__navigation._active {
 }
 
 ._active + .header__burger-btn .header__burger-line {
-	width: 40px;
+	@include box-size ($w: 40px);
+	
 	transform: rotate(-45deg) translate(-15px, 0);
 	-webkit-transform: rotate(-45deg) translate(-15px, 0);
 	-moz-transform: rotate(-45deg) translate(-15px, 0);

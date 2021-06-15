@@ -1,14 +1,11 @@
-
 .text {
-	font-size: 1.125rem;
-	/* 18px */
-	line-height: 2em;
-	/* 35px */
-}
+	@include font ($fs: 1.125rem, $lh: 2em);
 
-.text--black {
-	color: $text-dark-color;
-}
-.text-orange {
-	color: $text-cards-color;
+	.text--black {
+		color: $text-dark-color;
+	}
+
+	.text-orange {
+		color: $text-cards-color;
+	}
 }

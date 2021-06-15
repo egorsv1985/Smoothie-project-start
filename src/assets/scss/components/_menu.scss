@@ -1,92 +1,60 @@
-.menu__list {
-	display: flex;
-}
-
-.menu__item + .menu__item {
-	margin-left: 32px;
-	/* 32px */
-}
-
-.menu__item:hover {
-	transition: all 0.2s ease-in-out;
-	transform: scale(1.3);
-	-webkit-transform: scale(1.3);
-	-moz-transform: scale(1.3);
-	-ms-transform: scale(1.3);
-	-o-transform: scale(1.3);
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-}
-
-.menu__link {
-	font-size: 1rem;
-	/* font-size: calc(10px + 6 * (100vw / 1920)); */
-	/* 16px */
-	line-height: 2.5em;
-	/* 40px */
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 0.02em;
-	/* 0.32px */
-	position: relative;
-}
-
-.menu__link::after {
-	content: "";
-	width: 0;
-	height: 2px;
-	/* 2px */
-	position: absolute;
-	top: 22px;
-	/* 22px */
-	left: 0;
-	background-color: #fff;
-	display: block;
-}
-
-.menu__link:hover::after {
-	transition: all 0.2s;
-	width: 100%;
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	-o-transition: all 0.2s;
-}
-
-.menu__link:active {
-	color: #223499;
-}
-@media only screen and (max-width: 1368px) {
+.menu {
+	&__list {
+		@include flex ($jc: center, $ai: center, $fw: wrap);
+		
+	}
+	&__item + &__item {
+		@include mar (0, 0, 0, 32px);
+		}
 	
-	.menu__list {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-
-		height: 800px;
-	}
-
-	.menu__item + .menu__item {
-		margin-left: 0;
-	}
-
-	.menu__link {
-		font-size: 1.25rem;
-	}
-
-}
-@media only screen and (max-width: 360px) {
+	&__item:hover {
+		@include transition (all, .2s, ease-in-out);
+		transform: scale(1.3);
+		-webkit-transform: scale(1.3);
+		-moz-transform: scale(1.3);
+		-ms-transform: scale(1.3);
+		-o-transform: scale(1.3);
+		}
 	
-
-	.menu__list {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-
-		height: 300px;
+	&__link {
+		@include font ($fs: 1rem, $lh: 2.5em, $ls: -0.02em, $text-trans: uppercase, $fw: 700);
+		position: relative;
+		&::after {
+			@include pseudo;
+			@include box-size (0, 2px);
+			@include pos ($t: 22px, $l: 0);
+			background-color: $bg-main-color;			
+		}
+		&:hover::after {
+			@include transition (all, .2s, ease-in-out);
+			@include box-size ($w: 100%);			
+		}
+		&:active {
+			color: #223499;
+		}
+	}	
+	
+	
+	@media only screen and (max-width: 1368px) {
+		
+		&__list {
+			@include flex (space-between, center, wrap, column);
+			@include box-size ($h: 800px);	
+		}
+	
+		&__item + &__item {
+			@include mar (0, 0, 0, 0);
+			}
+	
+		&__link {
+			@include font ($fs: 1.25rem);
+			}
+	
+	}
+	@media only screen and (max-width: 360px) {
+		&__list {
+			@include flex (space-between, center, wrap, column);
+			@include box-size ($h: 300px);
+			}
 	}
 }

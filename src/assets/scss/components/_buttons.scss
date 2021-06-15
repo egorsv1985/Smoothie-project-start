@@ -1,43 +1,32 @@
-
 .btn {
-	font-size: 1.3125rem;
-	/* 21px */
+	@include font ($fs: 1.3125rem, $lh: 1.05em, $fw: 800);
 
-	line-height: 1.05em;
-	/* 22px */
-	font-weight: 800;
-	cursor: pointer;
-}
+	&:hover::before {
+		@include transition (all 0.2s ease-in-out);
+		transform: translateX(10px);
+		-webkit-transform: translateX(10px);
+		-moz-transform: translateX(10px);
+		-ms-transform: translateX(10px);
+		-o-transform: translateX(10px);
+	}
 
-.btn:hover::before {
-	transform: translateX(10px);
-	transition: 0.2s ease-in-out;
-	-webkit-transition: 0.2s ease-in-out;
-	-moz-transition: 0.2s ease-in-out;
-	-ms-transition: 0.2s ease-in-out;
-	-o-transition: 0.2s ease-in-out;
-	-webkit-transform: translateX(10px);
-	-moz-transform: translateX(10px);
-	-ms-transform: translateX(10px);
-	-o-transform: translateX(10px);
-}
+	&--green {
+		background-color: #0aa566;
 
-.btn--green {
-	background-color: #0aa566;
-}
+		&:hover {
+			background-color: #12c37c;
+		}
+	}
 
-.btn--green:hover {
-	background-color: #12c37c;
-}
+	&--border-orange {
+		border: 2px solid #f8b231;
+	}
 
-.btn--border-orange {
-	border: 2px solid #f8b231;
-}
-
-.btn--left {
-	transform: rotate(180deg);
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	-o-transform: rotate(180deg);
+	&--left {
+		transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+	}
 }
