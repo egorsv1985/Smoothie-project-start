@@ -7,39 +7,28 @@
 
 	background-color: $bg-burger-color;
 
-	@include flex ($jc: center, $ai: center, $fw: wrap, $fd: column-reverse);
+	@include flex (center, center, wrap, column-reverse);
 
 }
+
 @media only screen and (max-width: 1368px) {
-div.header__navigation._active {
-	@include pos ($l: 0);
-	@include transition (all 0.2s ease-in-out);
-	
-}
+	div.header__navigation._active {
+		@include pos ($l: 0);
+		@include transition (all 0.2s ease-in-out);
 
-._active + .header__burger-btn .header__burger-line::after {
-	transform: rotate(90deg) translate(10px, 0);
-	-webkit-transform: rotate(90deg) translate(10px, 0);
-	-moz-transform: rotate(90deg) translate(10px, 0);
-	-ms-transform: rotate(90deg) translate(10px, 0);
-	-o-transform: rotate(90deg) translate(10px, 0);
-}
+	}
 
-._active + .header__burger-btn .header__burger-line {
-	@include box-size ($w: 40px);
-	
-	transform: rotate(-45deg) translate(-15px, 0);
-	-webkit-transform: rotate(-45deg) translate(-15px, 0);
-	-moz-transform: rotate(-45deg) translate(-15px, 0);
-	-ms-transform: rotate(-45deg) translate(-15px, 0);
-	-o-transform: rotate(-45deg) translate(-15px, 0);
-}
+	._active+.header__burger-btn .header__burger-line::after {
+		@include transform (rotate(90deg), translate(10px, 0));
+		}
 
-._active + .header__burger-btn .header__burger-line::before {
-	transform: scale(0);
-	-webkit-transform: scale(0);
-	-moz-transform: scale(0);
-	-ms-transform: scale(0);
-	-o-transform: scale(0);
-}
+	._active+.header__burger-btn .header__burger-line {
+		@include box-size ($w: 40px);
+		@include transform (rotate(-45deg) translate(-15px, 0));
+
+	}
+
+	._active+.header__burger-btn .header__burger-line::before {
+		@include transform (scale(0));
+		}
 }

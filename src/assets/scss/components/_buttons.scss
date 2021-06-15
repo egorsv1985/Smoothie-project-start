@@ -3,11 +3,7 @@
 
 	&:hover::before {
 		@include transition (all 0.2s ease-in-out);
-		transform: translateX(10px);
-		-webkit-transform: translateX(10px);
-		-moz-transform: translateX(10px);
-		-ms-transform: translateX(10px);
-		-o-transform: translateX(10px);
+		@include transform (translateX(10px));
 	}
 
 	&--green {
@@ -19,14 +15,10 @@
 	}
 
 	&--border-orange {
-		border: 2px solid #f8b231;
+		@include border (2px, solid, #f8b231);
 	}
 
 	&--left {
-		transform: rotate(180deg);
-		-webkit-transform: rotate(180deg);
-		-moz-transform: rotate(180deg);
-		-ms-transform: rotate(180deg);
-		-o-transform: rotate(180deg);
+		@include transform (rotate(180deg));
 	}
 }

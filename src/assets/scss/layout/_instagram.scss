@@ -1,6 +1,6 @@
 .instagram {
-	margin: 0 auto;
-
+	@include mar (0, auto, 0, auto);
+	
 	text-align: center;
 
 	&__inner {
@@ -8,27 +8,19 @@
 	}
 
 	&__title {
+		@include mar (0, 45px, 0, 0);
+
 		font-size: 1.5rem;
 		/*24px*/
 		text-align: center;
 		position: relative;
 		display: inline-block;
-		margin-bottom: 45px;
 
 		&::before {
-			position: absolute;
-
-			content: "";
-
-			display: block;
-
-			background: no-repeat center/cover url("../images/instagramm.png");
-
-			width: 26px;
-			height: 26px;
-
-			top: 0;
-			left: -40px;
+			@include pseudo;
+			@include pos ($t: 0, $l: -40px);
+			@include background (url("../images/instagramm.png"));
+			@include box-size (26px, 26px);
 		}
 	}
 
@@ -38,9 +30,7 @@
 	}
 
 	&__inner {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		@include flex (center, center);
 		overflow-x: auto;
 	}
 
@@ -52,28 +42,17 @@
 		flex: 1 1 20%;
 
 		&::before {
-			position: absolute;
-
-			content: "";
-
-			display: block;
-
-			background: no-repeat center/cover url("../images/instaramm_white.png");
-
-			width: 26px;
-			height: 26px;
-
-			bottom: 25px;
-			right: 20px;
-
+			@include pseudo;
+			@include pos ($b: 25px, $r: 20px);
+			@include background (url("../images/instaramm_white.png"));
+			@include box-size (26px, 26px);
 			z-index: 1;
 		}
 	}
 
 	&__img {
 		object-fit: contain;
-		width: 100%;
-	}
+		}
 
 	/* instagram */
 	@media only screen and (max-width: 1440px) {}

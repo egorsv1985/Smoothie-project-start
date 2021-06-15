@@ -127,6 +127,13 @@
 	-o-transition: $transition-property $transition-time $method;
 	transition: $transition-property $transition-time $method;
 }
+@mixin transform($property...) {
+	transform: $property;
+	-webkit-transform: $property;
+	-moz-transform: $property;
+	-ms-transform: $property;
+	-o-transform: $property;
+	 }
 
 // @mixin font-source-sans($size: false, $colour: false, $weight: false, $lh: false) {
 // 	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;

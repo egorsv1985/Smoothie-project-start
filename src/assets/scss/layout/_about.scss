@@ -12,12 +12,8 @@
 
 	&__img {
 		@include box-size (691px, 818px);
-		// transform: translateY(0px) rotate(-7deg);
-		// -webkit-transform: translateY(0px) rotate(-7deg);
-		// -moz-transform: translateY(0px) rotate(-7deg);
-		// -ms-transform: translateY(0px) rotate(-7deg);
-		// -o-transform: translateY(0px) rotate(-7deg);
-	}
+		@include transform (translateY(0px) rotate(-7deg));
+		}
 
 	&__wrap {
 		@include flex ($fd: column);
@@ -42,6 +38,7 @@
 		@include mar(0, 0, 22px, 0);
 
 		&--bold {
+
 			font-weight: 800;
 		}
 	}
@@ -98,7 +95,7 @@
 		}
 
 		&__wrapper {
-			flex-direction: column;
+			@include flex ($fd: column);
 			@include mar (0, 0, 0, 0);
 		}
 	}
