@@ -1,147 +1,138 @@
 .blog {
-	@include pad-mar ($pt: 100px, $pr: 10px, $pb: 180px, $pl: 10px, $mt: 0, $mr: auto, $mb: 0, $ml: auto);
-	
+	@include pad (100px, 10px, 180px, 10px);
+	@include mar (0, auto, 0, auto);
+
 	&__wrapper {
 		@include flex($jc: center);
-			}
-	
+	}
+
 	&__box {
 		@include flex ($fd: column);
-			}
-	
+	}
+
 	&__title {
-		@include pad-mar ($mb: 50px);
-			}
-	
+		@include mar (0, 0, 50px, 0);
+	}
+
 	&__text-box {
-		@include pad-mar ($pt: 225px, $pr: 30px, $pb: 45px, $pl: 30px);
+		@include pad (225px, 30px, 45px, 30px);
 		position: relative;
 
 		&::before {
-			@include pseudo ($t: 165px, $l: -45px);
-			@include box-size ($w: 685px, $h: 12px);
-					
+			@include pseudo;
+			@include pos ($t: 165px, $l: -45px);
+			@include box-size (685px, 12px);
+
 			background-color: #f7ae3b;
-		
+
 			z-index: -1;
-		
-			border-radius: 0 10px 10px 0;
-			-webkit-border-radius: 0 10px 10px 0;
-			-moz-border-radius: 0 10px 10px 0;
-			-ms-border-radius: 0 10px 10px 0;
-			-o-border-radius: 0 10px 10px 0;
+			@include border-radius-side (0, 10px, 0, 10px);
 		}
 	}
+
 	&__subtitle {
 		@include font ($fs: 1.9rem, $lh: 1.3em, $ls: -0.02em, $fw: 800);
-		
-		color: #f2612d;
-	@include pad-mar ($ml: 30px);
-			}
-	
+		@include mar (0, 0, 0, 30px);
+	}
+
 	&__time {
-		@include font ($fs: 1rem,$lh: 2.2em);
-		@include pad-mar ($ml: 30px);
-		color: #1e1e1e;
-		}
-	
+		@include font ($fs: 1rem, $lh: 2.2em);
+		@include mar (0, 0, 0, 30px);
+
+	}
+
 	&__text {
 		max-width: 472px;
-		@include pad-mar($mt: 25px, $ml: 90px);
-	
+		@include mar(25px, 0, 0, 90px);
 		position: relative;
 	}
-		
+
 	&__link {
 		@include font ($fs: 1.125rem, $lh: 1.95em, $fw: 800);
-		color: #1e1e1e;
 		font-style: italic;
+
 		&::after {
 			@include pos-abs ($b: 15px, $r: 145px);
-			@include box-size ($w: 18px, $h:10px);
-			
-			background: no-repeat center/cover url("../images/arrow.png");
+			@include box-size (18px, 10px);
+			@include background (url("../images/arrow.png"));
 		}
 	}
-	
+
 	/* blog */
-	@media only screen and (max-width: 1440px) {
-	}
-	
-	@media only screen and (max-width: 992px) {
-	}
-	
+	@media only screen and (max-width: 1440px) {}
+
+	@media only screen and (max-width: 992px) {}
+
 	@media only screen and (max-width: 768px) {
 		& {
-			@include pad-mar ($pt: 100px, $pr: 30px, $pb: 160px, $pl: 30px, $mt: 0, $mr: auto, $mb: 0, $ml: auto);
-			
+			@include pad (100px, 30px, 160px, 30px);
+			@include mar (0, auto, 0, auto);
+
 			&__wrapper {
 				@include flex($jc: flex-start, $fw: wrap);
-				flex-wrap: wrap;
-				justify-content: flex-start;
 			}
-		
+
 			&__box {
 				@include flex ($jc: flex-start, $fd: column);
-				@include pad-mar ($mb: 30px);
-					}
-		
+				@include mar (0, 0, 30px, 0);
+			}
+
 			&__img {
-				@include box-size ($w: 708px, $h: 510px);
-							}
-		
+				@include box-size (708px, 510px);
+			}
+
 			&__text-box {
-				@include pad-mar ($pt: 0, $pr: 0, $pb: 0, $pl: 0);
-				
+				@include pad (0, 0, 0, 0);
+
 				&::before {
 					content: "";
 					display: none;
 				}
 			}
-			
+
 			&__subtitle {
-				@include pad-mar ($ml: 0);
-				
+				@include mar (0, 0, 0, 0);
+
 			}
-		
+
 			&__time {
-				@include pad-mar ($ml: 0);
+				@include mar (0, 0, 0, 0);
 			}
-		
+
 			&__text {
 				max-width: 472px;
-				@include pad-mar ($mt: 25px, $ml:64px);
+				@include mar (25px, 0, 0, 64px);
 				position: relative;
 
 				&::after {
-					@include pseudo ($b: 15px, $r: 145px);
-					@include box-size ($w: 18px, $h: 10px);
-					
-					background: no-repeat center/cover url("../images/arrow.png");
+					@include pseudo;
+					@include pos ($b: 15px, $r: 145px);
+					@include box-size (18px, 10px);
+					@include background (url("../images/arrow.png"));
 				}
 			}
 		}
 	}
-	
+
 	@media only screen and (max-width: 360px) {
 		& {
-			@include pad-mar ($pt: 60px, $pr: 10px, $pb: 90px, $pl: 10px);
-			}
-	
+			@include pad (60px, 10px, 90px, 10px);
+		}
+
 		&__wrapper {
-			@include pad-mar ($mt: 0, $mr: auto, $mb: 0, $ml: auto);
-			}
-	
+			@include mar (0, auto, 0, auto);
+		}
+
 		&__img {
-			@include box-size ($w: 240px, $h: 245px);
-			}
-	
+			@include box-size (240px, 245px);
+		}
+
 		&__text {
-			@include pad-mar ($mt: 28px, $ml: 0);
+			@include mar (28px, 0, 0, 0);
+
 			/* max-width: 472px; */
 			&::after {
-				bottom: 15px;
-				right: 270px;
+				@include pos ($b: 15px, $r: 270px);
 			}
 		}
 	}

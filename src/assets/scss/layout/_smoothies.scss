@@ -1,32 +1,33 @@
 .smoothies {
-	@include pad-mar($pt: 100px, $pr: 0, $pb: 120px, $pl: 0);
+	@include pad(100px, 0, 120px, 0);
 
 	&__title {
 		text-align: center;
-		@include pad-mar($mb: 40px);
+		@include mar(0, 0, 40px, 0);
 	}
 
 	&__text {
 		max-width: 915px;
 		text-align: center;
-		@include pad-mar($mt: 0px, $mr: auto, $mb: 40px, $ml: auto);
+		@include mar(0, auto, 40px, auto);
 	}
 
 	&__cards {
 		@include flex ($jc: center, $ai: center, $fw: wrap);
 		max-width: 1050px;
 		/* 1050px */
-		@include pad-mar($mt: 0, $mr: auto, $mb: 0, $ml: auto);
-		background-color: #f6edde;
+		@include mar(0, auto, 0, auto);
+		background-color: $bg-cards-color;
 	}
 
 	&__item {
 		@include flex ($jc: flex-end, $ai: center, $fd: column);
-		@include box-size($w: 25%, $h: 195px);
-		background-color: #fff;
-		@include pad-mar($pt: 28px, $pr: 0, $pb: 40px, $pl: 0);
+		@include box-size(25%, 195px);
+		background-color: $bg-main-color;
+		@include pad(28px, 0, 40px, 0);
 
 		&:nth-child(-n + 8) {
+
 			border-right: 2px solid #f6edde;
 		}
 
@@ -42,8 +43,7 @@
 
 	&__desc {
 		@include font ($fs: 1.5625rem, $lh: 1.6em, $ls: -0.02em, $fw: 800);
-		@include pad-mar($mt: 27px);
-		color: #f2612d;
+		@include mar (27px, 0, 0, 0);
 		text-align: center;
 	}
 
@@ -54,22 +54,20 @@
 
 	@media only screen and (max-width: 768px) {
 		& {
-			@include pad-mar($pt: 48px, $pr:0, $pb: 90px, $pl: 0);
+			@include pad(48px, 0, 90px, 0);
 		}
 
 		&__text {
 			max-width: 700px;
-			/* 700px */
 		}
 
 		&__cards {
 			max-width: 540px;
-			/* 1050px */
 		}
 
 		&__item {
-			width: 50%;
-			@include pad-mar($pb: 30px);
+			@include box-size ($w: 50%);
+			@include pad(0, 0, 30px, 0);
 
 			&:nth-child(-n + 8),
 			&:nth-child(-n + 4),
@@ -96,22 +94,22 @@
 
 	@media only screen and (max-width: 360px) {
 		& {
-			@include pad-mar($pt: 40px, $pr: 0, $pb: 90px, $pl: 0);
+			@include pad(40px, 0, 90px, 0);
 		}
 
 		&__title {
-			@include pad-mar ($mt: 22px);
+			@include mar (22px, 0, 0, 0);
 		}
 
 		&__text {
 			max-width: 338px;
 			/* 338px */
-			@include pad-mar($mt: 0, $mr: auto, $mb: 60px);
+			@include mar(0, auto, 60px, auto);
 		}
 
 		&__desc {
 			@include font ($fs: 1.25rem);
-			@include pad-mar ($mt: 27px);
+			@include mar (27px, 0, 0, 0);
 		}
 	}
 }

@@ -4,7 +4,8 @@
 	min-height: 100vh;
 
 	&__top {
-		@include pad-mar (84, 0, 0, 0, 0, 0, 120, 0);
+		@include pad (84px, 0, 0, 0);
+		@include mar (0, 0, 120px, 0);
 		position: relative;
 	}
 
@@ -12,7 +13,7 @@
 		@include flex ($jc: space-between, $ai: center, $fw: wrap);
 		z-index: 1;
 		@include box-size ($w: 100%);
-		}
+	}
 
 
 	&__right-block {
@@ -21,11 +22,12 @@
 
 	&__personal {
 		position: relative;
-		@include pad-mar (0, 0, 0, 0, 0, 134, 0, 0);
+		@include mar (0, 134px, 0, 0);
 
 		&::before {
-			@include pseudo (10, 0, 205, 0);
-			@include box-size ($w: 48px, $h: 2px);
+			@include pseudo;
+			@include pos-abs (10px, 0, 205px, 0);
+			@include box-size (48px, 2px);
 			background-color: $bg-header-color;
 		}
 	}
@@ -35,11 +37,11 @@
 	}
 
 	&__burger-btn {
-		@include pos-fix (15,0, 0, 25);
-		@include box-size($w: 50px, $h: 50px);
+		@include pos-fix ($t: 15px, $r: 25px);
+		@include box-size(50px, 50px);
 		display: block;
 		z-index: 1;
-		
+
 	}
 
 	&__content {
@@ -47,19 +49,20 @@
 	}
 
 	&__btn {
-		@include box-size($w: 280px, $h: 70px);
+		@include box-size(280px, 70px);
 		@include font ($fs: 1.5rem, $lh: 2.5em, $ls: -0.02em, $text-trans: capitalize);
-		@include border-radius (35);
+		@include border-radius-px (35);
 		text-indent: -5.25rem;
 		/*84px*/
 		position: relative;
 
 
 		&::before {
-			@include pseudo (27, 0, 210, 0);
+			@include pseudo;
+			@include pos-abs ($t: 27px, $l: 210px);
 			@include box-size ($w: 30px, $h: 16px);
 			@include background (url('../images/base/arrow.jpg'));
-			
+
 		}
 	}
 
@@ -76,37 +79,39 @@
 		}
 
 		&__burger-line {
-			@include box-size ($w: 35px, $h: 2px);
+			@include box-size (35px, 2px);
 			background-color: $bg-burger-color;
 			position: relative;
 			display: block;
-			transition: all 0.5s ease;
+			@include transition (all, 0.5s, ease);
+
 
 			&::after,
 			&::before {
-				@include pseudo ($r: 0);
+				@include pseudo;
+				@include pos-px ($r: 0);
 				background-color: $bg-burger-color;
-				@include box-size ($w: 35px, $h: 2px);
-				}
-			
-			&::after {
-				@include pos (-10, 0, 0, 0);
-				@include box-size ($w: 40px)
-				
+				@include box-size (35px, 2px);
 			}
+
+			&::after {
+				@include pos-px (-10, 0, 0, 0);
+				@include box-size ($w: 40px)
+			}
+
 			&::before {
-				@include pos (10, 0, 0, 0);
+				@include pos-px (10, 0, 0, 0);
 				@include box-size ($w: 30px);
-				}
+			}
 		}
 
 		&__right-block {
-			@include pad-mar(160, 0, 240, 0);
+			@include pad(160px, 0, 240px, 0);
 		}
 
 		&__logo {
 			display: block;
-			top: 120%;
+			@include pos ($t: 120%);
 		}
 	}
 }

@@ -1,7 +1,5 @@
 .about {
-	background-color: #158371;
-	
-
+	background-color: $bg-about-color;
 
 	&__inner {
 		@include flex($jc: space-between, $ai: center, $fw: wrap);
@@ -9,11 +7,11 @@
 
 	&__wrapper {
 		@include box-size ($h: 800px);
-		
+
 	}
 
 	&__img {
-		@include box-size ($w: 691px, $h: 818px);
+		@include box-size (691px, 818px);
 		// transform: translateY(0px) rotate(-7deg);
 		// -webkit-transform: translateY(0px) rotate(-7deg);
 		// -moz-transform: translateY(0px) rotate(-7deg);
@@ -23,89 +21,64 @@
 
 	&__wrap {
 		@include flex ($fd: column);
-		
+
 	}
 
 	&__title {
 		max-width: 660px;
 		/* 660px */
-		@include pad-mar ($mt: 80px, $mb: 55px);
+		@include mar (80px, 0, 55px, 0);
 		@include font ($fs: 3.4375rem, $lh: 1.1em);
-
-		&--orange {
-			color: #cae941;
-	
-			position: relative;
-
-			&::before {
-				@include pseudo ();
-								
-				background: no-repeat center/cover url(../images/about/about_line.png);
-				
-				@include pos-abs ($t: 60px, $l: -5px);
-				@include box-size ($w: 450px, $h: 13px);
-			}
-		}
 	}
 
 	&__list {
 		list-style-image: url(./images/about/about_li.png);
-		@include pad-mar ($pl: 30px, $mb: 32px);
+		@include pad (0, 0, 0, 30px);
+		@include mar (0, 0, 32px, 0);
 	}
 
 	&__item {
 		@include font ($fs: 1.3125rem, $lh: 1.05em);
-		@include pad-mar($mb: 22px);
+		@include mar(0, 0, 22px, 0);
 
 		&--bold {
 			font-weight: 800;
 		}
 	}
 
-	
-
 	&__btn {
 		position: relative;
-		@include box-size ($w: 382px, $h: 63px);
+		@include box-size (382px, 63px);
 		text-indent: -5.25rem;
 		/* 84px */
-		border-radius: 30px;
-		-webkit-border-radius: 30px;
-		-moz-border-radius: 30px;
-		-ms-border-radius: 30px;
-		-o-border-radius: 30px;
+		@include border-radius-px (30);
 
 		&::before {
-			content: "";
+			@include pseudo;
 			@include pos-abs ($t: 22px, $l: 305px);
 			@include box-size ($w: 30px, $h: 16px);
-			display: block;
-			background: no-repeat center/cover url("../images/arrow.png");
+			@include background (url("../images/arrow.png"));
 		}
 	}
 
-	
+
 
 	@media only screen and (max-width: 1440px) {
 		& {
-			@include pad-mar ($pl: 80px);
+			@include pad (0, 0, 0, 80px);
 			max-height: 1000px;
 			/* 1000px */
 		}
 
 		&__wrapper {
-			@include pad-mar ($ml: 80px);
+			@include mar (0, 0, 0, 80px);
 		}
 
 		&__title {
-			@include pad-mar ($mt: 65px);
+			@include mar (65px, 0, 0, 0);
 
 			&--orange::before {
-
-				top: 120px;
-				/* 120px */
-				left: -320px;
-				/* -320px */
+				@include pos ($t: 120px, $l: -320px);
 				@include box-size ($w: 420px);
 			}
 		}
@@ -117,7 +90,7 @@
 		& {
 			max-height: 1660px;
 			/* 1660px */
-			@include pad-mar ($pt: 56px, $pr: 0, $pb: 100px, $pl: 38px);
+			@include pad (56px, 0, 100px, 38px);
 		}
 
 		&__inner {
@@ -126,17 +99,17 @@
 
 		&__wrapper {
 			flex-direction: column;
-			@include pad-mar ($ml: 0);
+			@include mar (0, 0, 0, 0);
 		}
 	}
 
 	@media only screen and (max-width: 360px) {
 		& {
-			@include pad-mar ($pl: 12px);
+			@include pad (0, 0, 0, 12px);
 		}
 
 		&__img {
-			@include box-size ($w: 337px, $h: 399px);
+			@include box-size (337px, 399px);
 		}
 
 		&__title {
@@ -145,14 +118,11 @@
 
 			font-size: 2.75rem;
 			/* 44px */
-			@include pad-mar ($mt: 50px, $mb: 60px);
+			@include mar (50px, 0, 60px, 0);
 
 			&--orange::before {
-				top: 95px;
-				/* 95px */
-				left: -260px;
-				/* -260px */
-				@include box-size ($w: 305px, $h: 9px);
+				@include pos ($t: 95px, $l: -260px);
+				@include box-size (305px, 9px);
 			}
 		}
 
@@ -162,11 +132,10 @@
 			@include box-size ($w: 343px);
 
 			&::before {
-				left: 280px;
-				/* 280px */
+				@include pos ($l: 280px);
 			}
 		}
-		
+
 		&__item--bold {
 			line-height: 1.5em;
 		}

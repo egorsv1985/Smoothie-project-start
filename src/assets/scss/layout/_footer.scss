@@ -1,7 +1,7 @@
 .footer {
 	&__top {
-		background-color: #f4ad39;
-		@include pad-mar ($pt: 77px, $pr: 0, $pb: 93px, $pl: 0);
+		background-color: $bg-footer-color;
+		@include pad (77px, 0, 93px, 0);
 	}
 
 	&__wrapper {
@@ -9,7 +9,7 @@
 	}
 
 	&__logo {
-		@include pad-mar ($mt: 54px, $mr: 0, $mb: 74px, $ml: 100px);
+		@include mar (54px, 0, 74px, 100px);
 	}
 
 	&__wrap {
@@ -17,13 +17,13 @@
 	}
 
 	&__info {
-		@include pad-mar ($mb: 294px);
+		@include mar (0, 0, 294px, 0);
 	}
 
 	&__title {
 		font-size: 1.625rem;
 		/* 26px */
-		@include pad-mar ($mb: 35px);
+		@include mar (0, 0, 35px, 0);
 	}
 
 	&__info-list {
@@ -32,11 +32,11 @@
 
 	&__info-link {
 		@include font ($fs: 1.125rem, $lh: 1.95em, $ls: -0.02, $fw: 700);
-		color: #6d450c;
+		color: $text-footer-color;
 	}
 
 	&__pay {
-		@include pad-mar ($ml: 152px);
+		@include mar (0, 0, 0, 152px);
 	}
 
 	&__pay-list {
@@ -45,62 +45,58 @@
 	}
 
 	&__pay-img {
-		@include pad-mar ($mr: 18px, $mb: 20px);
+		@include mar (0, 18px, 20px, 0);
 		@include box-size ($h: 100%);
 	}
 
 	&__box {
-		@include pad-mar ($mt: 0, $mr: 80px, $mb: 0, $ml: 155px);
+		@include mar (0, 80px, 0, 155px);
 	}
 
 	&__form {
-		@include pad-mar ($mb: 24px);
+		@include mar (0, 0, 24px, 0);
 
 		position: relative;
 
 		&::before {
-			@include pseudo ($t: 22px, $l: 22px);
-			@include box-size ($w: 24px, $h: 19px);
-
-			background: no-repeat center/cover url("../images/email.png");
+			@include pseudo;
+			@include pos ($t: 22px, $l: 22px);
+			@include box-size (24px, 19px);
+			@include background (url("../images/email.png"));
 		}
 	}
 
 	&__input {
-		@include pad-mar ($pl: 50px);
-		@include box-size ($w: 498px, $h: 62px);
+		@include pad (0, 0, 0, 50px);
+		@include box-size (498px, 62px);
 
-		background-color: #fff;
-
+		background-color: $bg-main-color;
 		outline: 0;
 		border-style: none;
-		border-radius: 30px;
-		-webkit-border-radius: 30px;
-		-moz-border-radius: 30px;
-		-ms-border-radius: 30px;
-		-o-border-radius: 30px;
+		@include border-radius-px (30);
 
 		&::placeholder {
 			@include font ($fs: 1.05rem, $lh: 2.05em, $ls: -0.02em, $fw: 700);
-			color: #6d450c;
+			color: $text-footer-color;
 		}
 	}
 
 	&__inner {
 		@include flex ($ai: center);
-		@include pad-mar ($ml: 186px);
+		@include mar (0, 0, 0, 186px);
 	}
 
 	&__text {
 		@include font ($fs: 1rem, $lh: 2.5em, $ls: -0.02em, $text-trans: uppercase, $fw: 800);
-		@include pad-mar ($mr: 30px);
-		color: #6d450c;
+		@include mar (0, 30px, 0, 0);
+		color: $text-footer-color;
 		position: relative;
 
 		&::before {
-			@include pseudo ($b: 7px, $l: -7px);
-			background: no-repeat center/cover url("../images/arrow_footer.png");
-			@include box-size ($w: 48px, $h: 42px);
+			@include pseudo;
+			@include pos ($b: 7px, $l: -7px);
+			@include background (url("../images/arrow_footer.png"));
+			@include box-size (48px, 42px);
 		}
 	}
 
@@ -109,8 +105,8 @@
 	}
 
 	&__bottom {
-		background-color: #6e2c1e;
-		@include pad-mar ($mt: 0, $mr: auto, $mb: 0, $ml: auto);
+		background-color: $bg-footer-bottom-color;
+		@include mar (0, auto, 0, auto);
 		@include flex ($jc: center, $ai: center);
 		@include box-size ($h: 60px);
 	}
@@ -123,47 +119,40 @@
 
 	&__link {
 		background-color: #f2662f;
-		@include box-size ($w: 53px, $h: 55px);
+		@include box-size (53px, 55px);
 		@include pos-fix ($b: 80px, $r: 80px);
 		z-index: 100;
-		background-image: url(../images/arrow__up.png);
-		background-repeat: no-repeat;
+		@include background (url(../images/arrow__up.png));
 		background-size: 14px 25px;
-		background-position: center;
-
-		border-radius: 5px;
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
-		-ms-border-radius: 5px;
-		-o-border-radius: 5px;
+		@include border-radius-px (5);
 
 		&::before {
-			@include pseudo ($t: 40px, $r: 60px);
-			content: "Go top";
+			@include pseudo ('Go top');
+			@include pos ($t: 40px, $r: 60px);
 			@include font ($fs: 1rem, $lh: 2.5em, $ls: -0.02em, $fw: 700);
-			@include box-size ($w: 55px, $h: 14px);
+			@include box-size (55px, 14px);
 		}
 	}
 
 	@media only screen and (max-width: 1440px) {
 		&__logo {
-			@include pad-mar ($mt: 54px, $mr: 0, $mb: 74px, $ml: 55px);
+			@include mar (54px, 0, 74px, 55px);
 		}
 
 		&__info {
-			@include pad-mar ($ml: 100px);
+			@include mar (0, 0, 0, 100px);
 		}
 
 		&__pay {
-			@include pad-mar ($ml: 100px);
+			@include mar (0, 0, 0, 100px);
 		}
 
 		&__box {
-			@include pad-mar ($mt: 0, $mr: 80px, $mb: 0, $ml: 80px);
+			@include mar (0, 80px, 0, 80px);
 		}
 
 		&__inner {
-			@include pad-mar ($ml: 100px);
+			@include mar (0, 0, 0, 100px);
 		}
 
 		&__input {
@@ -173,7 +162,7 @@
 
 	@media only screen and (max-width: 1368px) {
 		&__top {
-			@include pad-mar ($pt: 65px, $pr: 106px, $pb: 93px, $pl: 106px);
+			@include pad (65px, 106px, 93px, 106px);
 		}
 
 		&__wrapper {
@@ -181,29 +170,29 @@
 		}
 
 		&__logo {
-			@include pad-mar ($mt: 0, $mr: 30px, $mb: 80px, $ml: 0);
+			@include mar (0, 30px, 80px, 0);
 		}
 
 		&__wrap {
 			@include flex ($jc: space-between);
-			@include pad-mar ($mb: 60px);
+			@include mar (0, 0, 60px, 0);
 			@include box-size ($w: 60%);
 		}
 
 		&__info {
-			@include pad-mar ($ml: 0);
+			@include mar (0, 0, 0, 0);
 		}
 
 		&__title {
-			@include pad-mar ($mb: 42px);
+			@include mar (0, 0, 42px, 0);
 		}
 
 		&__box {
-			@include pad-mar ($mt: 0, $mr: 90px, $mb: 0, $ml: 0);
+			@include mar (0, 90px, 0, 0);
 		}
 
 		&__text {
-			@include pad-mar ($mr: 23px);
+			@include mar (0, 23px, 0, 0);
 		}
 	}
 
@@ -211,7 +200,7 @@
 
 	@media only screen and (max-width: 768px) {
 		&__top {
-			@include pad-mar ($pt: 65px, $pr: 106px, $pb: 93px, $pl: 106px);
+			@include pad (65px, 106px, 93px, 106px);
 		}
 
 		&__wrapper {
@@ -219,34 +208,34 @@
 		}
 
 		&__logo {
-			@include pad-mar ($mt: 0, $mr: 30px, $mb: 80px, $ml: 0);
+			@include mar (0, 30px, 80px, 0);
 		}
 
 		&__wrap {
 			@include flex ($jc: space-between);
-			@include pad-mar ($mb: 60px);
+			@include mar (0, 0, 60px, 0);
 		}
 
 		&__info {
-			@include pad-mar ($ml: 0);
+			@include mar (0, 0, 0, 0);
 		}
 
 		&__title {
-			@include pad-mar ($mb: 42px);
+			@include mar (0, 0, 42px, 0);
 		}
 
 		&__box {
-			@include pad-mar ($mt: 0, $mr: 90px, $mb: 0, $ml: 0);
+			@include mar (0, 90px, 0, 0);
 		}
 
 		&__text {
-			@include pad-mar ($mr: 23px);
+			@include mar (0, 23px, 0, 0);
 		}
 	}
 
 	@media only screen and (max-width: 360px) {
 		&__top {
-			@include pad-mar ($pt: 65px, $pr: 10px, $pb: 68px, $pl: 10px);
+			@include pad (65px, 10px, 68px, 10px);
 		}
 
 
@@ -255,24 +244,24 @@
 		}
 
 		&__logo {
-			@include pad-mar ($mt: 0, $mr: 30px, $mb: 60px, $ml: 64px);
+			@include mar (0, 30px, 60px, 64px);
 		}
 
 		&__wrap {
 			@include flex ($jc: space-between, $ai: center, $fd: column);
-			@include pad-mar ($mb: 48px);
+			@include mar (0, 0, 48px, 0);
 		}
 
 		&__info {
-			@include pad-mar ($mb: 0, $ml: 54px);
+			@include mar (0, 0, 0, 54px);
 		}
 
 		&__title {
-			@include pad-mar ($mb: 22px);
+			@include mar (0, 0, 22px, 0);
 		}
 
 		&__pay {
-			@include pad-mar ($ml: 0);
+			@include mar (0, 0, 0, 0);
 		}
 
 		&__pay-list {
@@ -280,7 +269,7 @@
 		}
 
 		&__box {
-			@include pad-mar ($mt: 0, $mr: 90px, $mb: 0, $ml: 0);
+			@include mar (0, 90px, 0, 0);
 		}
 
 		&__input {
@@ -289,22 +278,22 @@
 		}
 
 		&__inner {
-			@include pad-mar ($ml: 82px);
+			@include mar (0, 0, 0, 82px);
 		}
 
 		&__text {
 			line-height: 1.125rem;
-			@include pad-mar ($ml: 24px);
+			@include mar (0, 0, 0, 24px);
 
 			&::before {
-				@include pseudo ($b: -2px, $l: -55px);
-
-				background: no-repeat center/cover url("../images/arrow_footer.png");
-				@include box-size ($w: 48px, $h: 42px);
+				@include pseudo;
+				@include pos ($b: -2px, $l: -55px);
+				@include background (url("../images/arrow_footer.png"));
+				@include box-size (48px, 42px);
 			}
 
 			&__link {
-				right: 12px;
+				@include pos ($r: 12px);
 
 				&::before {
 					display: none;

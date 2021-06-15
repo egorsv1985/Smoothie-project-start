@@ -1,23 +1,33 @@
 .title {
-	font-size: 3.125rem;
-	/* 50px */
-	line-height: 0.8em;
-	font-weight: 800;
-	letter-spacing: -0.02em;
-}
-@media only screen and (max-width: 360px) {
-	.title {
-		font-size: 2.75rem;
-		/* 44px */
-		line-height: 1.25em;
+	@include font ($fs: 3.125rem, $lh: 0.8em, $ls: -0.02em, $fw: 800);
+
+	&--orange {
+		color: #f7ae3b;
 	}
 
-}
+	&--green {
+		color: #0aa566;
+	}
 
-.title--orange {
-	color: #f7ae3b;
-}
+	&--yellow {
+		color: #cae941;
 
-.title--green {
-	color: #0aa566;
+		position: relative;
+
+		&::before {
+			@include pseudo;
+			@include background (url(../images/about/about_line.png));
+			@include pos ($t: 60px, $l: -5px);
+			@include box-size (450px, 13px);
+		}
+	}
+
+	@media only screen and (max-width: 360px) {
+		& {
+			@include font ($fs: 2.75rem, $lh: 1.25em);
+			font-size: 2.75rem;
+			/* 44px */
+			line-height: 1.25em;
+		}
+	}
 }

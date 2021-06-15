@@ -3,7 +3,7 @@
 
 	&__wrapper {
 		@include flex ($jc: space-between, $ai: center);
-		@include pad-mar ($mt: 0, $mr: auto, $mb: 0, $ml: auto);
+		@include mar (0, auto, 0, auto);
 
 	}
 
@@ -15,7 +15,7 @@
 		min-width: 480px;
 		/* 480px */
 		@include box-size ($h: 720px);
-		@include pad-mar ($pt: 130px);
+		@include pad (130px, 0, 0, 0);
 
 		&--brown {
 			background-color: #642c18;
@@ -36,44 +36,38 @@
 	}
 
 	&__img {
-		@include pad-mar ($mb: 25px);
+		@include mar (0, 0, 25px, 0);
 	}
 
 	&__title {
 		@include font ($fs: 1.5rem, $lh: 1.1em, $fw: 700);
-		@include pad-mar ($mb: 5px);
+		@include mar (0, 0, 5px, 0);
 	}
 
 	&__subtitle {
 		@include font ($fs: 1.3rem, $lh: 1.5em);
-		@include pad-mar ($mb: 60px);
+		@include mar (0, 0, 60px, 0);
 	}
 
 	&__btn {
-		@include box-size ($w: 288px, $h: 64px);
+		@include box-size (288px, 64px);
 
 
-		border: 2px solid #fff;
+		border: 2px solid $bg-main-color;
 
 		position: relative;
 
 		text-indent: -90px;
 		/* 90px */
-
-		border-radius: 30px;
-		-webkit-border-radius: 30px;
-		-moz-border-radius: 30px;
-		-ms-border-radius: 30px;
-		-o-border-radius: 30px;
+		@include border-radius-px (30);
 
 		&::before {
-			@include pseudo ($t: 20px, $l: 140px);
-			@include box-size ($w: 30px, $h: 16px);
-			background: no-repeat center/cover url("../images/arrow_white.png");
+			@include pseudo;
+			@include pos ($t: 20px, $l: 140px);
+			@include box-size (30px, 16px);
+			@include background (url("../images/arrow_white.png"));
 		}
 	}
-
-
 
 	/* products */
 	@media only screen and (max-width: 1440px) {}
@@ -84,7 +78,7 @@
 
 	@media only screen and (max-width: 360px) {
 		&__img {
-			@include box-size ($w: 100px, $h: 254px);
+			@include box-size (100px, 254px);
 		}
 	}
 }
