@@ -439,13 +439,13 @@ template {
 
 .header__top {
     padding-top: 84px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    margin-top: 0px;
-    margin-right: 0px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
     margin-bottom: 120px;
-    margin-left: 0px;
+    margin-left: 0;
     position: relative;
 }
 
@@ -473,24 +473,20 @@ template {
 
 .header__personal {
     position: relative;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-right: 134px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+    margin-bottom: 0;
+    margin-left: 0;
 }
 
 .header__personal::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 10px;
-    bottom: 0px;
+    bottom: 0;
     left: 205px;
-    right: 0px;
+    right: 0;
     width: 48px;
     height: 2px;
     background-color: #ffd68f;
@@ -500,15 +496,11 @@ template {
     position: absolute;
     top: 56%;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
 }
 
 .header__burger-btn {
     position: fixed;
     top: 15px;
-    bottom: 0px;
-    left: 0px;
     right: 25px;
     width: 50px;
     height: 50px;
@@ -545,13 +537,11 @@ template {
 }
 
 .header__btn::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 27px;
-    bottom: 0px;
     left: 210px;
-    right: 0px;
     width: 30px;
     height: 16px;
     background-repeat: no-repeat;
@@ -581,9 +571,8 @@ template {
     }
 
     .header__burger-line::after, .header__burger-line::before {
-        content: '';
+        content: "";
         display: block;
-        position: absolute;
         top: px;
         bottom: px;
         left: px;
@@ -611,13 +600,9 @@ template {
 
     .header__right-block {
         padding-top: 160px;
-        padding-right: 0px;
+        padding-right: 0;
         padding-bottom: 240px;
-        padding-left: 0px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: px;
+        padding-left: 0;
     }
 
     .header__logo {
@@ -627,40 +612,28 @@ template {
 }
 
 .smoothies {
-    padding-top: 100pxpx;
-    padding-right: 0px;
-    padding-bottom: 120pxpx;
-    padding-left: 0px;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: px;
-    margin-left: px;
+    padding-top: 100px;
+    padding-right: 0;
+    padding-bottom: 120px;
+    padding-left: 0;
   /* smoothies */
 }
 
 .smoothies__title {
     text-align: center;
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: 40pxpx;
-    margin-left: px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
+    margin-left: 0;
 }
 
 .smoothies__text {
     max-width: 915px;
     text-align: center;
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: 0pxpx;
-    margin-right: autopx;
-    margin-bottom: 40pxpx;
-    margin-left: autopx;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
 }
 
 .smoothies__cards {
@@ -674,14 +647,10 @@ template {
     flex-wrap: wrap;
     max-width: 1050px;
     /* 1050px */
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: 0px;
-    margin-right: autopx;
-    margin-bottom: 0px;
-    margin-left: autopx;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
     background-color: #f6edde;
 }
 
@@ -697,14 +666,10 @@ template {
     width: 25%;
     height: 195px;
     background-color: #fff;
-    padding-top: 28pxpx;
-    padding-right: 0px;
-    padding-bottom: 40pxpx;
-    padding-left: 0px;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: px;
-    margin-left: px;
+    padding-top: 28px;
+    padding-right: 0;
+    padding-bottom: 40px;
+    padding-left: 0;
 }
 
 .smoothies__item:nth-child(-n + 8) {
@@ -724,50 +689,35 @@ template {
     line-height: 1.6em;
     letter-spacing: -0.02em;
     font-weight: 800;
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: 27pxpx;
-    margin-right: px;
-    margin-bottom: px;
-    margin-left: px;
-    color: #f2612d;
+    margin-top: 27px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
     text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
     .smoothies {
-        padding-top: 48pxpx;
-        padding-right: 0px;
-        padding-bottom: 90pxpx;
-        padding-left: 0px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: px;
+        padding-top: 48px;
+        padding-right: 0;
+        padding-bottom: 90px;
+        padding-left: 0;
     }
 
     .smoothies__text {
         max-width: 700px;
-      /* 700px */
     }
 
     .smoothies__cards {
         max-width: 540px;
-      /* 1050px */
     }
 
     .smoothies__item {
         width: 50%;
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: 30pxpx;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: px;
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 30px;
+        padding-left: 0;
     }
 
     .smoothies__item:nth-child(-n + 8), .smoothies__item:nth-child(-n + 4), .smoothies__item:nth-child(4), .smoothies__item:last-child {
@@ -790,51 +740,35 @@ template {
 
 @media only screen and (max-width: 360px) {
     .smoothies {
-        padding-top: 40pxpx;
-        padding-right: 0px;
-        padding-bottom: 90pxpx;
-        padding-left: 0px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: px;
+        padding-top: 40px;
+        padding-right: 0;
+        padding-bottom: 90px;
+        padding-left: 0;
     }
 
     .smoothies__title {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: 22pxpx;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: px;
+        margin-top: 22px;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 
     .smoothies__text {
         max-width: 338px;
       /* 338px */
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: 0px;
-        margin-right: autopx;
-        margin-bottom: 60pxpx;
-        margin-left: px;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 60px;
+        margin-left: auto;
     }
 
     .smoothies__desc {
         font-size: 1.25rem;
         line-height: 2.5em;
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: 27pxpx;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: px;
+        margin-top: 27px;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 }
 
@@ -872,64 +806,33 @@ template {
 .about__title {
     max-width: 660px;
     /* 660px */
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: 80pxpx;
-    margin-right: px;
-    margin-bottom: 55pxpx;
-    margin-left: px;
+    margin-top: 80px;
+    margin-right: 0;
+    margin-bottom: 55px;
+    margin-left: 0;
     font-size: 3.4375rem;
     line-height: 1.1em;
 }
 
-.about__title--orange {
-    color: #cae941;
-    position: relative;
-}
-
-.about__title--orange::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: px;
-    bottom: px;
-    left: px;
-    right: px;
-    background: no-repeat center/cover url(../images/about/about_line.png);
-    position: absolute;
-    top: 60px;
-    left: -5px;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    width: 450px;
-    height: 13px;
-}
-
 .about__list {
     list-style-image: url(./images/about/about_li.png);
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: 30pxpx;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: 32pxpx;
-    margin-left: px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 30px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 32px;
+    margin-left: 0;
 }
 
 .about__item {
     font-size: 1.3125rem;
     line-height: 1.05em;
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: 22pxpx;
-    margin-left: px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 22px;
+    margin-left: 0;
 }
 
 .about__item--bold {
@@ -951,58 +854,45 @@ template {
 
 .about__btn::before {
     content: "";
+    display: block;
     position: absolute;
     top: 22px;
     left: 305px;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
     width: 30px;
     height: 16px;
-    display: block;
-    background: no-repeat center/cover url("../images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/arrow.png");
 }
 
 @media only screen and (max-width: 1440px) {
     .about {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: 80pxpx;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: px;
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 80px;
         max-height: 1000px;
       /* 1000px */
     }
 
     .about__wrapper {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: 80pxpx;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 80px;
     }
 
     .about__title {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: 65pxpx;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: px;
+        margin-top: 65px;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 
     .about__title--orange::before {
         top: 120px;
-        /* 120px */
         left: -320px;
-        /* -320px */
         width: 420px;
     }
 }
@@ -1011,14 +901,10 @@ template {
     .about {
         max-height: 1660px;
       /* 1660px */
-        padding-top: 56pxpx;
-        padding-right: 0px;
-        padding-bottom: 100pxpx;
-        padding-left: 38pxpx;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: px;
+        padding-top: 56px;
+        padding-right: 0;
+        padding-bottom: 100px;
+        padding-left: 38px;
     }
 
     .about__inner {
@@ -1035,27 +921,19 @@ template {
     .about__wrapper {
         -ms-flex-direction: column;
         flex-direction: column;
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: 0px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 }
 
 @media only screen and (max-width: 360px) {
     .about {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: 12pxpx;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: px;
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 12px;
     }
 
     .about__img {
@@ -1068,21 +946,15 @@ template {
       /* 660px */
         font-size: 2.75rem;
       /* 44px */
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: 50pxpx;
-        margin-right: px;
-        margin-bottom: 60pxpx;
-        margin-left: px;
+        margin-top: 50px;
+        margin-right: 0;
+        margin-bottom: 60px;
+        margin-left: 0;
     }
 
     .about__title--orange::before {
         top: 95px;
-        /* 95px */
         left: -260px;
-        /* -260px */
         width: 305px;
         height: 9px;
     }
@@ -1095,7 +967,6 @@ template {
 
     .about__btn::before {
         left: 280px;
-        /* 280px */
     }
 
     .about__item--bold {
@@ -1115,14 +986,10 @@ template {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: 0px;
-    margin-right: autopx;
-    margin-bottom: 0px;
-    margin-left: autopx;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
 }
 
 .products__item {
@@ -1137,14 +1004,10 @@ template {
     min-width: 480px;
     /* 480px */
     height: 720px;
-    padding-top: 130pxpx;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: px;
-    margin-left: px;
+    padding-top: 130px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
 }
 
 .products__item--brown {
@@ -1164,41 +1027,29 @@ template {
 }
 
 .products__img {
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: 25pxpx;
-    margin-left: px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 25px;
+    margin-left: 0;
 }
 
 .products__title {
     font-size: 1.5rem;
     line-height: 1.1em;
     font-weight: 700;
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: 5pxpx;
-    margin-left: px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+    margin-left: 0;
 }
 
 .products__subtitle {
     font-size: 1.3rem;
     line-height: 1.5em;
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: 60pxpx;
-    margin-left: px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 60px;
+    margin-left: 0;
 }
 
 .products__btn {
@@ -1216,16 +1067,16 @@ template {
 }
 
 .products__btn::before {
-    content: '';
+    content: "";
     display: block;
-    position: absolute;
-    top: 20pxpx;
-    bottom: px;
-    left: 140pxpx;
-    right: px;
+    top: 20px;
+    left: 140px;
     width: 30px;
     height: 16px;
-    background: no-repeat center/cover url("../images/arrow_white.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/arrow_white.png");
 }
 
 @media only screen and (max-width: 360px) {
@@ -1611,14 +1462,14 @@ template {
 }
 
 .blog {
-    padding-top: 100pxpx;
-    padding-right: 10pxpx;
-    padding-bottom: 180pxpx;
-    padding-left: 10pxpx;
-    margin-top: 0px;
-    margin-right: autopx;
-    margin-bottom: 0px;
-    margin-left: autopx;
+    padding-top: 100px;
+    padding-right: 10px;
+    padding-bottom: 180px;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
   /* blog */
 }
 
@@ -1637,45 +1488,49 @@ template {
 }
 
 .blog__title {
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: 50pxpx;
-    margin-left: px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 50px;
+    margin-left: 0;
 }
 
 .blog__text-box {
-    padding-top: 225pxpx;
-    padding-right: 30pxpx;
-    padding-bottom: 45pxpx;
-    padding-left: 30pxpx;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: px;
-    margin-left: px;
+    padding-top: 225px;
+    padding-right: 30px;
+    padding-bottom: 45px;
+    padding-left: 30px;
     position: relative;
 }
 
 .blog__text-box::before {
-    content: '';
+    content: "";
     display: block;
-    position: absolute;
-    top: 165pxpx;
-    bottom: px;
-    left: -45pxpx;
-    right: px;
+    top: 165px;
+    left: -45px;
     width: 685px;
     height: 12px;
     background-color: #f7ae3b;
     z-index: -1;
-    border-radius: 0 10px 10px 0;
-    -webkit-border-radius: 0 10px 10px 0;
-    -moz-border-radius: 0 10px 10px 0;
-    -ms-border-radius: 0 10px 10px 0;
-    -o-border-radius: 0 10px 10px 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-topleft: 0;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 0;
+    -moz-border-radius-bottomleft: 10px;
+    -ms-border-radius-topleft: 0;
+    -ms-border-radius-topright: 10px;
+    -ms-border-radius-bottomright: 0;
+    -ms-border-radius-bottomleft: 10px;
+    -o-border-radius-topleft: 0;
+    -o-border-radius-topright: 10px;
+    -o-border-radius-bottomright: 0;
+    -o-border-radius-bottomleft: 10px;
 }
 
 .blog__subtitle {
@@ -1683,41 +1538,27 @@ template {
     line-height: 1.3em;
     letter-spacing: -0.02em;
     font-weight: 800;
-    color: #f2612d;
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: px;
-    margin-left: 30pxpx;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 30px;
 }
 
 .blog__time {
     font-size: 1rem;
     line-height: 2.2em;
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: px;
-    margin-left: 30pxpx;
-    color: #1e1e1e;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 30px;
 }
 
 .blog__text {
     max-width: 472px;
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: 25pxpx;
-    margin-right: px;
-    margin-bottom: px;
-    margin-left: 90pxpx;
+    margin-top: 25px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 90px;
     position: relative;
 }
 
@@ -1725,7 +1566,6 @@ template {
     font-size: 1.125rem;
     line-height: 1.95em;
     font-weight: 800;
-    color: #1e1e1e;
     font-style: italic;
 }
 
@@ -1733,23 +1573,24 @@ template {
     position: absolute;
     bottom: 15px;
     right: 145px;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
     width: 18px;
     height: 10px;
-    background: no-repeat center/cover url("../images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/arrow.png");
 }
 
 @media only screen and (max-width: 768px) {
     .blog {
-        padding-top: 100pxpx;
-        padding-right: 30pxpx;
-        padding-bottom: 160pxpx;
-        padding-left: 30pxpx;
-        margin-top: 0px;
-        margin-right: autopx;
-        margin-bottom: 0px;
-        margin-left: autopx;
+        padding-top: 100px;
+        padding-right: 30px;
+        padding-bottom: 160px;
+        padding-left: 30px;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
     }
 
     .blog__wrapper {
@@ -1759,8 +1600,6 @@ template {
         justify-content: flex-start;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        flex-wrap: wrap;
-        justify-content: flex-start;
     }
 
     .blog__box {
@@ -1770,14 +1609,10 @@ template {
         justify-content: flex-start;
         -ms-flex-direction: column;
         flex-direction: column;
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: 30pxpx;
-        margin-left: px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 30px;
+        margin-left: 0;
     }
 
     .blog__img {
@@ -1786,14 +1621,10 @@ template {
     }
 
     .blog__text-box {
-        padding-top: 0px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: px;
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
     }
 
     .blog__text-box::before {
@@ -1802,75 +1633,55 @@ template {
     }
 
     .blog__subtitle {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: 0px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 
     .blog__time {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: 0px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 
     .blog__text {
         max-width: 472px;
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: 25pxpx;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: 64pxpx;
+        margin-top: 25px;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 64px;
         position: relative;
     }
 
     .blog__text::after {
-        content: '';
+        content: "";
         display: block;
-        position: absolute;
-        top: px;
-        bottom: 15pxpx;
-        left: px;
-        right: 145pxpx;
+        bottom: 15px;
+        right: 145px;
         width: 18px;
         height: 10px;
-        background: no-repeat center/cover url("../images/arrow.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url("../images/arrow.png");
     }
 }
 
 @media only screen and (max-width: 360px) {
     .blog {
-        padding-top: 60pxpx;
-        padding-right: 10pxpx;
-        padding-bottom: 90pxpx;
-        padding-left: 10pxpx;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: px;
+        padding-top: 60px;
+        padding-right: 10px;
+        padding-bottom: 90px;
+        padding-left: 10px;
     }
 
     .blog__wrapper {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: 0px;
-        margin-right: autopx;
-        margin-bottom: 0px;
-        margin-left: autopx;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
     }
 
     .blog__img {
@@ -1879,14 +1690,10 @@ template {
     }
 
     .blog__text {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: 28pxpx;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: 0px;
+        margin-top: 28px;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
       /* max-width: 472px; */
     }
 
@@ -1969,14 +1776,10 @@ template {
 
 .footer__top {
     background-color: #f4ad39;
-    padding-top: 77pxpx;
-    padding-right: 0px;
-    padding-bottom: 93pxpx;
-    padding-left: 0px;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: px;
-    margin-left: px;
+    padding-top: 77px;
+    padding-right: 0;
+    padding-bottom: 93px;
+    padding-left: 0;
 }
 
 .footer__wrapper {
@@ -1987,14 +1790,10 @@ template {
 }
 
 .footer__logo {
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: 54pxpx;
-    margin-right: 0px;
-    margin-bottom: 74pxpx;
-    margin-left: 100pxpx;
+    margin-top: 54px;
+    margin-right: 0;
+    margin-bottom: 74px;
+    margin-left: 100px;
 }
 
 .footer__wrap {
@@ -2003,27 +1802,19 @@ template {
 }
 
 .footer__info {
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: 294pxpx;
-    margin-left: px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 294px;
+    margin-left: 0;
 }
 
 .footer__title {
     font-size: 1.625rem;
   /* 26px */
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: 35pxpx;
-    margin-left: px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 35px;
+    margin-left: 0;
 }
 
 .footer__info-list {
@@ -2039,14 +1830,10 @@ template {
 }
 
 .footer__pay {
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: px;
-    margin-left: 152pxpx;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 152px;
 }
 
 .footer__pay-list {
@@ -2062,62 +1849,46 @@ template {
 }
 
 .footer__pay-img {
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: px;
-    margin-right: 18pxpx;
-    margin-bottom: 20pxpx;
-    margin-left: px;
+    margin-top: 0;
+    margin-right: 18px;
+    margin-bottom: 20px;
+    margin-left: 0;
     height: 100%;
 }
 
 .footer__box {
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: 0px;
-    margin-right: 80pxpx;
-    margin-bottom: 0px;
-    margin-left: 155pxpx;
+    margin-top: 0;
+    margin-right: 80px;
+    margin-bottom: 0;
+    margin-left: 155px;
 }
 
 .footer__form {
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: 24pxpx;
-    margin-left: px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 24px;
+    margin-left: 0;
     position: relative;
 }
 
 .footer__form::before {
-    content: '';
+    content: "";
     display: block;
-    position: absolute;
-    top: 22pxpx;
-    bottom: px;
-    left: 22pxpx;
-    right: px;
+    top: 22px;
+    left: 22px;
     width: 24px;
     height: 19px;
-    background: no-repeat center/cover url("../images/email.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/email.png");
 }
 
 .footer__input {
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: 50pxpx;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: px;
-    margin-left: px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 50px;
     width: 498px;
     height: 62px;
     background-color: #fff;
@@ -2175,14 +1946,10 @@ template {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: px;
-    margin-right: px;
-    margin-bottom: px;
-    margin-left: 186pxpx;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 186px;
 }
 
 .footer__text {
@@ -2191,27 +1958,23 @@ template {
     letter-spacing: -0.02em;
     text-transform: uppercase;
     font-weight: 800;
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: px;
-    margin-right: 30pxpx;
-    margin-bottom: px;
-    margin-left: px;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 0;
+    margin-left: 0;
     color: #6d450c;
     position: relative;
 }
 
 .footer__text::before {
-    content: '';
+    content: "";
     display: block;
-    position: absolute;
-    top: px;
-    bottom: 7pxpx;
-    left: -7pxpx;
-    right: px;
-    background: no-repeat center/cover url("../images/arrow_footer.png");
+    bottom: 7px;
+    left: -7px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/arrow_footer.png");
     width: 48px;
     height: 42px;
 }
@@ -2223,14 +1986,10 @@ template {
 
 .footer__bottom {
     background-color: #6e2c1e;
-    padding-top: px;
-    padding-right: px;
-    padding-bottom: px;
-    padding-left: px;
-    margin-top: 0px;
-    margin-right: autopx;
-    margin-bottom: 0px;
-    margin-left: autopx;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -2253,15 +2012,14 @@ template {
     width: 53px;
     height: 55px;
     position: fixed;
-    top: px;
-    bottom: 80pxpx;
-    left: px;
-    right: 80pxpx;
+    bottom: 80px;
+    right: 80px;
     z-index: 100;
-    background-image: url(../images/arrow__up.png);
     background-repeat: no-repeat;
-    background-size: 14px 25px;
     background-position: center;
+    background-size: cover;
+    background-image: url(../images/arrow__up.png);
+    background-size: 14px 25px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -2270,14 +2028,10 @@ template {
 }
 
 .footer__link::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 40pxpx;
-    bottom: px;
-    left: px;
-    right: 60pxpx;
     content: "Go top";
+    display: block;
+    top: 40px;
+    right: 60px;
     font-size: 1rem;
     line-height: 2.5em;
     letter-spacing: -0.02em;
@@ -2288,58 +2042,38 @@ template {
 
 @media only screen and (max-width: 1440px) {
     .footer__logo {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: 54pxpx;
-        margin-right: 0px;
-        margin-bottom: 74pxpx;
-        margin-left: 55pxpx;
+        margin-top: 54px;
+        margin-right: 0;
+        margin-bottom: 74px;
+        margin-left: 55px;
     }
 
     .footer__info {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: 100pxpx;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 100px;
     }
 
     .footer__pay {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: 100pxpx;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 100px;
     }
 
     .footer__box {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: 0px;
-        margin-right: 80pxpx;
-        margin-bottom: 0px;
-        margin-left: 80pxpx;
+        margin-top: 0;
+        margin-right: 80px;
+        margin-bottom: 0;
+        margin-left: 80px;
     }
 
     .footer__inner {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: 100pxpx;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 100px;
     }
 
     .footer__input {
@@ -2349,14 +2083,10 @@ template {
 
 @media only screen and (max-width: 1368px) {
     .footer__top {
-        padding-top: 65pxpx;
-        padding-right: 106pxpx;
-        padding-bottom: 93pxpx;
-        padding-left: 106pxpx;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: px;
+        padding-top: 65px;
+        padding-right: 106px;
+        padding-bottom: 93px;
+        padding-left: 106px;
     }
 
     .footer__wrapper {
@@ -2373,14 +2103,10 @@ template {
     }
 
     .footer__logo {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: 0px;
-        margin-right: 30pxpx;
-        margin-bottom: 80pxpx;
-        margin-left: 0px;
+        margin-top: 0;
+        margin-right: 30px;
+        margin-bottom: 80px;
+        margin-left: 0;
     }
 
     .footer__wrap {
@@ -2388,72 +2114,48 @@ template {
         display: flex;
         -ms-flex-pack: justify;
         justify-content: space-between;
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: 60pxpx;
-        margin-left: px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 60px;
+        margin-left: 0;
         width: 60%;
     }
 
     .footer__info {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: 0px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 
     .footer__title {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: 42pxpx;
-        margin-left: px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 42px;
+        margin-left: 0;
     }
 
     .footer__box {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: 0px;
-        margin-right: 90pxpx;
-        margin-bottom: 0px;
-        margin-left: 0px;
+        margin-top: 0;
+        margin-right: 90px;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 
     .footer__text {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: 23pxpx;
-        margin-bottom: px;
-        margin-left: px;
+        margin-top: 0;
+        margin-right: 23px;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .footer__top {
-        padding-top: 65pxpx;
-        padding-right: 106pxpx;
-        padding-bottom: 93pxpx;
-        padding-left: 106pxpx;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: px;
+        padding-top: 65px;
+        padding-right: 106px;
+        padding-bottom: 93px;
+        padding-left: 106px;
     }
 
     .footer__wrapper {
@@ -2470,14 +2172,10 @@ template {
     }
 
     .footer__logo {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: 0px;
-        margin-right: 30pxpx;
-        margin-bottom: 80pxpx;
-        margin-left: 0px;
+        margin-top: 0;
+        margin-right: 30px;
+        margin-bottom: 80px;
+        margin-left: 0;
     }
 
     .footer__wrap {
@@ -2485,71 +2183,47 @@ template {
         display: flex;
         -ms-flex-pack: justify;
         justify-content: space-between;
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: 60pxpx;
-        margin-left: px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 60px;
+        margin-left: 0;
     }
 
     .footer__info {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: 0px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 
     .footer__title {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: 42pxpx;
-        margin-left: px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 42px;
+        margin-left: 0;
     }
 
     .footer__box {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: 0px;
-        margin-right: 90pxpx;
-        margin-bottom: 0px;
-        margin-left: 0px;
+        margin-top: 0;
+        margin-right: 90px;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 
     .footer__text {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: 23pxpx;
-        margin-bottom: px;
-        margin-left: px;
+        margin-top: 0;
+        margin-right: 23px;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 }
 
 @media only screen and (max-width: 360px) {
     .footer__top {
-        padding-top: 65pxpx;
-        padding-right: 10pxpx;
-        padding-bottom: 68pxpx;
-        padding-left: 10pxpx;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: px;
+        padding-top: 65px;
+        padding-right: 10px;
+        padding-bottom: 68px;
+        padding-left: 10px;
     }
 
     .footer__wrapper {
@@ -2566,14 +2240,10 @@ template {
     }
 
     .footer__logo {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: 0px;
-        margin-right: 30pxpx;
-        margin-bottom: 60pxpx;
-        margin-left: 64pxpx;
+        margin-top: 0;
+        margin-right: 30px;
+        margin-bottom: 60px;
+        margin-left: 64px;
     }
 
     .footer__wrap {
@@ -2585,47 +2255,31 @@ template {
         align-items: center;
         -ms-flex-direction: column;
         flex-direction: column;
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: 48pxpx;
-        margin-left: px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 48px;
+        margin-left: 0;
     }
 
     .footer__info {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: 0px;
-        margin-left: 54pxpx;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 54px;
     }
 
     .footer__title {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: 22pxpx;
-        margin-left: px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 22px;
+        margin-left: 0;
     }
 
     .footer__pay {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: 0px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 
     .footer__pay-list {
@@ -2633,14 +2287,10 @@ template {
     }
 
     .footer__box {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: 0px;
-        margin-right: 90pxpx;
-        margin-bottom: 0px;
-        margin-left: 0px;
+        margin-top: 0;
+        margin-right: 90px;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 
     .footer__input {
@@ -2649,37 +2299,29 @@ template {
     }
 
     .footer__inner {
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: 82pxpx;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 82px;
     }
 
     .footer__text {
         line-height: 1.125rem;
-        padding-top: px;
-        padding-right: px;
-        padding-bottom: px;
-        padding-left: px;
-        margin-top: px;
-        margin-right: px;
-        margin-bottom: px;
-        margin-left: 24pxpx;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 24px;
     }
 
     .footer__text::before {
-        content: '';
+        content: "";
         display: block;
-        position: absolute;
-        top: px;
-        bottom: -2pxpx;
-        left: -55pxpx;
-        right: px;
-        background: no-repeat center/cover url("../images/arrow_footer.png");
+        bottom: -2px;
+        left: -55px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url("../images/arrow_footer.png");
         width: 48px;
         height: 42px;
     }
@@ -2995,20 +2637,15 @@ template {
     color: #1e1e1e;
 }
 
-.title {
-    font-size: 3.125rem;
-  /* 50px */
-    line-height: 0.8em;
-    font-weight: 800;
-    letter-spacing: -0.02em;
+.text-orange {
+    color: #f2612d;
 }
 
-@media only screen and (max-width: 360px) {
-    .title {
-        font-size: 2.75rem;
-    /* 44px */
-        line-height: 1.25em;
-    }
+.title {
+    font-size: 3.125rem;
+    line-height: 0.8em;
+    letter-spacing: -0.02em;
+    font-weight: 800;
 }
 
 .title--orange {
@@ -3017,6 +2654,34 @@ template {
 
 .title--green {
     color: #0aa566;
+}
+
+.title--yellow {
+    color: #cae941;
+    position: relative;
+}
+
+.title--yellow::before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/about/about_line.png);
+    top: 60px;
+    left: -5px;
+    width: 450px;
+    height: 13px;
+}
+
+@media only screen and (max-width: 360px) {
+    .title {
+        font-size: 2.75rem;
+        line-height: 1.25em;
+        font-size: 2.75rem;
+      /* 44px */
+        line-height: 1.25em;
+    }
 }
 
 :root {
