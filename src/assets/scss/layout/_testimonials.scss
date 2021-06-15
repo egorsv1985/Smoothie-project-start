@@ -4,36 +4,20 @@
 	position: relative;
 
 	&::after {
-		content: "";
-
-		position: absolute;
-
-		display: block;
-
-		top: -86px;
-		/* 86px */
-		right: 56px;
-		/* 56px */
-
-		width: 410px;
-		/* 410px */
-		height: 301px;
-		/* 301px */
-
-		background: no-repeat center/cover url("../images/dots.png");
+		@include pseudo;
+		@include pos-abs ($t: -86px, $r: 56px);
+		@include box-size (410px, 301px);
+		@include background (url("../images/testimonials/testimonials_dots.png"));
 	}
 
 	&__inner {
-		margin: 0 auto;
-		padding: 116px 0 80px;
-		/* 116px 0 80px */
-	}
+		@include mar (0, auto, 0, auto);
+		@include pad (116px, 0, 80px, 0);
+		}
 
 	&__title {
+		@include mar (0, 0, 140px, 0);
 		text-align: center;
-
-		margin-bottom: 140px;
-		/* 140px */
 
 		&--big {
 			text-transform: uppercase;
@@ -41,62 +25,37 @@
 	}
 
 	&__box {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
+		@include flex (center, center);
+		@include mar (0, auto, 105px, auto);
 		position: relative;
-
-		margin: 0 auto 105px;
-		/* 120px */
-
+		
 		&::after {
-			content: "Sarah A";
-			position: absolute;
-			display: block;
+			@include pseudo ('Sarah A');
+			@include pos-abs ($t: 7px, $l: 43%);
+			@include font ($fs: 12.5rem, $lh: 0.2em, $ls: -0.02em,$fw: 800);
+			@include transform (translateX(-50%));
 			opacity: 0.6;
-			font-size: 12.5rem;
-			/*200px*/
-			line-height: 0.2em;
-			font-weight: 800;
-			letter-spacing: -0.02em;
 			color: #521905;
-			top: 7px;
-			/*15px*/
-			left: 43%;
-			transform: translateX(-50%);
-			-webkit-transform: translateX(-50%);
-			-moz-transform: translateX(-50%);
-			-ms-transform: translateX(-50%);
-			-o-transform: translateX(-50%);
-		}
+			}
 	}
 
 	&__textbox {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
+		@include flex (center, center, wrap, column);
+		@include mar (0, 50px, 0, 0);
 
 		max-width: 470px;
-
-		margin-right: 50px;
 	}
 
 	&__quote {
-		font-size: 1.1rem;
-		/* 18px */
-		line-height: 1.95em;
+		@include font ($fs: 1.1rem, $lh: 1.95em);
+		@include mar (0, 0, 10px, 0);
 		text-align: center;
 
 		z-index: 1;
-
-		margin-bottom: 10px;
 	}
 
 	&__cite {
-		line-height: 1.95em;
-		font-weight: 600;
+		@include font ($fs: 1.1rem, $lh: 1.95em, $fw: 600);
 		font-style: italic;
 		text-align: center;
 		color: #f7ae3b;
@@ -107,31 +66,21 @@
 	}
 
 	&__container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
+		@include flex (center, center);
+		@include mar (0, auto, 0, auto);
 		max-width: 160px;
 		/* 160px */
-
-		margin: 0 auto;
 	}
 
 	&__btn {
+		@include background (url("../images/base/arrow.png"));
+		@include box-size (30px, 16px);
 		display: block;
 
-		background: no-repeat center/cover url("../images/arrow.png");
-
-		width: 30px;
-
-		height: 16px;
-
 		&:first-child {
-			margin-right: 100px;
-		}
+			@include mar (0, 100px, 0, 0);
+			}
 	}
-
-	
 
 	@media only screen and (max-width: 1440px) {
 		&::after {

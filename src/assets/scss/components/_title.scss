@@ -17,7 +17,7 @@
 		&::before {
 			@include pseudo;
 			@include background (url(../images/about/about_line.png));
-			@include pos ($t: 60px, $l: -5px);
+			@include pos-abs ($t: 60px, $l: -5px);
 			@include box-size (450px, 13px);
 		}
 	}

@@ -28,7 +28,7 @@
 	}
 
 	&__list {
-		list-style-image: url(./images/about/about_li.png);
+		list-style-image: url(../images/about/about_li.png);
 		@include pad (0, 0, 0, 30px);
 		@include mar (0, 0, 32px, 0);
 	}
@@ -54,7 +54,7 @@
 			@include pseudo;
 			@include pos-abs ($t: 22px, $l: 305px);
 			@include box-size ($w: 30px, $h: 16px);
-			@include background (url("../images/arrow.png"));
+			@include background (url("../images/base/arrow.png"));
 		}
 	}
 

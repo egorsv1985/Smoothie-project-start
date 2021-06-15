@@ -20,7 +20,7 @@
 
 		&::before {
 			@include pseudo;
-			@include pos ($t: 165px, $l: -45px);
+			@include pos-abs ($t: 165px, $l: -45px);
 			@include box-size (685px, 12px);
 
 			background-color: #f7ae3b;
@@ -44,17 +44,19 @@
 	&__text {
 		max-width: 472px;
 		@include mar(25px, 0, 0, 90px);
-		position: relative;
+		
 	}
 
 	&__link {
 		@include font ($fs: 1.125rem, $lh: 1.95em, $fw: 800);
 		font-style: italic;
+		position: relative;
 
 		&::after {
-			@include pos-abs ($b: 15px, $r: 145px);
+			@include pseudo;
+			@include pos-abs ($b: 5px, $r: -30px);
 			@include box-size (18px, 10px);
-			@include background (url("../images/arrow.png"));
+			@include background (url("../images/base/arrow.png"));
 		}
 	}
 
@@ -106,9 +108,9 @@
 
 				&::after {
 					@include pseudo;
-					@include pos ($b: 15px, $r: 145px);
+					@include pos-abs ($b: 15px, $r: 145px);
 					@include box-size (18px, 10px);
-					@include background (url("../images/arrow.png"));
+					@include background (url("../images/base/arrow.png"));
 				}
 			}
 		}

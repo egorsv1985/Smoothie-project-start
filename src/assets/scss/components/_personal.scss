@@ -21,9 +21,6 @@
 		@include flex (center, center, wrap);
 		@include box-size (21px, 21px);
 		@include border-radius (50%);
-
-		color: #000;
-
 		background-color: $bg-main-color;
 	}
 }

@@ -18,7 +18,7 @@
 		&::after {
 			@include pseudo;
 			@include box-size (0, 2px);
-			@include pos ($t: 22px, $l: 0);
+			@include pos-abs ($t: 22px, $l: 0);
 			background-color: $bg-main-color;			
 		}
 		&:hover::after {

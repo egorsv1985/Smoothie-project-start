@@ -18,8 +18,8 @@
 
 		&::before {
 			@include pseudo;
-			@include pos ($t: 0, $l: -40px);
-			@include background (url("../images/instagramm.png"));
+			@include pos-abs ($t: 0, $l: -40px);
+			@include background (url("../images/instagram/instagramm.png"));
 			@include box-size (26px, 26px);
 		}
 	}
@@ -43,8 +43,8 @@
 
 		&::before {
 			@include pseudo;
-			@include pos ($b: 25px, $r: 20px);
-			@include background (url("../images/instaramm_white.png"));
+			@include pos-abs ($b: 25px, $r: 20px);
+			@include background (url("../images/instagram/instagramm_white.png"));
 			@include box-size (26px, 26px);
 			z-index: 1;
 		}

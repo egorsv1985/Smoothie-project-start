@@ -50,8 +50,8 @@
 	}
 
 	&__btn {
-		@include box-size (288px, 64px);
-
+		@include box-size (207px, 63px);
+		
 
 		border: 2px solid $bg-main-color;
 
@@ -63,9 +63,9 @@
 
 		&::before {
 			@include pseudo;
-			@include pos ($t: 20px, $l: 140px);
+			@include pos-abs ($t: 20px, $l: 140px);
 			@include box-size (30px, 16px);
-			@include background (url("../images/arrow_white.png"));
+			@include background (url("../images/products/products_arrow_white.png"));
 		}
 	}
 

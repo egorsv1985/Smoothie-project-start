@@ -59,7 +59,8 @@ const path = {
 // Если нужно выполнять преобразование файлов в определенном порядке, то используем массив с нужным нам порядком:
 const jsFiles = [
     srcPath + 'assets/js/lib.js',
-    srcPath + 'assets/js/main.js'
+    srcPath + 'assets/js/main.js',
+    srcPath + 'assets/js/script.js'
 ]
 
 
@@ -138,9 +139,7 @@ function css(cb) {
 
 // Для быстрой компиляции CSS во время разработки 
 function cssWatch(cb) {
-    return src(path.src.css, {
-            base: srcPath + 'assets/scss/'
-        }) // если нужно компилировать 1 файл, то return src(srcPath + 'assets/scss/main.scss')  
+    src(srcPath + 'assets/scss/style.scss') // если нужно компилировать 1 файл, то return src(srcPath + 'assets/scss/main.scss')  
         .pipe(sourcemaps.init())
         .pipe(plumber({
             errorHandler: function (err) {
@@ -281,7 +280,7 @@ function watchFiles() {
 
 
 const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts)); // Будет запускаться по команде gulp build
-const watch = gulp.series(build, serve, watchFiles); // Будет запускаться по дефолтной команде gulp 
+const watch = gulp.series(build, gulp.parallel(serve, watchFiles)); // Будет запускаться по дефолтной команде gulp 
 
 
 // Экспорты тасок
@@ -291,6 +290,8 @@ exports.js = js;
 exports.images = images;
 exports.fonts = fonts;
 exports.clean = clean;
+// exports.serve = serve;
+// exports.watchFiles = watchFiles;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;

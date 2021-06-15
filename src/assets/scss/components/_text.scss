@@ -1,11 +1,12 @@
 .text {
 	@include font ($fs: 1.125rem, $lh: 2em);
 
-	.text--black {
+	&--black {
 		color: $text-dark-color;
+		
 	}
 
-	.text-orange {
+	&--orange {
 		color: $text-cards-color;
 	}
 }
