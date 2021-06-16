@@ -2,21 +2,30 @@
 	background-color: $bg-about-color;
 
 	&__inner {
-		@include flex($jc: space-between, $ai: center, $fw: wrap);
+		@include flex(space-around, center, wrap);
+		@media only screen and (max-width: 1520px) {
+			@include flex(center, center, wrap);
+			@include pad (0, 0, 80px, 0);
+		}
+		
 	}
 
 	&__wrapper {
 		@include box-size ($h: 800px);
-
-	}
+		
+		}
 
 	&__img {
 		@include box-size (691px, 818px);
-		@include transform (translateY(0px) rotate(-7deg));
+		@include transform (translateY(0) rotate(-7deg));
 		}
 
 	&__wrap {
-		@include flex ($fd: column);
+		@include flex (center, flex-start, wrap, column);
+		@include mar (0, 125px, 80px, 0);
+		@media only screen and (max-width: 1520px) {
+			@include mar (0, 0, 0, 70px);
+		}
 
 	}
 
@@ -60,26 +69,26 @@
 
 
 
-	@media only screen and (max-width: 1440px) {
-		& {
-			@include pad (0, 0, 0, 80px);
-			max-height: 1000px;
-			/* 1000px */
-		}
+	// @media only screen and (max-width: 1440px) {
+	// 	& {
+	// 		@include pad (0, 0, 0, 80px);
+	// 		max-height: 1000px;
+	// 		/* 1000px */
+	// 	}
 
-		&__wrapper {
-			@include mar (0, 0, 0, 80px);
-		}
+	// 	&__wrapper {
+	// 		@include mar (0, 0, 0, 80px);
+	// 	}
 
-		&__title {
-			@include mar (65px, 0, 0, 0);
+	// 	&__title {
+	// 		@include mar (65px, 0, 0, 0);
 
-			&--orange::before {
-				@include pos ($t: 120px, $l: -320px);
-				@include box-size ($w: 420px);
-			}
-		}
-	}
+	// 		&--orange::before {
+	// 			@include pos ($t: 120px, $l: -320px);
+	// 			@include box-size ($w: 420px);
+	// 		}
+	// 	}
+	// }
 
 	@media only screen and (max-width: 992px) {}
 

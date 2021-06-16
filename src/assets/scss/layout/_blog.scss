@@ -1,9 +1,9 @@
 .blog {
-	@include pad (100px, 10px, 180px, 10px);
+	@include pad (100px, 10px, 195px, 10px);
 	@include mar (0, auto, 0, auto);
 
 	&__wrapper {
-		@include flex($jc: center);
+		@include flex (center, center, wrap);
 	}
 
 	&__box {
@@ -11,7 +11,7 @@
 	}
 
 	&__title {
-		@include mar (0, 0, 50px, 0);
+		@include mar (0, 0, 62px, 0);
 	}
 
 	&__text-box {
@@ -20,13 +20,13 @@
 
 		&::before {
 			@include pseudo;
-			@include pos-abs ($t: 165px, $l: -45px);
+			@include pos-abs ($t: 175px, $l: -45px);
 			@include box-size (685px, 12px);
 
 			background-color: #f7ae3b;
 
 			z-index: -1;
-			@include border-radius-side (0, 10px, 0, 10px);
+			@include border-radius-side (0, 10px, 10px, 0);
 		}
 	}
 

@@ -14,12 +14,15 @@
 	&--footer {
 		background-color: transparent;
 	}
+	}
+	&__item + &__item {
+		@include mar (0, 0, 0, 8px);
+	
+	
+	
 }
 
-&__item + &__item {
-	@include mar (0, 0, 0, 8px);
 
-}
 }
 
 

@@ -8,7 +8,7 @@
 	}
 
 	&__title {
-		@include mar (0, 45px, 0, 0);
+		@include mar (0, 0, 50px, 40px);
 
 		font-size: 1.5rem;
 		/*24px*/
@@ -16,22 +16,23 @@
 		position: relative;
 		display: inline-block;
 
+		
+	}
+
+	&__link {
+		
 		&::before {
 			@include pseudo;
-			@include pos-abs ($t: 0, $l: -40px);
+			@include pos-abs ($t: -5px, $l: -40px);
 			@include background (url("../images/instagram/instagramm.png"));
 			@include box-size (26px, 26px);
 		}
 	}
 
-	&__link {
-		color: inherit;
-		text-align: center;
-	}
-
 	&__inner {
 		@include flex (center, center);
 		overflow-x: auto;
+		@include mar (0, 0, 10px, 0);
 	}
 
 	&__picture {
@@ -39,11 +40,11 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 
-		flex: 1 1 20%;
+		
 
 		&::before {
 			@include pseudo;
-			@include pos-abs ($b: 25px, $r: 20px);
+			@include pos-abs ($b: 17px, $r: 23px);
 			@include background (url("../images/instagram/instagramm_white.png"));
 			@include box-size (26px, 26px);
 			z-index: 1;
@@ -52,6 +53,7 @@
 
 	&__img {
 		object-fit: contain;
+		@include box-size (384px, 384px);
 		}
 
 	/* instagram */
