@@ -1,42 +1,47 @@
 .about {
 	background-color: $bg-about-color;
-	
+
 
 	&__inner {
 		@include flex(space-around, center, wrap);
+
 		@media only screen and (max-width: 1520px) {
 			@include flex(center, center, wrap);
 			@include pad (0, 0, 80px, 0);
 		}
-		
+
 	}
 
 	&__wrapper {
 		@include box-size ($h: 800px);
+	}
+
+	&--yellow {
+		color: #cae941;
+
+		position: relative;
+
+		&::before {
+			@include pseudo;
+			@include background (url(../images/about/about_line.png));
+			@include pos-abs ($t: 65px, $l: -10px);
+			@include box-size (450px, 13px);
 		}
-		&--yellow {
-			color: #cae941;
-	
-			position: relative;
-	
-			&::before {
-				@include pseudo;
-				@include background (url(../images/about/about_line.png));
-				@include pos-abs ($t: 65px, $l: -10px);
-				@include box-size (450px, 13px);
-			}
-		}
+	}
+
 	&__img {
 		@include box-size (691px, 818px);
 		@include transform (translateY(0) rotate(-7deg));
-		}
+	}
 
 	&__wrap {
 		@include flex (center, flex-start, wrap, column);
 		@include mar (0, 125px, 80px, 0);
+
 		@media only screen and (max-width: 1520px) {
 			@include mar (0, 0, 0, 70px);
 		}
+
 		@media only screen and (max-width: 768px) {
 			@include mar (0, 40px, 0, 0);
 		}

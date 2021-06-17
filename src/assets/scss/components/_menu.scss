@@ -1,56 +1,53 @@
 .menu {
 	&__list {
 		@include flex ($jc: center, $ai: center, $fw: wrap);
-		
-	}
-	&__item + &__item {
-		@include mar (0, 0, 0, 32px);
-		}
-	
-	&__item:hover {
-		@include transition (all, .2s, ease-in-out);
-		@include transform (scale(1.3));
-		}
-	
-	&__link {
-		@include font (1rem, 2.5em, -0.02em, uppercase, 700);
-		position: relative;
-		&::after {
-			@include pseudo;
-			@include box-size (0, 2px);
-			@include pos-abs ($t: 22px, $l: 0);
-			background-color: $bg-main-color;			
-		}
-		&:hover::after {
-			@include transition (all, .2s, ease-in-out);
-			@include box-size ($w: 100%);			
-		}
-		&:active {
-			color: #223499;
-		}
-	}	
-	
-	
-	@media only screen and (max-width: 1368px) {
-		
-		&__list {
+
+		@media only screen and (max-width: 1368px) {
 			@include flex (space-between, center, wrap, column);
-			@include box-size ($h: 800px);	
+			@include box-size ($h: 800px);
 		}
-	
-		&__item + &__item {
-			@include mar (0, 0, 0, 0);
-			}
-	
-		&__link {
-			@include font ($fs: 1.25rem);
-			}
-	
-	}
-	@media only screen and (max-width: 360px) {
-		&__list {
+
+		@media only screen and (max-width: 360px) {
 			@include flex (space-between, center, wrap, column);
 			@include box-size ($h: 300px);
-			}
+		}
+
 	}
-}
+
+	&__item+&__item {
+		@include mar (0, 0, 0, 32px);
+
+		@media only screen and (max-width: 1368px) {
+			@include mar (0, 0, 0, 0);
+		}
+	}
+		&__item:hover {
+			@include transition (all, .2s, ease-in-out);
+			@include transform (scale(1.3));
+		}
+
+		&__link {
+			@include font (1rem, 2.5em, -0.02em, uppercase, 700);
+			position: relative;
+
+			@media only screen and (max-width: 360px) {
+				@include font ($fs: 1.25rem);
+			}
+
+			&::after {
+				@include pseudo;
+				@include box-size (0, 2px);
+				@include pos-abs ($t: 22px, $l: 0);
+				background-color: $bg-main-color;
+			}
+
+			&:hover::after {
+				@include transition (all, .2s, ease-in-out);
+				@include box-size ($w: 100%);
+			}
+
+			&:active {
+				color: #223499;
+			}
+		}
+	}
