@@ -1,21 +1,19 @@
 .footer {
-	
 	&__top {
 		background-color: $bg-footer-color;
 		@include pad (80px, 0, 93px, 0);
-		
-		
-		
 	}
 
 	&__wrapper {
 		@include flex (space-between, center, wrap);
-		// @include mar (25px, 0, 50px, 0);
+		@media only screen and (max-width: 1520px) {
+			@include flex (center, center, wrap, column);
 		}
+	}
 
 	&__logo {
 		@include mar (0, 195px, 40px, 0);
-	
+
 	}
 
 	&__wrap {
@@ -23,10 +21,10 @@
 		@include mar (0, 38px, 0, 0);
 		max-width: 590px;
 
-		@media only screen and (max-width: 1488px) {
-			@include flex (center, center, wrap, column);
+		@media only screen and (max-width: 1520px) {
+			@include mar (0, 0, 0, 0);
 		}
-		
+
 	}
 
 	&__info {
@@ -50,10 +48,11 @@
 
 	&__pay {
 		@include mar (0, 0, 0, 144px);
+
 		@media only screen and (max-width: 1552px) {
 			@include mar (0, 0, 0, 95px);
 		}
-		
+
 	}
 
 	&__pay-list {
@@ -84,7 +83,7 @@
 	}
 
 	&__input {
-		
+
 		@include box-size (498px, 62px);
 		text-indent: 65px;
 
@@ -152,113 +151,7 @@
 		}
 	}
 
-	@media only screen and (max-width: 1520px) {
-		
-	}
-
-	
-
-	@media only screen and (max-width: 768px) {
-		&__top {
-			@include pad (65px, 106px, 93px, 106px);
-		}
-
-		&__wrapper {
-			@include flex ($jc: center, $ai: center, $fw: wrap, $fd: column);
-		}
-
-		&__logo {
-			@include mar (0, 30px, 80px, 0);
-		}
-
-		&__wrap {
-			@include flex ($jc: space-between);
-			@include mar (0, 0, 60px, 0);
-		}
-
-		&__info {
-			@include mar (0, 0, 0, 0);
-		}
-
-		&__title {
-			@include mar (0, 0, 42px, 0);
-		}
-
-		&__box {
-			@include mar (0, 90px, 0, 0);
-		}
-
-		&__text {
-			@include mar (0, 23px, 0, 0);
-		}
-	}
-
-	@media only screen and (max-width: 360px) {
-		&__top {
-			@include pad (65px, 10px, 68px, 10px);
-		}
+	@media only screen and (max-width: 1520px) {}
 
 
-		&__wrapper {
-			@include flex ($jc: flex-start, $ai: flex-start, $fw: wrap, $fd: column);
-		}
-
-		&__logo {
-			@include mar (0, 30px, 60px, 64px);
-		}
-
-		&__wrap {
-			@include flex ($jc: space-between, $ai: center, $fd: column);
-			@include mar (0, 0, 48px, 0);
-		}
-
-		&__info {
-			@include mar (0, 0, 0, 54px);
-		}
-
-		&__title {
-			@include mar (0, 0, 22px, 0);
-		}
-
-		&__pay {
-			@include mar (0, 0, 0, 0);
-		}
-
-		&__pay-list {
-			@include box-size ($w: 354px);
-		}
-
-		&__box {
-			@include mar (0, 90px, 0, 0);
-		}
-
-		&__input {
-			text-indent: 10px;
-			@include box-size ($w: 343px);
-		}
-
-		&__inner {
-			@include mar (0, 0, 0, 82px);
-		}
-
-		&__text {
-			line-height: 1.125rem;
-			@include mar (0, 0, 0, 24px);
-
-			&::before {
-				@include pseudo;
-				@include pos-abs ($b: -2px, $l: -55px);
-				@include background (url("../images/footer/footer_arrow.png"));
-				@include box-size (48px, 42px);
-			}
-
-			&__link {
-				@include pos ($r: 12px);
-
-				&::before {
-					display: none;
-				}
-			}
-		}
-	}
 }

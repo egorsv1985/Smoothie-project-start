@@ -30,7 +30,7 @@
 	}
 
 	&__inner {
-		@include flex (center, center);
+		@include flex (flex-start, center);
 		overflow-x: auto;
 		@include mar (0, 0, 10px, 0);
 	}
@@ -56,12 +56,4 @@
 		@include box-size (384px, 384px);
 		}
 
-	/* instagram */
-	@media only screen and (max-width: 1440px) {}
-
-	@media only screen and (max-width: 992px) {}
-
-	@media only screen and (max-width: 768px) {}
-
-	@media only screen and (max-width: 320px) {}
 }

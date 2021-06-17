@@ -1,111 +1,65 @@
 .story {
 	&__inner {
-		@include flex (center, center);
-		@include mar (120px, auto, 152px, auto);
-		max-width: 1320px;}
+		@include flex (center, center, wrap);
+		@include mar (120px, auto, 160px, auto);
+		@media only screen and (max-width: 1360px) {
+			@include flex (center, center, wrap, column);
+	}
+	}
+	&__box {
+		@media only screen and (max-width: 1360px) {
+			@include mar (0, 180px, 0, 0);
+	}
+	}
+	&__image {
+		max-width: 584px;
+	}
 
-		&__image {
-			max-width: 584px;
+	&__title {
+		@include mar (0, 0, 43px, 0);
+	}
+
+	&__text {
+		@include mar (0, 0, 45px, 0);
+		max-width: 525px;
+	}
+
+	&__btn {
+		@include box-size (304px, 64px);
+		@include border-radius-px (30);
+		border: none;
+		text-indent: -126px;
+		position: relative;
+		@media only screen and (max-width: 1360px) {
+			@include mar(0, 0, 80px, 0);
+	}
+
+		&::before {
+			@include pseudo;
+			@include pos-abs ($t: 23px, $r: 40px);
+			@include box-size (30px, 16px);
+			@include background (url("../images/base/arrow.png"))
 		}
+	}
 
-		&__title {
-			@include mar (0, 0, 43px, 0);
-		}
+	&__content {
+		position: relative;
+		@include mar (0, 0, 0, 200px);
+		@media only screen and (max-width: 1360px) {
+			@include mar(0, 0, 0, 0);
+	}
+	@media only screen and (max-width: 768px) {
+		@include mar(0, 0, 0, 125px);
+}
 
-		&__text {
-			@include mar (0, 0, 45px, 0);
-			max-width: 525px;
-		}
-
-		&__btn {
-			@include box-size (304px, 64px);
-			@include border-radius-px (30);
-			border: none;
-			text-indent: -126px;
-			position: relative;
-
-			&::before {
-				@include pseudo;
-				@include pos-abs ($t: 20px, $l: 225px);
-				@include box-size (30px, 16px);
-				@include background (url("../images/base/arrow.png"))
-			}
-		}
-
-		&__content {
-			position: relative;
-			@include mar (0, 0, 0, 200px);
-
-			&::after {
-				@include pseudo;
-				@include pos-abs ($t: 24px, $l: -166px);
-				@include box-size (290px, 216px);
-				@include background (url("../images/story/story_stamp.png"));
-			}
-		}
-
-		/* story */
-		@media only screen and (max-width: 1440px) {}
-
-		@media only screen and (max-width: 992px) {}
-
-		@media only screen and (max-width: 768px) {
-			&__inner {
-				@include flex (flex-start, center, wrap);
-				@include mar (90px, auto, 152px, auto);
-			}
-
-			&__box {
-				@include pad (0, 0, 0, 34px);
-			}
-
-			&__title {
-				@include mar (0, 0, 43px, 0);
-			}
-
-			&__text {
-				@include mar (0, 0, 40px, 0);
-				max-width: 520px;
-				/* 520px */
-			}
-
-			&__btn {
-				@include mar (0, 0, 80px, 0);
-
-			}
-
-			&__content {
-				@include mar (0, 0, 0, 160px);
-			}
-		}
-
-		@media only screen and (max-width: 360px) {
-			&__inner {
-				@include mar (60px, auto, 152px, auto);
-			}
-
-			&__box {
-				@include pad (0, 0, 0, 16px);
-			}
-
-			&__title {
-				@include mar (0, 0, 32px, 0);
-			}
-
-			&__btn {
-				@include mar (0, 0, 0, 17px);
-			}
-
-			&__img {
-				@include box-size (340px, 350px);
-			}
-
-			&__content {
-				@include mar (0, auto, 0, auto);
-
-				&::after {
-					display: none;
-				}
+		&::after {
+			@include pseudo;
+			@include pos-abs ($t: 20px, $l: -170px);
+			@include box-size (290px, 216px);
+			@include background (url("../images/story/story_stamp.png"));
+			@media only screen and (max-width: 360px) {
+				display: none;
 			}
 		}
 	}
+}

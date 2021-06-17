@@ -2,18 +2,14 @@
 	overflow-x: auto;
 
 	&__wrapper {
-		@include flex ($jc: space-between, $ai: center);
-		@include mar (0, auto, 0, auto);
+		@include flex (flex-start, center);
+		
 
 	}
 
 	&__item {
-		@include flex ($ai: center, $fd: column);
-
-		flex: 1 0 25%;
-
+		@include flex (center, center, nowrap, column);
 		min-width: 480px;
-		/* 480px */
 		@include box-size ($h: 720px);
 		@include pad (130px, 0, 0, 0);
 
@@ -51,14 +47,10 @@
 
 	&__btn {
 		@include box-size (207px, 63px);
-		
-
-		border: 2px solid $bg-main-color;
-
+		@include border (2px, solid, $bg-main-color);
+		@include mar (0, 0, 80px, 0);
 		position: relative;
-
 		text-indent: -90px;
-		/* 90px */
 		@include border-radius-px (30);
 
 		&::before {
@@ -69,16 +61,4 @@
 		}
 	}
 
-	/* products */
-	@media only screen and (max-width: 1440px) {}
-
-	@media only screen and (max-width: 992px) {}
-
-	@media only screen and (max-width: 768px) {}
-
-	@media only screen and (max-width: 360px) {
-		&__img {
-			@include box-size (100px, 254px);
-		}
-	}
 }

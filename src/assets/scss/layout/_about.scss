@@ -1,5 +1,6 @@
 .about {
 	background-color: $bg-about-color;
+	
 
 	&__inner {
 		@include flex(space-around, center, wrap);
@@ -12,9 +13,19 @@
 
 	&__wrapper {
 		@include box-size ($h: 800px);
-		
 		}
-
+		&--yellow {
+			color: #cae941;
+	
+			position: relative;
+	
+			&::before {
+				@include pseudo;
+				@include background (url(../images/about/about_line.png));
+				@include pos-abs ($t: 65px, $l: -10px);
+				@include box-size (450px, 13px);
+			}
+		}
 	&__img {
 		@include box-size (691px, 818px);
 		@include transform (translateY(0) rotate(-7deg));
@@ -25,6 +36,9 @@
 		@include mar (0, 125px, 80px, 0);
 		@media only screen and (max-width: 1520px) {
 			@include mar (0, 0, 0, 70px);
+		}
+		@media only screen and (max-width: 768px) {
+			@include mar (0, 40px, 0, 0);
 		}
 
 	}
@@ -64,86 +78,6 @@
 			@include pos-abs ($t: 22px, $l: 305px);
 			@include box-size ($w: 30px, $h: 16px);
 			@include background (url("../images/base/arrow.png"));
-		}
-	}
-
-
-
-	// @media only screen and (max-width: 1440px) {
-	// 	& {
-	// 		@include pad (0, 0, 0, 80px);
-	// 		max-height: 1000px;
-	// 		/* 1000px */
-	// 	}
-
-	// 	&__wrapper {
-	// 		@include mar (0, 0, 0, 80px);
-	// 	}
-
-	// 	&__title {
-	// 		@include mar (65px, 0, 0, 0);
-
-	// 		&--orange::before {
-	// 			@include pos ($t: 120px, $l: -320px);
-	// 			@include box-size ($w: 420px);
-	// 		}
-	// 	}
-	// }
-
-	@media only screen and (max-width: 992px) {}
-
-	@media only screen and (max-width: 768px) {
-		& {
-			max-height: 1660px;
-			/* 1660px */
-			@include pad (56px, 0, 100px, 38px);
-		}
-
-		&__inner {
-			@include flex ($jc: center, $ai: center, $fd: column);
-		}
-
-		&__wrapper {
-			@include flex ($fd: column);
-			@include mar (0, 0, 0, 0);
-		}
-	}
-
-	@media only screen and (max-width: 360px) {
-		& {
-			@include pad (0, 0, 0, 12px);
-		}
-
-		&__img {
-			@include box-size (337px, 399px);
-		}
-
-		&__title {
-			max-width: 660px;
-			/* 660px */
-
-			font-size: 2.75rem;
-			/* 44px */
-			@include mar (50px, 0, 60px, 0);
-
-			&--orange::before {
-				@include pos ($t: 95px, $l: -260px);
-				@include box-size (305px, 9px);
-			}
-		}
-
-		&__btn {
-			font-size: 1.125rem;
-			/*18px*/
-			@include box-size ($w: 343px);
-
-			&::before {
-				@include pos ($l: 280px);
-			}
-		}
-
-		&__item--bold {
-			line-height: 1.5em;
 		}
 	}
 }

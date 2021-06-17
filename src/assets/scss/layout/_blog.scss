@@ -1,6 +1,6 @@
 .blog {
-	@include pad (100px, 10px, 195px, 10px);
-	@include mar (0, auto, 0, auto);
+	@include pad (90px, 10px, 200px, 10px);
+	
 
 	&__wrapper {
 		@include flex (center, center, wrap);
@@ -15,18 +15,24 @@
 	}
 
 	&__text-box {
-		@include pad (225px, 30px, 45px, 30px);
+		@include mar (225px, 30px, 45px, 30px);
 		position: relative;
+		@media only screen and (max-width: 1216px) {
+			@include mar (30px, 30px, 45px, 30px);
+	}
 
 		&::before {
 			@include pseudo;
-			@include pos-abs ($t: 175px, $l: -45px);
+			@include pos-abs ($t: -50px, $l: -70px);
 			@include box-size (685px, 12px);
 
 			background-color: #f7ae3b;
 
 			z-index: -1;
 			@include border-radius-side (0, 10px, 10px, 0);
+			@media only screen and (max-width: 1216px) {
+				display: none;
+		}
 		}
 	}
 
@@ -60,82 +66,4 @@
 		}
 	}
 
-	/* blog */
-	@media only screen and (max-width: 1440px) {}
-
-	@media only screen and (max-width: 992px) {}
-
-	@media only screen and (max-width: 768px) {
-		& {
-			@include pad (100px, 30px, 160px, 30px);
-			@include mar (0, auto, 0, auto);
-
-			&__wrapper {
-				@include flex($jc: flex-start, $fw: wrap);
-			}
-
-			&__box {
-				@include flex ($jc: flex-start, $fd: column);
-				@include mar (0, 0, 30px, 0);
-			}
-
-			&__img {
-				@include box-size (708px, 510px);
-			}
-
-			&__text-box {
-				@include pad (0, 0, 0, 0);
-
-				&::before {
-					content: "";
-					display: none;
-				}
-			}
-
-			&__subtitle {
-				@include mar (0, 0, 0, 0);
-
-			}
-
-			&__time {
-				@include mar (0, 0, 0, 0);
-			}
-
-			&__text {
-				max-width: 472px;
-				@include mar (25px, 0, 0, 64px);
-				position: relative;
-
-				&::after {
-					@include pseudo;
-					@include pos-abs ($b: 15px, $r: 145px);
-					@include box-size (18px, 10px);
-					@include background (url("../images/base/arrow.png"));
-				}
-			}
-		}
-	}
-
-	@media only screen and (max-width: 360px) {
-		& {
-			@include pad (60px, 10px, 90px, 10px);
-		}
-
-		&__wrapper {
-			@include mar (0, auto, 0, auto);
-		}
-
-		&__img {
-			@include box-size (240px, 245px);
-		}
-
-		&__text {
-			@include mar (28px, 0, 0, 0);
-
-			/* max-width: 472px; */
-			&::after {
-				@include pos ($b: 15px, $r: 270px);
-			}
-		}
-	}
 }

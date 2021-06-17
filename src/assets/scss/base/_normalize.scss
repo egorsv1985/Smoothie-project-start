@@ -21,8 +21,27 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
-}
 
+  font-size: 100%;
+ 
+}
+body {
+  margin: 0;
+  font-family: Muli, sans-serif;
+	color: #fff;
+ }
+
+/* проблема переполнения */
+/* * {
+	outline: solid 1px red;
+} */
+
+.container {
+	max-width: 1740px;
+	margin: 0 auto;
+	padding: 0 10px;
+	/* 0 10px */
+}
 /* Sections
    ========================================================================== */
 
@@ -30,9 +49,7 @@ html {
  * Remove the margin in all browsers.
  */
 
-body {
-  margin: 0;
-}
+
 
 ul,
 p,

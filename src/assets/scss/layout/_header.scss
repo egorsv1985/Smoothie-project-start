@@ -1,18 +1,41 @@
+
 .header {
-	@include background (url('../images/header/header_bg.jpg'));
-	z-index: -1;
+	width: 100%;
 	min-height: 100vh;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
+	perspective: 1px;
+	perspective-origin: center center;
+	transform-style: preserve-3d;
+	z-index: 1;
+	
+
+	&::before {
+		@include pseudo;
+		@include background (url('../images/header/header_bg.jpg'));
+		@include pos-abs (0, 0, 0, 0);
+		transform: translateZ(-1px) scale(2);
+		z-index: -1;
+		transform-origin: center center;
+		}
+	
 
 	&__top {
 		@include pad (84px, 0, 0, 0);
 		@include mar (0, 0, 120px, 0);
 		position: relative;
+		
 	}
 
 	&__navigation {
 		@include flex ($jc: space-between, $ai: center, $fw: wrap);
 		z-index: 1;
 		@include box-size ($w: 100%);
+		@media only screen and (max-width: 1368px) {
+			display: none;
+		}
+
 	}
 
 
@@ -50,17 +73,16 @@
 
 	&__btn {
 		@include box-size(280px, 70px);
-		@include font ($fs: 1.5rem, $lh: 2.5em, $ls: -0.02em, $text-trans: capitalize);
+		@include font (1.5rem, 2.5em, -0.02em, capitalize);
 		@include border-radius-px (35);
-		text-indent: -5.25rem;
-		/*84px*/
+		text-indent: -84px;
 		position: relative;
 
 
 		&::before {
 			@include pseudo;
 			@include pos-abs ($t: 27px, $l: 210px);
-			@include box-size ($w: 30px, $h: 16px);
+			@include box-size (30px, 16px);
 			@include background (url('../images/base/arrow.png'));
 
 		}
@@ -74,9 +96,7 @@
 	}
 
 	@media only screen and (max-width: 1368px) {
-		&__navigation {
-			display: none;
-		}
+		
 
 		&__burger-line {
 			@include box-size (35px, 2px);
@@ -84,13 +104,14 @@
 			position: relative;
 			display: block;
 			@include transition (all, 0.5s, ease);
+			background-color: $burger-color;
 
 
 			&::after,
 			&::before {
 				@include pseudo;
 				@include pos-abs ($r: 0);
-				background-color: $bg-burger-color;
+				background-color: $burger-color;
 				@include box-size (35px, 2px);
 			}
 

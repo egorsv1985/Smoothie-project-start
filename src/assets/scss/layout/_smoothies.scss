@@ -1,15 +1,24 @@
 .smoothies {
-	@include pad(100px, 0, 120px, 0);
+	@include pad(100px, 0, 110px, 0);
+	@media only screen and (max-width: 768px) {
+		@include pad(48px, 0, 90px, 0);
+	}
 
 	&__title {
 		text-align: center;
 		@include mar(0, 0, 40px, 0);
+		@media only screen and (max-width: 768px) {
+			@include mar(0, 0, 24px, 0);
+		}
 	}
 
 	&__text {
 		max-width: 915px;
 		text-align: center;
 		@include mar(0, auto, 40px, auto);
+		@media only screen and (max-width: 768px) {
+			max-width: 700px;
+		}
 	}
 
 	&__cards {
@@ -18,14 +27,15 @@
 		/* 1050px */
 		@include mar(0, auto, 0, auto);
 		background-color: $bg-cards-color;
+		@media only screen and (max-width: 768px) {
+			max-width: 540px;
+		}
 	}
 
 	&__item {
 		@include flex ($jc: flex-end, $ai: center, $fd: column);
 		@include box-size(25%, 195px);
 		background-color: $bg-main-color;
-		@include pad(28px, 0, 40px, 0);
-
 		&:nth-child(-n + 8) {
 
 			border-right: 2px solid #f6edde;
@@ -39,33 +49,7 @@
 		&:last-child {
 			border-right: none;
 		}
-	}
-
-	&__desc {
-		@include font ($fs: 1.5625rem, $lh: 1.6em, $ls: -0.02em, $fw: 800);
-		@include mar (27px, 0, 0, 0);
-		text-align: center;
-	}
-
-	/* smoothies */
-	@media only screen and (max-width: 1440px) {}
-
-	@media only screen and (max-width: 992px) {}
-
-	@media only screen and (max-width: 768px) {
-		& {
-			@include pad(48px, 0, 90px, 0);
-		}
-
-		&__text {
-			max-width: 700px;
-		}
-
-		&__cards {
-			max-width: 540px;
-		}
-
-		&__item {
+		@media only screen and (max-width: 768px) {
 			@include box-size ($w: 50%);
 			@include pad(0, 0, 30px, 0);
 
@@ -75,7 +59,6 @@
 			&:last-child {
 				border: none;
 			}
-
 			&:nth-child(odd) {
 				border-right: 2px solid #f6edde;
 				border-bottom: 2px solid #f6edde;
@@ -90,26 +73,14 @@
 				border-bottom: none;
 			}
 		}
+
+		
 	}
 
-	@media only screen and (max-width: 360px) {
-		& {
-			@include pad(40px, 0, 90px, 0);
-		}
-
-		&__title {
-			@include mar (22px, 0, 0, 0);
-		}
-
-		&__text {
-			max-width: 338px;
-			/* 338px */
-			@include mar(0, auto, 60px, auto);
-		}
-
-		&__desc {
-			@include font ($fs: 1.25rem);
-			@include mar (27px, 0, 0, 0);
-		}
+	&__desc {
+		@include font ($fs: 1.5625rem, $lh: 1.6em, $ls: -0.02em, $fw: 800);
+		@include mar (27px, 0, 30px, 0);
+		text-align: center;
 	}
-}
+	}
+
