@@ -16,9 +16,9 @@
 
 html {
     line-height: 1.15;
-  /* 1 */
+    /* 1 */
     -webkit-text-size-adjust: 100%;
-  /* 2 */
+    /* 2 */
 }
 
 /* Sections
@@ -81,11 +81,11 @@ h1 {
  */
 hr {
     box-sizing: content-box;
-  /* 1 */
+    /* 1 */
     height: 0;
-  /* 1 */
+    /* 1 */
     overflow: visible;
-  /* 2 */
+    /* 2 */
 }
 
 /**
@@ -94,9 +94,9 @@ hr {
  */
 pre {
     font-family: monospace, monospace;
-  /* 1 */
+    /* 1 */
     font-size: 1em;
-  /* 2 */
+    /* 2 */
 }
 
 /* Text-level semantics
@@ -116,12 +116,12 @@ a {
  */
 abbr[title] {
     border-bottom: none;
-  /* 1 */
+    /* 1 */
     text-decoration: underline;
-  /* 2 */
+    /* 2 */
     -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted;
-  /* 2 */
+    /* 2 */
 }
 
 /**
@@ -140,9 +140,9 @@ code,
 kbd,
 samp {
     font-family: monospace, monospace;
-  /* 1 */
+    /* 1 */
     font-size: 1em;
-  /* 2 */
+    /* 2 */
 }
 
 /**
@@ -199,15 +199,15 @@ optgroup,
 select,
 textarea {
     font-family: inherit;
-  /* 1 */
+    /* 1 */
     font-size: 100%;
-  /* 1 */
+    /* 1 */
     line-height: 1.15;
-  /* 1 */
+    /* 1 */
     color: inherit;
-  /* 1 */
+    /* 1 */
     margin: 0;
-  /* 2 */
+    /* 2 */
 }
 
 /**
@@ -216,7 +216,7 @@ textarea {
  */
 button,
 input {
-  /* 1 */
+    /* 1 */
     overflow: visible;
 }
 
@@ -226,7 +226,7 @@ input {
  */
 button,
 select {
-  /* 1 */
+    /* 1 */
     text-transform: none;
 }
 
@@ -276,17 +276,17 @@ fieldset {
  */
 legend {
     box-sizing: border-box;
-  /* 1 */
+    /* 1 */
     color: inherit;
-  /* 2 */
+    /* 2 */
     display: table;
-  /* 1 */
+    /* 1 */
     max-width: 100%;
-  /* 1 */
+    /* 1 */
     padding: 0;
-  /* 3 */
+    /* 3 */
     white-space: normal;
-  /* 1 */
+    /* 1 */
 }
 
 /**
@@ -310,9 +310,9 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
     box-sizing: border-box;
-  /* 1 */
+    /* 1 */
     padding: 0;
-  /* 2 */
+    /* 2 */
 }
 
 /**
@@ -329,9 +329,9 @@ textarea {
  */
 [type="search"] {
     -webkit-appearance: textfield;
-  /* 1 */
+    /* 1 */
     outline-offset: -2px;
-  /* 2 */
+    /* 2 */
 }
 
 /**
@@ -347,9 +347,9 @@ textarea {
  */
 ::-webkit-file-upload-button {
     -webkit-appearance: button;
-  /* 1 */
+    /* 1 */
     font: inherit;
-  /* 2 */
+    /* 2 */
 }
 
 /* Interactive
@@ -386,47 +386,47 @@ template {
 
 @font-face {
     font-family: Muli;
-  src: url("./fonts/Muli-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-display: swap;
+    src: url("./fonts/Muli-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Muli;
-  src: url("../fonts/Muli-BoldItalic.ttf") format("truetype");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
+    src: url("../fonts/Muli-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Muli;
-  src: url("../fonts/Muli-ExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-display: swap;
+    src: url("../fonts/Muli-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Muli;
-  src: url("../fonts/Muli-Italic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
+    src: url("../fonts/Muli-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Muli;
-  src: url("../fonts/Muli-Regular.woff") format("woff");
-  font-weight: 400;
-  font-display: swap;
+    src: url("../fonts/Muli-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Muli;
-  src: url("../fonts/Muli-Semi-BoldItalic.ttf") format("truetype");
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
+    src: url("../fonts/Muli-Semi-BoldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
 }
 
 .header {
@@ -571,7 +571,8 @@ template {
         transition: all 0.5s ease;
     }
 
-    .header__burger-line::after, .header__burger-line::before {
+    .header__burger-line::after,
+    .header__burger-line::before {
         content: "";
         display: block;
         position: absolute;
@@ -617,7 +618,7 @@ template {
     padding-right: 0;
     padding-bottom: 120px;
     padding-left: 0;
-  /* smoothies */
+    /* smoothies */
 }
 
 .smoothies__title {
@@ -681,7 +682,8 @@ template {
     border-bottom: 2px solid #f6edde;
 }
 
-.smoothies__item:nth-child(4), .smoothies__item:last-child {
+.smoothies__item:nth-child(4),
+.smoothies__item:last-child {
     border-right: none;
 }
 
@@ -721,7 +723,10 @@ template {
         padding-left: 0;
     }
 
-    .smoothies__item:nth-child(-n + 8), .smoothies__item:nth-child(-n + 4), .smoothies__item:nth-child(4), .smoothies__item:last-child {
+    .smoothies__item:nth-child(-n + 8),
+    .smoothies__item:nth-child(-n + 4),
+    .smoothies__item:nth-child(4),
+    .smoothies__item:last-child {
         border: none;
     }
 
@@ -734,7 +739,8 @@ template {
         border-bottom: 2px solid #f6edde;
     }
 
-    .smoothies__item:nth-child(7), .smoothies__item:last-child {
+    .smoothies__item:nth-child(7),
+    .smoothies__item:last-child {
         border-bottom: none;
     }
 }
@@ -756,7 +762,7 @@ template {
 
     .smoothies__text {
         max-width: 338px;
-      /* 338px */
+        /* 338px */
         margin-top: 0;
         margin-right: auto;
         margin-bottom: 60px;
@@ -879,7 +885,7 @@ template {
         padding-bottom: 0;
         padding-left: 80px;
         max-height: 1000px;
-      /* 1000px */
+        /* 1000px */
     }
 
     .about__wrapper {
@@ -906,7 +912,7 @@ template {
 @media only screen and (max-width: 768px) {
     .about {
         max-height: 1660px;
-      /* 1660px */
+        /* 1660px */
         padding-top: 56px;
         padding-right: 0;
         padding-bottom: 100px;
@@ -951,9 +957,9 @@ template {
 
     .about__title {
         max-width: 660px;
-      /* 660px */
+        /* 660px */
         font-size: 2.75rem;
-      /* 44px */
+        /* 44px */
         margin-top: 50px;
         margin-right: 0;
         margin-bottom: 60px;
@@ -969,7 +975,7 @@ template {
 
     .about__btn {
         font-size: 1.125rem;
-      /*18px*/
+        /*18px*/
         width: 343px;
     }
 
@@ -984,7 +990,7 @@ template {
 
 .products {
     overflow-x: auto;
-  /* products */
+    /* products */
 }
 
 .products__wrapper {
@@ -1093,10 +1099,6 @@ template {
         width: 100px;
         height: 254px;
     }
-}
-
-.story {
-  /* story */
 }
 
 .story__inner {
@@ -1217,7 +1219,7 @@ template {
         margin-bottom: 40px;
         margin-left: 0;
         max-width: 520px;
-      /* 520px */
+        /* 520px */
     }
 
     .story__btn {
@@ -1437,11 +1439,11 @@ template {
 
     .testimonials__box::after {
         font-size: 12.5rem;
-      /* 200px */
+        /* 200px */
         top: 512px;
-      /* 512px */
+        /* 512px */
         left: 36px;
-      /* 36px */
+        /* 36px */
     }
 }
 
@@ -1453,34 +1455,34 @@ template {
 
     .testimonials__box::after {
         font-size: 11.25rem;
-      /* 180px */
+        /* 180px */
         top: 512px;
-      /* 512px */
+        /* 512px */
         left: 36px;
-      /* 36px */
+        /* 36px */
     }
 
     .testimonials__title {
         margin-bottom: 6rem;
-      /* 96px */
+        /* 96px */
     }
 
     .testimonials__box {
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
         max-width: 740px;
-      /* 740px */
+        /* 740px */
         margin: 0 auto 104px;
-      /*0 auto 104px */
+        /*0 auto 104px */
     }
 
     .testimonials__textbox {
         padding-top: 0;
         margin-top: 90px;
-      /* 90px */
+        /* 90px */
         margin-right: 0;
         max-width: 452px;
-      /* 452px */
+        /* 452px */
     }
 
     .testimonials__cite {
@@ -1491,7 +1493,7 @@ template {
 @media only screen and (max-width: 360px) {
     .testimonials__inner {
         padding: 116px 0 112px;
-      /* 116px 0 112px */
+        /* 116px 0 112px */
         position: relative;
     }
 
@@ -1502,7 +1504,7 @@ template {
 
     .testimonials__title {
         margin-bottom: 65px;
-      /* 65px */
+        /* 65px */
     }
 
     .testimonials::after {
@@ -1512,14 +1514,14 @@ template {
 
     .testimonials__box {
         margin: 0 auto 80px;
-      /*0 auto 80px */
+        /*0 auto 80px */
     }
 
     .testimonials__textbox {
         margin-top: 50px;
-      /* 50px */
+        /* 50px */
         max-width: 338px;
-      /* 338px */
+        /* 338px */
     }
 }
 
@@ -1532,7 +1534,7 @@ template {
     margin-right: auto;
     margin-bottom: 0;
     margin-left: auto;
-  /* blog */
+    /* blog */
 }
 
 .blog__wrapper {
@@ -1760,7 +1762,7 @@ template {
         margin-right: 0;
         margin-bottom: 0;
         margin-left: 0;
-      /* max-width: 472px; */
+        /* max-width: 472px; */
     }
 
     .blog__text::after {
@@ -1775,7 +1777,7 @@ template {
     margin-bottom: 0;
     margin-left: auto;
     text-align: center;
-  /* instagram */
+    /* instagram */
 }
 
 .instagram__inner {
@@ -1887,7 +1889,7 @@ template {
 
 .footer__title {
     font-size: 1.625rem;
-  /* 26px */
+    /* 26px */
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 35px;
@@ -2656,7 +2658,7 @@ template {
     left: 0;
     right: 0;
     height: 100vh;
-  /* overflow-y: hidden; */
+    /* overflow-y: hidden; */
     z-index: 1;
     background-color: #12c37c;
     display: -ms-flexbox;
@@ -2759,8 +2761,8 @@ template {
 
 html {
     font-size: 100%;
-  /* 10px */
-  /* parallax */
+    /* 10px */
+    /* parallax */
     height: 100%;
     overflow: hidden;
 }
@@ -2772,17 +2774,17 @@ html {
 body {
     font-family: Muli, sans-serif;
     color: #fff;
-  /* parallax */
+    /* parallax */
     height: 100%;
     overflow-x: hidden;
 }
 
 .container {
     max-width: 1740px;
-  /* 1740px */
+    /* 1740px */
     margin: 0 auto;
     padding: 0 10px;
-  /* 0 10px */
+    /* 0 10px */
 }
 
 /* создаем медиа запросы */
