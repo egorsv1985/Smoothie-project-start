@@ -33,15 +33,13 @@
 		@include flex (flex-start, center);
 		overflow-x: auto;
 		@include mar (0, 0, 10px, 0);
+		flex: 1 0 20%;
 	}
 
 	&__picture {
 		position: relative;
-		background-repeat: no-repeat;
-		background-size: cover;
-
+		@include box-size ($w: 100%);
 		
-
 		&::before {
 			@include pseudo;
 			@include pos-abs ($b: 17px, $r: 23px);
@@ -52,8 +50,8 @@
 	}
 
 	&__img {
-		object-fit: contain;
-		@include box-size (384px, 384px);
+		@include box-size (100%, 384px);
+		min-width: 384px;
 		}
 
 }

@@ -10,7 +10,7 @@
 	&__item {
 		@include flex (center, center, nowrap, column);
 		min-width: 480px;
-		@include box-size ($h: 720px);
+		@include box-size (100%, 720px);
 		@include pad (130px, 0, 0, 0);
 
 		&--brown {

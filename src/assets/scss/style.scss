@@ -6,15 +6,6 @@
 @import "./abstracts/variables";
 
 
-
-@import "./components/menu";
-@import "./components/personal";
-@import "./components/social";
-@import "./components/buttons";
-@import "./components/burger-active";
-@import "./components/text";
-@import "./components/title";
-
 @import "./layout/header";
 @import "./layout/smoothies";
 @import "./layout/about";
@@ -24,6 +15,17 @@
 @import "./layout/blog";
 @import "./layout/instagram";
 @import "./layout/footer";
+
+
+@import "./components/menu";
+@import "./components/personal";
+@import "./components/social";
+@import "./components/buttons";
+@import "./components/burger-active";
+@import "./components/text";
+@import "./components/title";
+
+
 
 
 

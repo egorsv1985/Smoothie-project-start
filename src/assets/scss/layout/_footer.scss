@@ -6,7 +6,7 @@
 
 	&__wrapper {
 		@include flex (space-between, center, wrap);
-		@media only screen and (max-width: 1520px) {
+		@media only screen and (max-width: 1568px) {
 			@include flex (center, center, wrap, column);
 		}
 	}

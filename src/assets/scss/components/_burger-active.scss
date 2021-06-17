@@ -18,8 +18,9 @@
 
 	}
 
-	._active+.header__burger-btn .header__burger-line::after {
-		@include transform (rotate(90deg), translate(10px, 0));
+	._active+.header__burger-btn .header__burger-line::before {
+		@include transform (rotate(90deg) translate(10px, 0));
+		// @include transform (rotate(90deg), translate(10px, 0));
 	}
 
 	._active+.header__burger-btn .header__burger-line {
@@ -28,7 +29,7 @@
 
 	}
 
-	._active+.header__burger-btn .header__burger-line::before {
+	._active+.header__burger-btn .header__burger-line::after {
 		@include transform (scale(0));
 	}
 }

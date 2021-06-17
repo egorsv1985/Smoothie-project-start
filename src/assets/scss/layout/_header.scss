@@ -116,13 +116,13 @@
 			}
 
 			&::after {
-				@include pos-abs (-10px, 0, 0, 0);
-				@include box-size ($w: 40px)
+				@include pos-abs (10px, 0, 0, 0);
+				@include box-size ($w: 30px)
 			}
 
 			&::before {
-				@include pos-abs (10px, 0, 0, 0);
-				@include box-size ($w: 30px);
+				@include pos-abs (-10px, 0, 0, 0);
+				@include box-size ($w: 40px);
 			}
 		}
 
