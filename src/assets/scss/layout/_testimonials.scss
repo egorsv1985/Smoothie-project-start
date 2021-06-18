@@ -30,9 +30,12 @@
 	}
 
 	&__box {
-		@include flex (center, center);
+		@include flex (center, center, wrap);
 		@include mar (0, auto, 120px, auto);
 		position: relative;
+		@media only screen and (max-width: 1440px) {
+			@include flex ($fd:column-reverse);
+		}
 
 		&::after {
 			@include pseudo ('Sarah A');
@@ -50,12 +53,12 @@
 	}
 
 	&__textbox {
-		@include flex (center, center, wrap, column);
+		@include flex (center, center, wrap);
 		@include mar (35px, 50px, 0, 0);
 		max-width: 460px;
 
-		@media only screen and (max-width: 768px) {
-			@include mar (80px, 0, 0, 0);
+		@media only screen and (max-width: 960px) {
+			@include mar (80px, 50px, 0, 0);
 		}
 	}
 
@@ -83,7 +86,7 @@
 	}
 
 	&__container {
-		@include flex (center, center);
+		@include flex (center, center, wrap);
 		@include mar (0, auto, 0, auto);
 		max-width: 160px;
 		/* 160px */

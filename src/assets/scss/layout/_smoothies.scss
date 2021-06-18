@@ -1,14 +1,16 @@
 .smoothies {
 	@include pad(100px, 0, 110px, 0);
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 960px) {
 		@include pad(48px, 0, 90px, 0);
 	}
 
 	&__title {
 		text-align: center;
 		@include mar(0, 0, 40px, 0);
-		@media only screen and (max-width: 768px) {
+		@include pad (0, 10px, 0, 10px);
+		@media only screen and (max-width: 960px) {
 			@include mar(0, 0, 24px, 0);
+			
 		}
 	}
 
@@ -16,9 +18,7 @@
 		max-width: 915px;
 		text-align: center;
 		@include mar(0, auto, 40px, auto);
-		@media only screen and (max-width: 768px) {
-			max-width: 700px;
-		}
+		@include pad (0, 10px, 0, 10px);
 	}
 
 	&__cards {
@@ -27,7 +27,7 @@
 		/* 1050px */
 		@include mar(0, auto, 0, auto);
 		background-color: $bg-cards-color;
-		@media only screen and (max-width: 768px) {
+		@media only screen and (max-width: 960px) {
 			max-width: 540px;
 		}
 	}
@@ -49,9 +49,9 @@
 		&:last-child {
 			border-right: none;
 		}
-		@media only screen and (max-width: 768px) {
+		@media only screen and (max-width: 960px) {
 			@include box-size ($w: 50%);
-			@include pad(0, 0, 30px, 0);
+			
 
 			&:nth-child(-n + 8),
 			&:nth-child(-n + 4),

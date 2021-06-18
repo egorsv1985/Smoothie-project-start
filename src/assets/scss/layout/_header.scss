@@ -1,4 +1,3 @@
-
 .header {
 	width: 100%;
 	min-height: 100vh;
@@ -10,7 +9,6 @@
 	transform-style: preserve-3d;
 	z-index: 1;
 	
-
 	&::before {
 		@include pseudo;
 		@include background (url('../images/header/header_bg.jpg'));
