@@ -30,9 +30,6 @@ body {
   perspective: 1px; }
 
 /* проблема переполнения */
-* {
-  outline: solid 1px red; }
-
 .container {
   max-width: 1740px;
   margin: 0 auto;
