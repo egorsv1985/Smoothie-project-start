@@ -2,10 +2,11 @@
 	&__top {
 		background-color: $bg-footer-color;
 		padding: 80px 0 93px;
-		}
+	}
 
 	&__wrapper {
 		@include flex (space-between, center, wrap);
+
 		@media only screen and (max-width: 1568px) {
 			@include flex (center, center, wrap, column);
 		}
@@ -13,7 +14,7 @@
 
 	&__logo {
 		margin: 0 195px 40px 0;
-		}
+	}
 
 	&__wrap {
 		@include flex (center, center, wrap);
@@ -22,12 +23,12 @@
 
 		@media only screen and (max-width: 1520px) {
 			margin: 0;
-			}
+		}
 	}
 
 	&__info {
 		margin-bottom: 15px;
-		}
+	}
 
 	&__title {
 		font-size: 1.625rem;
@@ -36,7 +37,7 @@
 
 	&__info-list {
 		width: 170px;
-		}
+	}
 
 	&__info-link {
 		@include font ($fs: 1.125rem, $lh: 1.95em, $ls: -0.02, $fw: 700);
@@ -45,26 +46,26 @@
 
 	&__pay {
 		margin-left: 144px;
-		
+
 		@media only screen and (max-width: 1552px) {
 			margin-left: 95px;
-			}
+		}
 
 	}
 
 	&__pay-list {
 		@include flex ($jc: flex-start, $ai: center, $fw: wrap);
 		width: 270px;
-		}
+	}
 
 	&__pay-img {
 		margin: 0 18px 20px 0;
 		height: 100%;
-		}
+	}
 
 	&__box {
 		margin-bottom: 30px;
-		}
+	}
 
 	&__form {
 		margin-bottom: 24px;
@@ -86,11 +87,11 @@
 		outline: 0;
 		max-width: 498px;
 		text-indent: 65px;
-   	background-color: $bg-main-color;
+		background-color: $bg-main-color;
 		outline: 0;
 		border-style: none;
 		border-radius: 30px;
-		
+
 		&::placeholder {
 			@include font ($fs: 1.05rem, $lh: 2.05em, $ls: -0.02em, $fw: 700);
 			color: $text-footer-color;
@@ -100,7 +101,7 @@
 	&__inner {
 		@include flex ($ai: center);
 		margin-left: 186px;
-		}
+	}
 
 	&__text {
 		@include font ($fs: 1rem, $lh: 2.5em, $ls: -0.02em, $text-trans: uppercase, $fw: 800);
@@ -114,19 +115,19 @@
 			@include background (url("../images/footer/footer_arrow.png"));
 			width: 48px;
 			height: 42px;
-			}
+		}
 	}
 
 	&__social {
 		display: flex;
-		}
+	}
 
 	&__bottom {
 		background-color: $bg-footer-bottom-color;
 		margin: 0 auto;
 		@include flex ($jc: center, $ai: center);
 		height: 60px;
-		}
+	}
 
 	&__small {
 		@include font ($fs: 0.8rem, $lh: 2.7em, $ls: 0.02em);
@@ -143,12 +144,13 @@
 		@include background (url(../images/footer/footer_arrow__up.png));
 		background-size: 14px 25px;
 		border-radius: 5px;
-		
+
 		&::before {
 			@include pseudo ('Go top');
 			@include pos ($position: absolute, $t: 40px, $r: 60px);
 			@include font ($fs: 1rem, $lh: 2.5em, $ls: -0.02em, $fw: 700);
 			width: 55px;
 			height: 14px;
-			}
-	}	
+		}
+	}
+}

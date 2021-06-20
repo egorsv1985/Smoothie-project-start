@@ -49,13 +49,14 @@
 		position: relative;
 		margin-left: 200px;
 		
+		
 		@media only screen and (max-width: 1360px) {
 			margin-left: 0;
 			}
 	@media only screen and (max-width: 768px) {
 		margin-left: 125px;
 	}
-
+	
 		&::after {
 			@include pseudo;
 			@include pos ($position: absolute, $t: 20px, $l: -170px);
@@ -66,5 +67,8 @@
 				display: none;
 			}
 		}
+	}
+	&__img {
+		width: 100%;
 	}
 }
