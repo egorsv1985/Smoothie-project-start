@@ -2545,7 +2545,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         width: 40px; } }
 
 .smoothies {
-  padding: 100px 0 110px; }
+  padding: 100px 0 115px; }
   @media only screen and (max-width: 960px) {
     .smoothies {
       padding: 48px 0 90px; } }
@@ -2823,6 +2823,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       .story__content::after {
         display: none; } }
 
+.story__img {
+  width: 100%; }
+
 .testimonials {
   background-color: #672f1b;
   position: relative; }
@@ -2935,6 +2938,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     flex-direction: column; }
   .blog__title {
     margin-bottom: 62px; }
+  .blog__img {
+    width: 100%; }
   .blog__text-box {
     margin: 225px 30px 45px 30px;
     position: relative; }
