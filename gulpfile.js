@@ -59,6 +59,7 @@ const path = {
 // Если нужно выполнять преобразование файлов в определенном порядке, то используем массив с нужным нам порядком:
 const jsFiles = [
     srcPath + 'assets/js/lib.js',
+    srcPath + 'assets/js/libs/wow.js',
     srcPath + 'assets/js/main.js',
     srcPath + 'assets/js/script.js'
 ]
@@ -93,9 +94,7 @@ function html(cb) {
 
 // CSS 
 function css(cb) {
-    return src(path.src.css, {
-            base: srcPath + 'assets/scss/'
-        }) // если нужно компилировать 1 файл, то return src(srcPath + 'assets/scss/main.scss') 
+    src(srcPath + 'assets/scss/style.scss') // если нужно компилировать 1 файл, то return src(srcPath + 'assets/scss/main.scss') 
         .pipe(sourcemaps.init())
         .pipe(plumber({
             errorHandler: function (err) {

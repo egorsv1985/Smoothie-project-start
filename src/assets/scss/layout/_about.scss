@@ -25,12 +25,19 @@
 			@include background (url(../images/about/about_line.png));
 			@include pos-abs ($t: 65px, $l: -10px);
 			@include box-size (450px, 13px);
+			@media screen and (max-width: 768px) {
+				display: none;
+				
+			}
 		}
 	}
 
 	&__img {
-		@include box-size (691px, 818px);
+		
 		@include transform (translateY(0) rotate(-7deg));
+		max-width: 690px;
+    width: 100%;
+    
 	}
 
 	&__wrap {

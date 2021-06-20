@@ -1,21 +1,20 @@
 .header {
-	width: 100%;
+	// width: 100vw;
 	min-height: 100vh;
 	position: relative;
-	overflow-x: hidden;
-	overflow-y: auto;
-	perspective: 1px;
-	perspective-origin: center center;
+	
+	
+	// perspective-origin: center center;
 	transform-style: preserve-3d;
-	z-index: 1;
+	
 	
 	&::before {
 		@include pseudo;
 		@include background (url('../images/header/header_bg.jpg'));
 		@include pos-abs (0, 0, 0, 0);
-		transform: translateZ(-1px) scale(2);
+		// transform: translateZ(-1px) scale(2);
 		z-index: -1;
-		transform-origin: center center;
+		transform-origin: center;
 		}
 	
 
@@ -31,7 +30,10 @@
 		z-index: 1;
 		@include box-size ($w: 100%);
 		@media only screen and (max-width: 1368px) {
-			display: none;
+			// visibility: hidden;
+			transform: translateX(-100%);
+			// @include transition(all2s);
+			transition: all 1s;
 		}
 
 	}
@@ -124,13 +126,13 @@
 			}
 		}
 
-		&__right-block {
-			@include pad(160px, 0, 240px, 0);
-		}
+		// &__right-block {
+		// 	@include pad(160px, 0, 240px, 0);
+		// }
 
-		&__logo {
-			display: block;
-			@include pos ($t: 120%);
-		}
+		// &__logo {
+		// 	display: block;
+		// 	@include pos ($t: 120%);
+		// }
 	}
 }

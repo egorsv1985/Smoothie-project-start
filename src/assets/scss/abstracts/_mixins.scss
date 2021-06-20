@@ -37,7 +37,7 @@
 	right: #{$r}px;
 }
 
-@mixin pos ($t: null, $b: null, $l: null, $r: null) {
+@mixin pos ($position: null, $t: null, $b: null, $l: null, $r: null) {
 	top: $t;
 	bottom: $b;
 	left: $l;

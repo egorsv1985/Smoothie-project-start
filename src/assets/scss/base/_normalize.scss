@@ -23,18 +23,24 @@ html {
   /* 2 */
 
   font-size: 100%;
+  // overflow-y: hidden;
+  height: 100%;
  
 }
 body {
   margin: 0;
   font-family: Muli, sans-serif;
 	color: #fff;
+  // overflow-x: hidden;
+  overflow-y: scroll;
+  transform-style: preserve-3d;
+  perspective: 1px;
  }
 
 /* проблема переполнения */
-/* * {
+* {
 	outline: solid 1px red;
-} */
+} 
 
 .container {
 	max-width: 1740px;

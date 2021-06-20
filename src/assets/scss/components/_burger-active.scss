@@ -1,23 +1,45 @@
+// ._active {
+// 	// @include pos-fix (0, 0, 0, 0);
+// 	@include box-size ($h: 100vh);
+// 	/* overflow-y: hidden; */
+// 	@include transition (all, 0.2s, ease-in-out);
+// 	z-index: 1;
+// position: fixed;
+// 	background-color: $bg-burger-color;
+
+// 	@include flex (center, center, wrap, column-reverse);
+// 	visibility: visible;
+
+// }
+
+// @media only screen and (max-width: 1368px) {
+// 	// div.header__navigation._active {
+// 	// 	// @include transform (translateX(-100%));
+// 	// }
+
+// 	._active+.header__burger-btn .header__burger-line::before {
+// 		@include transform (rotate(90deg) translate(10px, 0));
+// 		// @include transform (rotate(90deg), translate(10px, 0));
+// 	}
+
+// 	._active+.header__burger-btn .header__burger-line {
+// 		@include box-size ($w: 40px);
+// 		@include transform (rotate(-45deg) translate(-15px, 0));
+
+// 	}
+
+// 	._active+.header__burger-btn .header__burger-line::after {
+// 		@include transform (scale(0));
+// 	}
+// }
 ._active {
-	@include pos-fix (0, 0, 0, 0);
-	@include box-size ($h: 100vh);
-	/* overflow-y: hidden; */
-
-	z-index: 1;
-
+	// visibility: visible;
 	background-color: $bg-burger-color;
-
-	@include flex (center, center, wrap, column-reverse);
-
+	@include box-size ($h: 100vh);
+	transform: translateX(0);
 }
-
-@media only screen and (max-width: 1368px) {
-	div.header__navigation._active {
-		@include pos ($l: 0);
-		@include transition (all, 0.2s, ease-in-out);
-
-	}
-
+ 	
+// меняем бургер на крестик
 	._active+.header__burger-btn .header__burger-line::before {
 		@include transform (rotate(90deg) translate(10px, 0));
 		// @include transform (rotate(90deg), translate(10px, 0));
@@ -32,4 +54,3 @@
 	._active+.header__burger-btn .header__burger-line::after {
 		@include transform (scale(0));
 	}
-}

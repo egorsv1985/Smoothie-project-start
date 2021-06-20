@@ -5,6 +5,9 @@
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
 
+//libraries
+@import "./libs/animate.scss";
+
 @import "./components/title";
 
 @import "./layout/header";
