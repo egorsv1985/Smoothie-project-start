@@ -35,22 +35,20 @@
 ._active {
 	// visibility: visible;
 	background-color: $bg-burger-color;
-	@include box-size ($h: 100vh);
+	height: 100vh;
 	transform: translateX(0);
 }
  	
 // меняем бургер на крестик
 	._active+.header__burger-btn .header__burger-line::before {
-		@include transform (rotate(90deg) translate(10px, 0));
-		// @include transform (rotate(90deg), translate(10px, 0));
-	}
+		transform: rotate(90deg) translateX(10px);
+		}
 
 	._active+.header__burger-btn .header__burger-line {
-		@include box-size ($w: 40px);
-		@include transform (rotate(-45deg) translate(-15px, 0));
-
-	}
+		width: 40px;
+		transform: rotate(-45deg) translateX(-15px);
+		}
 
 	._active+.header__burger-btn .header__burger-line::after {
-		@include transform (scale(0));
+		transform: scale(0);		
 	}

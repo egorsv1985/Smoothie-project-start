@@ -1,8 +1,8 @@
 .footer {
 	&__top {
 		background-color: $bg-footer-color;
-		@include pad (80px, 0, 93px, 0);
-	}
+		padding: 80px 0 93px;
+		}
 
 	&__wrapper {
 		@include flex (space-between, center, wrap);
@@ -12,34 +12,31 @@
 	}
 
 	&__logo {
-		@include mar (0, 195px, 40px, 0);
-
-	}
+		margin: 0 195px 40px 0;
+		}
 
 	&__wrap {
 		@include flex (center, center, wrap);
-		@include mar (0, 38px, 0, 0);
+		margin-right: 38px;
 		max-width: 590px;
 
 		@media only screen and (max-width: 1520px) {
-			@include mar (0, 0, 0, 0);
-		}
-
+			margin: 0;
+			}
 	}
 
 	&__info {
-		@include mar (0, 0, 15px, 0);
-	}
+		margin-bottom: 15px;
+		}
 
 	&__title {
 		font-size: 1.625rem;
-		/* 26px */
-		@include mar (0, 0, 30px, 0);
+		margin-bottom: 30px;
 	}
 
 	&__info-list {
-		@include box-size ($w: 170px);
-	}
+		width: 170px;
+		}
 
 	&__info-link {
 		@include font ($fs: 1.125rem, $lh: 1.95em, $ls: -0.02, $fw: 700);
@@ -47,37 +44,37 @@
 	}
 
 	&__pay {
-		@include mar (0, 0, 0, 144px);
-
+		margin-left: 144px;
+		
 		@media only screen and (max-width: 1552px) {
-			@include mar (0, 0, 0, 95px);
-		}
+			margin-left: 95px;
+			}
 
 	}
 
 	&__pay-list {
 		@include flex ($jc: flex-start, $ai: center, $fw: wrap);
-		@include box-size ($w: 270px);
-	}
+		width: 270px;
+		}
 
 	&__pay-img {
-		@include mar (0, 18px, 20px, 0);
-		@include box-size ($h: 100%);
-	}
+		margin: 0 18px 20px 0;
+		height: 100%;
+		}
 
 	&__box {
-		@include mar (0, 0, 30px, 0);
-	}
+		margin-bottom: 30px;
+		}
 
 	&__form {
-		@include mar (0, 0, 24px, 0);
-
+		margin-bottom: 24px;
 		position: relative;
 
 		&::before {
 			@include pseudo;
-			@include pos-abs ($t: 22px, $l: 22px);
-			@include box-size (24px, 19px);
+			@include pos ($position: absolute, $t: 22px, $l: 22px);
+			width: 24px;
+			height: 19px;
 			@include background (url("../images/footer/footer_email.png"));
 		}
 	}
@@ -89,12 +86,11 @@
 		outline: 0;
 		max-width: 498px;
 		text-indent: 65px;
-
-		background-color: $bg-main-color;
+   	background-color: $bg-main-color;
 		outline: 0;
 		border-style: none;
-		@include border-radius-px (30);
-
+		border-radius: 30px;
+		
 		&::placeholder {
 			@include font ($fs: 1.05rem, $lh: 2.05em, $ls: -0.02em, $fw: 700);
 			color: $text-footer-color;
@@ -103,33 +99,34 @@
 
 	&__inner {
 		@include flex ($ai: center);
-		@include mar (0, 0, 0, 186px);
-	}
+		margin-left: 186px;
+		}
 
 	&__text {
 		@include font ($fs: 1rem, $lh: 2.5em, $ls: -0.02em, $text-trans: uppercase, $fw: 800);
-		@include mar (0, 44px, 0, 0);
+		margin-right: 44px;
 		color: $text-footer-color;
 		position: relative;
 
 		&::before {
 			@include pseudo;
-			@include pos-abs ($b: 7px, $l: -62px);
+			@include pos ($position: absolute, $b: 7px, $l: -62px);
 			@include background (url("../images/footer/footer_arrow.png"));
-			@include box-size (48px, 42px);
-		}
+			width: 48px;
+			height: 42px;
+			}
 	}
 
 	&__social {
-		@include flex ();
-	}
+		display: flex;
+		}
 
 	&__bottom {
 		background-color: $bg-footer-bottom-color;
-		@include mar (0, auto, 0, auto);
+		margin: 0 auto;
 		@include flex ($jc: center, $ai: center);
-		@include box-size ($h: 60px);
-	}
+		height: 60px;
+		}
 
 	&__small {
 		@include font ($fs: 0.8rem, $lh: 2.7em, $ls: 0.02em);
@@ -139,22 +136,19 @@
 
 	&__link {
 		background-color: #f2662f;
-		@include box-size (53px, 55px);
-		@include pos-fix ($b: 50px, $r: 120px);
+		width: 53px;
+		height: 55px;
+		@include pos ($position: fixed, $b: 50px, $r: 120px);
 		z-index: 100;
 		@include background (url(../images/footer/footer_arrow__up.png));
 		background-size: 14px 25px;
-		@include border-radius-px (5);
-
+		border-radius: 5px;
+		
 		&::before {
 			@include pseudo ('Go top');
-			@include pos-abs ($t: 40px, $r: 60px);
+			@include pos ($position: absolute, $t: 40px, $r: 60px);
 			@include font ($fs: 1rem, $lh: 2.5em, $ls: -0.02em, $fw: 700);
-			@include box-size (55px, 14px);
-		}
-	}
-
-	@media only screen and (max-width: 1520px) {}
-
-
-}
+			width: 55px;
+			height: 14px;
+			}
+	}	

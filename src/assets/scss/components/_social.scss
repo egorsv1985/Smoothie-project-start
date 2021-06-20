@@ -3,27 +3,24 @@
 		@include flex (center, center);
 	}
 
-&__item {
-	@include flex (center, center);
-	@include box-size (38px, 38px);
-	@include border-radius (50%);
-	background-color: $bg-main-color;
-	&:hover {
-		@include transform (scale(1.2));
+	&__item {
+		@include flex (center, center);
+		width: 38px;
+		height: 38px;
+		border-radius: 50%;
+
+		background-color: $bg-main-color;
+
+		&:hover {
+			transform: scale(1.3);
 		}
-	&--footer {
-		background-color: transparent;
+
+		&--footer {
+			background-color: transparent;
+		}
 	}
+
+	&__item+&__item {
+		margin-left: 8px;
 	}
-	&__item + &__item {
-		@include mar (0, 0, 0, 8px);
-	
-	
-	
 }
-
-
-}
-
-
-

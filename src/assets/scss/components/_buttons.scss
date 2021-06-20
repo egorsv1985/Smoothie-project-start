@@ -2,9 +2,9 @@
 	@include font ($fs: 1.3125rem, $lh: 1.05em, $fw: 800);
 
 	&:hover::before {
-		@include transition (all, 0.2s, ease-in-out);
-		@include transform (translateX(10px));
-	}
+		transition: all .2s ease-in-out;
+		transform: translateX(10px);
+		}
 
 	&--green {
 		background-color: #0aa566;
@@ -19,6 +19,6 @@
 	}
 
 	&--left {
-		@include transform (rotate(180deg));
-	}
+		transform: rotate(180deg);
+		}
 }

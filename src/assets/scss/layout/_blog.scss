@@ -1,7 +1,6 @@
 .blog {
-	@include pad (90px, 10px, 200px, 10px);
+	padding: 90px 10px 200px;
 	
-
 	&__wrapper {
 		@include flex (center, center, wrap);
 	}
@@ -11,25 +10,27 @@
 	}
 
 	&__title {
-		@include mar (0, 0, 62px, 0);
-	}
+		margin-bottom: 62px;
+		}
 
 	&__text-box {
-		@include mar (225px, 30px, 45px, 30px);
+		margin: 225px 30px 45px 30px;
+		
 		position: relative;
 		@media only screen and (max-width: 1216px) {
-			@include mar (30px, 30px, 45px, 30px);
-	}
+			margin-top: 30px;
+			}
 
 		&::before {
 			@include pseudo;
-			@include pos-abs ($t: -50px, $l: -70px);
-			@include box-size (685px, 12px);
-
+			@include pos ($position: absolute, $t: -50px, $l: -70px);
+			width: 685px;
+			height: 12px;
 			background-color: #f7ae3b;
-
 			z-index: -1;
-			@include border-radius-side (0, 10px, 10px, 0);
+			border-bottom-right-radius: 10px;
+			border-top-right-radius: 10px; 
+			
 			@media only screen and (max-width: 1216px) {
 				display: none;
 		}
@@ -38,20 +39,18 @@
 
 	&__subtitle {
 		@include font ($fs: 1.9rem, $lh: 1.3em, $ls: -0.02em, $fw: 800);
-		@include mar (0, 0, 0, 30px);
-	}
+		margin-left: 30px;
+		}
 
 	&__time {
 		@include font ($fs: 1rem, $lh: 2.2em);
-		@include mar (0, 0, 0, 30px);
-
-	}
+		margin-left: 30px;
+		}
 
 	&__text {
 		max-width: 472px;
-		@include mar(25px, 0, 0, 90px);
-		
-	}
+		margin: 25px 0 0 90px;
+		}
 
 	&__link {
 		@include font ($fs: 1.125rem, $lh: 1.95em, $fw: 800);
@@ -60,10 +59,10 @@
 
 		&::after {
 			@include pseudo;
-			@include pos-abs ($b: 5px, $r: -30px);
-			@include box-size (18px, 10px);
+			@include pos ($position: absolute, $b: 5px, $r: -30px);
+			width: 18px;
+			height: 10px;
 			@include background (url("../images/base/arrow.png"));
 		}
 	}
-
 }

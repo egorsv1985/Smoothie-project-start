@@ -6,14 +6,11 @@
 		@include flex(space-around, center, wrap);
 		@media only screen and (max-width: 1520px) {
 			@include flex(center, center, wrap);
-			@include pad (0, 0, 80px, 0);
-		}
+			padding-bottom: 80px;
+			}
 
 	}
 
-	&__wrapper {
-		@include box-size ($h: 800px);
-	}
 
 	&--yellow {
 		color: #cae941;
@@ -23,71 +20,69 @@
 		&::before {
 			@include pseudo;
 			@include background (url(../images/about/about_line.png));
-			@include pos-abs ($t: 65px, $l: -10px);
-			@include box-size (450px, 13px);
+			@include pos ($position: absolute, $t: 65px, $l: -10px);
+			width: 450px;
+			height: 13px;
 			@media screen and (max-width: 768px) {
 				display: none;
-				
-			}
+				}
 		}
 	}
 
 	&__img {
-		
-		@include transform (translateY(0) rotate(-7deg));
+		transform: translateY(0) rotate(-7deg);				
 		max-width: 690px;
-    width: 100%;
+		width: 100%;
     
 	}
 
 	&__wrap {
 		@include flex (center, flex-start, wrap, column);
-		@include mar (0, 125px, 80px, 0);
-
+		margin: 0 125px 80px 0;
+		
 		@media only screen and (max-width: 1520px) {
-			@include mar (0, 0, 0, 70px);
+			margin-left: 70px;
 		}
 
 		@media only screen and (max-width: 768px) {
-			@include mar (0, 40px, 0, 0);
-		}
+			margin-right: 40px;
+			}
 
 	}
 
 	&__title {
 		max-width: 660px;
-		/* 660px */
-		@include mar (80px, 0, 55px, 0);
+		margin: 80px 0 55px;
 		@include font ($fs: 3.4375rem, $lh: 1.1em);
 	}
 
 	&__list {
 		list-style-image: url(../images/about/about_li.png);
-		@include pad (0, 0, 0, 30px);
-		@include mar (0, 0, 32px, 0);
-	}
+		padding-left: 30px;
+		margin-bottom: 32px;
+		}
 
 	&__item {
 		@include font ($fs: 1.3125rem, $lh: 1.05em);
-		@include mar(0, 0, 22px, 0);
-
+		margin-bottom: 22px;
+		
 		&--bold {
-
 			font-weight: 800;
 		}
 	}
 
 	&__btn {
 		position: relative;
-		@include box-size (382px, 63px);
+		width: 382px;
+		height: 63px;
 		text-indent: -5.25rem;
-		/* 84px */
-		@include border-radius-px (30);
-
+		border-radius: 30px;
+		
 		&::before {
 			@include pseudo;
-			@include pos-abs ($t: 22px, $l: 305px);
-			@include box-size ($w: 30px, $h: 16px);
+			@include pos ($position: absolute, $t: 22px, $l: 305px);
+			width: 30px;
+			height: 16px;
 			@include background (url("../images/base/arrow.png"));
 		}
 	}

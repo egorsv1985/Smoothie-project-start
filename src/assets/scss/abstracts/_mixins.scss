@@ -11,26 +11,9 @@
 	display: block;
 }
 
-@mixin box-size ($w: null, $h: null) {
-	width: $w;
-	height: $h;
-}
 
-@mixin pad ($pt: null, $pr: null, $pb: null, $pl: null) {
-	padding-top: $pt;
-	padding-right: $pr;
-	padding-bottom: $pb;
-	padding-left: $pl;
-}
-
-@mixin mar ($mt: null, $mr: null, $mb: null, $ml: null) {
-	margin-top: $mt;
-	margin-right: $mr;
-	margin-bottom: $mb;
-	margin-left: $ml;
-}
-
-@mixin pos-px ($t: null, $b: null, $l: null, $r: null) {
+@mixin pos-px ($position: null, $t: null, $b: null, $l: null, $r: null) {
+	position: $position;
 	top: #{$t}px;
 	bottom: #{$b}px;
 	left: #{$l}px;
@@ -38,27 +21,13 @@
 }
 
 @mixin pos ($position: null, $t: null, $b: null, $l: null, $r: null) {
+	position: $position;
 	top: $t;
 	bottom: $b;
 	left: $l;
 	right: $r;
 }
 
-@mixin pos-abs ($t: null, $b: null, $l: null, $r: null) {
-	position: absolute;
-	top: $t;
-	bottom: $b;
-	left: $l;
-	right: $r;
-}
-
-@mixin pos-fix ($t: null, $b: null, $l: null, $r: null) {
-	position: fixed;
-	top: $t;
-	bottom: $b;
-	left: $l;
-	right: $r;
-}
 
 @mixin font ($fs: 1rem, $lh: 2.5em, $ls: null, $text-trans: null, $fw: null) {
 	font-size: $fs;
@@ -75,44 +44,6 @@
 	background-image: $img;
 }
 
-@mixin border-radius-px ($radius) {
-	border-radius: #{$radius}px;
-	-webkit-border-radius: #{$radius}px;
-	-moz-border-radius: #{$radius}px;
-	-ms-border-radius: #{$radius}px;
-	-o-border-radius: #{$radius}px;
-}
-
-@mixin border-radius ($radius) {
-	border-radius: $radius;
-	-webkit-border-radius: $radius;
-	-moz-border-radius: $radius;
-	-ms-border-radius: $radius;
-	-o-border-radius: $radius;
-}
-
-@mixin border-radius-side ($topleft, $topright, $bottomright, $bottomleft) {
-	border-top-left-radius: $topleft;
-	border-top-right-radius: $topright;
-	border-bottom-right-radius: $bottomright;
-	border-bottom-left-radius: $bottomleft;
-	-webkit-border-top-left-radius: $topleft;
-	-webkit-border-top-right-radius: $topright;
-	-webkit-border-bottom-right-radius: $bottomright;
-	-webkit-border-bottom-left-radius: $bottomleft;
-	-moz-border-radius-topleft: $topleft;
-	-moz-border-radius-topright: $topright;
-	-moz-border-radius-bottomright: $bottomright;
-	-moz-border-radius-bottomleft: $bottomleft;
-	-ms-border-radius-topleft: $topleft;
-	-ms-border-radius-topright: $topright;
-	-ms-border-radius-bottomright: $bottomright;
-	-ms-border-radius-bottomleft: $bottomleft;
-	-o-border-radius-topleft: $topleft;
-	-o-border-radius-topright: $topright;
-	-o-border-radius-bottomright: $bottomright;
-	-o-border-radius-bottomleft: $bottomleft;
-}
 
 @mixin border($bw: null, $bs: solid, $bc: null) {
 	border-width: $bw;
@@ -120,20 +51,6 @@
 	border-color: $bc;
 }
 
-@mixin transition($transition-property, $transition-time, $method) {
-	-webkit-transition: $transition-property $transition-time $method;
-	-moz-transition: $transition-property $transition-time $method;
-	-ms-transition: $transition-property $transition-time $method;
-	-o-transition: $transition-property $transition-time $method;
-	transition: $transition-property $transition-time $method;
-}
-@mixin transform($property...) {
-	transform: $property;
-	-webkit-transform: $property;
-	-moz-transform: $property;
-	-ms-transform: $property;
-	-o-transform: $property;
-	 }
 
 // @mixin font-source-sans($size: false, $colour: false, $weight: false, $lh: false) {
 // 	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;

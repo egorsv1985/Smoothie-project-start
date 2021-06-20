@@ -1,12 +1,12 @@
 .testimonials {
 	background-color: #672f1b;
-
 	position: relative;
 
 	&::after {
 		@include pseudo;
-		@include pos-abs ($t: -80px, $r: 60px);
-		@include box-size (410px, 301px);
+		@include pos ($position: absolute, $t: -80px, $r: 60px);
+		width: 410px;
+		height: 301px;
 		@include background (url("../images/testimonials/testimonials_dots.png"));
 
 		@media only screen and (max-width: 1440px) {
@@ -15,12 +15,12 @@
 	}
 
 	&__inner {
-		@include mar (0, auto, 0, auto);
-		@include pad (116px, 0, 80px, 0);
-	}
+		margin: 0 auto;
+		padding: 116px 0 80px;
+		}
 
 	&__title {
-		@include mar (0, 0, 130px, 0);
+		margin-bottom: 130px;
 		text-align: center;
 
 		&--big {
@@ -31,7 +31,7 @@
 
 	&__box {
 		@include flex (center, center, wrap);
-		@include mar (0, auto, 120px, auto);
+		margin: 0 auto 120px;
 		position: relative;
 		@media only screen and (max-width: 1440px) {
 			@include flex ($fd:column-reverse);
@@ -39,9 +39,9 @@
 
 		&::after {
 			@include pseudo ('Sarah A');
-			@include pos-abs ($t: 15px, $l: 41%);
+			@include pos ($position: absolute, $t: 15px, $l: 41%);
 			@include font ($fs: 12.5rem, $lh: 0.2em, $ls: -0.02em, $fw: 800);
-			@include transform (translateX(-50%));
+			transform: translateX(-50%);
 			opacity: 0.6;
 			color: #521905;
 
@@ -54,24 +54,23 @@
 
 	&__textbox {
 		@include flex (center, center, wrap);
-		@include mar (35px, 50px, 0, 0);
+		margin: 35px 50px 0 0;
 		max-width: 460px;
 
 		@media only screen and (max-width: 960px) {
-			@include mar (80px, 50px, 0, 0);
-		}
+			margin: 80px 50px 0 0;
+			}
 	}
 
 	&__quote {
 		@include font ($fs: 1.1rem, $lh: 1.95em);
-		@include mar (0, 0, 10px, 0);
+		margin-bottom: 10px;
 		text-align: center;
-
 		z-index: 1;
 
 		@media only screen and (max-width: 768px) {
-			@include mar (0, 0, 0, 0);
-		}
+			margin: 0;
+			}
 	}
 
 	&__cite {
@@ -87,19 +86,19 @@
 
 	&__container {
 		@include flex (center, center, wrap);
-		@include mar (0, auto, 0, auto);
+		margin: 0 auto;
 		max-width: 160px;
-		/* 160px */
-	}
+		}
 
 	&__btn {
 		@include background (url("../images/base/arrow.png"));
-		@include box-size (30px, 16px);
+		width: 30px;
+		height: 16px;
 		display: block;
 
 		&:first-child {
-			@include mar (0, 100px, 0, 0);
-		}
+			margin-right: 100px;
+			}
 	}
 
 }

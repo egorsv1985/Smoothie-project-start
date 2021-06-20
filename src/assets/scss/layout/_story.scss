@@ -1,61 +1,66 @@
 .story {
 	&__inner {
 		@include flex (center, center, wrap);
-		@include mar (120px, auto, 160px, auto);
+		margin: 120px auto 160px;
+		
 		@media only screen and (max-width: 1360px) {
 			@include flex (center, center, wrap, column);
 	}
 	}
 	&__box {
 		@media only screen and (max-width: 1360px) {
-			@include mar (0, 180px, 0, 0);
-	}
+			margin-bottom: 180px;
+			}
 	}
 	&__image {
 		max-width: 584px;
 	}
 
 	&__title {
-		@include mar (0, 0, 43px, 0);
-	}
+		margin-bottom: 43px;
+		}
 
 	&__text {
-		@include mar (0, 0, 45px, 0);
+		margin-bottom: 45px;
 		max-width: 525px;
 	}
 
 	&__btn {
-		@include box-size (304px, 64px);
-		@include border-radius-px (30);
+		width: 300px;
+		height: 64px;
+		border-radius: 30px;
 		border: none;
 		text-indent: -126px;
 		position: relative;
 		@media only screen and (max-width: 1360px) {
-			@include mar(0, 0, 80px, 0);
-	}
+			margin-bottom: 80px;
+			}
 
 		&::before {
 			@include pseudo;
-			@include pos-abs ($t: 23px, $r: 40px);
-			@include box-size (30px, 16px);
+			@include pos ($position: absolute, $t: 23px, $r: 40px);
+			width: 30px;
+			height: 16px;
 			@include background (url("../images/base/arrow.png"))
 		}
 	}
 
 	&__content {
 		position: relative;
-		@include mar (0, 0, 0, 200px);
+		margin-left: 200px;
+		
 		@media only screen and (max-width: 1360px) {
-			@include mar(0, 0, 0, 0);
-	}
+			margin-left: 0;
+			}
 	@media only screen and (max-width: 768px) {
-		@include mar(0, 0, 0, 125px);
-}
+		margin-left: 125px;
+	}
 
 		&::after {
 			@include pseudo;
-			@include pos-abs ($t: 20px, $l: -170px);
-			@include box-size (290px, 216px);
+			@include pos ($position: absolute, $t: 20px, $l: -170px);
+			width: 290px;
+			height: 216px;
 			@include background (url("../images/story/story_stamp.png"));
 			@media only screen and (max-width: 360px) {
 				display: none;
