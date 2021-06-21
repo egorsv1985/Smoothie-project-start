@@ -2415,7 +2415,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   font-size: 3.125rem;
   line-height: 0.8em;
   letter-spacing: -0.02em;
-  font-weight: 800; }
+  font-weight: 600; }
   .title--orange {
     color: #f7ae3b; }
   .title--green {
@@ -2424,6 +2424,26 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .title {
       font-size: 2.75rem;
       line-height: 1.25em; } }
+
+.btn {
+  font-size: 1.3125rem;
+  line-height: 1.05em;
+  font-weight: 800;
+  height: 63px;
+  border-radius: 30px; }
+  .btn:hover::before {
+    transition: all .2s ease-in-out;
+    transform: translateX(10px); }
+  .btn--green {
+    background-color: #0aa566; }
+    .btn--green:hover {
+      background-color: #12c37c; }
+  .btn--border-orange {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #f8b231; }
+  .btn--left {
+    transform: rotate(180deg); }
 
 .header {
   min-height: 100vh;
@@ -2607,10 +2627,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     text-align: center; }
 
 .about {
-  background-color: #158371; }
+  background-color: #158371;
+  height: 800px; }
   .about__inner {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap; }
     @media only screen and (max-width: 1520px) {
@@ -2620,6 +2641,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         align-items: center;
         flex-wrap: wrap;
         padding-bottom: 80px; } }
+  .about__wrapper {
+    margin: 0 180px 0 0; }
   .about--yellow {
     color: #cae941;
     position: relative; }
@@ -2639,25 +2662,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         .about--yellow::before {
           display: none; } }
   .about__img {
-    transform: translateY(0) rotate(-7deg);
+    transform: translate(42px, 63px);
     max-width: 690px;
     width: 100%; }
   .about__wrap {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 0 125px 80px 0; }
-    @media only screen and (max-width: 1520px) {
-      .about__wrap {
-        margin-left: 70px; } }
-    @media only screen and (max-width: 768px) {
-      .about__wrap {
-        margin-right: 40px; } }
+    margin: 80px 0 95px 0; }
   .about__title {
-    max-width: 660px;
-    margin: 80px 0 55px;
+    max-width: 640px;
+    margin-bottom: 55px;
     font-size: 3.4375rem;
     line-height: 1.1em; }
   .about__list {
@@ -2673,9 +2690,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .about__btn {
     position: relative;
     width: 382px;
-    height: 63px;
-    text-indent: -5.25rem;
-    border-radius: 30px; }
+    text-indent: -5.25rem; }
     .about__btn::before {
       content: "";
       display: block;
@@ -2930,18 +2945,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   padding: 90px 10px 200px; }
   .blog__wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap; }
   .blog__box {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin: 0 30px 0 260px; }
   .blog__title {
     margin-bottom: 62px; }
   .blog__img {
     width: 100%; }
   .blog__text-box {
-    margin: 225px 30px 45px 30px;
+    margin: 225px 0 45px;
     position: relative; }
     @media only screen and (max-width: 1216px) {
       .blog__text-box {
@@ -2999,7 +3015,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .instagram__inner {
     position: relative; }
   .instagram__title {
-    margin: 0 0 50px 40px;
+    margin: 0 0 40px 40px;
     font-size: 1.5rem;
     text-align: center;
     position: relative;
@@ -3062,14 +3078,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       flex-direction: column; } }
 
 .footer__logo {
-  margin: 0 195px 40px 0; }
+  margin: 0 0 40px 0; }
 
 .footer__wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-right: 38px;
+  margin-right: 0;
   max-width: 590px; }
   @media only screen and (max-width: 1520px) {
     .footer__wrap {
@@ -3093,10 +3109,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   color: #6d450c; }
 
 .footer__pay {
-  margin-left: 144px; }
-  @media only screen and (max-width: 1552px) {
-    .footer__pay {
-      margin-left: 95px; } }
+  margin-left: 0; }
 
 .footer__pay-list {
   display: flex;
@@ -3302,24 +3315,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .social__item + .social__item {
   margin-left: 8px; }
-
-.btn {
-  font-size: 1.3125rem;
-  line-height: 1.05em;
-  font-weight: 800; }
-  .btn:hover::before {
-    transition: all .2s ease-in-out;
-    transform: translateX(10px); }
-  .btn--green {
-    background-color: #0aa566; }
-    .btn--green:hover {
-      background-color: #12c37c; }
-  .btn--border-orange {
-    border-width: 2px;
-    border-style: solid;
-    border-color: #f8b231; }
-  .btn--left {
-    transform: rotate(180deg); }
 
 ._active {
   background-color: #12c37c;

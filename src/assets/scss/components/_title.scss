@@ -1,5 +1,5 @@
 .title {
-	@include font ($fs: 3.125rem, $lh: 0.8em, $ls: -0.02em, $fw: 800);
+	@include font ($fs: 3.125rem, $lh: 0.8em, $ls: -0.02em, $fw: 600);
 
 	&--orange {
 		color: #f7ae3b;

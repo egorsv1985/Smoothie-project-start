@@ -1,16 +1,18 @@
 .about {
 	background-color: $bg-about-color;
+	height: 800px;
 
 
 	&__inner {
-		@include flex(space-around, center, wrap);
+		@include flex(flex-start, center, wrap);
 		@media only screen and (max-width: 1520px) {
 			@include flex(center, center, wrap);
 			padding-bottom: 80px;
 			}
-
 	}
-
+&__wrapper {
+	margin: 0 180px 0 0;
+}
 
 	&--yellow {
 		color: #cae941;
@@ -30,29 +32,29 @@
 	}
 
 	&__img {
-		transform: translateY(0) rotate(-7deg);				
+		transform: translate(42px, 63px);				
 		max-width: 690px;
 		width: 100%;
     
 	}
 
 	&__wrap {
-		@include flex (center, flex-start, wrap, column);
-		margin: 0 125px 80px 0;
+		@include flex (flex-start, flex-start, wrap, column);
+		margin: 80px 0 95px 0;
 		
-		@media only screen and (max-width: 1520px) {
-			margin-left: 70px;
-		}
+		// @media only screen and (max-width: 1520px) {
+		// 	margin-left: 70px;
+		// }
 
-		@media only screen and (max-width: 768px) {
-			margin-right: 40px;
-			}
+		// @media only screen and (max-width: 768px) {
+		// 	margin-right: 40px;
+		// 	}
 
 	}
 
 	&__title {
-		max-width: 660px;
-		margin: 80px 0 55px;
+		max-width: 640px;
+		margin-bottom: 55px;
 		@include font ($fs: 3.4375rem, $lh: 1.1em);
 	}
 
@@ -74,10 +76,8 @@
 	&__btn {
 		position: relative;
 		width: 382px;
-		height: 63px;
 		text-indent: -5.25rem;
-		border-radius: 30px;
-		
+				
 		&::before {
 			@include pseudo;
 			@include pos ($position: absolute, $t: 22px, $l: 305px);

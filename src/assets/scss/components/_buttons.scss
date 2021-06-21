@@ -1,5 +1,7 @@
 .btn {
 	@include font ($fs: 1.3125rem, $lh: 1.05em, $fw: 800);
+	height: 63px;
+	border-radius: 30px;
 
 	&:hover::before {
 		transition: all .2s ease-in-out;

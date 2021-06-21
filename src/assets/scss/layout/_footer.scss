@@ -13,12 +13,12 @@
 	}
 
 	&__logo {
-		margin: 0 195px 40px 0;
+		margin: 0 0 40px 0;
 	}
 
 	&__wrap {
 		@include flex (center, center, wrap);
-		margin-right: 38px;
+		margin-right: 0;
 		max-width: 590px;
 
 		@media only screen and (max-width: 1520px) {
@@ -45,10 +45,10 @@
 	}
 
 	&__pay {
-		margin-left: 144px;
+		margin-left: 0;
 
 		@media only screen and (max-width: 1552px) {
-			margin-left: 95px;
+			
 		}
 
 	}
