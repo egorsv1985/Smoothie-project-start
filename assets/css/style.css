@@ -16,9 +16,9 @@
 
 html {
     line-height: 1.15;
-  /* 1 */
+    /* 1 */
     -webkit-text-size-adjust: 100%;
-  /* 2 */
+    /* 2 */
     font-size: 100%;
     height: 100%;
 }
@@ -39,7 +39,7 @@ body {
     max-width: 1740px;
     margin: 0 auto;
     padding: 0 10px;
-  /* 0 10px */
+    /* 0 10px */
 }
 
 /* Sections
@@ -98,11 +98,11 @@ h1 {
  */
 hr {
     box-sizing: content-box;
-  /* 1 */
+    /* 1 */
     height: 0;
-  /* 1 */
+    /* 1 */
     overflow: visible;
-  /* 2 */
+    /* 2 */
 }
 
 /**
@@ -111,9 +111,9 @@ hr {
  */
 pre {
     font-family: monospace, monospace;
-  /* 1 */
+    /* 1 */
     font-size: 1em;
-  /* 2 */
+    /* 2 */
 }
 
 /* Text-level semantics
@@ -133,12 +133,12 @@ a {
  */
 abbr[title] {
     border-bottom: none;
-  /* 1 */
+    /* 1 */
     text-decoration: underline;
-  /* 2 */
+    /* 2 */
     -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted;
-  /* 2 */
+    /* 2 */
 }
 
 /**
@@ -157,9 +157,9 @@ code,
 kbd,
 samp {
     font-family: monospace, monospace;
-  /* 1 */
+    /* 1 */
     font-size: 1em;
-  /* 2 */
+    /* 2 */
 }
 
 /**
@@ -216,15 +216,15 @@ optgroup,
 select,
 textarea {
     font-family: inherit;
-  /* 1 */
+    /* 1 */
     font-size: 100%;
-  /* 1 */
+    /* 1 */
     line-height: 1.15;
-  /* 1 */
+    /* 1 */
     color: inherit;
-  /* 1 */
+    /* 1 */
     margin: 0;
-  /* 2 */
+    /* 2 */
 }
 
 /**
@@ -233,7 +233,7 @@ textarea {
  */
 button,
 input {
-  /* 1 */
+    /* 1 */
     overflow: visible;
 }
 
@@ -243,7 +243,7 @@ input {
  */
 button,
 select {
-  /* 1 */
+    /* 1 */
     text-transform: none;
 }
 
@@ -293,17 +293,17 @@ fieldset {
  */
 legend {
     box-sizing: border-box;
-  /* 1 */
+    /* 1 */
     color: inherit;
-  /* 2 */
+    /* 2 */
     display: table;
-  /* 1 */
+    /* 1 */
     max-width: 100%;
-  /* 1 */
+    /* 1 */
     padding: 0;
-  /* 3 */
+    /* 3 */
     white-space: normal;
-  /* 1 */
+    /* 1 */
 }
 
 /**
@@ -327,9 +327,9 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
     box-sizing: border-box;
-  /* 1 */
+    /* 1 */
     padding: 0;
-  /* 2 */
+    /* 2 */
 }
 
 /**
@@ -346,9 +346,9 @@ textarea {
  */
 [type="search"] {
     -webkit-appearance: textfield;
-  /* 1 */
+    /* 1 */
     outline-offset: -2px;
-  /* 2 */
+    /* 2 */
 }
 
 /**
@@ -364,9 +364,9 @@ textarea {
  */
 ::-webkit-file-upload-button {
     -webkit-appearance: button;
-  /* 1 */
+    /* 1 */
     font: inherit;
-  /* 2 */
+    /* 2 */
 }
 
 /* Interactive
@@ -403,47 +403,47 @@ template {
 
 @font-face {
     font-family: Muli;
-  src: url("./fonts/Muli-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-display: swap;
+    src: url("./fonts/Muli-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Muli;
-  src: url("./fonts/Muli-BoldItalic.ttf") format("truetype");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
+    src: url("./fonts/Muli-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Muli;
-  src: url("./fonts/Muli-ExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-display: swap;
+    src: url("./fonts/Muli-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Muli;
-  src: url("./fonts/Muli-Italic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
+    src: url("./fonts/Muli-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Muli;
-  src: url("./fonts/Muli-Regular.woff") format("woff");
-  font-weight: 400;
-  font-display: swap;
+    src: url("./fonts/Muli-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Muli;
-  src: url("./fonts/Muli-Semi-BoldItalic.ttf") format("truetype");
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
+    src: url("./fonts/Muli-Semi-BoldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
 }
 
 /*!
@@ -471,7 +471,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @-webkit-keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
@@ -488,7 +492,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
@@ -510,21 +518,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @-webkit-keyframes flash {
-    0%, 50%, 100% {
+    0%,
+    50%,
+    100% {
         opacity: 1;
     }
 
-    25%, 75% {
+    25%,
+    75% {
         opacity: 0;
     }
 }
 
 @keyframes flash {
-    0%, 50%, 100% {
+    0%,
+    50%,
+    100% {
         opacity: 1;
     }
 
-    25%, 75% {
+    25%,
+    75% {
         opacity: 0;
     }
 }
@@ -575,34 +589,50 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @-webkit-keyframes shake {
-    0%, 100% {
+    0%,
+    100% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
 
-    10%, 30%, 50%, 70%, 90% {
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
         -webkit-transform: translateX(-10px);
         transform: translateX(-10px);
     }
 
-    20%, 40%, 60%, 80% {
+    20%,
+    40%,
+    60%,
+    80% {
         -webkit-transform: translateX(10px);
         transform: translateX(10px);
     }
 }
 
 @keyframes shake {
-    0%, 100% {
+    0%,
+    100% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
 
-    10%, 30%, 50%, 70%, 90% {
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
         -webkit-transform: translateX(-10px);
         transform: translateX(-10px);
     }
 
-    20%, 40%, 60%, 80% {
+    20%,
+    40%,
+    60%,
+    80% {
         -webkit-transform: translateX(10px);
         transform: translateX(10px);
     }
@@ -680,17 +710,23 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         transform: scale(1);
     }
 
-    10%, 20% {
+    10%,
+    20% {
         -webkit-transform: scale(0.9) rotate(-3deg);
         transform: scale(0.9) rotate(-3deg);
     }
 
-    30%, 50%, 70%, 90% {
+    30%,
+    50%,
+    70%,
+    90% {
         -webkit-transform: scale(1.1) rotate(3deg);
         transform: scale(1.1) rotate(3deg);
     }
 
-    40%, 60%, 80% {
+    40%,
+    60%,
+    80% {
         -webkit-transform: scale(1.1) rotate(-3deg);
         transform: scale(1.1) rotate(-3deg);
     }
@@ -707,17 +743,23 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         transform: scale(1);
     }
 
-    10%, 20% {
+    10%,
+    20% {
         -webkit-transform: scale(0.9) rotate(-3deg);
         transform: scale(0.9) rotate(-3deg);
     }
 
-    30%, 50%, 70%, 90% {
+    30%,
+    50%,
+    70%,
+    90% {
         -webkit-transform: scale(1.1) rotate(3deg);
         transform: scale(1.1) rotate(3deg);
     }
 
-    40%, 60%, 80% {
+    40%,
+    60%,
+    80% {
         -webkit-transform: scale(1.1) rotate(-3deg);
         transform: scale(1.1) rotate(-3deg);
     }
@@ -2842,7 +2884,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         animation-timing-function: ease-in-out;
     }
 
-    20%, 60% {
+    20%,
+    60% {
         -webkit-transform: rotate(80deg);
         transform: rotate(80deg);
         -webkit-transform-origin: top left;
@@ -2887,7 +2930,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         animation-timing-function: ease-in-out;
     }
 
-    20%, 60% {
+    20%,
+    60% {
         -webkit-transform: rotate(80deg);
         transform: rotate(80deg);
         -webkit-transform-origin: top left;
@@ -3166,11 +3210,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         background-color: #c7c5c4;
         position: relative;
         display: block;
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
         background-color: #c7c5c4;
     }
 
-    .header__burger-line::after, .header__burger-line::before {
+    .header__burger-line::after,
+    .header__burger-line::before {
         content: "";
         display: block;
         position: absolute;
@@ -3262,7 +3307,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     border-bottom: 2px solid #f6edde;
 }
 
-.smoothies__item:nth-child(4), .smoothies__item:last-child {
+.smoothies__item:nth-child(4),
+.smoothies__item:last-child {
     border-right: none;
 }
 
@@ -3271,7 +3317,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         width: 50%;
     }
 
-    .smoothies__item:nth-child(-n + 8), .smoothies__item:nth-child(-n + 4), .smoothies__item:nth-child(4), .smoothies__item:last-child {
+    .smoothies__item:nth-child(-n + 8),
+    .smoothies__item:nth-child(-n + 4),
+    .smoothies__item:nth-child(4),
+    .smoothies__item:last-child {
         border: none;
     }
 
@@ -3284,7 +3333,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         border-bottom: 2px solid #f6edde;
     }
 
-    .smoothies__item:nth-child(7), .smoothies__item:last-child {
+    .smoothies__item:nth-child(7),
+    .smoothies__item:last-child {
         border-bottom: none;
     }
 }
@@ -3411,9 +3461,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .about__btn {
     position: relative;
     width: 382px;
-    height: 63px;
     text-indent: -5.25rem;
-    border-radius: 30px;
 }
 
 .about__btn::before {
@@ -3495,14 +3543,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .products__btn {
     width: 207px;
-    height: 63px;
     border-width: 2px;
     border-style: solid;
     border-color: #fff;
     margin-bottom: 80px;
     position: relative;
     text-indent: -90px;
-    border-radius: 30px;
 }
 
 .products__btn::before {
@@ -3567,8 +3613,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .story__btn {
     width: 300px;
-    height: 64px;
-    border-radius: 30px;
     border: none;
     text-indent: -126px;
     position: relative;
@@ -4242,7 +4286,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .menu__item:hover {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
 }
@@ -4268,7 +4312,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .menu__link:hover::after {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     width: 100%;
 }
 
@@ -4359,7 +4403,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .btn:hover::before {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     -webkit-transform: translateX(10px);
     transform: translateX(10px);
 }
