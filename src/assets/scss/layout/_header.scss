@@ -71,10 +71,7 @@
 			
 		}
 	}
-&__burger{
-	display: none;
-	
-}
+
 	&__content {
 		@include flex ($jc: center, $ai: center, $fd: column);
 	}

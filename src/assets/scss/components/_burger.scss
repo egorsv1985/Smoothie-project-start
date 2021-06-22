@@ -1,4 +1,5 @@
 .burger {
+	transform: translateX(-100%);
 	&__right-block {
 		@include flex;
 		margin: 100px 0 150px;

@@ -7,8 +7,6 @@ if (headerBurgerBtn) {
 		body.classList.toggle('_lock');
 	});
 }
-
-// найди элемент body через js запиши его в переменную и при нажатие на burger  body.classList.toggle('lock')  а в класс lock добавь overflow:hidden
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
     define(['module', 'exports'], factory);
