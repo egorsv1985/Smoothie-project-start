@@ -3202,17 +3202,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .footer__logo {
   margin: 0 0 40px 0; }
 
-.footer__wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-right: 0;
-  max-width: 590px; }
-  @media only screen and (max-width: 1520px) {
-    .footer__wrap {
-      margin: 0; } }
-
 .footer__info {
   margin-bottom: 15px; }
 
@@ -3380,5 +3369,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ._active + .header__burger-btn .header__burger-line::after {
   transform: scale(0); }
+
+._lock {
+  overflow: hidden; }
 
 /*# sourceMappingURL=style.min.css.map */
