@@ -2453,30 +2453,30 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .btn--left {
     transform: rotate(180deg); }
 
-.burger__right-block {
-  display: flex;
-  margin: 100px 0 150px; }
-
-.burger__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: 500px; }
-
-.burger__personal {
-  position: relative;
-  margin-right: 134px; }
-  .burger__personal::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: 205px;
-    width: 48px;
-    height: 2px;
-    background-color: #ffd68f; }
+.burger {
+  transform: translateX(-100%); }
+  .burger__right-block {
+    display: flex;
+    margin: 100px 0 150px; }
+  .burger__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 500px; }
+  .burger__personal {
+    position: relative;
+    margin-right: 134px; }
+    .burger__personal::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 205px;
+      width: 48px;
+      height: 2px;
+      background-color: #ffd68f; }
 
 .menu__list {
   display: flex;
@@ -2630,8 +2630,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     @media only screen and (max-width: 1368px) {
       .header__burger-btn {
         display: block; } }
-  .header__burger {
-    display: none; }
   .header__content {
     display: flex;
     justify-content: center;
@@ -3354,6 +3352,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   width: 100%;
   transition: all .5s ease-in-out;
   z-index: 1;
+  transform: translateX(0);
   display: flex;
   justify-content: flex-end;
   align-items: center;
