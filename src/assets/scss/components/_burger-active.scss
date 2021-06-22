@@ -24,3 +24,6 @@
 ._active+.header__burger-btn .header__burger-line::after {
 	transform: scale(0);
 }
+._lock {
+	overflow: hidden;
+}
