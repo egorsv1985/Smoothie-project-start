@@ -2747,22 +2747,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     text-align: center; }
 
 .about {
-  background-color: #158371;
-  height: 800px; }
+  background-color: #158371; }
   .about__inner {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    height: 800px; }
     @media only screen and (max-width: 1520px) {
       .about__inner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding-bottom: 80px; } }
+        height: auto;
+        justify-content: center; } }
   .about__wrapper {
-    margin: 0 180px 0 0; }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%; }
+    @media only screen and (max-width: 1520px) {
+      .about__wrapper {
+        flex-basis: 52%; } }
   .about--yellow {
     color: #cae941;
     position: relative; }
@@ -2782,7 +2785,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         .about--yellow::before {
           display: none; } }
   .about__img {
-    transform: translate(42px, 63px);
+    transform: translate(-40px, 63px);
     max-width: 690px;
     width: 100%; }
   .about__wrap {
@@ -2791,7 +2794,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     align-items: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 80px 0 95px 0; }
+    margin: 80px 0 95px 0;
+    flex-basis: 50%; }
   .about__title {
     max-width: 640px;
     margin-bottom: 55px;
