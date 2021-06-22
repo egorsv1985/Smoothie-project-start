@@ -1,11 +1,11 @@
 .footer {
 	&__top {
 		background-color: $bg-footer-color;
-		padding: 80px 0 93px;
+		padding: 75px 0 85px;
 	}
 
 	&__wrapper {
-		@include flex (space-between, center, wrap);
+		@include flex (space-between, flex-start);
 
 		@media only screen and (max-width: 1568px) {
 			@include flex (center, center, wrap, column);
@@ -13,13 +13,14 @@
 	}
 
 	&__logo {
-		margin: 0 0 40px 0;
+		padding-top: 55px;
+		flex-basis: 33%;
 	}
 
 	
 
 	&__info {
-		margin-bottom: 15px;
+		flex-basis: 21%;
 	}
 
 	&__title {
@@ -37,7 +38,7 @@
 	}
 
 	&__pay {
-		margin-left: 0;
+		flex-basis: 27%;
 
 		@media only screen and (max-width: 1552px) {
 			
@@ -56,7 +57,7 @@
 	}
 
 	&__box {
-		margin-bottom: 30px;
+		flex-basis: 33%;
 	}
 
 	&__form {

@@ -3182,13 +3182,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .footer__top {
   background-color: #f4ad39;
-  padding: 80px 0 93px; }
+  padding: 75px 0 85px; }
 
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; }
+  align-items: flex-start; }
   @media only screen and (max-width: 1568px) {
     .footer__wrapper {
       display: flex;
@@ -3198,10 +3197,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       flex-direction: column; } }
 
 .footer__logo {
-  margin: 0 0 40px 0; }
+  padding-top: 55px;
+  flex-basis: 33%; }
 
 .footer__info {
-  margin-bottom: 15px; }
+  flex-basis: 21%; }
 
 .footer__title {
   font-size: 1.625rem;
@@ -3218,7 +3218,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   color: #6d450c; }
 
 .footer__pay {
-  margin-left: 0; }
+  flex-basis: 27%; }
 
 .footer__pay-list {
   display: flex;
@@ -3232,7 +3232,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   height: 100%; }
 
 .footer__box {
-  margin-bottom: 30px; }
+  flex-basis: 33%; }
 
 .footer__form {
   margin-bottom: 24px;
