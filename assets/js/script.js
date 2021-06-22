@@ -1,7 +1,11 @@
-function test(a, b) {
-    return a + b
+const headerBurgerBtn = document.querySelector('.header__burger-btn');
+if (headerBurgerBtn) {
+	const headerBurgerMenu = document.querySelector('.header__burger-menu');
+	headerBurgerBtn.addEventListener("click", function () {
+		headerBurgerMenu.classList.toggle('_active');
+	});
 }
-
+console.log("hello");
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
     define(['module', 'exports'], factory);
@@ -539,15 +543,4 @@ function test(a, b) {
   module.exports = exports['default'];
 });
 
-console.log(test(5, 2));
-console.log(test(2, 4));
-console.log(test(9, 1));
-
-const headerBurgerBtn = document.querySelector('.header__burger-btn');
-if (headerBurgerBtn) {
-	const headerBurgerMenu = document.querySelector('.header__burger-menu');
-	headerBurgerMenu.addEventListener("click", function () {
-		headerBurgerMenu.classList.toggle('_active');
-	});
-}
 //# sourceMappingURL=script.js.map
