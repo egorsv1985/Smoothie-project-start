@@ -1,29 +1,26 @@
 ._active {
+	@include pos (fixed, 0, 0, 0, 0);
+
 	visibility: visible;
 	background-color: $bg-burger-color;
 	height: 100vh;
-	left: 0;
 	width: 100%;
-	position: fixed;
 	transition: all .5s ease-in-out;
-	
 	z-index: 1;
 
-	@include flex (center, center, wrap, column-reverse);
+	@include flex (flex-end, center, wrap, column-reverse);
 }
- 	
+
 // меняем бургер на крестик
-	._active+.header__burger-btn .header__burger-line::before {
-		transform: rotate(90deg) translateX(10px);
-		}
+._active+.header__burger-btn .header__burger-line::before {
+	transform: rotate(90deg) translateX(10px);
+}
 
-	._active+.header__burger-btn .header__burger-line {
-		width: 40px;
-		transform: rotate(-45deg) translateX(-15px);
-		}
+._active+.header__burger-btn .header__burger-line {
+	width: 40px;
+	transform: rotate(-45deg) translateX(-15px);
+}
 
-	._active+.header__burger-btn .header__burger-line::after {
-		transform: scale(0);		
-	}
-
-	
+._active+.header__burger-btn .header__burger-line::after {
+	transform: scale(0);
+}

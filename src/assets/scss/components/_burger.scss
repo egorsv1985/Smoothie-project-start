@@ -1,0 +1,25 @@
+.burger {
+	&__right-block {
+		@include flex;
+		margin: 100px 0 150px;
+	}
+	&__list {
+		@include flex (space-between, center, wrap, column);
+		height: 500px;
+		
+	}
+&__personal {
+	position: relative;
+		margin-right: 134px;
+
+
+		&::before {
+			@include pseudo;
+			@include pos ($position: absolute, $t: 10px, $l: 205px);
+			width: 48px;
+			height: 2px;
+			background-color: $bg-header-color;
+		}
+}
+
+}
