@@ -2453,6 +2453,31 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .btn--left {
     transform: rotate(180deg); }
 
+.burger__right-block {
+  display: flex;
+  margin: 100px 0 150px; }
+
+.burger__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 500px; }
+
+.burger__personal {
+  position: relative;
+  margin-right: 134px; }
+  .burger__personal::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 205px;
+    width: 48px;
+    height: 2px;
+    background-color: #ffd68f; }
+
 .menu__list {
   display: flex;
   justify-content: center;
@@ -2461,6 +2486,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .menu__item + .menu__item {
   margin-left: 32px; }
+  @media only screen and (max-width: 1368px) {
+    .menu__item + .menu__item {
+      margin: 0; } }
 
 .menu__item:hover {
   transition: all .2s ease-in-out;
@@ -2569,9 +2597,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 100%; }
     @media only screen and (max-width: 1368px) {
       .header__navigation {
-        display: none;
-        transform: translateX(-100%);
-        transition: all 1s; } }
+        display: none; } }
   .header__right-block {
     display: flex;
     justify-content: space-between;
@@ -2604,12 +2630,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     @media only screen and (max-width: 1368px) {
       .header__burger-btn {
         display: block; } }
-  .header__burger-menu {
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    height: 100%; }
+  .header__burger {
+    display: none; }
   .header__content {
     display: flex;
     justify-content: center;
@@ -3332,16 +3354,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     height: 14px; }
 
 ._active {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   visibility: visible;
   background-color: #12c37c;
   height: 100vh;
-  left: 0;
   width: 100%;
-  position: fixed;
   transition: all .5s ease-in-out;
   z-index: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column-reverse; }
