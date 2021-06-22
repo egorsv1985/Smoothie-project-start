@@ -1,16 +1,26 @@
+// base
 @import "./base/normalize";
 
 @import "./base/fonts";
 
+// abstracts
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
 
 //libraries
 @import "./libs/animate.scss";
 
+// components
+
+@import "./components/text";
 @import "./components/title";
 @import "./components/buttons";
 
+@import "./components/menu";
+@import "./components/personal";
+@import "./components/social";
+
+// layout
 @import "./layout/header";
 @import "./layout/smoothies";
 @import "./layout/about";
@@ -21,16 +31,4 @@
 @import "./layout/instagram";
 @import "./layout/footer";
 
-
-@import "./components/menu";
-@import "./components/personal";
-@import "./components/social";
-
 @import "./components/burger-active";
-@import "./components/text";
-
-
-
-
-
-

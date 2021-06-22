@@ -65,11 +65,23 @@
 		@include pos ($position: fixed, $t: 15px, $r: 25px);
 		width: 50px;
 		height: 50px;
-		display: block;
+		display: none;
 		z-index: 1;
+		@media only screen and (max-width: 1368px) {
+			
+				display: block;
+			
+		}
 	}
 &__burger-menu{
-	display: none;
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: -100%;
+	height: 100%;
+	// @media only screen and (max-width: 1368px) {
+	// 	visibility: visible;
+	// 	}
 }
 	&__content {
 		@include flex ($jc: center, $ai: center, $fd: column);

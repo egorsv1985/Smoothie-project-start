@@ -2995,6 +2995,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-name: rollOut;
 }
 
+.text {
+    font-size: 1.125rem;
+    line-height: 2em;
+}
+
+.text--black {
+    color: #1e1e1e;
+}
+
+.text--orange {
+    color: #f2612d;
+}
+
 .title {
     font-size: 3.125rem;
     line-height: 0.8em;
@@ -3048,6 +3061,132 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .btn--left {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+.menu__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.menu__item + .menu__item {
+    margin-left: 32px;
+}
+
+.menu__item:hover {
+    transition: all .2s ease-in-out;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.menu__link {
+    font-size: 1rem;
+    line-height: 2.5em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+}
+
+.menu__link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    background-color: #fff;
+}
+
+.menu__link:hover::after {
+    transition: all .2s ease-in-out;
+    width: 100%;
+}
+
+.menu__link:active {
+    color: #223499;
+}
+
+.personal__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.personal__icon:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.personal__item + .personal__item {
+    margin-left: 45px;
+}
+
+.personal__link--cart {
+    position: relative;
+}
+
+.personal__count {
+    position: absolute;
+    bottom: -10px;
+    left: 25px;
+    font-size: 0.625rem;
+    line-height: 2.5em;
+    text-transform: uppercase;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.social__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.social__item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.social__item:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.social__item--footer {
+    background-color: transparent;
+}
+
+.social__item + .social__item {
+    margin-left: 8px;
 }
 
 .header {
@@ -3141,12 +3280,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     right: 25px;
     width: 50px;
     height: 50px;
-    display: block;
+    display: none;
     z-index: 1;
 }
 
+@media only screen and (max-width: 1368px) {
+    .header__burger-btn {
+        display: block;
+    }
+}
+
 .header__burger-menu {
-    display: none;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
 }
 
 .header__content {
@@ -4249,137 +4398,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     height: 14px;
 }
 
-.menu__list {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-
-.menu__item + .menu__item {
-    margin-left: 32px;
-}
-
-.menu__item:hover {
-    transition: all .2s ease-in-out;
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-}
-
-.menu__link {
-    font-size: 1rem;
-    line-height: 2.5em;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    font-weight: 700;
-    position: relative;
-}
-
-.menu__link::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    position: absolute;
-    top: 22px;
-    left: 0;
-    background-color: #fff;
-}
-
-.menu__link:hover::after {
-    transition: all .2s ease-in-out;
-    width: 100%;
-}
-
-.menu__link:active {
-    color: #223499;
-}
-
-.personal__list {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.personal__icon:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-}
-
-.personal__item + .personal__item {
-    margin-left: 45px;
-}
-
-.personal__link--cart {
-    position: relative;
-}
-
-.personal__count {
-    position: absolute;
-    bottom: -10px;
-    left: 25px;
-    font-size: 0.625rem;
-    line-height: 2.5em;
-    text-transform: uppercase;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    width: 21px;
-    height: 21px;
-    border-radius: 50%;
-    background-color: #fff;
-}
-
-.social__list {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.social__item {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background-color: #fff;
-}
-
-.social__item:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-}
-
-.social__item--footer {
-    background-color: transparent;
-}
-
-.social__item + .social__item {
-    margin-left: 8px;
-}
-
 ._active {
+    visibility: visible;
     background-color: #12c37c;
     height: 100vh;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    left: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
 }
 
 ._active + .header__burger-btn .header__burger-line::before {
@@ -4396,17 +4430,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ._active + .header__burger-btn .header__burger-line::after {
     -webkit-transform: scale(0);
     transform: scale(0);
-}
-
-.text {
-    font-size: 1.125rem;
-    line-height: 2em;
-}
-
-.text--black {
-    color: #1e1e1e;
-}
-
-.text--orange {
-    color: #f2612d;
 }
