@@ -13,8 +13,18 @@
 }
 
 // меняем бургер на крестик
-._active+.header__burger-btn .header__burger-line::before {
-	transform: rotate(90deg) translateX(10px);
+// ._active+.header__burger-btn .header__burger-line::before {
+// 	transform: rotate(90deg) translateX(10px);
+// }
+
+._active {
+	+.header__burger-btn {
+		.header__burger-line {
+			&::before {
+				transform: rotate(90deg) translateX(10px);
+			}
+		}
+	}
 }
 
 ._active+.header__burger-btn .header__burger-line {
