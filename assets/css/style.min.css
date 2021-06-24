@@ -25,9 +25,7 @@ body {
   margin: 0;
   font-family: Muli, sans-serif;
   color: #fff;
-  overflow-y: scroll;
-  transform-style: preserve-3d;
-  perspective: 1px; }
+  overflow-y: scroll; }
 
 /* проблема переполнения */
 .container {
@@ -356,39 +354,39 @@ template {
 
 @font-face {
   font-family: Muli;
-  src: url("./fonts/Muli-Bold.ttf") format("truetype");
+  src: url("./../fonts/Muli-Bold.ttf") format("truetype");
   font-weight: 700;
   font-display: swap; }
 
 @font-face {
   font-family: Muli;
-  src: url("./fonts/Muli-BoldItalic.ttf") format("truetype");
+  src: url("./../fonts/Muli-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
   font-display: swap; }
 
 @font-face {
   font-family: Muli;
-  src: url("./fonts/Muli-ExtraBold.woff") format("woff");
+  src: url("./../fonts/Muli-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-display: swap; }
 
 @font-face {
   font-family: Muli;
-  src: url("./fonts/Muli-Italic.ttf") format("truetype");
+  src: url("./../fonts/Muli-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
   font-display: swap; }
 
 @font-face {
   font-family: Muli;
-  src: url("./fonts/Muli-Regular.woff") format("woff");
+  src: url("./../fonts/Muli-Regular.woff") format("woff");
   font-weight: 400;
   font-display: swap; }
 
 @font-face {
   font-family: Muli;
-  src: url("./fonts/Muli-Semi-BoldItalic.ttf") format("truetype");
+  src: url("./../fonts/Muli-Semi-BoldItalic.ttf") format("truetype");
   font-weight: 600;
   font-style: italic;
   font-display: swap; }
@@ -2568,8 +2566,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .header {
   min-height: 100vh;
-  position: relative;
-  transform-style: preserve-3d; }
+  position: relative; }
   .header::before {
     content: "";
     display: block;
@@ -2795,7 +2792,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     flex-wrap: wrap;
     flex-direction: column;
     margin: 80px 0 95px 0;
-    flex-basis: 50%; }
+    flex-basis: 50%;
+    padding-left: 18px; }
   .about__title {
     max-width: 640px;
     margin-bottom: 55px;
@@ -3074,14 +3072,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     flex-wrap: wrap; }
   .blog__box {
     display: flex;
-    flex-direction: column;
-    margin: 0 30px 0 260px; }
+    flex-direction: column; }
   .blog__title {
     margin-bottom: 62px; }
   .blog__img {
     width: 100%; }
   .blog__text-box {
-    margin: 225px 0 45px;
+    padding: 225px 0 45px;
     position: relative; }
     @media only screen and (max-width: 1216px) {
       .blog__text-box {
