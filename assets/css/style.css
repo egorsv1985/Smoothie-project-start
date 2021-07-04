@@ -3356,7 +3356,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: block;
     position: absolute;
     top: 27px;
-    left: 210px;
+    right: 14%;
     width: 30px;
     height: 16px;
     background-repeat: no-repeat;
@@ -3517,39 +3517,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .about__inner {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -ms-flex-align: center;
-    align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    height: 800px;
-}
-
-@media only screen and (max-width: 1520px) {
-    .about__inner {
-        height: auto;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
+    min-height: 800px;
 }
 
 .about__wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-}
-
-@media only screen and (max-width: 1520px) {
-    .about__wrapper {
-        -ms-flex-preferred-size: 52%;
-        flex-basis: 52%;
-    }
+    -ms-flex-preferred-size: 51%;
+    flex-basis: 51%;
+    height: 200px;
 }
 
 .about--yellow {
@@ -3571,15 +3547,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     height: 13px;
 }
 
-@media screen and (max-width: 768px) {
-    .about--yellow::before {
-        display: none;
-    }
-}
-
 .about__img {
-    -webkit-transform: translate(-40px, 63px);
-    transform: translate(-40px, 63px);
+    -webkit-transform: translate(45px, 63px);
+    transform: translate(45px, 63px);
     max-width: 690px;
     width: 100%;
 }
@@ -3587,18 +3557,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .about__wrap {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin: 80px 0 95px 0;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    padding-left: 18px;
+    margin: 85px 0 95px 0;
+    -ms-flex-preferred-size: 49%;
+    flex-basis: 49%;
 }
 
 .about__title {
@@ -3979,7 +3942,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     z-index: 1;
 }
 
-.testimonials__container {
+.testimonials__controls {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -4007,14 +3970,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .blog {
-    padding: 90px 10px 200px;
+    padding: 90px 10px 190px;
 }
 
 .blog__wrapper {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-wrap: wrap;
@@ -4026,6 +3989,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin-right: 60px;
 }
 
 .blog__title {
@@ -4036,23 +4000,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 100%;
 }
 
-.blog__text-box {
-    padding: 225px 0 45px;
+.blog__picture {
     position: relative;
 }
 
-@media only screen and (max-width: 1216px) {
-    .blog__text-box {
-        margin-top: 30px;
-    }
-}
-
-.blog__text-box::before {
+.blog__picture::before {
     content: "";
     display: block;
     position: absolute;
-    top: -50px;
-    left: -70px;
+    top: 17%;
+    left: 93%;
     width: 685px;
     height: 12px;
     background-color: #f7ae3b;
@@ -4062,8 +4019,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @media only screen and (max-width: 1216px) {
-    .blog__text-box::before {
+    .blog__picture::before {
         display: none;
+    }
+}
+
+.blog__text-box {
+    padding: 225px 0 45px;
+    margin-right: 40px;
+}
+
+@media only screen and (max-width: 1216px) {
+    .blog__text-box {
+        margin-top: 30px;
     }
 }
 
@@ -4072,18 +4040,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     line-height: 1.3em;
     letter-spacing: -0.02em;
     font-weight: 800;
-    margin-left: 30px;
 }
 
 .blog__time {
     font-size: 1rem;
     line-height: 2.2em;
-    margin-left: 30px;
 }
 
 .blog__text {
     max-width: 472px;
-    margin: 25px 0 0 90px;
+    margin: 30px 0 0 62px;
 }
 
 .blog__link {
@@ -4118,7 +4084,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .instagram__title {
-    margin: 0 0 40px 40px;
+    margin: 0 0 50px 40px;
     font-size: 1.5rem;
     text-align: center;
     position: relative;
@@ -4174,7 +4140,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .instagram__img {
     width: 100%;
-    height: 394px;
+    height: 384px;
     min-width: 384px;
 }
 
@@ -4190,41 +4156,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     justify-content: space-between;
     -ms-flex-align: start;
     align-items: flex-start;
-}
-
-@media only screen and (max-width: 1568px) {
-    .footer__wrapper {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .footer__logo {
     padding-top: 55px;
-    -ms-flex-preferred-size: 33%;
-    flex-basis: 33%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
 }
 
 .footer__info {
-    -ms-flex-preferred-size: 21%;
-    flex-basis: 21%;
+    -ms-flex-preferred-size: 14%;
+    flex-basis: 14%;
 }
 
 .footer__title {
     font-size: 1.625rem;
-    margin-bottom: 30px;
-}
-
-.footer__info-list {
-    width: 170px;
+    margin-bottom: 35px;
 }
 
 .footer__info-link {
@@ -4236,8 +4185,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .footer__pay {
-    -ms-flex-preferred-size: 27%;
-    flex-basis: 27%;
+    -ms-flex-preferred-size: 19%;
+    flex-basis: 19%;
 }
 
 .footer__pay-list {
@@ -4258,8 +4207,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .footer__box {
-    -ms-flex-preferred-size: 33%;
-    flex-basis: 33%;
+    -ms-flex-preferred-size: 29%;
+    flex-basis: 29%;
 }
 
 .footer__form {
@@ -4285,8 +4234,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     max-width: 498px;
     width: 100%;
     height: 62px;
-    outline: 0;
-    max-width: 498px;
     text-indent: 65px;
     background-color: #fff;
     outline: 0;
@@ -4339,7 +4286,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: 186px;
+    margin-left: 37%;
 }
 
 .footer__text {
@@ -4397,8 +4344,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 53px;
     height: 55px;
     position: fixed;
-    bottom: 50px;
-    right: 120px;
+    bottom: 35px;
+    right: 100px;
     z-index: 100;
     background-repeat: no-repeat;
     background-position: center;
