@@ -5,32 +5,29 @@
 	}
 
 	&__wrapper {
-		@include flex (space-between, flex-start);
+		@include flex (space-between, flex-start, wrap);
 
-		@media only screen and (max-width: 1568px) {
-			@include flex (center, center, wrap, column);
-		}
+		// @media only screen and (max-width: 1568px) {
+		// 	@include flex (center, center, wrap, column);
+		// }
 	}
 
 	&__logo {
 		padding-top: 55px;
-		flex-basis: 33%;
+		flex-basis: 25%;
 	}
 
 	
 
 	&__info {
-		flex-basis: 21%;
+		flex-basis: 14%;
 	}
 
 	&__title {
 		font-size: 1.625rem;
-		margin-bottom: 30px;
+		margin-bottom: 35px;
 	}
 
-	&__info-list {
-		width: 170px;
-	}
 
 	&__info-link {
 		@include font ($fs: 1.125rem, $lh: 1.95em, $ls: -0.02, $fw: 700);
@@ -38,7 +35,7 @@
 	}
 
 	&__pay {
-		flex-basis: 27%;
+		flex-basis: 19%;
 
 		@media only screen and (max-width: 1552px) {
 			
@@ -57,7 +54,7 @@
 	}
 
 	&__box {
-		flex-basis: 33%;
+		flex-basis: 29%;
 	}
 
 	&__form {
@@ -77,8 +74,6 @@
 		max-width: 498px;
 		width: 100%;
 		height: 62px;
-		outline: 0;
-		max-width: 498px;
 		text-indent: 65px;
 		background-color: $bg-main-color;
 		outline: 0;
@@ -93,7 +88,7 @@
 
 	&__inner {
 		@include flex ($ai: center);
-		margin-left: 186px;
+		margin-left: 37%;
 	}
 
 	&__text {
@@ -132,7 +127,7 @@
 		background-color: #f2662f;
 		width: 53px;
 		height: 55px;
-		@include pos ($position: fixed, $b: 50px, $r: 120px);
+		@include pos ($position: fixed, $b: 35px, $r: 100px);
 		z-index: 100;
 		@include background (url(../images/footer/footer_arrow__up.png));
 		background-size: 14px 25px;

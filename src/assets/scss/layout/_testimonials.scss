@@ -84,7 +84,7 @@
 		z-index: 1;
 	}
 
-	&__container {
+	&__controls {
 		@include flex (center, center, wrap);
 		margin: 0 auto;
 		max-width: 160px;

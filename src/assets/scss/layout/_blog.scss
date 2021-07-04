@@ -1,12 +1,13 @@
 .blog {
-	padding: 90px 10px 200px;
+	padding: 90px 10px 190px;
 	
 	&__wrapper {
-		@include flex (flex-start, center, wrap);
+		@include flex (center, center, wrap);
 	}
 
 	&__box {
 		@include flex ($fd: column);
+		margin-right: 60px;
 		
 	}
 
@@ -15,45 +16,55 @@
 		}
 		&__img {
 			width: 100%;
+			
 		}
+		&__picture {
+			position: relative;
+			&::before {
+				@include pseudo;
+				@include pos ($position: absolute, $t: 17%, $l: 93%);
+				
+    
+				width: 685px;
+				height: 12px;
+				background-color: #f7ae3b;
+				z-index: -1;
+				border-bottom-right-radius: 10px;
+				border-top-right-radius: 10px; 
+				
+				@media only screen and (max-width: 1216px) {
+					display: none;
+			}
+			}
+		}
+			
+		
 
 	&__text-box {
 		padding: 225px 0 45px;
+		margin-right: 40px;
 		
-		position: relative;
 		@media only screen and (max-width: 1216px) {
 			margin-top: 30px;
+			
 			}
 
-		&::before {
-			@include pseudo;
-			@include pos ($position: absolute, $t: -50px, $l: -70px);
-			width: 685px;
-			height: 12px;
-			background-color: #f7ae3b;
-			z-index: -1;
-			border-bottom-right-radius: 10px;
-			border-top-right-radius: 10px; 
-			
-			@media only screen and (max-width: 1216px) {
-				display: none;
-		}
-		}
+		
 	}
 
 	&__subtitle {
 		@include font ($fs: 1.9rem, $lh: 1.3em, $ls: -0.02em, $fw: 800);
-		margin-left: 30px;
+		
 		}
 
 	&__time {
 		@include font ($fs: 1rem, $lh: 2.2em);
-		margin-left: 30px;
+		
 		}
 
 	&__text {
 		max-width: 472px;
-		margin: 25px 0 0 90px;
+		margin: 30px 0 0 62px;
 		}
 
 	&__link {

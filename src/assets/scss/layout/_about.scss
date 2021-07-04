@@ -4,19 +4,20 @@
 
 
 	&__inner {
-		@include flex(flex-start, center, wrap);
-		height: 800px;
-	@media only screen and (max-width: 1520px) {
-		height: auto;
-		justify-content: center;
-		}
+		@include flex($fw: wrap);
+		min-height: 800px;
+	// @media only screen and (max-width: 1520px) {
+	// 	height: auto;
+	// 	justify-content: center;
+	// 	}
 	}
 &__wrapper {
-	@include flex(center, center);
-	flex-basis: 50%;
-	@media only screen and (max-width: 1520px) {
-		flex-basis: 52%;
-		}
+	
+	flex-basis: 51%;
+	height: 200px;
+	// @media only screen and (max-width: 1520px) {
+	// 	flex-basis: 52%;
+	// 	}
 }
 
 	&--yellow {
@@ -30,24 +31,24 @@
 			@include pos ($position: absolute, $t: 65px, $l: -10px);
 			width: 450px;
 			height: 13px;
-			@media screen and (max-width: 768px) {
-				display: none;
-				}
+			// @media screen and (max-width: 768px) {
+			// 	display: none;
+			// 	}
 		}
 	}
 
 	&__img {
-		transform: translate(-40px, 63px);				
+		transform: translate(45px, 63px);				
 		max-width: 690px;
 		width: 100%;
     
 	}
 
 	&__wrap {
-		@include flex (flex-start, flex-start, wrap, column);
-		margin: 80px 0 95px 0;
-		flex-basis: 50%;
-		padding-left: 18px;
+		@include flex ($fd: column);
+		margin: 85px 0 95px 0;
+		flex-basis: 49%;
+		// padding-left: 18px;
 		
 		
 		

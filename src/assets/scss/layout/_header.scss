@@ -87,7 +87,8 @@
 
 		&::before {
 			@include pseudo;
-			@include pos ($position: absolute, $t: 27px, $l: 210px);
+			@include pos ($position: absolute, $t: 27px, $r: 14%);
+			
 			width: 30px;
 			height: 16px;
 			@include background (url('../images/base/arrow.png'));
