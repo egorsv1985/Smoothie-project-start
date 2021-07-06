@@ -38,7 +38,7 @@
 
 		&::before {
 			@include pseudo;
-			@include pos-px (absolute, $top: 23px, $right: 40px);
+			@include pos (absolute, $top: 23px, $right: 40px);
 			@include wh-px (30, 16);
 			@include background (url("../images/base/arrow.png"))
 		}
@@ -58,7 +58,7 @@
 
 		&::after {
 			@include pseudo;
-			@include pos-px ($position: absolute, $top: 20, $left: -170);
+			@include pos (absolute, $top: 20px, $left: -170px);
 			@include wh-px (290, 216);
 			@include background (url("../images/story/story_stamp.png"));
 

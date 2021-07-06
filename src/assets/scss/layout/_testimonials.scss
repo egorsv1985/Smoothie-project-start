@@ -4,7 +4,7 @@
 
 	&::after {
 		@include pseudo;
-		@include pos-px (absolute, $top: -80, $right: 60);
+		@include pos (absolute, $top: -80px, $right: 60px);
 		@include wh-px (410, 300);
 		@include background (url("../images/testimonials/testimonials_dots.png"));
 

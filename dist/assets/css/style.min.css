@@ -2429,6 +2429,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     color: #f7ae3b; }
   .title--green {
     color: #0aa566; }
+  .title--yellow {
+    color: #cae941;
+    position: relative; }
+    .title--yellow::after {
+      content: "";
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image: url(../images/about/about_line.png);
+      position: absolute;
+      bottom: -2px;
+      left: -3%;
+      width: 450px;
+      height: 13px; }
+      @media screen and (max-width: 600px) {
+        .title--yellow::after {
+          width: 100%; } }
+      @media screen and (max-width: 460px) {
+        .title--yellow::after {
+          display: none; } }
   @media only screen and (max-width: 360px) {
     .title {
       font-size: 44px;
@@ -2437,11 +2458,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .btn {
   font-size: 21px;
   line-height: 22px;
+  text-transform: capitalize;
   font-weight: 800;
   height: 63px;
   border-radius: 30px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  letter-spacing: -0.02em;
+  padding-left: 38px; }
   .btn:hover::before {
     transition: all .2s ease-in-out;
     transform: translateX(10px); }
@@ -2620,9 +2644,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       display: block;
       position: absolute;
       top: 10px;
-      bottom: px;
       left: 205px;
-      right: px;
       width: 48px;
       height: 2px;
       background-color: #ffd68f; }
@@ -2637,8 +2659,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .header__burger-btn {
     position: fixed;
     top: 15px;
-    bottom: px;
-    left: px;
     right: 25px;
     width: 50px;
     height: 50px;
@@ -2661,9 +2681,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     border-radius: 35px;
     font-size: 24px;
     line-height: 60px;
-    text-transform: capitalize;
-    letter-spacing: -0.02em;
-    padding-left: 17px;
     position: relative; }
     .header__btn::before {
       content: "";
@@ -2780,63 +2797,63 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .about {
   background-color: #158371; }
   .about__inner {
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 800px; }
-  .about__wrapper {
-    flex-basis: 51%;
-    height: 200px; }
-  .about--yellow {
-    color: #cae941;
-    position: relative; }
-    .about--yellow::before {
-      content: "";
-      display: block;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-image: url(../images/about/about_line.png);
-      position: absolute;
-      top: 65px;
-      left: -10px;
-      width: 450px;
-      height: 13px; }
+    display: flex; }
+    @media only screen and (max-width: 1536px) {
+      .about__inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column; } }
   .about__img {
-    transform: translate(45px, 63px);
+    transform: translate(40px, 8%);
     max-width: 690px;
-    width: 100%; }
+    width: 100%;
+    margin-right: 190px; }
+    @media only screen and (max-width: 1536px) {
+      .about__img {
+        margin-right: 0;
+        transform: translate(0, 6%);
+        margin-bottom: 50px; } }
   .about__wrap {
     display: flex;
     flex-direction: column;
-    margin: 85px 0 95px 0;
-    flex-basis: 49%; }
+    margin-top: 85px; }
+    @media only screen and (max-width: 1536px) {
+      .about__wrap {
+        margin: 50px 0 75px; } }
   .about__title {
     max-width: 640px;
-    margin-bottom: 55px;
-    font-size: 55;
+    margin-bottom: 60px;
+    font-size: 55px;
     line-height: 60px; }
   .about__list {
     list-style-image: url(../images/about/about_li.png);
-    padding-left: 30px;
+    padding-left: 25px;
     margin-bottom: 32px; }
   .about__item {
     font-size: 21px;
     line-height: 22px;
     margin-bottom: 22px; }
+    @media only screen and (max-width: 460px) {
+      .about__item {
+        font-size: 14px;
+        line-height: 16px; } }
     .about__item--bold {
       font-weight: 800; }
   .about__btn {
     position: relative;
-    width: 382px;
-    text-indent: -84px; }
+    max-width: 382px;
+    width: 100%; }
+    @media only screen and (max-width: 460px) {
+      .about__btn {
+        font-size: 16px;
+        line-height: 18px;
+        padding-left: 20px; } }
     .about__btn::before {
       content: "";
       display: block;
       position: absolute;
       top: 22px;
-      bottom: px;
-      left: 305px;
-      right: px;
+      right: 12%;
       width: 30px;
       height: 16px;
       background-repeat: no-repeat;
@@ -2893,9 +2910,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       display: block;
       position: absolute;
       top: 20px;
-      bottom: px;
       left: 140px;
-      right: px;
       width: 30px;
       height: 16px;
       background-repeat: no-repeat;
@@ -2943,10 +2958,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     content: "";
     display: block;
     position: absolute;
-    top: 23pxpx;
-    bottom: px;
-    left: px;
-    right: 40pxpx;
+    top: 23px;
+    right: 40px;
     width: 30px;
     height: 16px;
     background-repeat: no-repeat;
@@ -2968,9 +2981,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: block;
     position: absolute;
     top: 20px;
-    bottom: px;
     left: -170px;
-    right: px;
     width: 290px;
     height: 216px;
     background-repeat: no-repeat;
@@ -2992,8 +3003,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: block;
     position: absolute;
     top: -80px;
-    bottom: px;
-    left: px;
     right: 60px;
     width: 410px;
     height: 300px;
@@ -3145,9 +3154,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       content: "";
       display: block;
       position: absolute;
-      top: px;
       bottom: 5px;
-      left: px;
       right: -30px;
       width: 18px;
       height: 10px;

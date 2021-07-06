@@ -4,78 +4,61 @@
 
 
 	&__inner {
-		@include flex($flex-wrap: wrap);
-		min-height: 800px;
-	// @media only screen and (max-width: 1520px) {
-	// 	height: auto;
-	// 	justify-content: center;
-	// 	}
-	}
-&__wrapper {
-	
-	flex-basis: 51%;
-	height: 200px;
-	// @media only screen and (max-width: 1520px) {
-	// 	flex-basis: 52%;
-	// 	}
-}
-
-	&--yellow {
-		color: #cae941;
-
-		position: relative;
-
-		&::before {
-			@include pseudo;
-			@include background (url(../images/about/about_line.png));
-			@include pos ($position: absolute, $top: 65px, $left: -10px);
-			@include wh (450px, 13px);			
-			// @media screen and (max-width: 768px) {
-			// 	display: none;
-			// 	}
+		@include flex();
+		
+		
+	@media only screen and (max-width: 1536px) {
+		
+		@include flex ($align-items: center, $flex-direction: column);
 		}
 	}
 
 	&__img {
-		transform: translate(45px, 63px);				
+		transform: translate(40px, 8%);				
 		max-width: 690px;
 		width: 100%;
-    
+		margin-right: 190px;    
+		@media only screen and (max-width: 1536px) {
+			margin-right: 0;
+			transform: translate(0, 6%);
+			margin-bottom: 50px;
+			
+		}
 	}
-
 	&__wrap {
 		@include flex ($flex-direction: column);
-		margin: 85px 0 95px 0;
-		flex-basis: 49%;
-		// padding-left: 18px;
-		
-		
-		
+		margin-top: 85px;
+		@media only screen and (max-width: 1536px) {
+			margin: 50px 0 75px;
+		}
+			
+		// padding-left: 18px;		
 		// @media only screen and (max-width: 1520px) {
 		// 	margin-left: 70px;
 		// }
 
-		// @media only screen and (max-width: 768px) {
-		// 	margin-right: 40px;
-		// 	}
-
+		
 	}
 
 	&__title {
 		max-width: 640px;
-		margin-bottom: 55px;
-		@include font (55, 60px);
+		margin-bottom: 60px;
+		@include font (55px, 60px);
 	}
 
 	&__list {
 		list-style-image: url(../images/about/about_li.png);
-		padding-left: 30px;
+		padding-left: 25px;
 		margin-bottom: 32px;
 		}
 
 	&__item {
 		@include font (21px, 22px);
 		margin-bottom: 22px;
+		
+		@media only screen and (max-width: 460px) {
+			@include font (14px, 16px);
+			}
 		
 		&--bold {
 			font-weight: 800;
@@ -84,12 +67,16 @@
 
 	&__btn {
 		position: relative;
-		width: 382px;
-		text-indent: -84px;
+		max-width: 382px;
+		width: 100%;
+		@media only screen and (max-width: 460px) {
+			@include font (16px, 18px);
+			padding-left: 20px;
+		}
 				
 		&::before {
 			@include pseudo;
-			@include pos-px ($position: absolute, $top: 22, $left: 305);
+			@include pos ($position: absolute, $top: 22px, $right: 12%);
 			@include wh-px (30, 16);
 			@include background (url("../images/base/arrow.png"));
 		}

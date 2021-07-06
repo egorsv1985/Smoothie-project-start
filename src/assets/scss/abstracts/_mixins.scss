@@ -11,15 +11,6 @@
 	display: block;
 }
 
-
-@mixin pos-px ($position: null, $top: null, $bottom: null, $left: null, $right: null) {
-	position: $position;
-	top: #{$top}px;
-	bottom: #{$bottom}px;
-	left: #{$left}px;
-	right: #{$right}px;
-}
-
 @mixin pos ($position: null, $top: null, $bottom: null, $left: null, $right: null) {
 	position: $position;
 	top: $top;

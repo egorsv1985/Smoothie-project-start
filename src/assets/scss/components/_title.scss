@@ -11,7 +11,27 @@
 		color: #0aa566;
 	}
 
-	
+	&--yellow {
+		color: #cae941;
+		position: relative;
+		
+
+		&::after {
+			@include pseudo;
+			@include background (url(../images/about/about_line.png));
+			@include pos (absolute, $bottom: -2px, $left: -3%);
+			
+			@include wh (450px, 13px);
+			@media screen and (max-width: 600px) {
+				width: 100%;
+				}
+
+			@media screen and (max-width: 460px) {
+				display: none;
+				}
+		}
+	}
+
 
 	@media only screen and (max-width: 360px) {
 		& {

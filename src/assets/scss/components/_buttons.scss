@@ -1,10 +1,13 @@
 .btn {
-	@include font (21px, 22px, 800);
+	@include font (21px, 22px, 800, $text-transform: capitalize);
 	height: 63px;
 	border-radius: 30px;
 	@include flex ($align-items: center);
-
-
+	letter-spacing: -0.02em;
+	padding-left: 38px;
+	
+	
+	
 	&:hover::before {
 		transition: all .2s ease-in-out;
 		transform: translateX(10px);

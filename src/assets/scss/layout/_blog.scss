@@ -71,7 +71,7 @@
 
 		&::after {
 			@include pseudo;
-			@include pos-px (absolute, $bottom: 5, $right: -30);
+			@include pos (absolute, $bottom: 5px, $right: -30px);
 			@include wh-px (18, 10);
 			@include background (url("../images/base/arrow.png"));
 		}

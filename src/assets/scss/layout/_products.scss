@@ -51,7 +51,7 @@
 				
 		&::before {
 			@include pseudo;
-			@include pos-px (absolute, $top: 20, $left: 140);
+			@include pos (absolute, $top: 20px, $left: 140px);
 			@include wh-px (30, 16);
 			@include background (url("../images/products/products_arrow_white.png"));
 		}
