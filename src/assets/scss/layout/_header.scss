@@ -34,18 +34,35 @@
 	&__right-block {
 		@include flex (space-between, center);
 
-		@media only screen and (max-width: 480px) {
+		@media only screen and (max-width: 590px) {
 			@include flex (center, center, $flex-direction: column);
+			margin-bottom: 30px;
+		}
+		@media only screen and (max-width: 590px) and (orientation: landscape) {
+			flex-direction: row;
+			margin-bottom: 20px;
 		}
 	}
 
 	&__personal {
 		position: relative;
 		margin-right: 134px;
-		@media only screen and (max-width: 480px) {
-			margin-right: 0;
-			margin-bottom: 50px;
+
+		@media only screen and (max-width: 1368px) {
+			&__right-block {
+				@include flex;
+				margin: 0 0 50px;
+			}
 		}
+
+		@media only screen and (max-width: 590px) {
+			margin-right: 0;
+			margin-bottom: 30px;
+			
+			@media only screen and (max-width: 590px) and (orientation: landscape) {
+				margin-right: 134px;
+				margin-bottom: 0;
+			}}
 
 
 		&::before {
@@ -53,6 +70,7 @@
 			@include pos-px (absolute, $top: 10, $left: 205);
 			@include wh-px (48, 2);
 			background-color: $bg-header-color;
+
 			@media only screen and (max-width: 1440px) {
 				display: none;
 			}
@@ -98,17 +116,13 @@
 			@include background (url('../images/base/arrow.png'));
 		}
 	}
-	@media only screen and (max-width: 1368px) {
-		&__right-block {
-			@include flex;
-			margin: 0 0 50px;
-		}
 
+	@media only screen and (max-width: 1368px) {
 		&__list {
 			@include flex (space-between, center, wrap, column);
 			height: 100%;
-
 		}
+
 
 		&__burger-line {
 			@include wh-px (35, 2);
@@ -135,5 +149,14 @@
 				width: 40px;
 			}
 		}
+	}
+
+	@media only screen and (max-width: 1368px) and (orientation: landscape) {
+		&__list {
+			flex-direction: row;
+		}
+		&__right-block {
+			margin-bottom: 20px;
 		}
 	}
+}

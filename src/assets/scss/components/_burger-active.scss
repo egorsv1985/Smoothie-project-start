@@ -1,6 +1,5 @@
 ._active {
 	@include pos (fixed, 0, 0, 0, 0);
-
 	visibility: visible;
 	background-color: $bg-burger-color;
 	height: 100vh;
@@ -8,10 +7,14 @@
 	transition: all .5s ease-in-out;
 	z-index: 1;
 	transform: translateX(0);
-	padding: 10% 0;
-
+	padding: 15% 0 0;
 	@include flex (flex-end, center, $flex-direction: column-reverse);
+	@media only screen and (max-width: 280px) {
+		padding: 40% 0;
+	}
 }
+
+
 
 // меняем бургер на крестик
 // ._active+.header__burger-btn .header__burger-line::before {

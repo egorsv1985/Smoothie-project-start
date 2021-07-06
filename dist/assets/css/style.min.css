@@ -2471,6 +2471,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .menu__item + .menu__item {
       margin-left: 0;
       margin-top: 15%; } }
+  @media (orientation: landscape) {
+    .menu__item + .menu__item {
+      margin-left: 32px;
+      margin-top: 0; } }
 
 .menu__item:hover {
   transition: all .2s ease-in-out;
@@ -2585,19 +2589,32 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 590px) {
       .header__right-block {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column; } }
+        flex-direction: column;
+        margin-bottom: 30px; } }
+    @media only screen and (max-width: 590px) and (orientation: landscape) {
+      .header__right-block {
+        flex-direction: row;
+        margin-bottom: 20px; } }
   .header__personal {
     position: relative;
     margin-right: 134px; }
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 1368px) {
+      .header__personal__right-block {
+        display: flex;
+        margin: 0 0 50px; } }
+    @media only screen and (max-width: 590px) {
       .header__personal {
         margin-right: 0;
-        margin-bottom: 50px; } }
+        margin-bottom: 30px; } }
+  @media only screen and (max-width: 590px) and (max-width: 590px) and (orientation: landscape) {
+    .header__personal {
+      margin-right: 134px;
+      margin-bottom: 0; } }
     .header__personal::before {
       content: "";
       display: block;
@@ -2661,9 +2678,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       background-size: cover;
       background-image: url("../images/base/arrow.png"); }
   @media only screen and (max-width: 1368px) {
-    .header__right-block {
-      display: flex;
-      margin: 0 0 50px; }
     .header__list {
       display: flex;
       justify-content: space-between;
@@ -2692,6 +2706,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       .header__burger-line::before {
         top: -10px;
         width: 40px; } }
+  @media only screen and (max-width: 1368px) and (orientation: landscape) {
+    .header__list {
+      flex-direction: row; }
+    .header__right-block {
+      margin-bottom: 20px; } }
 
 .smoothies {
   padding: 100px 0 115px; }
@@ -2700,16 +2719,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       padding: 48px 0 90px; } }
   .smoothies__title {
     text-align: center;
-    margin-bottom: 40px;
-    padding: 0 10px; }
+    margin-bottom: 40px; }
     @media only screen and (max-width: 960px) {
       .smoothies__title {
         margin-bottom: 24px; } }
   .smoothies__text {
     max-width: 915px;
     text-align: center;
-    margin: 0 auto 40px;
-    padding: 0 10px; }
+    margin: 0 auto 40px; }
   .smoothies__cards {
     display: flex;
     justify-content: center;
@@ -3349,11 +3366,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   transition: all .5s ease-in-out;
   z-index: 1;
   transform: translateX(0);
-  padding: 10% 0;
+  padding: 15% 0 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: column-reverse; }
+  @media only screen and (max-width: 280px) {
+    ._active {
+      padding: 40% 0; } }
 
 ._active + .header__burger-btn .header__burger-line::before {
   transform: rotate(90deg) translateX(10px); }
