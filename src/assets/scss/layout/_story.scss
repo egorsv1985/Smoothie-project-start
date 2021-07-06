@@ -1,8 +1,11 @@
 .story {
-	
+	padding: 120px 0 160px;
+	@media only screen and (max-width: 1360px) {
+		padding: 60px 0 80px;
+	}
 	&__inner {
 		@include flex (center, center, wrap);
-		margin: 120px auto 160px;
+		
 
 		@media only screen and (max-width: 1360px) {
 			@include flex (center, center, wrap, column);
@@ -11,7 +14,7 @@
 
 	&__box {
 		@media only screen and (max-width: 1360px) {
-			margin-bottom: 180px;
+			margin-bottom: 50px;
 		}
 	}
 
@@ -53,9 +56,7 @@
 			margin-left: 0;
 		}
 
-		@media only screen and (max-width: 768px) {
-			margin-left: 125px;
-		}
+		
 
 		&::after {
 			@include pseudo;
@@ -63,7 +64,7 @@
 			@include wh-px (290, 216);
 			@include background (url("../images/story/story_stamp.png"));
 
-			@media only screen and (max-width: 360px) {
+			@media only screen and (max-width: 960px) {
 				display: none;
 			}
 		}

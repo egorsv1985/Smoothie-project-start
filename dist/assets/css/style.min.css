@@ -2956,82 +2956,76 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       background-size: cover;
       background-image: url("../images/products/products_arrow_white.png"); }
 
-.story__inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 120px auto 160px; }
+.story {
+  padding: 120px 0 160px; }
   @media only screen and (max-width: 1360px) {
-    .story__inner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      flex-direction: column; } }
-
-@media only screen and (max-width: 1360px) {
-  .story__box {
-    margin-bottom: 180px; } }
-
-.story__image {
-  max-width: 584px; }
-
-.story__title {
-  margin-bottom: 43px; }
-
-.story__text {
-  margin-bottom: 45px;
-  max-width: 525px; }
-
-.story__btn {
-  width: 300px;
-  height: 64px;
-  text-indent: -126px;
-  position: relative; }
+    .story {
+      padding: 60px 0 80px; } }
+  .story__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    @media only screen and (max-width: 1360px) {
+      .story__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column; } }
   @media only screen and (max-width: 1360px) {
-    .story__btn {
-      margin-bottom: 80px; } }
-  .story__btn::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 23px;
-    right: 40px;
-    width: 30px;
-    height: 16px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url("../images/base/arrow.png"); }
-
-.story__content {
-  position: relative;
-  margin-left: 200px; }
-  @media only screen and (max-width: 1360px) {
-    .story__content {
-      margin-left: 0; } }
-  @media only screen and (max-width: 768px) {
-    .story__content {
-      margin-left: 125px; } }
-  .story__content::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 20px;
-    left: -170px;
-    width: 290px;
-    height: 216px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url("../images/story/story_stamp.png"); }
-    @media only screen and (max-width: 360px) {
-      .story__content::after {
-        display: none; } }
-
-.story__img {
-  width: 100%; }
+    .story__box {
+      margin-bottom: 50px; } }
+  .story__image {
+    max-width: 584px; }
+  .story__title {
+    margin-bottom: 43px; }
+  .story__text {
+    margin-bottom: 45px;
+    max-width: 525px; }
+  .story__btn {
+    width: 300px;
+    height: 64px;
+    text-indent: -126px;
+    position: relative; }
+    @media only screen and (max-width: 1360px) {
+      .story__btn {
+        margin-bottom: 80px; } }
+    .story__btn::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 23px;
+      right: 40px;
+      width: 30px;
+      height: 16px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image: url("../images/base/arrow.png"); }
+  .story__content {
+    position: relative;
+    margin-left: 200px; }
+    @media only screen and (max-width: 1360px) {
+      .story__content {
+        margin-left: 0; } }
+    .story__content::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: -170px;
+      width: 290px;
+      height: 216px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image: url("../images/story/story_stamp.png"); }
+      @media only screen and (max-width: 960px) {
+        .story__content::after {
+          display: none; } }
+  .story__img {
+    width: 100%; }
 
 .testimonials {
   background-color: #672f1b;
