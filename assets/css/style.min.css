@@ -2740,6 +2740,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   @media only screen and (max-width: 960px) {
     .smoothies {
       padding: 48px 0 90px; } }
+  .smoothies__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
   .smoothies__title {
     text-align: center;
     margin-bottom: 40px; }
@@ -2749,14 +2753,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .smoothies__text {
     max-width: 915px;
     text-align: center;
-    margin: 0 auto 40px; }
+    margin-bottom: 40px; }
   .smoothies__cards {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     max-width: 1050px;
-    margin: 0 auto;
     background-color: #f6edde; }
     @media only screen and (max-width: 960px) {
       .smoothies__cards {
