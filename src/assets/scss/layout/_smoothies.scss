@@ -1,18 +1,18 @@
 .smoothies {
 	padding: 100px 0 115px;
-	
+
 	@media only screen and (max-width: 960px) {
 		padding: 48px 0 90px;
-		
 	}
 
 	&__title {
 		text-align: center;
 		margin-bottom: 40px;
 		padding: 0 10px;
+
 		@media only screen and (max-width: 960px) {
 			margin-bottom: 24px;
-			}
+		}
 	}
 
 	&__text {
@@ -20,13 +20,14 @@
 		text-align: center;
 		margin: 0 auto 40px;
 		padding: 0 10px;
-		}
+	}
 
 	&__cards {
 		@include flex (center, center, wrap);
 		max-width: 1050px;
 		margin: 0 auto;
 		background-color: $bg-cards-color;
+
 		@media only screen and (max-width: 960px) {
 			max-width: 540px;
 		}
@@ -35,7 +36,9 @@
 	&__item {
 		@include flex (flex-end, center, $flex-direction: column);
 		@include wh (25%, 195px);
+		padding: 0 10px;
 		background-color: $bg-main-color;
+
 		&:nth-child(-n + 8) {
 			border-right: 2px solid #f6edde;
 		}
@@ -48,15 +51,17 @@
 		&:last-child {
 			border-right: none;
 		}
+
 		@media only screen and (max-width: 960px) {
 			width: 50%;
-			
+
 			&:nth-child(-n + 8),
 			&:nth-child(-n + 4),
 			&:nth-child(4),
 			&:last-child {
 				border: none;
 			}
+
 			&:nth-child(odd) {
 				border-right: 2px solid #f6edde;
 				border-bottom: 2px solid #f6edde;
@@ -71,13 +76,20 @@
 				border-bottom: none;
 			}
 		}
-
-		
 	}
+	// &__icon {
+	// 	@media only screen and (max-width: 476px) {
+	// 		width: 35%;
+	// 	}
+	// }
 
 	&__desc {
 		@include font (25px, 40px, $font-weight: 800, $text-align: center);
-		margin: 27px 0 30px;		
-	}
-	}
+		margin: 27px 0 30px;
+		white-space: nowrap;
 
+		@media only screen and (max-width: 476px) {
+			@include font (16px);
+		}
+	}
+}

@@ -23,6 +23,12 @@ html {
     height: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 120%;
+    }
+}
+
 body {
     margin: 0;
     font-family: Muli, sans-serif;
@@ -2992,8 +2998,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .text {
-    font-size: 1.125rem;
-    line-height: 2em;
+    font-size: 18px;
+    line-height: 36px;
 }
 
 .text--black {
@@ -3005,10 +3011,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .title {
-    font-size: 3.125rem;
-    line-height: 0.8em;
-    letter-spacing: -0.02em;
+    font-size: 50px;
+    line-height: 40px;
     font-weight: 600;
+    letter-spacing: -0.02em;
 }
 
 .title--orange {
@@ -3021,17 +3027,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @media only screen and (max-width: 360px) {
     .title {
-        font-size: 2.75rem;
-        line-height: 1.25em;
+        font-size: 44px;
+        line-height: 55px;
     }
 }
 
 .btn {
-    font-size: 1.3125rem;
-    line-height: 1.05em;
+    font-size: 21px;
+    line-height: 22px;
     font-weight: 800;
     height: 63px;
     border-radius: 30px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .btn:hover::before {
@@ -3045,7 +3055,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .btn--green:hover {
-    background-color: #12c37c;
+    background-color: #0bbd75;
 }
 
 .btn--border-orange {
@@ -3060,44 +3070,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .burger {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-}
-
-.burger__right-block {
-    display: -ms-flexbox;
-    display: flex;
-    margin: 100px 0 150px;
-}
-
-.burger__list {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    height: 500px;
-}
-
-.burger__personal {
-    position: relative;
-    margin-right: 134px;
-}
-
-.burger__personal::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: 205px;
-    width: 48px;
-    height: 2px;
-    background-color: #ffd68f;
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
 }
 
 .menu__list {
@@ -3117,7 +3091,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @media only screen and (max-width: 1368px) {
     .menu__item + .menu__item {
-        margin: 0;
+        margin-left: 0;
+        margin-top: 15%;
     }
 }
 
@@ -3128,17 +3103,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .menu__link {
-    font-size: 1rem;
-    line-height: 2.5em;
-    letter-spacing: -0.02em;
+    font-size: 16px;
+    line-height: 40px;
     text-transform: uppercase;
     font-weight: 700;
+    letter-spacing: -0.02em;
     position: relative;
 }
 
 .menu__link::after {
     content: "";
     display: block;
+    width: 0;
+    height: 2px;
     width: 0;
     height: 2px;
     position: absolute;
@@ -3180,7 +3157,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     position: absolute;
     bottom: -10px;
     left: 25px;
-    font-size: 0.625rem;
+    font-size: 10px;
     line-height: 2.5em;
     text-transform: uppercase;
     display: -ms-flexbox;
@@ -3288,9 +3265,29 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     align-items: center;
 }
 
+@media only screen and (max-width: 480px) {
+    .header__right-block {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
 .header__personal {
     position: relative;
     margin-right: 134px;
+}
+
+@media only screen and (max-width: 480px) {
+    .header__personal {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
 }
 
 .header__personal::before {
@@ -3298,10 +3295,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: block;
     position: absolute;
     top: 10px;
+    bottom: px;
     left: 205px;
+    right: px;
     width: 48px;
     height: 2px;
     background-color: #ffd68f;
+}
+
+@media only screen and (max-width: 1440px) {
+    .header__personal::before {
+        display: none;
+    }
 }
 
 .header__logo {
@@ -3315,6 +3320,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .header__burger-btn {
     position: fixed;
     top: 15px;
+    bottom: px;
+    left: px;
     right: 25px;
     width: 50px;
     height: 50px;
@@ -3325,6 +3332,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media only screen and (max-width: 1368px) {
     .header__burger-btn {
         display: block;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .header__burger-btn {
+        right: 0;
     }
 }
 
@@ -3343,11 +3356,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 280px;
     height: 70px;
     border-radius: 35px;
-    font-size: 1.5rem;
-    line-height: 2.5em;
-    letter-spacing: -0.02em;
+    font-size: 24px;
+    line-height: 60px;
     text-transform: capitalize;
-    text-indent: -84px;
+    letter-spacing: -0.02em;
+    padding-left: 17px;
     position: relative;
 }
 
@@ -3365,31 +3378,44 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-image: url("../images/base/arrow.png");
 }
 
-@media only screen and (max-width: 1440px) {
-    .header__personal::before {
-        display: none;
-    }
-}
-
 @media only screen and (max-width: 1368px) {
+    .header__right-block {
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 0 50px;
+    }
+
+    .header__list {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 100%;
+    }
+
     .header__burger-line {
         width: 35px;
         height: 2px;
-        background-color: #c7c5c4;
+        background-color: #e7e4e3;
         position: relative;
         display: block;
-        transition: all .5s ease-in-out;
-        background-color: #c7c5c4;
+        transition: all .7s ease-in-out;
     }
 
     .header__burger-line::after, .header__burger-line::before {
         content: "";
         display: block;
-        position: absolute;
-        right: 0;
         width: 35px;
         height: 2px;
-        background-color: #c7c5c4;
+        position: absolute;
+        right: 0;
+        background-color: #e7e4e3;
     }
 
     .header__burger-line::after {
@@ -3502,12 +3528,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .smoothies__desc {
-    font-size: 1.5625rem;
-    line-height: 1.6em;
-    letter-spacing: -0.02em;
+    font-size: 25px;
+    line-height: 40px;
     font-weight: 800;
-    margin: 27px 0 30px;
     text-align: center;
+    margin: 27px 0 30px;
 }
 
 .about {
@@ -3567,8 +3592,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .about__title {
     max-width: 640px;
     margin-bottom: 55px;
-    font-size: 3.4375rem;
-    line-height: 1.1em;
+    font-size: 55;
+    line-height: 60px;
 }
 
 .about__list {
@@ -3578,8 +3603,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .about__item {
-    font-size: 1.3125rem;
-    line-height: 1.05em;
+    font-size: 21px;
+    line-height: 22px;
     margin-bottom: 22px;
 }
 
@@ -3590,7 +3615,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .about__btn {
     position: relative;
     width: 382px;
-    text-indent: -5.25rem;
+    text-indent: -84px;
 }
 
 .about__btn::before {
@@ -3598,7 +3623,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: block;
     position: absolute;
     top: 22px;
+    bottom: px;
     left: 305px;
+    right: px;
     width: 30px;
     height: 16px;
     background-repeat: no-repeat;
@@ -3658,15 +3685,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .products__title {
-    font-size: 1.5rem;
-    line-height: 1.1em;
+    font-size: 24px;
+    line-height: 26px;
     font-weight: 700;
     margin-bottom: 5px;
 }
 
 .products__subtitle {
-    font-size: 1.3rem;
-    line-height: 1.5em;
+    font-size: 20px;
+    line-height: 30px;
     margin-bottom: 60px;
 }
 
@@ -3679,7 +3706,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     margin-bottom: 80px;
     position: relative;
     text-indent: -90px;
-    border-radius: 30px;
 }
 
 .products__btn::before {
@@ -3687,7 +3713,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: block;
     position: absolute;
     top: 20px;
+    bottom: px;
     left: 140px;
+    right: px;
     width: 30px;
     height: 16px;
     background-repeat: no-repeat;
@@ -3745,8 +3773,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .story__btn {
     width: 300px;
     height: 64px;
-    border-radius: 30px;
-    border: none;
     text-indent: -126px;
     position: relative;
 }
@@ -3761,8 +3787,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     content: "";
     display: block;
     position: absolute;
-    top: 23px;
-    right: 40px;
+    top: 23pxpx;
+    bottom: px;
+    left: px;
+    right: 40pxpx;
     width: 30px;
     height: 16px;
     background-repeat: no-repeat;
@@ -3793,7 +3821,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: block;
     position: absolute;
     top: 20px;
+    bottom: px;
     left: -170px;
+    right: px;
     width: 290px;
     height: 216px;
     background-repeat: no-repeat;
@@ -3822,9 +3852,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: block;
     position: absolute;
     top: -80px;
+    bottom: px;
+    left: px;
     right: 60px;
     width: 410px;
-    height: 301px;
+    height: 300px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -3880,10 +3912,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     position: absolute;
     top: 15px;
     left: 41%;
-    font-size: 12.5rem;
-    line-height: 0.2em;
-    letter-spacing: -0.02em;
+    font-size: 200px;
+    line-height: 40px;
     font-weight: 800;
+    letter-spacing: -0.02em;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     opacity: 0.6;
@@ -3916,8 +3948,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .testimonials__quote {
-    font-size: 1.1rem;
-    line-height: 1.95em;
+    font-size: 18px;
+    line-height: 34px;
     margin-bottom: 10px;
     text-align: center;
     z-index: 1;
@@ -3930,11 +3962,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .testimonials__cite {
-    font-size: 1.1rem;
-    line-height: 1.95em;
+    font-size: 18px;
+    line-height: 34px;
     font-weight: 600;
-    font-style: italic;
     text-align: center;
+    font-style: italic;
     color: #f7ae3b;
 }
 
@@ -3960,8 +3992,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-position: center;
     background-size: cover;
     background-image: url("../images/base/arrow.png");
-    width: 30px;
-    height: 16px;
+    width: 30pxpx;
+    height: 16pxpx;
     display: block;
 }
 
@@ -4036,15 +4068,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .blog__subtitle {
-    font-size: 1.9rem;
-    line-height: 1.3em;
-    letter-spacing: -0.02em;
+    font-size: 30px;
+    line-height: 39px;
     font-weight: 800;
+    letter-spacing: -0.02em;
 }
 
 .blog__time {
-    font-size: 1rem;
-    line-height: 2.2em;
+    font-size: 16px;
+    line-height: 35px;
 }
 
 .blog__text {
@@ -4053,8 +4085,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .blog__link {
-    font-size: 1.125rem;
-    line-height: 1.95em;
+    font-size: 18px;
+    line-height: 35px;
     font-weight: 800;
     font-style: italic;
     position: relative;
@@ -4064,7 +4096,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     content: "";
     display: block;
     position: absolute;
+    top: px;
     bottom: 5px;
+    left: px;
     right: -30px;
     width: 18px;
     height: 10px;
@@ -4085,7 +4119,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .instagram__title {
     margin: 0 0 50px 40px;
-    font-size: 1.5rem;
+    font-size: 24px;
     text-align: center;
     position: relative;
     display: inline-block;
@@ -4101,8 +4135,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-position: center;
     background-size: cover;
     background-image: url("../images/instagram/instagramm.png");
-    width: 26px;
-    height: 26px;
 }
 
 .instagram__inner {
@@ -4172,15 +4204,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .footer__title {
-    font-size: 1.625rem;
+    font-size: 26px;
     margin-bottom: 35px;
 }
 
 .footer__info-link {
-    font-size: 1.125rem;
-    line-height: 1.95em;
-    letter-spacing: -0.02;
+    font-size: 18px;
+    line-height: 35px;
     font-weight: 700;
+    letter-spacing: -0.02em;
     color: #6d450c;
 }
 
@@ -4242,42 +4274,42 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .footer__input::-webkit-input-placeholder {
-    font-size: 1.05rem;
-    line-height: 2.05em;
-    letter-spacing: -0.02em;
+    font-size: 17px;
+    line-height: 35px;
     font-weight: 700;
+    letter-spacing: -0.02em;
     color: #6d450c;
 }
 
 .footer__input::-moz-placeholder {
-    font-size: 1.05rem;
-    line-height: 2.05em;
-    letter-spacing: -0.02em;
+    font-size: 17px;
+    line-height: 35px;
     font-weight: 700;
+    letter-spacing: -0.02em;
     color: #6d450c;
 }
 
 .footer__input:-ms-input-placeholder {
-    font-size: 1.05rem;
-    line-height: 2.05em;
-    letter-spacing: -0.02em;
+    font-size: 17px;
+    line-height: 35px;
     font-weight: 700;
+    letter-spacing: -0.02em;
     color: #6d450c;
 }
 
 .footer__input::-ms-input-placeholder {
-    font-size: 1.05rem;
-    line-height: 2.05em;
-    letter-spacing: -0.02em;
+    font-size: 17px;
+    line-height: 35px;
     font-weight: 700;
+    letter-spacing: -0.02em;
     color: #6d450c;
 }
 
 .footer__input::placeholder {
-    font-size: 1.05rem;
-    line-height: 2.05em;
-    letter-spacing: -0.02em;
+    font-size: 17px;
+    line-height: 35px;
     font-weight: 700;
+    letter-spacing: -0.02em;
     color: #6d450c;
 }
 
@@ -4290,9 +4322,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .footer__text {
-    font-size: 1rem;
-    line-height: 2.5em;
-    letter-spacing: -0.02em;
+    font-size: 16px;
+    line-height: 40px;
     text-transform: uppercase;
     font-weight: 800;
     margin-right: 44px;
@@ -4332,11 +4363,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .footer__small {
-    font-size: 0.8rem;
-    line-height: 2.7em;
+    font-size: 13px;
+    line-height: 35px;
+    text-align: center;
     letter-spacing: 0.02em;
     color: #af8a82;
-    text-align: center;
 }
 
 .footer__link {
@@ -4361,10 +4392,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     position: absolute;
     top: 40px;
     right: 60px;
-    font-size: 1rem;
-    line-height: 2.5em;
-    letter-spacing: -0.02em;
+    font-size: 16px;
+    line-height: 40px;
     font-weight: 700;
+    letter-spacing: -0.02em;
     width: 55px;
     height: 14px;
 }
@@ -4383,14 +4414,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     z-index: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
+    padding: 10% 0;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: end;
     justify-content: flex-end;
     -ms-flex-align: center;
     align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
 }
