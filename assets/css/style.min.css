@@ -2488,6 +2488,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 1368px) {
+    .menu__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      height: 100%; } }
 
 .menu__item + .menu__item {
   margin-left: 32px; }
@@ -2695,13 +2703,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       background-size: cover;
       background-image: url("../images/base/arrow.png"); }
   @media only screen and (max-width: 1368px) {
-    .header__list {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      flex-direction: column;
-      height: 100%; }
     .header__burger-line {
       width: 35px;
       height: 2px;
