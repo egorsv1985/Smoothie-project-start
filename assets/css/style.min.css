@@ -2466,6 +2466,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   align-items: center;
   letter-spacing: -0.02em;
   padding-left: 38px; }
+  @media only screen and (max-width: 460px) {
+    .btn {
+      font-size: 16px;
+      line-height: 18px;
+      padding-left: 20px; } }
   .btn:hover::before {
     transition: all .2s ease-in-out;
     transform: translateX(10px); }
@@ -2499,14 +2504,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .menu__item + .menu__item {
   margin-left: 32px; }
-  @media only screen and (max-width: 1368px) {
-    .menu__item + .menu__item {
-      margin-left: 0;
-      margin-top: 15%; } }
   @media (orientation: landscape) {
     .menu__item + .menu__item {
       margin-left: 32px;
       margin-top: 0; } }
+  @media only screen and (max-width: 1368px) {
+    .menu__item + .menu__item {
+      margin-left: 0;
+      margin-top: 15%; } }
 
 .menu__item:hover {
   transition: all .2s ease-in-out;
@@ -2861,13 +2866,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       background-position: center;
       background-size: cover;
       background-image: url("../images/base/arrow.png"); }
+      @media only screen and (max-width: 460px) {
+        .about__btn::before {
+          right: 4%; } }
 
 .products {
   overflow-x: auto; }
   .products__wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; }
+    display: flex; }
   .products__item {
     display: flex;
     justify-content: center;
@@ -2878,6 +2884,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 100%;
     height: 720px;
     padding-top: 130px; }
+    @media only screen and (max-width: 768px) {
+      .products__item {
+        padding-top: 80px;
+        width: 80%;
+        height: 80%;
+        min-width: 60%; } }
     .products__item--brown {
       background-color: #642c18; }
     .products__item--green {
@@ -2888,30 +2900,52 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       background-color: #c3491f; }
   .products__img {
     margin-bottom: 25px; }
+    @media only screen and (max-width: 768px) {
+      .products__img {
+        margin-bottom: 15px;
+        width: 30%; } }
   .products__title {
     font-size: 24px;
     line-height: 26px;
     font-weight: 700;
     margin-bottom: 5px; }
+    @media only screen and (max-width: 520px) {
+      .products__title {
+        font-size: 16px;
+        line-height: 18px; } }
   .products__subtitle {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 60px; }
+    @media only screen and (max-width: 768px) {
+      .products__subtitle {
+        margin-bottom: 30px; } }
+    @media only screen and (max-width: 520px) {
+      .products__subtitle {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 15px; } }
   .products__btn {
-    width: 207px;
-    height: 63px;
+    max-width: 207px;
+    width: 100%;
     border-width: 2px;
     border-style: solid;
     border-color: #fff;
     margin-bottom: 80px;
-    position: relative;
-    text-indent: -90px; }
+    position: relative; }
+    @media only screen and (max-width: 768px) {
+      .products__btn {
+        margin-bottom: 50px; } }
+    @media only screen and (max-width: 360px) {
+      .products__btn {
+        width: 80%;
+        height: 50px; } }
     .products__btn::before {
       content: "";
       display: block;
       position: absolute;
-      top: 20px;
-      left: 140px;
+      top: 34%;
+      right: 18%;
       width: 30px;
       height: 16px;
       background-repeat: no-repeat;
