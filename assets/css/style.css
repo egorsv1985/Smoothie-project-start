@@ -3025,6 +3025,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     color: #0aa566;
 }
 
+.title--yellow {
+    color: #cae941;
+    position: relative;
+}
+
+.title--yellow::after {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/about/about_line.png);
+    position: absolute;
+    bottom: -2px;
+    left: -15px;
+    width: 450px;
+    height: 13px;
+}
+
 @media only screen and (max-width: 360px) {
     .title {
         font-size: 44px;
@@ -3036,12 +3055,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     font-size: 21px;
     line-height: 22px;
     font-weight: 800;
+    text-align: capitalize;
     height: 63px;
     border-radius: 30px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+    letter-spacing: -0.02em;
+    padding-left: 38px;
 }
 
 .btn:hover::before {
@@ -3093,6 +3115,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .menu__item + .menu__item {
         margin-left: 0;
         margin-top: 15%;
+    }
+}
+
+@media (orientation: landscape) {
+    .menu__item + .menu__item {
+        margin-left: 32px;
+        margin-top: 0;
     }
 }
 
@@ -3265,7 +3294,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     align-items: center;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 590px) {
     .header__right-block {
         display: -ms-flexbox;
         display: flex;
@@ -3275,6 +3304,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         align-items: center;
         -ms-flex-direction: column;
         flex-direction: column;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 590px) and (orientation: landscape) {
+    .header__right-block {
+        -ms-flex-direction: row;
+        flex-direction: row;
+        margin-bottom: 20px;
     }
 }
 
@@ -3283,10 +3321,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     margin-right: 134px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1368px) {
+    .header__personal__right-block {
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 0 50px;
+    }
+}
+
+@media only screen and (max-width: 590px) {
     .header__personal {
         margin-right: 0;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 590px) and (max-width: 590px) and (orientation: landscape) {
+    .header__personal {
+        margin-right: 134px;
+        margin-bottom: 0;
     }
 }
 
@@ -3295,9 +3348,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: block;
     position: absolute;
     top: 10px;
-    bottom: px;
     left: 205px;
-    right: px;
     width: 48px;
     height: 2px;
     background-color: #ffd68f;
@@ -3320,8 +3371,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .header__burger-btn {
     position: fixed;
     top: 15px;
-    bottom: px;
-    left: px;
     right: 25px;
     width: 50px;
     height: 50px;
@@ -3358,9 +3407,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     border-radius: 35px;
     font-size: 24px;
     line-height: 60px;
-    text-transform: capitalize;
-    letter-spacing: -0.02em;
-    padding-left: 17px;
     position: relative;
 }
 
@@ -3379,12 +3425,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @media only screen and (max-width: 1368px) {
-    .header__right-block {
-        display: -ms-flexbox;
-        display: flex;
-        margin: 0 0 50px;
-    }
-
     .header__list {
         display: -ms-flexbox;
         display: flex;
@@ -3429,6 +3469,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 }
 
+@media only screen and (max-width: 1368px) and (orientation: landscape) {
+    .header__list {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .header__right-block {
+        margin-bottom: 20px;
+    }
+}
+
 .smoothies {
     padding: 100px 0 115px;
 }
@@ -3442,7 +3493,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .smoothies__title {
     text-align: center;
     margin-bottom: 40px;
-    padding: 0 10px;
 }
 
 @media only screen and (max-width: 960px) {
@@ -3455,7 +3505,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     max-width: 915px;
     text-align: center;
     margin: 0 auto 40px;
-    padding: 0 10px;
 }
 
 .smoothies__cards {
@@ -3489,6 +3538,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     flex-direction: column;
     width: 25%;
     height: 195px;
+    padding: 0 10px;
     background-color: #fff;
 }
 
@@ -3533,50 +3583,43 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     font-weight: 800;
     text-align: center;
     margin: 27px 0 30px;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 476px) {
+    .smoothies__desc {
+        font-size: 16px;
+        line-height: 2.5em;
+    }
 }
 
 .about {
     background-color: #158371;
+    padding: 85px 0 95px;
 }
 
 .about__inner {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    min-height: 800px;
+    height: 620px;
 }
 
-.about__wrapper {
-    -ms-flex-preferred-size: 51%;
-    flex-basis: 51%;
-    height: 200px;
-}
-
-.about--yellow {
-    color: #cae941;
-    position: relative;
-}
-
-.about--yellow::before {
-    content: "";
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../images/about/about_line.png);
-    position: absolute;
-    top: 65px;
-    left: -10px;
-    width: 450px;
-    height: 13px;
+@media only screen and (max-width: 1536px) {
+    .about__inner {
+        height: auto;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
 }
 
 .about__img {
-    -webkit-transform: translate(45px, 63px);
-    transform: translate(45px, 63px);
+    -webkit-transform: translate(40px, -20px);
+    transform: translate(40px, -20px);
     max-width: 690px;
     width: 100%;
+    margin-right: 190px;
 }
 
 .about__wrap {
@@ -3584,21 +3627,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin: 85px 0 95px 0;
-    -ms-flex-preferred-size: 49%;
-    flex-basis: 49%;
 }
 
 .about__title {
     max-width: 640px;
-    margin-bottom: 55px;
-    font-size: 55;
+    margin-bottom: 60px;
+    font-size: 55px;
     line-height: 60px;
 }
 
 .about__list {
     list-style-image: url(../images/about/about_li.png);
-    padding-left: 30px;
+    padding-left: 25px;
     margin-bottom: 32px;
 }
 
@@ -3623,9 +3663,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: block;
     position: absolute;
     top: 22px;
-    bottom: px;
     left: 305px;
-    right: px;
     width: 30px;
     height: 16px;
     background-repeat: no-repeat;
@@ -3713,9 +3751,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: block;
     position: absolute;
     top: 20px;
-    bottom: px;
     left: 140px;
-    right: px;
     width: 30px;
     height: 16px;
     background-repeat: no-repeat;
@@ -3787,10 +3823,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     content: "";
     display: block;
     position: absolute;
-    top: 23pxpx;
-    bottom: px;
-    left: px;
-    right: 40pxpx;
+    top: 23px;
+    right: 40px;
     width: 30px;
     height: 16px;
     background-repeat: no-repeat;
@@ -3821,9 +3855,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: block;
     position: absolute;
     top: 20px;
-    bottom: px;
     left: -170px;
-    right: px;
     width: 290px;
     height: 216px;
     background-repeat: no-repeat;
@@ -3852,8 +3884,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: block;
     position: absolute;
     top: -80px;
-    bottom: px;
-    left: px;
     right: 60px;
     width: 410px;
     height: 300px;
@@ -4096,9 +4126,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     content: "";
     display: block;
     position: absolute;
-    top: px;
     bottom: 5px;
-    left: px;
     right: -30px;
     width: 18px;
     height: 10px;
@@ -4414,7 +4442,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     z-index: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    padding: 10% 0;
+    padding: 15% 0 0;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: end;
@@ -4423,6 +4451,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     align-items: center;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+}
+
+@media only screen and (max-width: 280px) {
+    ._active {
+        padding: 40% 0;
+    }
 }
 
 ._active + .header__burger-btn .header__burger-line::before {
