@@ -118,10 +118,7 @@
 	}
 
 	@media only screen and (max-width: 1368px) {
-		&__list {
-			@include flex (space-between, center, wrap, column);
-			height: 100%;
-		}
+		
 
 
 		&__burger-line {

@@ -2,27 +2,24 @@
 	&__list {
 		@include flex (center, center, wrap);
 
-		@media only screen and (max-width: 1368px) {}
-
-		// @media only screen and (max-width: 360px) {
-		// 	@include flex (space-between, center, wrap, column);
-		// 	@include box-size ($h: 300px);
-		// }
-
+		@media only screen and (max-width: 1368px) {
+			@include flex (space-between, center, wrap, column);
+			height: 100%;
+		}
 	}
 
 	&__item+&__item {
 		margin-left: 32px;
 
-		
 		@media only screen and (max-width: 1368px) {
 			margin-left: 0;
 			margin-top: 15%;
 		}
+
 		@media (orientation: landscape) {
 			margin-left: 32px;
 			margin-top: 0;
-			}
+		}
 	}
 
 	&__item:hover {
@@ -34,8 +31,6 @@
 		@include font (16px, 40px, 700, $text-transform: uppercase);
 		letter-spacing: -0.02em;
 		position: relative;
-
-		
 
 		&::after {
 			@include pseudo;
@@ -56,4 +51,3 @@
 		}
 	}
 }
-
