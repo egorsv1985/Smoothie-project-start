@@ -1,9 +1,9 @@
-@mixin flex ($jc: null, $ai: null, $fw:null, $fd: null) {
+@mixin flex ($justify-content: null, $align-items: null, $flex-wrap:null, $flex-direction: null) {
 	display: flex;
-	justify-content: $jc;
-	align-items: $ai;
-	flex-wrap: $fw;
-	flex-direction: $fd;
+	justify-content: $justify-content;
+	align-items: $align-items;
+	flex-wrap: $flex-wrap;
+	flex-direction: $flex-direction;
 }
 
 @mixin pseudo ($content: '') {
@@ -12,29 +12,29 @@
 }
 
 
-@mixin pos-px ($position: null, $t: null, $b: null, $l: null, $r: null) {
+@mixin pos-px ($position: null, $top: null, $bottom: null, $left: null, $right: null) {
 	position: $position;
-	top: #{$t}px;
-	bottom: #{$b}px;
-	left: #{$l}px;
-	right: #{$r}px;
+	top: #{$top}px;
+	bottom: #{$bottom}px;
+	left: #{$left}px;
+	right: #{$right}px;
 }
 
-@mixin pos ($position: null, $t: null, $b: null, $l: null, $r: null) {
+@mixin pos ($position: null, $top: null, $bottom: null, $left: null, $right: null) {
 	position: $position;
-	top: $t;
-	bottom: $b;
-	left: $l;
-	right: $r;
+	top: $top;
+	bottom: $bottom;
+	left: $left;
+	right: $right;
 }
 
 
-@mixin font ($fs: 1rem, $lh: 2.5em, $ls: null, $text-trans: null, $fw: null) {
-	font-size: $fs;
-	line-height: $lh;
-	letter-spacing: $ls;
-	text-transform: $text-trans;
-	font-weight: $fw;
+@mixin font ($font-size: 1rem, $line-height: 2.5em, $font-weight: null, $text-align: null, $text-transform: null) {
+	font-size: $font-size;
+	line-height: $line-height;
+	text-transform: $text-transform;
+	font-weight: $font-weight;
+	text-align: $text-align;
 }
 
 @mixin background ($img) {
@@ -45,35 +45,26 @@
 }
 
 
-@mixin border($bw: null, $bs: solid, $bc: null) {
-	border-width: $bw;
-	border-style: $bs;
-	border-color: $bc;
+@mixin border($border-width: null, $border-style: solid, $border-color: null) {
+	border-width: $border-width;
+	border-style: $border-style;
+	border-color: $border-color;
+}
+
+@mixin colors($text, $background, $border) {
+	color: $text;
+	background-color: $background;
+	border-color: $border;
+}
+
+@mixin wh ($width: $width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+@mixin wh-px ($width: $width, $height: $width) {
+	width: #{$width}px;
+	height: #{$height}px;	
 }
 
 
-// @mixin font-source-sans($size: false, $colour: false, $weight: false, $lh: false) {
-// 	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 
-// 	@if $size {
-// 		font-size: $size;
-// 	}
-
-// 	@if $colour {
-// 		color: $colour;
-// 	}
-
-// 	@if $weight {
-// 		font-weight: $weight;
-// 	}
-
-// 	@if $lh {
-// 		line-height: $lh;
-// 	}
-// }
-
-// @mixin colors($text, $background, $border) {
-// 	color: $text;
-// 	background-color: $background;
-// 	border-color: $border;
-// }

@@ -3,145 +3,137 @@
 	min-height: 100vh;
 	position: relative;
 
-
 	// perspective-origin: center center;
 	// transform-style: preserve-3d;
-
 
 	&::before {
 		@include pseudo;
 		@include background (url('../images/header/header_bg.jpg'));
-		@include pos($position: absolute, $t: 0, $b: 0, $l: 0, $r: 0);
+		@include pos(absolute, 0, 0, 0, 0);
 		z-index: -1;
 		transform-origin: center;
 	}
-
 
 	&__top {
 		padding-top: 84px;
 		margin-bottom: 120px;
 		position: relative;
-
 	}
 
 	&__navigation {
-		@include flex ($jc: space-between, $ai: center, $fw: wrap);
+		@include flex (space-between, center, wrap);
 		z-index: 1;
 		width: 100%;
 
 		@media only screen and (max-width: 1368px) {
 			display: none;
-			}
+		}
 
 	}
 
-
 	&__right-block {
-		@include flex ($jc: space-between, $ai: center);
+		@include flex (space-between, center);
+
+		@media only screen and (max-width: 480px) {
+			@include flex (center, center, $flex-direction: column);
+		}
 	}
 
 	&__personal {
 		position: relative;
 		margin-right: 134px;
+		@media only screen and (max-width: 480px) {
+			margin-right: 0;
+			margin-bottom: 50px;
+		}
 
 
 		&::before {
 			@include pseudo;
-			@include pos ($position: absolute, $t: 10px, $l: 205px);
-			width: 48px;
-			height: 2px;
+			@include pos-px (absolute, $top: 10, $left: 205);
+			@include wh-px (48, 2);
 			background-color: $bg-header-color;
+			@media only screen and (max-width: 1440px) {
+				display: none;
+			}
 		}
 	}
 
 	&__logo {
-		@include pos ($position: absolute, $t: 56%, $l: 50%);
+		@include pos (absolute, $top: 56%, $left: 50%);
 		transform: translateX(-50%);
 	}
 
 	&__burger-btn {
-		@include pos ($position: fixed, $t: 15px, $r: 25px);
-		width: 50px;
-		height: 50px;
+		@include pos-px (fixed, $top: 15, $right: 25);
+		@include wh(50px);
 		display: none;
 		z-index: 1;
+
 		@media only screen and (max-width: 1368px) {
-			
-				display: block;
-			
+			display: block;
+		}
+
+		@media only screen and (max-width: 576px) {
+			right: 0;
 		}
 	}
 
 	&__content {
-		@include flex ($jc: center, $ai: center, $fd: column);
+		@include flex (center, center, $flex-direction: column);
 	}
 
 	&__btn {
-		width: 280px;
-		height: 70px;
+		@include wh-px (280, 70);
 		border-radius: 35px;
-		@include font (1.5rem, 2.5em, -0.02em, capitalize);
-		text-indent: -84px;
+		@include font (24px, 60px, $text-transform: capitalize);
+		letter-spacing: -0.02em;
+		padding-left: 17px;
 		position: relative;
-
 
 		&::before {
 			@include pseudo;
-			@include pos ($position: absolute, $t: 27px, $r: 14%);
-			
-			width: 30px;
-			height: 16px;
+			@include pos ($position: absolute, $top: 27px, $right: 14%);
+			@include wh-px (30, 16);
 			@include background (url('../images/base/arrow.png'));
 		}
 	}
-
-
-	@media only screen and (max-width: 1440px) {
-
-		&__personal::before {
-			display: none;
-		}
-	}
-
 	@media only screen and (max-width: 1368px) {
+		&__right-block {
+			@include flex;
+			margin: 0 0 50px;
+		}
+
+		&__list {
+			@include flex (space-between, center, wrap, column);
+			height: 100%;
+
+		}
+
 		&__burger-line {
-			width: 35px;
-			height: 2px;
+			@include wh-px (35, 2);
 			background-color: $burger-color;
 			position: relative;
 			display: block;
-			transition: all .5s ease-in-out;
-			background-color: $burger-color;
-
+			transition: all .7s ease-in-out;
 
 			&::after,
 			&::before {
 				@include pseudo;
-				position: absolute;
-				right: 0;
-				width: 35px;
-				height: 2px;
+				@include wh-px (35, 2);
+				@include pos (absolute, $right: 0);
 				background-color: $burger-color;
-				}
+			}
 
 			&::after {
 				top: 10px;
 				width: 30px;
-				}
+			}
 
 			&::before {
 				top: -10px;
 				width: 40px;
-				}
+			}
 		}
-
-		// &__right-block {
-		// 	@include pad(160px, 0, 240px, 0);
-		// }
-
-		// &__logo {
-		// 	display: block;
-		// 	@include pos ($t: 120%);
-		// }
+		}
 	}
-}

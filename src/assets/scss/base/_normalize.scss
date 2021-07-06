@@ -23,6 +23,9 @@ html {
   /* 2 */
 
   font-size: 100%;
+  @media only screen and (max-width: 768px) {
+    font-size: 120%;
+  }
   // overflow-y: hidden;
   height: 100%;
  

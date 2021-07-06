@@ -6,7 +6,7 @@
 	}
 
 	&__box {
-		@include flex ($fd: column);
+		@include flex ($flex-direction: column);
 		margin-right: 60px;
 		
 	}
@@ -22,12 +22,9 @@
 			position: relative;
 			&::before {
 				@include pseudo;
-				@include pos ($position: absolute, $t: 17%, $l: 93%);
-				
-    
-				width: 685px;
-				height: 12px;
-				background-color: #f7ae3b;
+				@include pos (absolute, $top: 17%, $left: 93%);
+				@include wh (685px, 12px);			
+    			background-color: #f7ae3b;
 				z-index: -1;
 				border-bottom-right-radius: 10px;
 				border-top-right-radius: 10px; 
@@ -53,12 +50,12 @@
 	}
 
 	&__subtitle {
-		@include font ($fs: 1.9rem, $lh: 1.3em, $ls: -0.02em, $fw: 800);
-		
+		@include font (30px, 39px, 800);
+		letter-spacing: -0.02em;		
 		}
 
 	&__time {
-		@include font ($fs: 1rem, $lh: 2.2em);
+		@include font (16px, 35px);
 		
 		}
 
@@ -68,15 +65,14 @@
 		}
 
 	&__link {
-		@include font ($fs: 1.125rem, $lh: 1.95em, $fw: 800);
+		@include font (18px, 35px, 800);
 		font-style: italic;
 		position: relative;
 
 		&::after {
 			@include pseudo;
-			@include pos ($position: absolute, $b: 5px, $r: -30px);
-			width: 18px;
-			height: 10px;
+			@include pos-px (absolute, $bottom: 5, $right: -30);
+			@include wh-px (18, 10);
 			@include background (url("../images/base/arrow.png"));
 		}
 	}

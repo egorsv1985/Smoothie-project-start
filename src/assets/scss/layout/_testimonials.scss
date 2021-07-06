@@ -4,9 +4,8 @@
 
 	&::after {
 		@include pseudo;
-		@include pos ($position: absolute, $t: -80px, $r: 60px);
-		width: 410px;
-		height: 301px;
+		@include pos-px (absolute, $top: -80, $right: 60);
+		@include wh-px (410, 300);
 		@include background (url("../images/testimonials/testimonials_dots.png"));
 
 		@media only screen and (max-width: 1440px) {
@@ -34,13 +33,14 @@
 		margin: 0 auto 120px;
 		position: relative;
 		@media only screen and (max-width: 1440px) {
-			@include flex ($fd:column-reverse);
+			@include flex ($flex-direction:column-reverse);
 		}
 
 		&::after {
 			@include pseudo ('Sarah A');
-			@include pos ($position: absolute, $t: 15px, $l: 41%);
-			@include font ($fs: 12.5rem, $lh: 0.2em, $ls: -0.02em, $fw: 800);
+			@include pos (absolute, $top: 15px, $left: 41%);
+			@include font (200px, 40px, 800);
+			letter-spacing: -0.02em;
 			transform: translateX(-50%);
 			opacity: 0.6;
 			color: #521905;
@@ -63,7 +63,7 @@
 	}
 
 	&__quote {
-		@include font ($fs: 1.1rem, $lh: 1.95em);
+		@include font (18px, 34px);
 		margin-bottom: 10px;
 		text-align: center;
 		z-index: 1;
@@ -74,9 +74,8 @@
 	}
 
 	&__cite {
-		@include font ($fs: 1.1rem, $lh: 1.95em, $fw: 600);
-		font-style: italic;
-		text-align: center;
+		@include font (18px, 34px, 600, center);
+		font-style: italic;		
 		color: #f7ae3b;
 	}
 
@@ -92,8 +91,7 @@
 
 	&__btn {
 		@include background (url("../images/base/arrow.png"));
-		width: 30px;
-		height: 16px;
+		@include wh-px (30px, 16px);
 		display: block;
 
 		&:first-child {

@@ -1,5 +1,5 @@
 .text {
-	@include font ($fs: 1.125rem, $lh: 2em);
+	@include font ($font-size: 18px, $line-height: 36px);
 
 	&--black {
 		color: $text-dark-color;

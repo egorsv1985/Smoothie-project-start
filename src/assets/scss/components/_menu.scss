@@ -1,6 +1,6 @@
 .menu {
 	&__list {
-		@include flex ($jc: center, $ai: center, $fw: wrap);
+		@include flex (center, center, wrap);
 
 		@media only screen and (max-width: 1368px) {}
 
@@ -16,7 +16,8 @@
 
 
 		@media only screen and (max-width: 1368px) {
-			margin: 0;
+			margin-left: 0;
+			margin-top: 15%;
 		}
 	}
 
@@ -26,18 +27,18 @@
 	}
 
 	&__link {
-		@include font (1rem, 2.5em, -0.02em, uppercase, 700);
+		@include font (16px, 40px, 700, $text-transform: uppercase);
+		letter-spacing: -0.02em;
 		position: relative;
 
-		// @media only screen and (max-width: 360px) {
-		// 	@include font ($fs: 1.25rem);
-		// }
+		
 
 		&::after {
 			@include pseudo;
+			@include wh (0, 2px);
 			width: 0;
 			height: 2px;
-			@include pos ($position: absolute, $t: 22px, $l: 0);
+			@include pos (absolute, $top: 22px, $left: 0);
 			background-color: $bg-main-color;
 		}
 

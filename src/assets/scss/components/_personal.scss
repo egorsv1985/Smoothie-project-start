@@ -1,6 +1,6 @@
 .personal {
 	&__list {
-		@include flex ($ai: center);
+		@include flex ($align-items: center);
 	}
 
 	&__icon:hover {
@@ -16,11 +16,10 @@
 	}
 
 	&__count {
-		@include pos ($position: absolute, $b: -10px, $l: 25px);
-		@include font ($fs: 0.625rem, $text-trans: uppercase);
+		@include pos ($position: absolute, $bottom: -10px, $left: 25px);
+		@include font ($font-size: 10px, $text-transform: uppercase);
 		@include flex (center, center, wrap);
-		width: 21px;
-		height: 21px;
+		@include wh (21px);
 		border-radius: 50%;
 		background-color: $bg-main-color;
 	}

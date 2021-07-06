@@ -23,7 +23,7 @@
 		}
 
 	&__cards {
-		@include flex ($jc: center, $ai: center, $fw: wrap);
+		@include flex (center, center, wrap);
 		max-width: 1050px;
 		margin: 0 auto;
 		background-color: $bg-cards-color;
@@ -33,12 +33,10 @@
 	}
 
 	&__item {
-		@include flex ($jc: flex-end, $ai: center, $fd: column);
-		width: 25%;
-		height: 195px;
+		@include flex (flex-end, center, $flex-direction: column);
+		@include wh (25%, 195px);
 		background-color: $bg-main-color;
 		&:nth-child(-n + 8) {
-
 			border-right: 2px solid #f6edde;
 		}
 
@@ -78,9 +76,8 @@
 	}
 
 	&__desc {
-		@include font ($fs: 1.5625rem, $lh: 1.6em, $ls: -0.02em, $fw: 800);
-		margin: 27px 0 30px;
-		text-align: center;
+		@include font (25px, 40px, $font-weight: 800, $text-align: center);
+		margin: 27px 0 30px;		
 	}
 	}
 

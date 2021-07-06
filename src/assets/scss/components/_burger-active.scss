@@ -8,8 +8,9 @@
 	transition: all .5s ease-in-out;
 	z-index: 1;
 	transform: translateX(0);
+	padding: 10% 0;
 
-	@include flex (flex-end, center, wrap, column-reverse);
+	@include flex (flex-end, center, $flex-direction: column-reverse);
 }
 
 // меняем бургер на крестик

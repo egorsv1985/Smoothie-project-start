@@ -1,7 +1,9 @@
 .btn {
-	@include font ($fs: 1.3125rem, $lh: 1.05em, $fw: 800);
+	@include font (21px, 22px, 800);
 	height: 63px;
 	border-radius: 30px;
+	@include flex ($align-items: center);
+
 
 	&:hover::before {
 		transition: all .2s ease-in-out;
@@ -9,10 +11,10 @@
 		}
 
 	&--green {
-		background-color: #0aa566;
+		background-color: $bg-btn-color;
 
 		&:hover {
-			background-color: #12c37c;
+			background-color: lighten($bg-btn-color, 5%);
 		}
 	}
 
