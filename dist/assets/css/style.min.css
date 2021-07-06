@@ -2985,18 +2985,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     max-width: 525px; }
   .story__btn {
     width: 300px;
-    height: 64px;
-    text-indent: -126px;
     position: relative; }
     @media only screen and (max-width: 1360px) {
       .story__btn {
-        margin-bottom: 80px; } }
+        margin-bottom: 50px; } }
     .story__btn::before {
       content: "";
       display: block;
       position: absolute;
-      top: 23px;
-      right: 40px;
+      top: 40%;
+      right: 13%;
       width: 30px;
       height: 16px;
       background-repeat: no-repeat;

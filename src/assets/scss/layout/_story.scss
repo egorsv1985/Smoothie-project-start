@@ -32,17 +32,15 @@
 	}
 
 	&__btn {
-		@include wh-px (300, 64);
-		text-indent: -126px;
+		width: 300px;		
 		position: relative;
-
 		@media only screen and (max-width: 1360px) {
-			margin-bottom: 80px;
+			margin-bottom: 50px;
 		}
 
 		&::before {
 			@include pseudo;
-			@include pos (absolute, $top: 23px, $right: 40px);
+			@include pos (absolute, $top: 40%, $right: 13%);
 			@include wh-px (30, 16);
 			@include background (url("../images/base/arrow.png"))
 		}
