@@ -2603,7 +2603,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       display: block;
       position: absolute;
       top: 10px;
+      bottom: px;
       left: 205px;
+      right: px;
       width: 48px;
       height: 2px;
       background-color: #ffd68f; }
@@ -2618,6 +2620,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .header__burger-btn {
     position: fixed;
     top: 15px;
+    bottom: px;
+    left: px;
     right: 25px;
     width: 50px;
     height: 50px;
@@ -2724,6 +2728,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     flex-direction: column;
     width: 25%;
     height: 195px;
+    padding: 0 10px;
     background-color: #fff; }
     .smoothies__item:nth-child(-n + 8) {
       border-right: 2px solid #f6edde; }
@@ -2748,7 +2753,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     line-height: 40px;
     font-weight: 800;
     text-align: center;
-    margin: 27px 0 30px; }
+    margin: 27px 0 30px;
+    white-space: nowrap; }
+    @media only screen and (max-width: 476px) {
+      .smoothies__desc {
+        font-size: 16px;
+        line-height: 2.5em; } }
 
 .about {
   background-color: #158371; }
