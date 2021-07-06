@@ -2,7 +2,7 @@
 	overflow-x: auto;
 
 	&__wrapper {
-		@include flex (flex-start, center);
+		@include flex ();
 	}
 
 	&__item {
@@ -10,6 +10,11 @@
 		min-width: 480px;
 		@include wh (100%, 720px);
 		padding-top: 130px;
+		@media only screen and (max-width: 768px) {
+			padding-top: 80px;
+			@include wh (80%);
+			min-width: 60%;
+		}
 		
 		&--brown {
 			background-color: #642c18;
@@ -30,28 +35,51 @@
 
 	&__img {
 		margin-bottom: 25px;
+		@media only screen and (max-width: 768px) {
+			margin-bottom: 15px;
+			width: 30%;
+		}
 		}
 
 	&__title {
-		@include font (24px, 26px, $font-weight: 700);
+		@include font (24px, 26px, 700);
 		margin-bottom: 5px;
+		@media only screen and (max-width: 520px) {
+			@include font (16px, 18px);
+		}
 		}
 
 	&__subtitle {
 		@include font (20px, 30px);
 		margin-bottom: 60px;
+		@media only screen and (max-width: 768px) {
+			margin-bottom: 30px;
+		}
+		@media only screen and (max-width: 520px) {
+			@include font (14px, 16px);
+			margin-bottom: 15px;
+		}
 		}
 
 	&__btn {
-		@include wh-px (207, 63);
+		max-width: 207px;
+		width: 100%;
 		@include border (2px, solid, $bg-main-color);
 		margin-bottom: 80px;
 		position: relative;
-		text-indent: -90px;
+		
+		@media only screen and (max-width: 768px) {
+			
+			margin-bottom: 50px;
+		}
+		@media only screen and (max-width: 360px) {
+			@include wh (80%, 50px);
+		}
+
 				
 		&::before {
 			@include pseudo;
-			@include pos (absolute, $top: 20px, $left: 140px);
+			@include pos (absolute, $top:34%, $right: 18%);
 			@include wh-px (30, 16);
 			@include background (url("../images/products/products_arrow_white.png"));
 		}

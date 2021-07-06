@@ -5,13 +5,16 @@
 	@include flex ($align-items: center);
 	letter-spacing: -0.02em;
 	padding-left: 38px;
-	
-	
-	
+
+	@media only screen and (max-width: 460px) {
+		@include font (16px, 18px);
+		padding-left: 20px;
+	}
+
 	&:hover::before {
 		transition: all .2s ease-in-out;
 		transform: translateX(10px);
-		}
+	}
 
 	&--green {
 		background-color: $bg-btn-color;
@@ -27,5 +30,5 @@
 
 	&--left {
 		transform: rotate(180deg);
-		}
+	}
 }

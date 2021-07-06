@@ -72,13 +72,17 @@
 		@media only screen and (max-width: 460px) {
 			@include font (16px, 18px);
 			padding-left: 20px;
+			
 		}
 				
 		&::before {
 			@include pseudo;
-			@include pos ($position: absolute, $top: 22px, $right: 12%);
+			@include pos (absolute, $top: 22px, $right: 12%);
 			@include wh-px (30, 16);
 			@include background (url("../images/base/arrow.png"));
+			@media only screen and (max-width: 460px) {
+				right: 4%;
+			}
 		}
 	}
 }
