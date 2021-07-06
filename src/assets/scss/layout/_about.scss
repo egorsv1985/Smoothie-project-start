@@ -68,7 +68,7 @@
 	&__btn {
 		position: relative;
 		max-width: 382px;
-		width: 100%;
+		
 		@media only screen and (max-width: 460px) {
 			@include font (16px, 18px);
 			padding-left: 20px;

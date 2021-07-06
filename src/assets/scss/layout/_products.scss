@@ -63,7 +63,7 @@
 
 	&__btn {
 		max-width: 207px;
-		width: 100%;
+		
 		@include border (2px, solid, $bg-main-color);
 		margin-bottom: 80px;
 		position: relative;

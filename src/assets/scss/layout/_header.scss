@@ -104,7 +104,8 @@
 	}
 
 	&__btn {
-		@include wh-px (280, 70);
+		height: 70px;	
+		max-width: 280px;
 		border-radius: 35px;
 		@include font (24px, 60px);
 		position: relative;

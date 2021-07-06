@@ -3068,6 +3068,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     line-height: 22px;
     text-transform: capitalize;
     font-weight: 800;
+    width: 100%;
     height: 63px;
     border-radius: 30px;
     display: -ms-flexbox;
@@ -3104,11 +3105,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     border-width: 2px;
     border-style: solid;
     border-color: #f8b231;
-}
-
-.btn--left {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
 }
 
 .burger {
@@ -3438,8 +3434,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .header__btn {
-    width: 280px;
     height: 70px;
+    max-width: 280px;
     border-radius: 35px;
     font-size: 24px;
     line-height: 60px;
@@ -3707,7 +3703,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .about__btn {
     position: relative;
     max-width: 382px;
-    width: 100%;
 }
 
 @media only screen and (max-width: 460px) {
@@ -3836,7 +3831,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .products__btn {
     max-width: 207px;
-    width: 100%;
     border-width: 2px;
     border-style: solid;
     border-color: #fff;
@@ -3875,6 +3869,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     padding: 120px 0 160px;
 }
 
+@media only screen and (max-width: 1360px) {
+    .story {
+        padding: 60px 0 80px;
+    }
+}
+
 .story__inner {
     display: -ms-flexbox;
     display: flex;
@@ -3903,7 +3903,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @media only screen and (max-width: 1360px) {
     .story__box {
-        margin-bottom: 180px;
+        margin-bottom: 50px;
     }
 }
 
@@ -3921,15 +3921,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .story__btn {
-    width: 300px;
-    height: 64px;
-    text-indent: -126px;
+    max-width: 300px;
     position: relative;
 }
 
 @media only screen and (max-width: 1360px) {
     .story__btn {
-        margin-bottom: 80px;
+        margin-bottom: 50px;
     }
 }
 
@@ -3937,8 +3935,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     content: "";
     display: block;
     position: absolute;
-    top: 23px;
-    right: 40px;
+    top: 40%;
+    right: 13%;
     width: 30px;
     height: 16px;
     background-repeat: no-repeat;
@@ -3958,12 +3956,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .story__content {
-        margin-left: 125px;
-    }
-}
-
 .story__content::after {
     content: "";
     display: block;
@@ -3978,7 +3970,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-image: url("../images/story/story_stamp.png");
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 960px) {
     .story__content::after {
         display: none;
     }
@@ -3991,6 +3983,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .testimonials {
     background-color: #672f1b;
     position: relative;
+    padding: 116px 0 80px;
 }
 
 .testimonials::after {
@@ -4011,11 +4004,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .testimonials::after {
         display: none;
     }
-}
-
-.testimonials__inner {
-    margin: 0 auto;
-    padding: 116px 0 80px;
 }
 
 .testimonials__title {
@@ -4059,14 +4047,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     font-size: 200px;
     line-height: 40px;
     font-weight: 800;
+    text-align: center;
     letter-spacing: -0.02em;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     opacity: 0.6;
     color: #521905;
+    width: 100%;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1100px) {
+    .testimonials__box::after {
+        left: 50%;
+    }
+}
+
+@media only screen and (max-width: 790px) {
     .testimonials__box::after {
         display: none;
     }
@@ -4136,13 +4132,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-position: center;
     background-size: cover;
     background-image: url("../images/base/arrow.png");
-    width: 30pxpx;
-    height: 16pxpx;
+    width: 30px;
+    height: 16px;
     display: block;
 }
 
 .testimonials__btn:first-child {
     margin-right: 100px;
+}
+
+.testimonials__btn--left {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .blog {

@@ -32,7 +32,8 @@
 	}
 
 	&__btn {
-		width: 300px;		
+		max-width: 300px;	
+			
 		position: relative;
 		@media only screen and (max-width: 1360px) {
 			margin-bottom: 50px;

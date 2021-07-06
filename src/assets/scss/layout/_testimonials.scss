@@ -1,6 +1,11 @@
 .testimonials {
 	background-color: #672f1b;
 	position: relative;
+	padding: 116px 0 80px;
+
+	@media only screen and (max-width: 960px) {
+		padding: 80px 0 60px;
+	}
 
 	&::after {
 		@include pseudo;
@@ -13,10 +18,10 @@
 		}
 	}
 
-	&__inner {
-		margin: 0 auto;
-		padding: 116px 0 80px;
-		}
+	// &__inner {
+
+
+	// }
 
 	&__title {
 		margin-bottom: 130px;
@@ -26,26 +31,39 @@
 			text-transform: uppercase;
 			color: $text-cards-color;
 		}
+
+		@media only screen and (max-width: 960px) {
+			margin-bottom: 80px;
+		}
 	}
 
 	&__box {
 		@include flex (center, center, wrap);
 		margin: 0 auto 120px;
 		position: relative;
+
 		@media only screen and (max-width: 1440px) {
 			@include flex ($flex-direction:column-reverse);
+		}
+		@media only screen and (max-width: 960px) {
+			margin-bottom: 60px;
 		}
 
 		&::after {
 			@include pseudo ('Sarah A');
 			@include pos (absolute, $top: 15px, $left: 41%);
-			@include font (200px, 40px, 800);
+			@include font (200px, 40px, 800, center);
 			letter-spacing: -0.02em;
 			transform: translateX(-50%);
 			opacity: 0.6;
 			color: #521905;
+			width: 100%;
 
-			@media only screen and (max-width: 1440px) {
+			@media only screen and (max-width: 1100px) {
+				left: 50%;
+			}
+
+			@media only screen and (max-width: 960px) {
 				display: none;
 			}
 		}
@@ -58,8 +76,8 @@
 		max-width: 460px;
 
 		@media only screen and (max-width: 960px) {
-			margin: 80px 50px 0 0;
-			}
+			margin: 80px 0 0 0;
+		}
 	}
 
 	&__quote {
@@ -70,12 +88,12 @@
 
 		@media only screen and (max-width: 768px) {
 			margin: 0;
-			}
+		}
 	}
 
 	&__cite {
 		@include font (18px, 34px, 600, center);
-		font-style: italic;		
+		font-style: italic;
 		color: #f7ae3b;
 	}
 
@@ -87,16 +105,21 @@
 		@include flex (center, center, wrap);
 		margin: 0 auto;
 		max-width: 160px;
-		}
+	}
 
 	&__btn {
 		@include background (url("../images/base/arrow.png"));
-		@include wh-px (30px, 16px);
+		@include wh-px (30, 16);
 		display: block;
 
 		&:first-child {
 			margin-right: 100px;
-			}
+		}
+
+		&--left {
+			transform: rotate(180deg);
+		}
 	}
+
 
 }

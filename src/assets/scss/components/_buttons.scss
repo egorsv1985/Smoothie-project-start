@@ -1,6 +1,6 @@
 .btn {
 	@include font (21px, 22px, 800, $text-transform: capitalize);
-	height: 63px;
+	@include wh (100%, 63px);
 	border-radius: 30px;
 	@include flex ($align-items: center);
 	letter-spacing: -0.02em;
@@ -28,7 +28,5 @@
 		@include border (2px, solid, #f8b231);
 	}
 
-	&--left {
-		transform: rotate(180deg);
-	}
+	
 }
