@@ -5,7 +5,10 @@
 	}
 
 	&__wrapper {
-		@include flex (space-between, flex-start, wrap);
+		@include flex (space-between, flex-start);
+		@media only screen and (max-width: 1280px) {
+			@include flex (center, center, $flex-direction: column);
+			}
 
 		// @media only screen and (max-width: 1568px) {
 		// 	@include flex (center, center, wrap, column);
@@ -13,13 +16,31 @@
 	}
 
 	&__logo {
-		margin: 65px 40px 0 0;
-		flex-basis: 22%;		
-	}
+		margin-top: 65px;
+		flex-basis: 25%;
+		@media only screen and (max-width: 1280px) {
+			flex-basis: 100%;
+			margin: 0 0 50px;
+		}
 
+	}
+&__wrap {
+	flex-basis: 38%;
+	@include flex (center, center, wrap);
+	margin: 0 50px;
+	@media only screen and (max-width: 1280px) {
+		flex-basis: 100%;
+		margin: 0 0 50px;
+		gap: 100px;
+	}
+}
 	&__info {
-		flex-basis: 11%;
-		margin-right: 40px;
+		flex-basis: 43%;
+		@media only screen and (max-width: 1280px) {
+			flex-basis: 50%;
+			
+		}
+
 	}
 
 	&__title {
@@ -34,13 +55,14 @@
 	}
 
 	&__pay {
-		flex-basis: 16%;
-		margin-right: 40px;
+		flex-basis: 42%;
+		margin-left: 34px;
+		
 
-		@media only screen and (max-width: 1552px) {
-			
+		@media only screen and (max-width: 1280px) {
+			flex-basis: 50%;
+			margin-left: 0;
 		}
-
 	}
 
 	&__pay-list {
@@ -48,36 +70,30 @@
 		width: 270px;
 		gap: 23px;
 	}
-	
 
 	&__pay-img {
-		
 		height: 100%;
 	}
 
 	&__box {
 		flex-basis: 29%;
+		margin-left: 60px;
+		@media only screen and (max-width: 1280px) {
+			flex-basis: 100%;
+			margin-left: 0;
+		}
 	}
 
-	
+
 	&__inner {
-		@include flex ($align-items: center);
-		margin-left: 37%;
+		@include flex (flex-end, center);
+		margin-right: 9%;
+
+		@media only screen and (max-width: 1520px) {
+			margin-right: 0;
+		}
 	}
 
-	&__text {
-		@include font (16px, 40px, 800, $text-transform: uppercase);
-		margin-right: 44px;
-		color: $text-footer-color;
-		position: relative;
-
-		&::before {
-			@include pseudo;
-			@include pos (absolute, $bottom: 7px, $left: -62px);
-			@include background (url("../images/footer/footer_arrow.png"));
-			@include wh (48px, 42px);
-					}
-	}
 
 	&__social {
 		display: flex;
@@ -94,7 +110,7 @@
 		@include font (13px, 35px, $text-align: center);
 		letter-spacing: 0.02em;
 		color: #af8a82;
-			}
+	}
 
 	&__link {
 		background-color: #f2662f;
@@ -111,6 +127,6 @@
 			@include font (16px, 40px, 700);
 			letter-spacing: -0.02em;
 			@include wh-px (55, 14);
-			}
+		}
 	}
 }
