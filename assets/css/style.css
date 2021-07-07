@@ -3986,6 +3986,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     padding: 116px 0 80px;
 }
 
+@media only screen and (max-width: 960px) {
+    .testimonials {
+        padding: 80px 0 60px;
+    }
+}
+
 .testimonials::after {
     content: "";
     display: block;
@@ -4016,6 +4022,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     color: #f2612d;
 }
 
+@media only screen and (max-width: 960px) {
+    .testimonials__title {
+        margin-bottom: 80px;
+    }
+}
+
 .testimonials__box {
     display: -ms-flexbox;
     display: flex;
@@ -4035,6 +4047,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         display: flex;
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .testimonials__box {
+        margin-bottom: 60px;
     }
 }
 
@@ -4062,7 +4080,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 960px) {
     .testimonials__box::after {
         display: none;
     }
@@ -4083,7 +4101,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @media only screen and (max-width: 960px) {
     .testimonials__textbox {
-        margin: 80px 50px 0 0;
+        margin: 80px 0 0 0;
     }
 }
 
@@ -4147,18 +4165,31 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .blog {
-    padding: 90px 10px 190px;
+    padding: 90px 0 190px;
+}
+
+@media only screen and (max-width: 1440px) {
+    .blog {
+        padding-bottom: 90px;
+    }
 }
 
 .blog__wrapper {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
     -ms-flex-align: center;
     align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    padding-left: 15%;
+}
+
+@media only screen and (max-width: 1440px) {
+    .blog__wrapper {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 0;
+    }
 }
 
 .blog__box {
@@ -4169,8 +4200,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     margin-right: 60px;
 }
 
+@media only screen and (max-width: 1440px) {
+    .blog__box {
+        margin-right: 0;
+    }
+}
+
 .blog__title {
     margin-bottom: 62px;
+}
+
+@media only screen and (max-width: 1440px) {
+    .blog__title {
+        margin-bottom: 30px;
+    }
 }
 
 .blog__img {
@@ -4185,8 +4228,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     content: "";
     display: block;
     position: absolute;
-    top: 17%;
-    left: 93%;
+    top: 18%;
+    left: 92%;
     width: 685px;
     height: 12px;
     background-color: #f7ae3b;
@@ -4195,20 +4238,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     border-top-right-radius: 10px;
 }
 
-@media only screen and (max-width: 1216px) {
+@media only screen and (max-width: 1440px) {
     .blog__picture::before {
         display: none;
     }
 }
 
-.blog__text-box {
-    padding: 225px 0 45px;
-    margin-right: 40px;
+.blog__inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 205px 0 0;
 }
 
-@media only screen and (max-width: 1216px) {
-    .blog__text-box {
-        margin-top: 30px;
+@media only screen and (max-width: 1440px) {
+    .blog__inner {
+        margin-top: 50px;
+        padding: 0;
     }
 }
 
@@ -4226,7 +4273,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .blog__text {
     max-width: 472px;
-    margin: 30px 0 0 62px;
+    margin: 25px 0 0 65px;
+}
+
+@media only screen and (max-width: 576px) {
+    .blog__text {
+        margin: 10px 0 0;
+    }
 }
 
 .blog__link {
@@ -4241,8 +4294,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     content: "";
     display: block;
     position: absolute;
-    bottom: 5px;
-    right: -30px;
+    bottom: 40%;
+    right: -30%;
     width: 18px;
     height: 10px;
     background-repeat: no-repeat;
