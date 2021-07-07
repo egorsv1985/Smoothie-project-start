@@ -1,7 +1,7 @@
 .footer {
 	&__top {
 		background-color: $bg-footer-color;
-		padding: 75px 0 85px;
+		padding: 60px 0 95px;
 	}
 
 	&__wrapper {
@@ -13,21 +13,19 @@
 	}
 
 	&__logo {
-		padding-top: 55px;
-		flex-basis: 25%;
+		margin: 65px 40px 0 0;
+		flex-basis: 22%;		
 	}
 
-	
-
 	&__info {
-		flex-basis: 14%;
+		flex-basis: 11%;
+		margin-right: 40px;
 	}
 
 	&__title {
 		font-size: 26px;
-		margin-bottom: 35px;
+		margin-bottom: 24px;
 	}
-
 
 	&__info-link {
 		@include font (18px, 35px, 700);
@@ -36,7 +34,8 @@
 	}
 
 	&__pay {
-		flex-basis: 19%;
+		flex-basis: 16%;
+		margin-right: 40px;
 
 		@media only screen and (max-width: 1552px) {
 			
@@ -47,10 +46,12 @@
 	&__pay-list {
 		@include flex (flex-start, center, wrap);
 		width: 270px;
+		gap: 23px;
 	}
+	
 
 	&__pay-img {
-		margin: 0 18px 20px 0;
+		
 		height: 100%;
 	}
 
@@ -58,34 +59,7 @@
 		flex-basis: 29%;
 	}
 
-	&__form {
-		margin-bottom: 24px;
-		position: relative;
-
-		&::before {
-			@include pseudo;
-			@include pos ($position: absolute, $top: 22px, $left: 22px);
-			@include wh-px (24, 19);
-			@include background (url("../images/footer/footer_email.png"));
-		}
-	}
-
-	&__input {
-		max-width: 498px;
-		@include wh (100%, 62px);
-		text-indent: 65px;
-		background-color: $bg-main-color;
-		outline: 0;
-		border-style: none;
-		border-radius: 30px;
-
-		&::placeholder {
-			@include font (17px, 35px, 700);
-			letter-spacing: -0.02em;
-			color: $text-footer-color;
-		}
-	}
-
+	
 	&__inner {
 		@include flex ($align-items: center);
 		margin-left: 37%;

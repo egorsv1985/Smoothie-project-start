@@ -1,0 +1,27 @@
+form {
+	margin-bottom: 24px;
+	position: relative;
+
+	&::before {
+		@include pseudo;
+		@include pos ($position: absolute, $top: 22px, $left: 22px);
+		@include wh-px (24, 19);
+		@include background (url("../images/footer/footer_email.png"));
+	}
+	&__input {
+		max-width: 498px;
+		@include wh (100%, 62px);
+		text-indent: 65px;
+		background-color: $bg-main-color;
+		outline: 0;
+		border-style: none;
+		border-radius: 30px;
+	
+		&::placeholder {
+			@include font (17px, 35px, 700);
+			letter-spacing: -0.02em;
+			color: $text-footer-color;
+		}
+	}
+}
+
