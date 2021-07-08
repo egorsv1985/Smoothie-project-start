@@ -3270,6 +3270,121 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     margin-left: 8px;
 }
 
+.form {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.form::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 37%;
+    left: 6%;
+    width: 24px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/footer/footer_email.png");
+}
+
+.form::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -90%;
+    left: 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/footer/footer_arrow.png");
+    width: 48px;
+    height: 42px;
+}
+
+@media only screen and (max-width: 1520px) {
+    .form::after {
+        left: 15%;
+    }
+}
+
+@media only screen and (max-width: 1368px) {
+    .form::after {
+        left: 5%;
+    }
+}
+
+.form__input {
+    max-width: 498px;
+    width: 100%;
+    height: 62px;
+    padding: 0 0 0 65px;
+    background-color: #fff;
+    outline: 0;
+    border-style: none;
+    border-radius: 30px;
+}
+
+.form__input::-webkit-input-placeholder {
+    font-size: 17px;
+    line-height: 35px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #6d450c;
+}
+
+.form__input::-moz-placeholder {
+    font-size: 17px;
+    line-height: 35px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #6d450c;
+}
+
+.form__input:-ms-input-placeholder {
+    font-size: 17px;
+    line-height: 35px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #6d450c;
+}
+
+.form__input::-ms-input-placeholder {
+    font-size: 17px;
+    line-height: 35px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #6d450c;
+}
+
+.form__input::placeholder {
+    font-size: 17px;
+    line-height: 35px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #6d450c;
+}
+
+.form__submit {
+    font-size: 16px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #6d450c;
+    position: absolute;
+    bottom: -102%;
+    left: 38%;
+    border-style: none;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 1368px) {
+    .form__submit {
+        left: 25%;
+    }
+}
+
 .header {
     min-height: 100vh;
     position: relative;
@@ -3755,7 +3870,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     flex-direction: column;
     min-width: 480px;
     width: 100%;
-    height: 720px;
     padding-top: 130px;
 }
 
@@ -3812,6 +3926,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .products__subtitle {
     font-size: 20px;
     line-height: 30px;
+    font-style: italic;
     margin-bottom: 60px;
 }
 
@@ -4286,6 +4401,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     font-size: 18px;
     line-height: 35px;
     font-weight: 800;
+    white-space: nowrap;
     font-style: italic;
     position: relative;
 }
@@ -4309,10 +4425,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     text-align: center;
 }
 
-.instagram__inner {
-    position: relative;
-}
-
 .instagram__title {
     margin: 0 0 50px 40px;
     font-size: 24px;
@@ -4334,6 +4446,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .instagram__inner {
+    position: relative;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: start;
@@ -4342,13 +4455,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     align-items: center;
     overflow-x: auto;
     margin-bottom: 10px;
-    -ms-flex: 1 0 20%;
-    flex: 1 0 20%;
 }
 
 .instagram__picture {
     position: relative;
     width: 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
 }
 
 .instagram__picture::before {
@@ -4368,13 +4481,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .instagram__img {
     width: 100%;
-    height: 384px;
-    min-width: 384px;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .footer__top {
     background-color: #f4ad39;
-    padding: 75px 0 85px;
+    padding: 60px 0 95px;
 }
 
 .footer__wrapper {
@@ -4384,24 +4498,73 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     justify-content: space-between;
     -ms-flex-align: start;
     align-items: flex-start;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1280px) {
+    .footer__wrapper {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
 }
 
 .footer__logo {
-    padding-top: 55px;
+    margin-top: 65px;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
 }
 
+@media only screen and (max-width: 1280px) {
+    .footer__logo {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        margin: 0 0 50px;
+    }
+}
+
+.footer__wrap {
+    -ms-flex-preferred-size: 38%;
+    flex-basis: 38%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 50px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .footer__wrap {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        margin: 0 0 50px;
+        gap: 100px;
+    }
+}
+
 .footer__info {
-    -ms-flex-preferred-size: 14%;
-    flex-basis: 14%;
+    -ms-flex-preferred-size: 43%;
+    flex-basis: 43%;
+}
+
+@media only screen and (max-width: 1280px) {
+    .footer__info {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    }
 }
 
 .footer__title {
     font-size: 26px;
-    margin-bottom: 35px;
+    margin-bottom: 24px;
 }
 
 .footer__info-link {
@@ -4413,8 +4576,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .footer__pay {
-    -ms-flex-preferred-size: 19%;
-    flex-basis: 19%;
+    -ms-flex-preferred-size: 42%;
+    flex-basis: 42%;
+    margin-left: 34px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .footer__pay {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        margin-left: 0;
+    }
 }
 
 .footer__pay-list {
@@ -4427,118 +4599,41 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 270px;
+    gap: 23px;
 }
 
 .footer__pay-img {
-    margin: 0 18px 20px 0;
     height: 100%;
 }
 
 .footer__box {
     -ms-flex-preferred-size: 29%;
     flex-basis: 29%;
+    margin-left: 60px;
 }
 
-.footer__form {
-    margin-bottom: 24px;
-    position: relative;
-}
-
-.footer__form::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 22px;
-    left: 22px;
-    width: 24px;
-    height: 19px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url("../images/footer/footer_email.png");
-}
-
-.footer__input {
-    max-width: 498px;
-    width: 100%;
-    height: 62px;
-    text-indent: 65px;
-    background-color: #fff;
-    outline: 0;
-    border-style: none;
-    border-radius: 30px;
-}
-
-.footer__input::-webkit-input-placeholder {
-    font-size: 17px;
-    line-height: 35px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: #6d450c;
-}
-
-.footer__input::-moz-placeholder {
-    font-size: 17px;
-    line-height: 35px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: #6d450c;
-}
-
-.footer__input:-ms-input-placeholder {
-    font-size: 17px;
-    line-height: 35px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: #6d450c;
-}
-
-.footer__input::-ms-input-placeholder {
-    font-size: 17px;
-    line-height: 35px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: #6d450c;
-}
-
-.footer__input::placeholder {
-    font-size: 17px;
-    line-height: 35px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: #6d450c;
+@media only screen and (max-width: 1280px) {
+    .footer__box {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        margin-left: 0;
+    }
 }
 
 .footer__inner {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: 37%;
+    margin-right: 9%;
 }
 
-.footer__text {
-    font-size: 16px;
-    line-height: 40px;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-right: 44px;
-    color: #6d450c;
-    position: relative;
-}
-
-.footer__text::before {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 7px;
-    left: -62px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url("../images/footer/footer_arrow.png");
-    width: 48px;
-    height: 42px;
+@media only screen and (max-width: 1520px) {
+    .footer__inner {
+        margin-right: 0;
+    }
 }
 
 .footer__social {
