@@ -6,9 +6,10 @@
 
 	&__wrapper {
 		@include flex (space-between, flex-start);
+
 		@media only screen and (max-width: 1280px) {
 			@include flex (center, center, $flex-direction: column);
-			}
+		}
 
 		// @media only screen and (max-width: 1568px) {
 		// 	@include flex (center, center, wrap, column);
@@ -18,27 +19,31 @@
 	&__logo {
 		margin-top: 65px;
 		flex-basis: 25%;
+
 		@media only screen and (max-width: 1280px) {
 			flex-basis: 100%;
 			margin: 0 0 50px;
 		}
 
 	}
-&__wrap {
-	flex-basis: 38%;
-	@include flex (center, center, wrap);
-	margin: 0 50px;
-	@media only screen and (max-width: 1280px) {
-		flex-basis: 100%;
-		margin: 0 0 50px;
-		gap: 100px;
+
+	&__wrap {
+		flex-basis: 38%;
+		@include flex (center, center, wrap);
+		margin: 0 50px;
+
+		@media only screen and (max-width: 1280px) {
+			flex-basis: 100%;
+			margin: 0 0 50px;
+			gap: 100px;
+		}
 	}
-}
+
 	&__info {
 		flex-basis: 43%;
+
 		@media only screen and (max-width: 1280px) {
 			flex-basis: 50%;
-			
 		}
 
 	}
@@ -57,7 +62,7 @@
 	&__pay {
 		flex-basis: 42%;
 		margin-left: 34px;
-		
+
 
 		@media only screen and (max-width: 1280px) {
 			flex-basis: 50%;
@@ -78,6 +83,7 @@
 	&__box {
 		flex-basis: 29%;
 		margin-left: 60px;
+
 		@media only screen and (max-width: 1280px) {
 			flex-basis: 100%;
 			margin-left: 0;
@@ -120,6 +126,10 @@
 		@include background (url(../images/footer/footer_arrow__up.png));
 		background-size: 14px 25px;
 		border-radius: 5px;
+		@media only screen and (max-width: 1280px) {
+			bottom: 30px;
+			right: 30px;
+		}
 
 		&::before {
 			@include pseudo ('Go top');
@@ -127,6 +137,9 @@
 			@include font (16px, 40px, 700);
 			letter-spacing: -0.02em;
 			@include wh-px (55, 14);
+			@media only screen and (max-width: 768px) {
+				display: none;
+			}
 		}
 	}
 }

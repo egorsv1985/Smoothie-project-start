@@ -87,6 +87,7 @@
 
 	&__link {
 		@include font (18px, 35px, 800);
+		white-space: nowrap;
 		font-style: italic;
 		position: relative;
 

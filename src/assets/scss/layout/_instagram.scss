@@ -2,9 +2,7 @@
 	margin: 0 auto;
 	text-align: center;
 
-	&__inner {
-		position: relative;
-	}
+
 
 	&__title {
 		margin: 0 0 50px 40px;
@@ -20,21 +18,22 @@
 			@include pseudo;
 			@include pos (absolute, $top: -5px, $left: -40px);
 			@include background (url("../images/instagram/instagramm.png"));
-			
-			}
+
+		}
 	}
 
 	&__inner {
+		position: relative;
 		@include flex (flex-start, center);
 		overflow-x: auto;
 		margin-bottom: 10px;
-		flex: 1 0 20%;
 	}
 
 	&__picture {
 		position: relative;
 		width: 100%;
-		
+	
+
 		&::before {
 			@include pseudo;
 			@include pos (absolute, $bottom: 17px, $right: 23px);
@@ -46,7 +45,7 @@
 	}
 
 	&__img {
-		@include wh (100%, 384px);
-		min-width: 384px;
-	}
+		@include wh (100%);
+		object-fit: cover;
+		}
 }

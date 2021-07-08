@@ -8,7 +8,7 @@
 	&__item {
 		@include flex (center, center, nowrap, column);
 		min-width: 480px;
-		@include wh (100%, 720px);
+		width: 100%;
 		padding-top: 130px;
 		@media only screen and (max-width: 768px) {
 			padding-top: 80px;
@@ -51,6 +51,7 @@
 
 	&__subtitle {
 		@include font (20px, 30px);
+		font-style: italic;
 		margin-bottom: 60px;
 		@media only screen and (max-width: 768px) {
 			margin-bottom: 30px;
