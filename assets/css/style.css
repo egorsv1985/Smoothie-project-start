@@ -2999,7 +2999,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .text {
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
 }
 
 .text--black {
@@ -3012,7 +3012,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .title {
     font-size: 50px;
-    line-height: 40px;
+    line-height: 0.8;
     font-weight: 600;
     letter-spacing: -0.02em;
 }
@@ -3059,7 +3059,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media only screen and (max-width: 360px) {
     .title {
         font-size: 44px;
-        line-height: 55px;
+        line-height: 0.8;
     }
 }
 
@@ -4460,8 +4460,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .instagram__picture {
     position: relative;
     width: 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
 }
 
 .instagram__picture::before {
@@ -4498,6 +4496,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     justify-content: space-between;
     -ms-flex-align: start;
     align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -4515,8 +4515,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .footer__logo {
     margin-top: 65px;
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
+    -ms-flex-preferred-size: 29%;
+    flex-basis: 29%;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -4551,8 +4551,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .footer__info {
-    -ms-flex-preferred-size: 43%;
-    flex-basis: 43%;
+    -ms-flex-preferred-size: 18%;
+    flex-basis: 18%;
+    margin-right: 10px;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -4677,6 +4678,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     border-radius: 5px;
 }
 
+@media only screen and (max-width: 1280px) {
+    .footer__link {
+        bottom: 30px;
+        right: 30px;
+    }
+}
+
 .footer__link::before {
     content: "Go top";
     display: block;
@@ -4691,6 +4699,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     height: 14px;
 }
 
+@media only screen and (max-width: 768px) {
+    .footer__link::before {
+        display: none;
+    }
+}
+
 ._active {
     position: fixed;
     top: 0;
@@ -4702,7 +4716,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     height: 100vh;
     width: 100%;
     transition: all .5s ease-in-out;
-    z-index: 1;
+    z-index: 9999999999999;
     -webkit-transform: translateX(0);
     transform: translateX(0);
     padding: 15% 0 0;
