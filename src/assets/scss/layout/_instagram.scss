@@ -18,6 +18,7 @@
 			@include pseudo;
 			@include pos (absolute, $top: -5px, $left: -40px);
 			@include background (url("../images/instagram/instagramm.png"));
+			@include wh (26px);
 
 		}
 	}

@@ -3303,15 +3303,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     height: 42px;
 }
 
-@media only screen and (max-width: 1520px) {
+@media only screen and (max-width: 1420px) {
     .form::after {
-        left: 15%;
-    }
-}
-
-@media only screen and (max-width: 1368px) {
-    .form::after {
-        left: 5%;
+        left: 10%;
     }
 }
 
@@ -3379,9 +3373,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-color: transparent;
 }
 
-@media only screen and (max-width: 1368px) {
+@media only screen and (max-width: 1420px) {
     .form__submit {
-        left: 25%;
+        left: 30%;
     }
 }
 
@@ -4508,58 +4502,30 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         justify-content: center;
         -ms-flex-align: center;
         align-items: center;
-        -ms-flex-direction: column;
-        flex-direction: column;
     }
 }
 
 .footer__logo {
     margin-top: 65px;
-    -ms-flex-preferred-size: 29%;
-    flex-basis: 29%;
+    width: 29%;
 }
 
 @media only screen and (max-width: 1280px) {
     .footer__logo {
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-        margin: 0 0 50px;
-    }
-}
-
-.footer__wrap {
-    -ms-flex-preferred-size: 38%;
-    flex-basis: 38%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: 0 50px;
-}
-
-@media only screen and (max-width: 1280px) {
-    .footer__wrap {
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-        margin: 0 0 50px;
-        gap: 100px;
+        margin: 0px 150px 50px;
     }
 }
 
 .footer__info {
-    -ms-flex-preferred-size: 18%;
-    flex-basis: 18%;
+    width: 15%;
     margin-right: 10px;
 }
 
 @media only screen and (max-width: 1280px) {
     .footer__info {
-        -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+        width: 35%;
+        margin-left: 100px;
+        margin-right: 100px;
     }
 }
 
@@ -4577,15 +4543,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .footer__pay {
-    -ms-flex-preferred-size: 42%;
-    flex-basis: 42%;
-    margin-left: 34px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 20%;
+    margin-right: 10px;
 }
 
 @media only screen and (max-width: 1280px) {
     .footer__pay {
-        -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+        width: 30%;
         margin-left: 0;
     }
 }
@@ -4608,15 +4576,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .footer__box {
-    -ms-flex-preferred-size: 29%;
-    flex-basis: 29%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin-left: 60px;
+    width: 29%;
 }
 
 @media only screen and (max-width: 1280px) {
     .footer__box {
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+        margin-top: 50px;
         margin-left: 0;
     }
 }
@@ -4628,12 +4598,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     justify-content: flex-end;
     -ms-flex-align: center;
     align-items: center;
-    margin-right: 9%;
+    margin-right: 45px;
 }
 
 @media only screen and (max-width: 1520px) {
     .footer__inner {
-        margin-right: 0;
+        margin-right: 20px;
     }
 }
 
