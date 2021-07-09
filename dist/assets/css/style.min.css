@@ -2414,7 +2414,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .text {
   font-size: 18px;
-  line-height: 36px; }
+  line-height: 2; }
   .text--black {
     color: #1e1e1e; }
   .text--orange {
@@ -2422,7 +2422,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .title {
   font-size: 50px;
-  line-height: 40px;
+  line-height: 0.8;
   font-weight: 600;
   letter-spacing: -0.02em; }
   .title--orange {
@@ -2453,7 +2453,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   @media only screen and (max-width: 360px) {
     .title {
       font-size: 44px;
-      line-height: 55px; } }
+      line-height: 0.8; } }
 
 .btn {
   font-size: 21px;
@@ -2617,12 +2617,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-image: url("../images/footer/footer_arrow.png");
     width: 48px;
     height: 42px; }
-    @media only screen and (max-width: 1520px) {
+    @media only screen and (max-width: 1420px) {
       .form::after {
-        left: 15%; } }
-    @media only screen and (max-width: 1368px) {
-      .form::after {
-        left: 5%; } }
+        left: 10%; } }
   .form__input {
     max-width: 498px;
     width: 100%;
@@ -2649,9 +2646,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     left: 38%;
     border-style: none;
     background-color: transparent; }
-    @media only screen and (max-width: 1368px) {
+    @media only screen and (max-width: 1420px) {
       .form__submit {
-        left: 25%; } }
+        left: 30%; } }
 
 .header {
   min-height: 100vh;
@@ -3340,40 +3337,29 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; }
+  align-items: flex-start;
+  flex-wrap: wrap; }
   @media only screen and (max-width: 1280px) {
     .footer__wrapper {
       display: flex;
       justify-content: center;
-      align-items: center;
-      flex-direction: column; } }
+      align-items: center; } }
 
 .footer__logo {
   margin-top: 65px;
-  flex-basis: 25%; }
+  width: 29%; }
   @media only screen and (max-width: 1280px) {
     .footer__logo {
-      flex-basis: 100%;
-      margin: 0 0 50px; } }
-
-.footer__wrap {
-  flex-basis: 38%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0 50px; }
-  @media only screen and (max-width: 1280px) {
-    .footer__wrap {
-      flex-basis: 100%;
-      margin: 0 0 50px;
-      gap: 100px; } }
+      margin: 0px 150px 50px; } }
 
 .footer__info {
-  flex-basis: 43%; }
+  width: 15%;
+  margin-right: 10px; }
   @media only screen and (max-width: 1280px) {
     .footer__info {
-      flex-basis: 50%; } }
+      width: 35%;
+      margin-left: 100px;
+      margin-right: 100px; } }
 
 .footer__title {
   font-size: 26px;
@@ -3387,11 +3373,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   color: #6d450c; }
 
 .footer__pay {
-  flex-basis: 42%;
-  margin-left: 34px; }
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-right: 10px; }
   @media only screen and (max-width: 1280px) {
     .footer__pay {
-      flex-basis: 50%;
+      width: 30%;
       margin-left: 0; } }
 
 .footer__pay-list {
@@ -3406,21 +3394,23 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   height: 100%; }
 
 .footer__box {
-  flex-basis: 29%;
-  margin-left: 60px; }
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  width: 29%; }
   @media only screen and (max-width: 1280px) {
     .footer__box {
-      flex-basis: 100%;
+      margin-top: 50px;
       margin-left: 0; } }
 
 .footer__inner {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 9%; }
+  margin-right: 45px; }
   @media only screen and (max-width: 1520px) {
     .footer__inner {
-      margin-right: 0; } }
+      margin-right: 20px; } }
 
 .footer__social {
   display: flex; }

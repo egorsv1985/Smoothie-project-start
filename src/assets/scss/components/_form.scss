@@ -13,11 +13,11 @@
 		@include pos (absolute, $bottom: -90%, $left: 25%);
 		@include background (url("../images/footer/footer_arrow.png"));
 		@include wh (48px, 42px);
-		@media only screen and (max-width: 1520px) {
-			left: 15%;
-		}
-		@media only screen and (max-width: 1368px) {
-			left: 5%;
+		// @media only screen and (max-width: 1520px) {
+		// 	left: 15%;
+		// }
+		@media only screen and (max-width: 1420px) {
+			left: 10%;
 		}
 	}
 
@@ -46,8 +46,8 @@
 		@include pos (absolute, $bottom: -102%, $left: 38%);
 		border-style: none;
 		background-color: transparent;
-		@media only screen and (max-width: 1368px) {
-			left: 25%;
+		@media only screen and (max-width: 1420px) {
+			left: 30%;
 		}
 		
 	}
