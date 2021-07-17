@@ -3280,7 +3280,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: block;
     position: absolute;
     top: 37%;
-    left: 6%;
+    left: 4%;
     width: 24px;
     height: 19px;
     background-repeat: no-repeat;
@@ -3306,6 +3306,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media only screen and (max-width: 1420px) {
     .form::after {
         left: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .form::after {
+        left: 3%;
     }
 }
 
@@ -3376,6 +3382,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media only screen and (max-width: 1420px) {
     .form__submit {
         left: 30%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .form__submit {
+        left: 18%;
     }
 }
 
@@ -4437,6 +4449,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-position: center;
     background-size: cover;
     background-image: url("../images/instagram/instagramm.png");
+    width: 26px;
+    height: 26px;
 }
 
 .instagram__inner {
@@ -4494,25 +4508,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 1280px) {
-    .footer__wrapper {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-}
-
 .footer__logo {
     margin-top: 65px;
     width: 29%;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1100px) {
     .footer__logo {
-        margin: 0px 150px 50px;
+        margin: 65px auto 0;
+        width: 211px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .footer__logo {
+        margin: 0 0 50px;
+        width: 100%;
     }
 }
 
@@ -4521,11 +4532,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     margin-right: 10px;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 900px) {
     .footer__info {
-        width: 35%;
-        margin-left: 100px;
-        margin-right: 100px;
+        width: 100%;
+        margin: 0 0 50px;
     }
 }
 
@@ -4548,13 +4558,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     -ms-flex-direction: column;
     flex-direction: column;
     width: 20%;
-    margin-right: 10px;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 900px) {
     .footer__pay {
-        width: 30%;
-        margin-left: 0;
+        width: 100%;
+        margin-bottom: 50px;
     }
 }
 
@@ -4584,27 +4593,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 29%;
 }
 
-@media only screen and (max-width: 1280px) {
-    .footer__box {
-        margin-top: 50px;
-        margin-left: 0;
-    }
-}
-
 .footer__inner {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
     -ms-flex-align: center;
     align-items: center;
-    margin-right: 45px;
-}
-
-@media only screen and (max-width: 1520px) {
-    .footer__inner {
-        margin-right: 20px;
-    }
+    margin-left: 60%;
 }
 
 .footer__social {
