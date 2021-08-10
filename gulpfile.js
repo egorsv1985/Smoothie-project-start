@@ -20,7 +20,7 @@ const imagemin = require('gulp-imagemin'); //для минификации из�
 const del = require('del'); // для удаления файлов и папок
 const notify = require('gulp-notify'); //предоставляет информацию об ошибке
 const browserSync = require('browser-sync').create(); // для запуска сервера и перезагрузки страницы при внесении изменений
-
+const ghPages = require('gulp-gh-pages'); //для публикации на github
 
 
 
@@ -259,6 +259,12 @@ function fonts(cb) {
 
     cb();
 }
+
+
+gulp.task('deploy', function () {
+    return gulp.src('./build/**/*')
+        .pipe(ghPages());
+});
 
 // При сборке проекта удаляет папку dist и создает новую со свежими файлами 
 function clean(cb) {
