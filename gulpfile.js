@@ -12,15 +12,18 @@ const cssbeautify = require('gulp-cssbeautify'); // форматирует css, 
 const removeComments = require('gulp-strip-css-comments'); // удаляет комментарии
 const rename = require('gulp-rename'); // для переименования файлов
 const sass = require('gulp-sass'); // для компиляции sass в css
+// const postcss = require('gulp-postcss');
+// const pxtorem = require('postcss-pxtorem');
 const cssnano = require('gulp-cssnano'); //для минификации css
-const uglify = require('gulp-uglify'); // для минификации (сжатия) js-кода. Обратного преобразования нет.
+// const uglify = require('gulp-uglify'); // для минификации (сжатия) js-кода. Обратного преобразования нет.
 const concat = require('gulp-concat'); //"склеивает" несколько файлов в один
 const plumber = require('gulp-plumber'); // для обработки ошибок
 const imagemin = require('gulp-imagemin'); //для минификации изображений
 const del = require('del'); // для удаления файлов и папок
 const notify = require('gulp-notify'); //предоставляет информацию об ошибке
 const browserSync = require('browser-sync').create(); // для запуска сервера и перезагрузки страницы при внесении изменений
-const ghPages = require('gulp-gh-pages'); //для публикации на github
+// const usemin = require('gulp-usemin');
+
 
 
 
@@ -58,8 +61,10 @@ const path = {
 
 // Если нужно выполнять преобразование файлов в определенном порядке, то используем массив с нужным нам порядком:
 const jsFiles = [
-    srcPath + 'assets/js/script.js',
-    srcPath + 'assets/js/libs/wow.js'
+    './node_modules/bootstrap/dist/js/**/*.js',
+    // srcPath + 'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+    // srcPath + 'node_modules/@popperjs/core/lib/popper-lite.js',
+    srcPath + 'assets/js/script.js'
 ]
 
 
@@ -73,6 +78,8 @@ gulp.task('deploy', function () {
     return gulp.src('./dist/**/*')
         .pipe(ghPages());
 });
+
+
 
 // Локальный сервер
 function serve() {
@@ -116,6 +123,15 @@ function css(cb) {
 
 
         }))
+        // .pipe(postcss(
+        //     [
+        //         pxtorem({
+        //             propList: ['*'],
+        //             mediaQuery: true,
+        //         }),
+        //     ],
+        // ))
+
         .pipe(autoprefixer({
             cascade: true
         }))
@@ -268,17 +284,16 @@ function fonts(cb) {
     cb();
 }
 
-
-gulp.task('deploy', function () {
-    return gulp.src('./build/**/*')
-        .pipe(ghPages());
-});
-
 // При сборке проекта удаляет папку dist и создает новую со свежими файлами 
 function clean(cb) {
     return del(path.clean);
     cb();
 }
+
+
+
+
+
 
 // Для слежки за файлами. Перезагрузит страницу, если что-то изменится 
 function watchFiles() {
@@ -288,6 +303,7 @@ function watchFiles() {
     gulp.watch([path.watch.images], images);
     gulp.watch([path.watch.fonts], fonts);
 }
+
 
 
 const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts)); // Будет запускаться по команде gulp build
@@ -306,6 +322,7 @@ exports.clean = clean;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
+
 
 
 // На сервер (или заказчику) пойдет только папка dist
