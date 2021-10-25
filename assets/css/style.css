@@ -3528,7 +3528,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 50px;
     height: 50px;
     display: none;
-    z-index: 1;
+    z-index: 99999999999999999999;
 }
 
 @media only screen and (max-width: 1368px) {
