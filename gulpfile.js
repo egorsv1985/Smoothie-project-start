@@ -66,11 +66,12 @@ const jsFiles = [
 // TASKS
 // объявляем функции под сборки (все пути относительные)
 
+// !!!!!!! Сделано для Deploy  проекта на GitHub pages
 var ghPages = require('gulp-gh-pages');
- 
-gulp.task('deploy', function() {
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages());
+
+gulp.task('deploy', function () {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
 });
 
 // Локальный сервер
