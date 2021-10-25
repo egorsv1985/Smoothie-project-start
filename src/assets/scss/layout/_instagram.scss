@@ -33,6 +33,7 @@
 	&__picture {
 		position: relative;
 		width: 100%;
+		min-width: 300px;
 	
 
 		&::before {

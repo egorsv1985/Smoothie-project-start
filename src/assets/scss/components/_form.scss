@@ -22,12 +22,16 @@
 		@media only screen and (max-width: 600px) {
 			left: 3%;
 		}
+		@media only screen and (max-width: 360px) {
+			display: none;
+		}
 	}
 
 	// .form__input
 	&__input {
 		max-width: 498px;
 		@include wh (100%, 62px);
+		min-width: 325px;
 		padding: 0 0 0 65px;
 		background-color: $bg-main-color;
 		outline: 0;
